@@ -39,7 +39,7 @@
 Программа и исходники распространяются под лицензией MIT, то есть можно использовать как угодно, но не забывать об авторстве.
 
 ## Вопросы?
-Моя электропочта: yan.gerasimuk@yandex.ru, техподдержка: [Ledger on vk.com](https://vk.com/ledgerapp).
+Моя электропочта: yan.gerasimuk@gmail.com, техподдержка: [Ledger on vk.com](https://vk.com/ledgerapp).
 
 gl hf
 
