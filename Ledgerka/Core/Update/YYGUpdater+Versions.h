@@ -10,6 +10,7 @@
 
 @interface YYGUpdater (Versions)
 
+- (NSNumber *)updateToVersionMajor2Minor0Build0;
 - (NSNumber *)updateToVersionMajor1Minor3Build3;
 - (NSNumber *)updateToVersionMajor1Minor2Build6;
 - (NSNumber *)updateToVersionMajor1Minor1Build13;

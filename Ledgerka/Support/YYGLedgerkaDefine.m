@@ -42,5 +42,6 @@ NSString *const kBackupFileNamePattern = @"^\\d{4}[-]\\d{2}[-]\\d{2}[-]\\d{2}[-]
 
 NSString *const kDropboxAppKey = @"ltzx54gtxldo9sn";
 
-char *const kSQLiteQueue = "com.yangerasimuk.Ledgerka.sqliteQueue";
-char *const kEntitiesQueue = "com.yangerasimuk.Ledgerka.entitiesQueue";
+char *const kSQLiteQueue = "com.yanygerasimuk.Ledgerka.sqliteQueue";
+char *const kEntitiesQueue = "com.yanygerasimuk.Ledgerka.entitiesQueue";
+char *const kReportsQueue = "com.yanygerasimuk.Ledgerka.reportsQueue";

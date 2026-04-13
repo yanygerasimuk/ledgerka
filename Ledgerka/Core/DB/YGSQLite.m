@@ -13,6 +13,7 @@
 #import "YYGDBLog.h"
 #import "YYGDataCommon.h"
 #import "YYGDataRelease.h"
+#import "YYGResult.h"
 
 @interface YGSQLite() {
     dispatch_queue_t p_queue;
@@ -165,7 +166,66 @@
     [self createTable:@"entity" createSQL:createSql];
     
     [YYGDBLog logEvent:@"Table entity created"];
-    
+
+
+    #ifdef DEBUG_REBUILD_DATABASE
+        if([self isTableExist:@"report"])
+            [self dropTable:@"report"];
+    #endif
+
+    createSql = @"CREATE TABLE IF NOT EXISTS report "
+    "(report_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+    "report_type_id INTEGER NOT NULL, "
+    "name TEXT NOT NULL, "
+    "active INTEGER NOT NULL, "
+    "created TEXT NOT NULL, "
+    "modified TEXT, "
+    "sort INTEGER NOT NULL, "
+    "comment TEXT, "
+    "uuid TEXT NOT NULL, "
+    ");";
+
+    [self createTable:@"report" createSQL:createSql];
+
+    [YYGDBLog logEvent:@"Table report created"];
+
+    #ifdef DEBUG_REBUILD_DATABASE
+        if([self isTableExist:@"report_parameter"])
+            [self dropTable:@"report_parameter"];
+    #endif
+
+    createSql = @"CREATE TABLE IF NOT EXISTS report_parameter "
+    "(report_parameter_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+    "report_parameter_type_id INTEGER NOT NULL, "
+    "report_id INTEGER NOT NULL, "
+    "uuid TEXT NOT NULL"
+    ");";
+
+    [self createTable:@"report_parameter" createSQL:createSql];
+
+    [YYGDBLog logEvent:@"Table report_parameter created"];
+
+    #ifdef DEBUG_REBUILD_DATABASE
+        if([self isTableExist:@"report_value"])
+            [self dropTable:@"report_value"];
+    #endif
+
+    createSql = @"CREATE TABLE IF NOT EXISTS report_value "
+    "(report_value_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+    "report_value_type_id INTEGER NOT NULL, "
+    "report_parameter_id INTEGER NOT NULL, "
+    "value_text TEXT NULL, "
+    "value_bool INTEGER NULL, "
+    "value_integer INTEGER NULL, "
+    "value_float REAL NULL, "
+    "uuid TEXT NOT NULL"
+    ");";
+
+    [self createTable:@"report_value" createSQL:createSql];
+
+    [YYGDBLog logEvent:@"Table report_value created"];
+
+
 #ifdef DEBUG_REBUILD_DATABASE
     if([self isTableExist:@"operation"])
         [self dropTable:@"operation"];
@@ -714,6 +774,228 @@
         NSLog(@"Error in create symbolic link. Error: %@", [error description]);
     }
 #endif
+}
+
+#pragma mark - New Design
+
+- (YYGResult)execSyncInTransactionSQLs:(NSArray<NSString *> *)sqls
+{
+    __block BOOL result = NO;
+    __weak YGSQLite *weakSelf = self;
+    dispatch_sync(p_queue, ^{
+        YGSQLite *strongSelf = weakSelf;
+        if(strongSelf) {
+            result = [self execInTransactionSQLs:sqls];
+        }
+    });
+    return result;
+}
+
+- (void)execAsyncInTransactionSQLs:(NSArray<NSString *> *)sqls
+                      successBlock:(void (^) (void))successBlock
+                      failureBlock:(void (^) (void))failureBlock
+{
+    __block BOOL result = NO;
+    __weak YGSQLite *weakSelf = self;
+    dispatch_sync(p_queue, ^{
+        YGSQLite *strongSelf = weakSelf;
+        if(strongSelf) {
+            NSInteger result = NSNotFound;
+            sqlite3 *db;
+            NSString *sql;
+            char *error = 0;
+
+            @try {
+                // Open db
+                NSString *databaseFullName = [[YGTools documentsDirectoryPath] stringByAppendingPathComponent:kDatabaseName];
+                result = sqlite3_open([databaseFullName UTF8String], &db);
+                if(result != SQLITE_OK)
+                {
+                    NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, message: Can not open db.",
+                                        @"execSyncInTransactionSQLs",
+                                        (long)result];
+                    @throw [NSException exceptionWithName:NSGenericException
+                                                   reason:reason
+                                                 userInfo:nil];
+                }
+
+                // BEGIN TRANSACTION;
+                sql = @"BEGIN TRANSACTION";
+                result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+                if(result != SQLITE_OK) {
+                    NSString *errMsg = nil;
+                    if(error){
+                        errMsg = [NSString stringWithUTF8String:error];
+                        NSLog(@"Error: %@", errMsg);
+                    }
+                    NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, error: %@, user: %@",
+                                        @"execSyncInTransactionSQLs",
+                                        (long)result,
+                                        errMsg,
+                                        @"Can not begin transaction."];
+                    @throw [NSException exceptionWithName:NSGenericException
+                                                   reason:reason
+                                                 userInfo:nil];
+                }
+
+                for (NSString *elementSql in sqls)
+                {
+                    result = sqlite3_exec(db, [elementSql UTF8String], NULL, NULL, &error);
+                    if(result != SQLITE_OK) {
+                        NSString *errMsg = nil;
+                        if(error){
+                            errMsg = [NSString stringWithUTF8String:error];
+                            NSLog(@"Error: %@", errMsg);
+                        }
+                        NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, error: %@, sql: %@",
+                                            @"execSyncInTransactionSQLs",
+                                            (long)result,
+                                            errMsg,
+                                            elementSql];
+                        @throw [NSException exceptionWithName:NSGenericException
+                                                       reason:reason
+                                                     userInfo:nil];
+                    }
+                }
+
+                // COMMIT
+                sql = @"COMMIT";
+                result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+                if(result != SQLITE_OK) {
+                    NSString *errMsg = nil;
+                    if(error){
+                        errMsg = [NSString stringWithUTF8String:error];
+                        NSLog(@"Error: %@", errMsg);
+                    }
+                    NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, error: %@, user: %@",
+                                        @"execSyncInTransactionSQLs",
+                                        (long)result,
+                                        errMsg,
+                                        @"Fail to commit transaction."];
+                    @throw [NSException exceptionWithName:NSGenericException
+                                                   reason:reason
+                                                 userInfo:nil];
+                }
+                sqlite3_close(db);
+                successBlock();
+            }
+            @catch(NSException *ex) {
+                NSLog(@"YGSQLite exception handled. Message: %@", [ex description]);
+
+                sql = @"ROLLBACK";
+                result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+                if(result != SQLITE_OK) {
+                    if(error)
+                        NSLog(@"Error: %@", [NSString stringWithUTF8String:error]);
+                }
+
+                sqlite3_close(db);
+                failureBlock();
+            }
+        }
+    });
+}
+
+
+#pragma mark - Private
+
+- (YYGResult)execInTransactionSQLs:(NSArray<NSString *> *)sqls
+{
+    // Prepare updade
+    YYGResult finalResult = YYGResultFailure;
+    NSInteger result = NSNotFound;
+    sqlite3 *db;
+    NSString *sql;
+    char *error = 0;
+
+    @try {
+        // Open db
+        NSString *databaseFullName = [[YGTools documentsDirectoryPath] stringByAppendingPathComponent:kDatabaseName];
+        result = sqlite3_open([databaseFullName UTF8String], &db);
+        if(result != SQLITE_OK)
+        {
+            NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, message: Can not open db.",
+                                @"execSyncInTransactionSQLs",
+                                (long)result];
+            @throw [NSException exceptionWithName:NSGenericException
+                                           reason:reason
+                                         userInfo:nil];
+        }
+
+        // BEGIN TRANSACTION;
+        sql = @"BEGIN TRANSACTION";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, error: %@, user: %@",
+                                @"execSyncInTransactionSQLs",
+                                (long)result,
+                                errMsg,
+                                @"Can not begin transaction."];
+            @throw [NSException exceptionWithName:NSGenericException
+                                           reason:reason
+                                         userInfo:nil];
+        }
+
+        for (NSString *elementSql in sqls)
+        {
+            result = sqlite3_exec(db, [elementSql UTF8String], NULL, NULL, &error);
+            if(result != SQLITE_OK) {
+                NSString *errMsg = nil;
+                if(error){
+                    errMsg = [NSString stringWithUTF8String:error];
+                    NSLog(@"Error: %@", errMsg);
+                }
+                NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, error: %@, sql: %@",
+                                    @"execSyncInTransactionSQLs",
+                                    (long)result,
+                                    errMsg,
+                                    elementSql];
+                @throw [NSException exceptionWithName:NSGenericException
+                                               reason:reason
+                                             userInfo:nil];
+            }
+        }
+
+        // COMMIT
+        sql = @"COMMIT";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            NSString *reason = [NSString stringWithFormat:@"Func: %@, result: %ld, error: %@, user: %@",
+                                @"execSyncInTransactionSQLs",
+                                (long)result,
+                                errMsg,
+                                @"Fail to commit transaction."];
+            @throw [NSException exceptionWithName:NSGenericException
+                                           reason:reason
+                                         userInfo:nil];
+        }
+
+        finalResult = YYGResultSuccess;
+    }
+    @catch(NSException *ex) {
+        NSLog(@"YGSQLite exception handled. Message: %@", [ex description]);
+
+        sql = @"ROLLBACK";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            if(error)
+                NSLog(@"Error: %@", [NSString stringWithUTF8String:error]);
+        }
+    }
+    @finally {
+        sqlite3_close(db);
+        return finalResult;
+    }
 }
 
 @end
