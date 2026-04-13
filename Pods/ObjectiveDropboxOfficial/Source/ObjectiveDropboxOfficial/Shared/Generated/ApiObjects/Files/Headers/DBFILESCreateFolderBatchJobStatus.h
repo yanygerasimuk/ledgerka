@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBFILESCreateFolderBatchJobStatusTag` enum type represents the possible
 /// tag states with which the `DBFILESCreateFolderBatchJobStatus` union can
 /// exist.
-typedef NS_ENUM(NSInteger, DBFILESCreateFolderBatchJobStatusTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESCreateFolderBatchJobStatusTag) {
   /// The asynchronous job is still in progress.
   DBFILESCreateFolderBatchJobStatusInProgress,
 
@@ -161,7 +161,7 @@ typedef NS_ENUM(NSInteger, DBFILESCreateFolderBatchJobStatusTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESCreateFolderBatchJobStatus` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESCreateFolderBatchJobStatus *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESCreateFolderBatchJobStatus *)instance;
 
 ///
 /// Deserializes `DBFILESCreateFolderBatchJobStatus` instances.
@@ -171,7 +171,7 @@ typedef NS_ENUM(NSInteger, DBFILESCreateFolderBatchJobStatusTag) {
 ///
 /// @return An instantiation of the `DBFILESCreateFolderBatchJobStatus` object.
 ///
-+ (DBFILESCreateFolderBatchJobStatus *)deserialize:(NSDictionary *)dict;
++ (DBFILESCreateFolderBatchJobStatus *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

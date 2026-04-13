@@ -8,7 +8,7 @@
 
 #import "YYGUpdater.h"
 #import "YGConfig.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 #import "YGTools.h"
 #import "YGDirectory.h"
 #import "YYGAppVersion.h"

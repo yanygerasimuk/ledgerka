@@ -29,7 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGSharedLinkVisibilityTag` enum type represents the possible tag
 /// states with which the `DBTEAMLOGSharedLinkVisibility` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGSharedLinkVisibilityTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGSharedLinkVisibilityTag) {
+  /// (no description).
+  DBTEAMLOGSharedLinkVisibilityNoOne,
+
   /// (no description).
   DBTEAMLOGSharedLinkVisibilityPassword,
 
@@ -48,6 +51,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGSharedLinkVisibilityTag) {
 @property (nonatomic, readonly) DBTEAMLOGSharedLinkVisibilityTag tag;
 
 #pragma mark - Constructors
+
+///
+/// Initializes union class with tag state of "no_one".
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoOne;
 
 ///
 /// Initializes union class with tag state of "password".
@@ -80,6 +90,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGSharedLinkVisibilityTag) {
 - (instancetype)init NS_UNAVAILABLE;
 
 #pragma mark - Tag state methods
+
+///
+/// Retrieves whether the union's current tag state has value "no_one".
+///
+/// @return Whether the union's current tag state has value "no_one".
+///
+- (BOOL)isNoOne;
 
 ///
 /// Retrieves whether the union's current tag state has value "password".
@@ -134,7 +151,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGSharedLinkVisibilityTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGSharedLinkVisibility` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGSharedLinkVisibility *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGSharedLinkVisibility *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGSharedLinkVisibility` instances.
@@ -144,7 +161,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGSharedLinkVisibilityTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGSharedLinkVisibility` object.
 ///
-+ (DBTEAMLOGSharedLinkVisibility *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGSharedLinkVisibility *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

@@ -10,7 +10,7 @@
 #import "YGOperationManager.h"
 #import "YGSQLite.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @interface YGEntityManager () {
     YGSQLite *p_sqlite;

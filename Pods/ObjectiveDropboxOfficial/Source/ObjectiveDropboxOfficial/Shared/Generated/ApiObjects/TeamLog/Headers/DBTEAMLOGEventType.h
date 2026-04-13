@@ -13,20 +13,53 @@
 @class DBTEAMLOGAccountCaptureMigrateAccountType;
 @class DBTEAMLOGAccountCaptureNotificationEmailsSentType;
 @class DBTEAMLOGAccountCaptureRelinquishAccountType;
+@class DBTEAMLOGAccountLockOrUnlockedType;
+@class DBTEAMLOGAdminAlertingAlertStateChangedType;
+@class DBTEAMLOGAdminAlertingChangedAlertConfigType;
+@class DBTEAMLOGAdminAlertingTriggeredAlertType;
+@class DBTEAMLOGAdminEmailRemindersChangedType;
 @class DBTEAMLOGAllowDownloadDisabledType;
 @class DBTEAMLOGAllowDownloadEnabledType;
+@class DBTEAMLOGAppBlockedByPermissionsType;
 @class DBTEAMLOGAppLinkTeamType;
 @class DBTEAMLOGAppLinkUserType;
+@class DBTEAMLOGAppPermissionsChangedType;
 @class DBTEAMLOGAppUnlinkTeamType;
 @class DBTEAMLOGAppUnlinkUserType;
+@class DBTEAMLOGApplyNamingConventionType;
+@class DBTEAMLOGBackupAdminInvitationSentType;
+@class DBTEAMLOGBackupInvitationOpenedType;
+@class DBTEAMLOGBinderAddPageType;
+@class DBTEAMLOGBinderAddSectionType;
+@class DBTEAMLOGBinderRemovePageType;
+@class DBTEAMLOGBinderRemoveSectionType;
+@class DBTEAMLOGBinderRenamePageType;
+@class DBTEAMLOGBinderRenameSectionType;
+@class DBTEAMLOGBinderReorderPageType;
+@class DBTEAMLOGBinderReorderSectionType;
+@class DBTEAMLOGCameraUploadsPolicyChangedType;
+@class DBTEAMLOGCaptureTranscriptPolicyChangedType;
+@class DBTEAMLOGChangedEnterpriseAdminRoleType;
+@class DBTEAMLOGChangedEnterpriseConnectedTeamStatusType;
+@class DBTEAMLOGClassificationChangePolicyType;
+@class DBTEAMLOGClassificationCreateReportFailType;
+@class DBTEAMLOGClassificationCreateReportType;
 @class DBTEAMLOGCollectionShareType;
+@class DBTEAMLOGComputerBackupPolicyChangedType;
+@class DBTEAMLOGContentAdministrationPolicyChangedType;
 @class DBTEAMLOGCreateFolderType;
+@class DBTEAMLOGCreateTeamInviteLinkType;
 @class DBTEAMLOGDataPlacementRestrictionChangePolicyType;
 @class DBTEAMLOGDataPlacementRestrictionSatisfyPolicyType;
+@class DBTEAMLOGDataResidencyMigrationRequestSuccessfulType;
+@class DBTEAMLOGDataResidencyMigrationRequestUnsuccessfulType;
+@class DBTEAMLOGDeleteTeamInviteLinkType;
+@class DBTEAMLOGDeviceApprovalsAddExceptionType;
 @class DBTEAMLOGDeviceApprovalsChangeDesktopPolicyType;
 @class DBTEAMLOGDeviceApprovalsChangeMobilePolicyType;
 @class DBTEAMLOGDeviceApprovalsChangeOverageActionType;
 @class DBTEAMLOGDeviceApprovalsChangeUnlinkActionType;
+@class DBTEAMLOGDeviceApprovalsRemoveExceptionType;
 @class DBTEAMLOGDeviceChangeIpDesktopType;
 @class DBTEAMLOGDeviceChangeIpMobileType;
 @class DBTEAMLOGDeviceChangeIpWebType;
@@ -36,6 +69,7 @@
 @class DBTEAMLOGDeviceLinkSuccessType;
 @class DBTEAMLOGDeviceManagementDisabledType;
 @class DBTEAMLOGDeviceManagementEnabledType;
+@class DBTEAMLOGDeviceSyncBackupStatusChangedType;
 @class DBTEAMLOGDeviceUnlinkType;
 @class DBTEAMLOGDirectoryRestrictionsAddMembersType;
 @class DBTEAMLOGDirectoryRestrictionsRemoveMembersType;
@@ -49,6 +83,11 @@
 @class DBTEAMLOGDomainVerificationAddDomainFailType;
 @class DBTEAMLOGDomainVerificationAddDomainSuccessType;
 @class DBTEAMLOGDomainVerificationRemoveDomainType;
+@class DBTEAMLOGDropboxPasswordsExportedType;
+@class DBTEAMLOGDropboxPasswordsNewDeviceEnrolledType;
+@class DBTEAMLOGDropboxPasswordsPolicyChangedType;
+@class DBTEAMLOGEmailIngestPolicyChangedType;
+@class DBTEAMLOGEmailIngestReceiveFileType;
 @class DBTEAMLOGEmmAddExceptionType;
 @class DBTEAMLOGEmmChangePolicyType;
 @class DBTEAMLOGEmmCreateExceptionsReportType;
@@ -57,10 +96,20 @@
 @class DBTEAMLOGEmmRefreshAuthTokenType;
 @class DBTEAMLOGEmmRemoveExceptionType;
 @class DBTEAMLOGEnabledDomainInvitesType;
+@class DBTEAMLOGEndedEnterpriseAdminSessionDeprecatedType;
+@class DBTEAMLOGEndedEnterpriseAdminSessionType;
+@class DBTEAMLOGEnterpriseSettingsLockingType;
 @class DBTEAMLOGEventType;
+@class DBTEAMLOGExportMembersReportFailType;
 @class DBTEAMLOGExportMembersReportType;
 @class DBTEAMLOGExtendedVersionHistoryChangePolicyType;
+@class DBTEAMLOGExternalDriveBackupEligibilityStatusCheckedType;
+@class DBTEAMLOGExternalDriveBackupPolicyChangedType;
+@class DBTEAMLOGExternalDriveBackupStatusChangedType;
+@class DBTEAMLOGExternalSharingCreateReportType;
+@class DBTEAMLOGExternalSharingReportFailedType;
 @class DBTEAMLOGFileAddCommentType;
+@class DBTEAMLOGFileAddFromAutomationType;
 @class DBTEAMLOGFileAddType;
 @class DBTEAMLOGFileChangeCommentSubscriptionType;
 @class DBTEAMLOGFileCommentsChangePolicyType;
@@ -68,16 +117,21 @@
 @class DBTEAMLOGFileDeleteCommentType;
 @class DBTEAMLOGFileDeleteType;
 @class DBTEAMLOGFileDownloadType;
+@class DBTEAMLOGFileEditCommentType;
 @class DBTEAMLOGFileEditType;
 @class DBTEAMLOGFileGetCopyReferenceType;
 @class DBTEAMLOGFileLikeCommentType;
+@class DBTEAMLOGFileLockingLockStatusChangedType;
+@class DBTEAMLOGFileLockingPolicyChangedType;
 @class DBTEAMLOGFileMoveType;
 @class DBTEAMLOGFilePermanentlyDeleteType;
 @class DBTEAMLOGFilePreviewType;
+@class DBTEAMLOGFileProviderMigrationPolicyChangedType;
 @class DBTEAMLOGFileRenameType;
 @class DBTEAMLOGFileRequestChangeType;
 @class DBTEAMLOGFileRequestCloseType;
 @class DBTEAMLOGFileRequestCreateType;
+@class DBTEAMLOGFileRequestDeleteType;
 @class DBTEAMLOGFileRequestReceiveFileType;
 @class DBTEAMLOGFileRequestsChangePolicyType;
 @class DBTEAMLOGFileRequestsEmailsEnabledType;
@@ -87,9 +141,31 @@
 @class DBTEAMLOGFileRevertType;
 @class DBTEAMLOGFileRollbackChangesType;
 @class DBTEAMLOGFileSaveCopyReferenceType;
+@class DBTEAMLOGFileTransfersFileAddType;
+@class DBTEAMLOGFileTransfersPolicyChangedType;
+@class DBTEAMLOGFileTransfersTransferDeleteType;
+@class DBTEAMLOGFileTransfersTransferDownloadType;
+@class DBTEAMLOGFileTransfersTransferSendType;
+@class DBTEAMLOGFileTransfersTransferViewType;
 @class DBTEAMLOGFileUnlikeCommentType;
 @class DBTEAMLOGFileUnresolveCommentType;
+@class DBTEAMLOGFolderLinkRestrictionPolicyChangedType;
+@class DBTEAMLOGFolderOverviewDescriptionChangedType;
+@class DBTEAMLOGFolderOverviewItemPinnedType;
+@class DBTEAMLOGFolderOverviewItemUnpinnedType;
 @class DBTEAMLOGGoogleSsoChangePolicyType;
+@class DBTEAMLOGGovernancePolicyAddFolderFailedType;
+@class DBTEAMLOGGovernancePolicyAddFoldersType;
+@class DBTEAMLOGGovernancePolicyContentDisposedType;
+@class DBTEAMLOGGovernancePolicyCreateType;
+@class DBTEAMLOGGovernancePolicyDeleteType;
+@class DBTEAMLOGGovernancePolicyEditDetailsType;
+@class DBTEAMLOGGovernancePolicyEditDurationType;
+@class DBTEAMLOGGovernancePolicyExportCreatedType;
+@class DBTEAMLOGGovernancePolicyExportRemovedType;
+@class DBTEAMLOGGovernancePolicyRemoveFoldersType;
+@class DBTEAMLOGGovernancePolicyReportCreatedType;
+@class DBTEAMLOGGovernancePolicyZipPartDownloadedType;
 @class DBTEAMLOGGroupAddExternalIdType;
 @class DBTEAMLOGGroupAddMemberType;
 @class DBTEAMLOGGroupChangeExternalIdType;
@@ -104,17 +180,43 @@
 @class DBTEAMLOGGroupRemoveMemberType;
 @class DBTEAMLOGGroupRenameType;
 @class DBTEAMLOGGroupUserManagementChangePolicyType;
+@class DBTEAMLOGGuestAdminChangeStatusType;
+@class DBTEAMLOGGuestAdminSignedInViaTrustedTeamsType;
+@class DBTEAMLOGGuestAdminSignedOutViaTrustedTeamsType;
+@class DBTEAMLOGIntegrationConnectedType;
+@class DBTEAMLOGIntegrationDisconnectedType;
+@class DBTEAMLOGIntegrationPolicyChangedType;
+@class DBTEAMLOGInviteAcceptanceEmailPolicyChangedType;
+@class DBTEAMLOGLegalHoldsActivateAHoldType;
+@class DBTEAMLOGLegalHoldsAddMembersType;
+@class DBTEAMLOGLegalHoldsChangeHoldDetailsType;
+@class DBTEAMLOGLegalHoldsChangeHoldNameType;
+@class DBTEAMLOGLegalHoldsExportAHoldType;
+@class DBTEAMLOGLegalHoldsExportCancelledType;
+@class DBTEAMLOGLegalHoldsExportDownloadedType;
+@class DBTEAMLOGLegalHoldsExportRemovedType;
+@class DBTEAMLOGLegalHoldsReleaseAHoldType;
+@class DBTEAMLOGLegalHoldsRemoveMembersType;
+@class DBTEAMLOGLegalHoldsReportAHoldType;
 @class DBTEAMLOGLoginFailType;
 @class DBTEAMLOGLoginSuccessType;
 @class DBTEAMLOGLogoutType;
+@class DBTEAMLOGMemberAddExternalIdType;
 @class DBTEAMLOGMemberAddNameType;
 @class DBTEAMLOGMemberChangeAdminRoleType;
 @class DBTEAMLOGMemberChangeEmailType;
+@class DBTEAMLOGMemberChangeExternalIdType;
 @class DBTEAMLOGMemberChangeMembershipTypeType;
 @class DBTEAMLOGMemberChangeNameType;
+@class DBTEAMLOGMemberChangeResellerRoleType;
 @class DBTEAMLOGMemberChangeStatusType;
+@class DBTEAMLOGMemberDeleteManualContactsType;
+@class DBTEAMLOGMemberDeleteProfilePhotoType;
 @class DBTEAMLOGMemberPermanentlyDeleteAccountContentsType;
+@class DBTEAMLOGMemberRemoveExternalIdType;
 @class DBTEAMLOGMemberRequestsChangePolicyType;
+@class DBTEAMLOGMemberSendInvitePolicyChangedType;
+@class DBTEAMLOGMemberSetProfilePhotoType;
 @class DBTEAMLOGMemberSpaceLimitsAddCustomQuotaType;
 @class DBTEAMLOGMemberSpaceLimitsAddExceptionType;
 @class DBTEAMLOGMemberSpaceLimitsChangeCapsTypePolicyType;
@@ -128,12 +230,24 @@
 @class DBTEAMLOGMemberTransferAccountContentsType;
 @class DBTEAMLOGMicrosoftOfficeAddinChangePolicyType;
 @class DBTEAMLOGNetworkControlChangePolicyType;
+@class DBTEAMLOGNoExpirationLinkGenCreateReportType;
+@class DBTEAMLOGNoExpirationLinkGenReportFailedType;
+@class DBTEAMLOGNoPasswordLinkGenCreateReportType;
+@class DBTEAMLOGNoPasswordLinkGenReportFailedType;
+@class DBTEAMLOGNoPasswordLinkViewCreateReportType;
+@class DBTEAMLOGNoPasswordLinkViewReportFailedType;
 @class DBTEAMLOGNoteAclInviteOnlyType;
 @class DBTEAMLOGNoteAclLinkType;
 @class DBTEAMLOGNoteAclTeamLinkType;
 @class DBTEAMLOGNoteShareReceiveType;
 @class DBTEAMLOGNoteSharedType;
+@class DBTEAMLOGObjectLabelAddedType;
+@class DBTEAMLOGObjectLabelRemovedType;
+@class DBTEAMLOGObjectLabelUpdatedValueType;
 @class DBTEAMLOGOpenNoteSharedType;
+@class DBTEAMLOGOrganizeFolderWithTidyType;
+@class DBTEAMLOGOutdatedLinkViewCreateReportType;
+@class DBTEAMLOGOutdatedLinkViewReportFailedType;
 @class DBTEAMLOGPaperAdminExportStartType;
 @class DBTEAMLOGPaperChangeDeploymentPolicyType;
 @class DBTEAMLOGPaperChangeMemberLinkPolicyType;
@@ -148,6 +262,8 @@
 @class DBTEAMLOGPaperContentRemoveMemberType;
 @class DBTEAMLOGPaperContentRenameType;
 @class DBTEAMLOGPaperContentRestoreType;
+@class DBTEAMLOGPaperDefaultFolderPolicyChangedType;
+@class DBTEAMLOGPaperDesktopPolicyChangedType;
 @class DBTEAMLOGPaperDocAddCommentType;
 @class DBTEAMLOGPaperDocChangeMemberRoleType;
 @class DBTEAMLOGPaperDocChangeSharingPolicyType;
@@ -159,6 +275,7 @@
 @class DBTEAMLOGPaperDocEditType;
 @class DBTEAMLOGPaperDocFollowedType;
 @class DBTEAMLOGPaperDocMentionType;
+@class DBTEAMLOGPaperDocOwnershipChangedType;
 @class DBTEAMLOGPaperDocRequestAccessType;
 @class DBTEAMLOGPaperDocResolveCommentType;
 @class DBTEAMLOGPaperDocRevertType;
@@ -177,13 +294,34 @@
 @class DBTEAMLOGPaperFolderDeletedType;
 @class DBTEAMLOGPaperFolderFollowedType;
 @class DBTEAMLOGPaperFolderTeamInviteType;
+@class DBTEAMLOGPaperPublishedLinkChangePermissionType;
+@class DBTEAMLOGPaperPublishedLinkCreateType;
+@class DBTEAMLOGPaperPublishedLinkDisabledType;
+@class DBTEAMLOGPaperPublishedLinkViewType;
 @class DBTEAMLOGPasswordChangeType;
 @class DBTEAMLOGPasswordResetAllType;
 @class DBTEAMLOGPasswordResetType;
+@class DBTEAMLOGPasswordStrengthRequirementsChangePolicyType;
+@class DBTEAMLOGPendingSecondaryEmailAddedType;
 @class DBTEAMLOGPermanentDeleteChangePolicyType;
+@class DBTEAMLOGRansomwareAlertCreateReportFailedType;
+@class DBTEAMLOGRansomwareAlertCreateReportType;
+@class DBTEAMLOGRansomwareRestoreProcessCompletedType;
+@class DBTEAMLOGRansomwareRestoreProcessStartedType;
+@class DBTEAMLOGReplayFileDeleteType;
+@class DBTEAMLOGReplayFileSharedLinkCreatedType;
+@class DBTEAMLOGReplayFileSharedLinkModifiedType;
+@class DBTEAMLOGReplayProjectTeamAddType;
+@class DBTEAMLOGReplayProjectTeamDeleteType;
+@class DBTEAMLOGResellerSupportChangePolicyType;
 @class DBTEAMLOGResellerSupportSessionEndType;
 @class DBTEAMLOGResellerSupportSessionStartType;
+@class DBTEAMLOGRewindFolderType;
+@class DBTEAMLOGRewindPolicyChangedType;
+@class DBTEAMLOGSecondaryEmailDeletedType;
+@class DBTEAMLOGSecondaryEmailVerifiedType;
 @class DBTEAMLOGSecondaryMailsPolicyChangedType;
+@class DBTEAMLOGSendForSignaturePolicyChangedType;
 @class DBTEAMLOGSfAddGroupType;
 @class DBTEAMLOGSfAllowNonMembersToViewSharedLinksType;
 @class DBTEAMLOGSfExternalInviteWarnType;
@@ -217,6 +355,8 @@
 @class DBTEAMLOGSharedContentRemoveLinkPasswordType;
 @class DBTEAMLOGSharedContentRemoveMemberType;
 @class DBTEAMLOGSharedContentRequestAccessType;
+@class DBTEAMLOGSharedContentRestoreInviteesType;
+@class DBTEAMLOGSharedContentRestoreMemberType;
 @class DBTEAMLOGSharedContentUnshareType;
 @class DBTEAMLOGSharedContentViewType;
 @class DBTEAMLOGSharedFolderChangeLinkPolicyType;
@@ -237,12 +377,26 @@
 @class DBTEAMLOGSharedLinkDisableType;
 @class DBTEAMLOGSharedLinkDownloadType;
 @class DBTEAMLOGSharedLinkRemoveExpiryType;
+@class DBTEAMLOGSharedLinkSettingsAddExpirationType;
+@class DBTEAMLOGSharedLinkSettingsAddPasswordType;
+@class DBTEAMLOGSharedLinkSettingsAllowDownloadDisabledType;
+@class DBTEAMLOGSharedLinkSettingsAllowDownloadEnabledType;
+@class DBTEAMLOGSharedLinkSettingsChangeAudienceType;
+@class DBTEAMLOGSharedLinkSettingsChangeExpirationType;
+@class DBTEAMLOGSharedLinkSettingsChangePasswordType;
+@class DBTEAMLOGSharedLinkSettingsRemoveExpirationType;
+@class DBTEAMLOGSharedLinkSettingsRemovePasswordType;
 @class DBTEAMLOGSharedLinkShareType;
 @class DBTEAMLOGSharedLinkViewType;
 @class DBTEAMLOGSharedNoteOpenedType;
 @class DBTEAMLOGSharingChangeFolderJoinPolicyType;
+@class DBTEAMLOGSharingChangeLinkAllowChangeExpirationPolicyType;
+@class DBTEAMLOGSharingChangeLinkDefaultExpirationPolicyType;
+@class DBTEAMLOGSharingChangeLinkEnforcePasswordPolicyType;
 @class DBTEAMLOGSharingChangeLinkPolicyType;
 @class DBTEAMLOGSharingChangeMemberPolicyType;
+@class DBTEAMLOGShmodelDisableDownloadsType;
+@class DBTEAMLOGShmodelEnableDownloadsType;
 @class DBTEAMLOGShmodelGroupShareType;
 @class DBTEAMLOGShowcaseAccessGrantedType;
 @class DBTEAMLOGShowcaseAddMemberType;
@@ -277,6 +431,7 @@
 @class DBTEAMLOGSmartSyncCreateAdminPrivilegeReportType;
 @class DBTEAMLOGSmartSyncNotOptOutType;
 @class DBTEAMLOGSmartSyncOptOutType;
+@class DBTEAMLOGSmarterSmartSyncPolicyChangedType;
 @class DBTEAMLOGSsoAddCertType;
 @class DBTEAMLOGSsoAddLoginUrlType;
 @class DBTEAMLOGSsoAddLogoutUrlType;
@@ -289,29 +444,72 @@
 @class DBTEAMLOGSsoRemoveCertType;
 @class DBTEAMLOGSsoRemoveLoginUrlType;
 @class DBTEAMLOGSsoRemoveLogoutUrlType;
+@class DBTEAMLOGStartedEnterpriseAdminSessionType;
+@class DBTEAMLOGTeamActivityCreateReportFailType;
 @class DBTEAMLOGTeamActivityCreateReportType;
+@class DBTEAMLOGTeamBrandingPolicyChangedType;
+@class DBTEAMLOGTeamEncryptionKeyCancelKeyDeletionType;
+@class DBTEAMLOGTeamEncryptionKeyCreateKeyType;
+@class DBTEAMLOGTeamEncryptionKeyDeleteKeyType;
+@class DBTEAMLOGTeamEncryptionKeyDisableKeyType;
+@class DBTEAMLOGTeamEncryptionKeyEnableKeyType;
+@class DBTEAMLOGTeamEncryptionKeyRotateKeyType;
+@class DBTEAMLOGTeamEncryptionKeyScheduleKeyDeletionType;
+@class DBTEAMLOGTeamExtensionsPolicyChangedType;
 @class DBTEAMLOGTeamFolderChangeStatusType;
 @class DBTEAMLOGTeamFolderCreateType;
 @class DBTEAMLOGTeamFolderDowngradeType;
 @class DBTEAMLOGTeamFolderPermanentlyDeleteType;
 @class DBTEAMLOGTeamFolderRenameType;
 @class DBTEAMLOGTeamMergeFromType;
+@class DBTEAMLOGTeamMergeRequestAcceptedShownToPrimaryTeamType;
+@class DBTEAMLOGTeamMergeRequestAcceptedShownToSecondaryTeamType;
+@class DBTEAMLOGTeamMergeRequestAcceptedType;
+@class DBTEAMLOGTeamMergeRequestAutoCanceledType;
+@class DBTEAMLOGTeamMergeRequestCanceledShownToPrimaryTeamType;
+@class DBTEAMLOGTeamMergeRequestCanceledShownToSecondaryTeamType;
+@class DBTEAMLOGTeamMergeRequestCanceledType;
+@class DBTEAMLOGTeamMergeRequestExpiredShownToPrimaryTeamType;
+@class DBTEAMLOGTeamMergeRequestExpiredShownToSecondaryTeamType;
+@class DBTEAMLOGTeamMergeRequestExpiredType;
+@class DBTEAMLOGTeamMergeRequestRejectedShownToPrimaryTeamType;
+@class DBTEAMLOGTeamMergeRequestRejectedShownToSecondaryTeamType;
+@class DBTEAMLOGTeamMergeRequestReminderShownToPrimaryTeamType;
+@class DBTEAMLOGTeamMergeRequestReminderShownToSecondaryTeamType;
+@class DBTEAMLOGTeamMergeRequestReminderType;
+@class DBTEAMLOGTeamMergeRequestRevokedType;
+@class DBTEAMLOGTeamMergeRequestSentShownToPrimaryTeamType;
+@class DBTEAMLOGTeamMergeRequestSentShownToSecondaryTeamType;
 @class DBTEAMLOGTeamMergeToType;
+@class DBTEAMLOGTeamProfileAddBackgroundType;
 @class DBTEAMLOGTeamProfileAddLogoType;
+@class DBTEAMLOGTeamProfileChangeBackgroundType;
 @class DBTEAMLOGTeamProfileChangeDefaultLanguageType;
 @class DBTEAMLOGTeamProfileChangeLogoType;
 @class DBTEAMLOGTeamProfileChangeNameType;
+@class DBTEAMLOGTeamProfileRemoveBackgroundType;
 @class DBTEAMLOGTeamProfileRemoveLogoType;
+@class DBTEAMLOGTeamSelectiveSyncPolicyChangedType;
 @class DBTEAMLOGTeamSelectiveSyncSettingsChangedType;
+@class DBTEAMLOGTeamSharingWhitelistSubjectsChangedType;
 @class DBTEAMLOGTfaAddBackupPhoneType;
+@class DBTEAMLOGTfaAddExceptionType;
 @class DBTEAMLOGTfaAddSecurityKeyType;
 @class DBTEAMLOGTfaChangeBackupPhoneType;
 @class DBTEAMLOGTfaChangePolicyType;
 @class DBTEAMLOGTfaChangeStatusType;
 @class DBTEAMLOGTfaRemoveBackupPhoneType;
+@class DBTEAMLOGTfaRemoveExceptionType;
 @class DBTEAMLOGTfaRemoveSecurityKeyType;
 @class DBTEAMLOGTfaResetType;
 @class DBTEAMLOGTwoAccountChangePolicyType;
+@class DBTEAMLOGUndoNamingConventionType;
+@class DBTEAMLOGUndoOrganizeFolderWithTidyType;
+@class DBTEAMLOGUserTagsAddedType;
+@class DBTEAMLOGUserTagsRemovedType;
+@class DBTEAMLOGViewerInfoPolicyChangedType;
+@class DBTEAMLOGWatermarkingPolicyChangedType;
+@class DBTEAMLOGWebSessionsChangeActiveSessionLimitType;
 @class DBTEAMLOGWebSessionsChangeFixedLengthPolicyType;
 @class DBTEAMLOGWebSessionsChangeIdleLengthPolicyType;
 
@@ -322,7 +520,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// The `EventType` union.
 ///
-/// The type of the event.
+/// The type of the event with description.
 ///
 /// This class implements the `DBSerializable` protocol (serialize and
 /// deserialize instance methods), which is required for all Obj-C SDK API route
@@ -334,7 +532,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGEventTypeTag` enum type represents the possible tag states
 /// with which the `DBTEAMLOGEventType` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
+  /// (admin_alerting) Changed an alert state
+  DBTEAMLOGEventTypeAdminAlertingAlertStateChanged,
+
+  /// (admin_alerting) Changed an alert setting
+  DBTEAMLOGEventTypeAdminAlertingChangedAlertConfig,
+
+  /// (admin_alerting) Triggered security alert
+  DBTEAMLOGEventTypeAdminAlertingTriggeredAlert,
+
+  /// (admin_alerting) Completed ransomware restore process
+  DBTEAMLOGEventTypeRansomwareRestoreProcessCompleted,
+
+  /// (admin_alerting) Started ransomware restore process
+  DBTEAMLOGEventTypeRansomwareRestoreProcessStarted,
+
+  /// (apps) Failed to connect app for member
+  DBTEAMLOGEventTypeAppBlockedByPermissions,
+
   /// (apps) Linked app for team
   DBTEAMLOGEventTypeAppLinkTeam,
 
@@ -347,6 +563,12 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (apps) Unlinked app for member
   DBTEAMLOGEventTypeAppUnlinkUser,
 
+  /// (apps) Connected integration for member
+  DBTEAMLOGEventTypeIntegrationConnected,
+
+  /// (apps) Disconnected integration for member
+  DBTEAMLOGEventTypeIntegrationDisconnected,
+
   /// (comments) Added file comment
   DBTEAMLOGEventTypeFileAddComment,
 
@@ -356,6 +578,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (comments) Deleted file comment
   DBTEAMLOGEventTypeFileDeleteComment,
+
+  /// (comments) Edited file comment
+  DBTEAMLOGEventTypeFileEditComment,
 
   /// (comments) Liked file comment (deprecated, no longer logged)
   DBTEAMLOGEventTypeFileLikeComment,
@@ -368,6 +593,75 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (comments) Unresolved file comment
   DBTEAMLOGEventTypeFileUnresolveComment,
+
+  /// (data_governance) Added folders to policy
+  DBTEAMLOGEventTypeGovernancePolicyAddFolders,
+
+  /// (data_governance) Couldn't add a folder to a policy
+  DBTEAMLOGEventTypeGovernancePolicyAddFolderFailed,
+
+  /// (data_governance) Content disposed
+  DBTEAMLOGEventTypeGovernancePolicyContentDisposed,
+
+  /// (data_governance) Activated a new policy
+  DBTEAMLOGEventTypeGovernancePolicyCreate,
+
+  /// (data_governance) Deleted a policy
+  DBTEAMLOGEventTypeGovernancePolicyDelete,
+
+  /// (data_governance) Edited policy
+  DBTEAMLOGEventTypeGovernancePolicyEditDetails,
+
+  /// (data_governance) Changed policy duration
+  DBTEAMLOGEventTypeGovernancePolicyEditDuration,
+
+  /// (data_governance) Created a policy download
+  DBTEAMLOGEventTypeGovernancePolicyExportCreated,
+
+  /// (data_governance) Removed a policy download
+  DBTEAMLOGEventTypeGovernancePolicyExportRemoved,
+
+  /// (data_governance) Removed folders from policy
+  DBTEAMLOGEventTypeGovernancePolicyRemoveFolders,
+
+  /// (data_governance) Created a summary report for a policy
+  DBTEAMLOGEventTypeGovernancePolicyReportCreated,
+
+  /// (data_governance) Downloaded content from a policy
+  DBTEAMLOGEventTypeGovernancePolicyZipPartDownloaded,
+
+  /// (data_governance) Activated a hold
+  DBTEAMLOGEventTypeLegalHoldsActivateAHold,
+
+  /// (data_governance) Added members to a hold
+  DBTEAMLOGEventTypeLegalHoldsAddMembers,
+
+  /// (data_governance) Edited details for a hold
+  DBTEAMLOGEventTypeLegalHoldsChangeHoldDetails,
+
+  /// (data_governance) Renamed a hold
+  DBTEAMLOGEventTypeLegalHoldsChangeHoldName,
+
+  /// (data_governance) Exported hold
+  DBTEAMLOGEventTypeLegalHoldsExportAHold,
+
+  /// (data_governance) Canceled export for a hold
+  DBTEAMLOGEventTypeLegalHoldsExportCancelled,
+
+  /// (data_governance) Downloaded export for a hold
+  DBTEAMLOGEventTypeLegalHoldsExportDownloaded,
+
+  /// (data_governance) Removed export for a hold
+  DBTEAMLOGEventTypeLegalHoldsExportRemoved,
+
+  /// (data_governance) Released a hold
+  DBTEAMLOGEventTypeLegalHoldsReleaseAHold,
+
+  /// (data_governance) Removed members from a hold
+  DBTEAMLOGEventTypeLegalHoldsRemoveMembers,
+
+  /// (data_governance) Created a summary report for a hold
+  DBTEAMLOGEventTypeLegalHoldsReportAHold,
 
   /// (devices) Changed IP address associated with active desktop session
   DBTEAMLOGEventTypeDeviceChangeIpDesktop,
@@ -396,12 +690,26 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (devices) Enabled device management (deprecated, no longer logged)
   DBTEAMLOGEventTypeDeviceManagementEnabled,
 
+  /// (devices) Enabled/disabled backup for computer
+  DBTEAMLOGEventTypeDeviceSyncBackupStatusChanged,
+
   /// (devices) Disconnected device
   DBTEAMLOGEventTypeDeviceUnlink,
 
-  /// (devices) Refreshed auth token used for setting up enterprise mobility
-  /// management
+  /// (devices) Exported passwords
+  DBTEAMLOGEventTypeDropboxPasswordsExported,
+
+  /// (devices) Enrolled new Dropbox Passwords device
+  DBTEAMLOGEventTypeDropboxPasswordsNewDeviceEnrolled,
+
+  /// (devices) Refreshed auth token used for setting up EMM
   DBTEAMLOGEventTypeEmmRefreshAuthToken,
+
+  /// (devices) Checked external drive backup eligibility status
+  DBTEAMLOGEventTypeExternalDriveBackupEligibilityStatusChecked,
+
+  /// (devices) Modified external drive backup
+  DBTEAMLOGEventTypeExternalDriveBackupStatusChanged,
 
   /// (domains) Granted/revoked option to enable account capture on team
   /// domains
@@ -410,7 +718,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (domains) Account-captured user migrated account to team
   DBTEAMLOGEventTypeAccountCaptureMigrateAccount,
 
-  /// (domains) Sent proactive account capture email to all unmanaged members
+  /// (domains) Sent account capture email to all unmanaged members
   DBTEAMLOGEventTypeAccountCaptureNotificationEmailsSent,
 
   /// (domains) Account-captured user changed account email to personal email
@@ -452,11 +760,38 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (domains) Enabled domain invites (deprecated, no longer logged)
   DBTEAMLOGEventTypeEnabledDomainInvites,
 
+  /// (encryption) Canceled team encryption key deletion
+  DBTEAMLOGEventTypeTeamEncryptionKeyCancelKeyDeletion,
+
+  /// (encryption) Created team encryption key
+  DBTEAMLOGEventTypeTeamEncryptionKeyCreateKey,
+
+  /// (encryption) Deleted team encryption key
+  DBTEAMLOGEventTypeTeamEncryptionKeyDeleteKey,
+
+  /// (encryption) Disabled team encryption key
+  DBTEAMLOGEventTypeTeamEncryptionKeyDisableKey,
+
+  /// (encryption) Enabled team encryption key
+  DBTEAMLOGEventTypeTeamEncryptionKeyEnableKey,
+
+  /// (encryption) Rotated team encryption key (deprecated, no longer logged)
+  DBTEAMLOGEventTypeTeamEncryptionKeyRotateKey,
+
+  /// (encryption) Scheduled encryption key deletion
+  DBTEAMLOGEventTypeTeamEncryptionKeyScheduleKeyDeletion,
+
+  /// (file_operations) Applied naming convention
+  DBTEAMLOGEventTypeApplyNamingConvention,
+
   /// (file_operations) Created folders (deprecated, no longer logged)
   DBTEAMLOGEventTypeCreateFolder,
 
   /// (file_operations) Added files and/or folders
   DBTEAMLOGEventTypeFileAdd,
+
+  /// (file_operations) Added files and/or folders from automation
+  DBTEAMLOGEventTypeFileAddFromAutomation,
 
   /// (file_operations) Copied files and/or folders
   DBTEAMLOGEventTypeFileCopy,
@@ -472,6 +807,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (file_operations) Created copy reference to file/folder
   DBTEAMLOGEventTypeFileGetCopyReference,
+
+  /// (file_operations) Locked/unlocked editing for a file
+  DBTEAMLOGEventTypeFileLockingLockStatusChanged,
 
   /// (file_operations) Moved files and/or folders
   DBTEAMLOGEventTypeFileMove,
@@ -497,6 +835,48 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (file_operations) Saved file/folder using copy reference
   DBTEAMLOGEventTypeFileSaveCopyReference,
 
+  /// (file_operations) Updated folder overview
+  DBTEAMLOGEventTypeFolderOverviewDescriptionChanged,
+
+  /// (file_operations) Pinned item to folder overview
+  DBTEAMLOGEventTypeFolderOverviewItemPinned,
+
+  /// (file_operations) Unpinned item from folder overview
+  DBTEAMLOGEventTypeFolderOverviewItemUnpinned,
+
+  /// (file_operations) Added a label
+  DBTEAMLOGEventTypeObjectLabelAdded,
+
+  /// (file_operations) Removed a label
+  DBTEAMLOGEventTypeObjectLabelRemoved,
+
+  /// (file_operations) Updated a label's value
+  DBTEAMLOGEventTypeObjectLabelUpdatedValue,
+
+  /// (file_operations) Organized a folder with multi-file organize
+  DBTEAMLOGEventTypeOrganizeFolderWithTidy,
+
+  /// (file_operations) Deleted files in Replay
+  DBTEAMLOGEventTypeReplayFileDelete,
+
+  /// (file_operations) Rewound a folder
+  DBTEAMLOGEventTypeRewindFolder,
+
+  /// (file_operations) Reverted naming convention
+  DBTEAMLOGEventTypeUndoNamingConvention,
+
+  /// (file_operations) Removed multi-file organize
+  DBTEAMLOGEventTypeUndoOrganizeFolderWithTidy,
+
+  /// (file_operations) Tagged a file
+  DBTEAMLOGEventTypeUserTagsAdded,
+
+  /// (file_operations) Removed tags
+  DBTEAMLOGEventTypeUserTagsRemoved,
+
+  /// (file_requests) Received files via Email to Dropbox
+  DBTEAMLOGEventTypeEmailIngestReceiveFile,
+
   /// (file_requests) Changed file request
   DBTEAMLOGEventTypeFileRequestChange,
 
@@ -505,6 +885,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (file_requests) Created file request
   DBTEAMLOGEventTypeFileRequestCreate,
+
+  /// (file_requests) Delete file request
+  DBTEAMLOGEventTypeFileRequestDelete,
 
   /// (file_requests) Received files for file request
   DBTEAMLOGEventTypeFileRequestReceiveFile,
@@ -548,9 +931,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (groups) Renamed group
   DBTEAMLOGEventTypeGroupRename,
 
+  /// (logins) Unlocked/locked account after failed sign in attempts
+  DBTEAMLOGEventTypeAccountLockOrUnlocked,
+
   /// (logins) Failed to sign in via EMM (deprecated, replaced by 'Failed to
   /// sign in')
   DBTEAMLOGEventTypeEmmError,
+
+  /// (logins) Started trusted team admin session
+  DBTEAMLOGEventTypeGuestAdminSignedInViaTrustedTeams,
+
+  /// (logins) Ended trusted team admin session
+  DBTEAMLOGEventTypeGuestAdminSignedOutViaTrustedTeams,
 
   /// (logins) Failed to sign in
   DBTEAMLOGEventTypeLoginFail,
@@ -577,6 +969,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// sign in')
   DBTEAMLOGEventTypeSsoError,
 
+  /// (members) Invited members to activate Backup
+  DBTEAMLOGEventTypeBackupAdminInvitationSent,
+
+  /// (members) Opened Backup invite
+  DBTEAMLOGEventTypeBackupInvitationOpened,
+
+  /// (members) Created team invite link
+  DBTEAMLOGEventTypeCreateTeamInviteLink,
+
+  /// (members) Deleted team invite link
+  DBTEAMLOGEventTypeDeleteTeamInviteLink,
+
+  /// (members) Added an external ID for team member
+  DBTEAMLOGEventTypeMemberAddExternalId,
+
   /// (members) Added team member name
   DBTEAMLOGEventTypeMemberAddName,
 
@@ -586,6 +993,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (members) Changed team member email
   DBTEAMLOGEventTypeMemberChangeEmail,
 
+  /// (members) Changed the external ID for team member
+  DBTEAMLOGEventTypeMemberChangeExternalId,
+
   /// (members) Changed membership type (limited/full) of member (deprecated,
   /// no longer logged)
   DBTEAMLOGEventTypeMemberChangeMembershipType,
@@ -593,11 +1003,26 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (members) Changed team member name
   DBTEAMLOGEventTypeMemberChangeName,
 
+  /// (members) Changed team member reseller role
+  DBTEAMLOGEventTypeMemberChangeResellerRole,
+
   /// (members) Changed member status (invited, joined, suspended, etc.)
   DBTEAMLOGEventTypeMemberChangeStatus,
 
+  /// (members) Cleared manually added contacts
+  DBTEAMLOGEventTypeMemberDeleteManualContacts,
+
+  /// (members) Deleted team member profile photo
+  DBTEAMLOGEventTypeMemberDeleteProfilePhoto,
+
   /// (members) Permanently deleted contents of deleted team member account
   DBTEAMLOGEventTypeMemberPermanentlyDeleteAccountContents,
+
+  /// (members) Removed the external ID for team member
+  DBTEAMLOGEventTypeMemberRemoveExternalId,
+
+  /// (members) Set team member profile photo
+  DBTEAMLOGEventTypeMemberSetProfilePhoto,
 
   /// (members) Set custom member space limit
   DBTEAMLOGEventTypeMemberSpaceLimitsAddCustomQuota,
@@ -618,10 +1043,44 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// member
   DBTEAMLOGEventTypeMemberTransferAccountContents,
 
+  /// (members) Added pending secondary email
+  DBTEAMLOGEventTypePendingSecondaryEmailAdded,
+
+  /// (members) Deleted secondary email
+  DBTEAMLOGEventTypeSecondaryEmailDeleted,
+
+  /// (members) Verified secondary email
+  DBTEAMLOGEventTypeSecondaryEmailVerified,
+
   /// (members) Secondary mails policy changed
   DBTEAMLOGEventTypeSecondaryMailsPolicyChanged,
 
-  /// (paper) Added team member to Paper doc/folder
+  /// (paper) Added Binder page (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderAddPage,
+
+  /// (paper) Added Binder section (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderAddSection,
+
+  /// (paper) Removed Binder page (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderRemovePage,
+
+  /// (paper) Removed Binder section (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderRemoveSection,
+
+  /// (paper) Renamed Binder page (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderRenamePage,
+
+  /// (paper) Renamed Binder section (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderRenameSection,
+
+  /// (paper) Reordered Binder page (deprecated, replaced by 'Edited files')
+  DBTEAMLOGEventTypeBinderReorderPage,
+
+  /// (paper) Reordered Binder section (deprecated, replaced by 'Edited
+  /// files')
+  DBTEAMLOGEventTypeBinderReorderSection,
+
+  /// (paper) Added users and/or groups to Paper doc/folder
   DBTEAMLOGEventTypePaperContentAddMember,
 
   /// (paper) Added Paper doc/folder to folder
@@ -639,7 +1098,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (paper) Removed Paper doc/folder from folder
   DBTEAMLOGEventTypePaperContentRemoveFromFolder,
 
-  /// (paper) Removed team member from Paper doc/folder
+  /// (paper) Removed users and/or groups from Paper doc/folder
   DBTEAMLOGEventTypePaperContentRemoveMember,
 
   /// (paper) Renamed Paper doc/folder
@@ -651,7 +1110,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (paper) Added Paper doc comment
   DBTEAMLOGEventTypePaperDocAddComment,
 
-  /// (paper) Changed team member permissions for Paper doc
+  /// (paper) Changed member permissions for Paper doc
   DBTEAMLOGEventTypePaperDocChangeMemberRole,
 
   /// (paper) Changed sharing setting for Paper doc
@@ -679,8 +1138,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// Paper doc')
   DBTEAMLOGEventTypePaperDocFollowed,
 
-  /// (paper) Mentioned team member in Paper doc
+  /// (paper) Mentioned user in Paper doc
   DBTEAMLOGEventTypePaperDocMention,
+
+  /// (paper) Transferred ownership of Paper doc
+  DBTEAMLOGEventTypePaperDocOwnershipChanged,
 
   /// (paper) Requested access to Paper doc
   DBTEAMLOGEventTypePaperDocRequestAccess,
@@ -694,7 +1156,8 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (paper) Shared Paper doc via Slack
   DBTEAMLOGEventTypePaperDocSlackShare,
 
-  /// (paper) Shared Paper doc with team member (deprecated, no longer logged)
+  /// (paper) Shared Paper doc with users and/or groups (deprecated, no longer
+  /// logged)
   DBTEAMLOGEventTypePaperDocTeamInvite,
 
   /// (paper) Deleted Paper doc
@@ -731,8 +1194,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// 'Followed/unfollowed Paper folder')
   DBTEAMLOGEventTypePaperFolderFollowed,
 
-  /// (paper) Shared Paper folder with member (deprecated, no longer logged)
+  /// (paper) Shared Paper folder with users and/or groups (deprecated, no
+  /// longer logged)
   DBTEAMLOGEventTypePaperFolderTeamInvite,
+
+  /// (paper) Changed permissions for published doc
+  DBTEAMLOGEventTypePaperPublishedLinkChangePermission,
+
+  /// (paper) Published doc
+  DBTEAMLOGEventTypePaperPublishedLinkCreate,
+
+  /// (paper) Unpublished doc
+  DBTEAMLOGEventTypePaperPublishedLinkDisabled,
+
+  /// (paper) Viewed published doc
+  DBTEAMLOGEventTypePaperPublishedLinkView,
 
   /// (passwords) Changed password
   DBTEAMLOGEventTypePasswordChange,
@@ -743,6 +1219,12 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (passwords) Reset all team member passwords
   DBTEAMLOGEventTypePasswordResetAll,
 
+  /// (reports) Created Classification report
+  DBTEAMLOGEventTypeClassificationCreateReport,
+
+  /// (reports) Couldn't create Classification report
+  DBTEAMLOGEventTypeClassificationCreateReportFail,
+
   /// (reports) Created EMM-excluded users report
   DBTEAMLOGEventTypeEmmCreateExceptionsReport,
 
@@ -752,8 +1234,47 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (reports) Created member data report
   DBTEAMLOGEventTypeExportMembersReport,
 
+  /// (reports) Failed to create members data report
+  DBTEAMLOGEventTypeExportMembersReportFail,
+
+  /// (reports) Created External sharing report
+  DBTEAMLOGEventTypeExternalSharingCreateReport,
+
+  /// (reports) Couldn't create External sharing report
+  DBTEAMLOGEventTypeExternalSharingReportFailed,
+
+  /// (reports) Report created: Links created with no expiration
+  DBTEAMLOGEventTypeNoExpirationLinkGenCreateReport,
+
+  /// (reports) Couldn't create report: Links created with no expiration
+  DBTEAMLOGEventTypeNoExpirationLinkGenReportFailed,
+
+  /// (reports) Report created: Links created without passwords
+  DBTEAMLOGEventTypeNoPasswordLinkGenCreateReport,
+
+  /// (reports) Couldn't create report: Links created without passwords
+  DBTEAMLOGEventTypeNoPasswordLinkGenReportFailed,
+
+  /// (reports) Report created: Views of links without passwords
+  DBTEAMLOGEventTypeNoPasswordLinkViewCreateReport,
+
+  /// (reports) Couldn't create report: Views of links without passwords
+  DBTEAMLOGEventTypeNoPasswordLinkViewReportFailed,
+
+  /// (reports) Report created: Views of old links
+  DBTEAMLOGEventTypeOutdatedLinkViewCreateReport,
+
+  /// (reports) Couldn't create report: Views of old links
+  DBTEAMLOGEventTypeOutdatedLinkViewReportFailed,
+
   /// (reports) Exported all team Paper docs
   DBTEAMLOGEventTypePaperAdminExportStart,
+
+  /// (reports) Created ransomware report
+  DBTEAMLOGEventTypeRansomwareAlertCreateReport,
+
+  /// (reports) Couldn't generate ransomware report
+  DBTEAMLOGEventTypeRansomwareAlertCreateReportFailed,
 
   /// (reports) Created Smart Sync non-admin devices report
   DBTEAMLOGEventTypeSmartSyncCreateAdminPrivilegeReport,
@@ -761,8 +1282,26 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (reports) Created team activity report
   DBTEAMLOGEventTypeTeamActivityCreateReport,
 
+  /// (reports) Couldn't generate team activity report
+  DBTEAMLOGEventTypeTeamActivityCreateReportFail,
+
   /// (sharing) Shared album
   DBTEAMLOGEventTypeCollectionShare,
+
+  /// (sharing) Transfer files added
+  DBTEAMLOGEventTypeFileTransfersFileAdd,
+
+  /// (sharing) Deleted transfer
+  DBTEAMLOGEventTypeFileTransfersTransferDelete,
+
+  /// (sharing) Transfer downloaded
+  DBTEAMLOGEventTypeFileTransfersTransferDownload,
+
+  /// (sharing) Sent transfer
+  DBTEAMLOGEventTypeFileTransfersTransferSend,
+
+  /// (sharing) Viewed transfer
+  DBTEAMLOGEventTypeFileTransfersTransferView,
 
   /// (sharing) Changed Paper doc to invite-only (deprecated, no longer
   /// logged)
@@ -784,6 +1323,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (sharing) Opened shared Paper doc (deprecated, no longer logged)
   DBTEAMLOGEventTypeOpenNoteShared,
+
+  /// (sharing) Created shared link in Replay
+  DBTEAMLOGEventTypeReplayFileSharedLinkCreated,
+
+  /// (sharing) Modified shared link in Replay
+  DBTEAMLOGEventTypeReplayFileSharedLinkModified,
+
+  /// (sharing) Added member to Replay Project
+  DBTEAMLOGEventTypeReplayProjectTeamAdd,
+
+  /// (sharing) Removed member from Replay Project
+  DBTEAMLOGEventTypeReplayProjectTeamDelete,
 
   /// (sharing) Added team to shared folder (deprecated, no longer logged)
   DBTEAMLOGEventTypeSfAddGroup,
@@ -838,28 +1389,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   DBTEAMLOGEventTypeSharedContentAddInvitees,
 
   /// (sharing) Added expiration date to link for shared file/folder
+  /// (deprecated, no longer logged)
   DBTEAMLOGEventTypeSharedContentAddLinkExpiry,
 
-  /// (sharing) Added password to link for shared file/folder
+  /// (sharing) Added password to link for shared file/folder (deprecated, no
+  /// longer logged)
   DBTEAMLOGEventTypeSharedContentAddLinkPassword,
 
   /// (sharing) Added users and/or groups to shared file/folder
   DBTEAMLOGEventTypeSharedContentAddMember,
 
   /// (sharing) Changed whether members can download shared file/folder
+  /// (deprecated, no longer logged)
   DBTEAMLOGEventTypeSharedContentChangeDownloadsPolicy,
 
   /// (sharing) Changed access type of invitee to shared file/folder before
   /// invite was accepted
   DBTEAMLOGEventTypeSharedContentChangeInviteeRole,
 
-  /// (sharing) Changed link audience of shared file/folder
+  /// (sharing) Changed link audience of shared file/folder (deprecated, no
+  /// longer logged)
   DBTEAMLOGEventTypeSharedContentChangeLinkAudience,
 
-  /// (sharing) Changed link expiration of shared file/folder
+  /// (sharing) Changed link expiration of shared file/folder (deprecated, no
+  /// longer logged)
   DBTEAMLOGEventTypeSharedContentChangeLinkExpiry,
 
-  /// (sharing) Changed link password of shared file/folder
+  /// (sharing) Changed link password of shared file/folder (deprecated, no
+  /// longer logged)
   DBTEAMLOGEventTypeSharedContentChangeLinkPassword,
 
   /// (sharing) Changed access type of shared file/folder member
@@ -885,9 +1442,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   DBTEAMLOGEventTypeSharedContentRemoveInvitees,
 
   /// (sharing) Removed link expiration date of shared file/folder
+  /// (deprecated, no longer logged)
   DBTEAMLOGEventTypeSharedContentRemoveLinkExpiry,
 
-  /// (sharing) Removed link password of shared file/folder
+  /// (sharing) Removed link password of shared file/folder (deprecated, no
+  /// longer logged)
   DBTEAMLOGEventTypeSharedContentRemoveLinkPassword,
 
   /// (sharing) Removed user/group from shared file/folder
@@ -896,8 +1455,14 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (sharing) Requested access to shared file/folder
   DBTEAMLOGEventTypeSharedContentRequestAccess,
 
-  /// (sharing) Unshared file/folder by clearing membership and turning off
-  /// link
+  /// (sharing) Restored shared file/folder invitees
+  DBTEAMLOGEventTypeSharedContentRestoreInvitees,
+
+  /// (sharing) Restored users and/or groups to membership of shared
+  /// file/folder
+  DBTEAMLOGEventTypeSharedContentRestoreMember,
+
+  /// (sharing) Unshared file/folder by clearing membership
   DBTEAMLOGEventTypeSharedContentUnshare,
 
   /// (sharing) Previewed shared file/folder
@@ -958,6 +1523,33 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (sharing) Removed shared link expiration date
   DBTEAMLOGEventTypeSharedLinkRemoveExpiry,
 
+  /// (sharing) Added an expiration date to the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsAddExpiration,
+
+  /// (sharing) Added a password to the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsAddPassword,
+
+  /// (sharing) Disabled downloads
+  DBTEAMLOGEventTypeSharedLinkSettingsAllowDownloadDisabled,
+
+  /// (sharing) Enabled downloads
+  DBTEAMLOGEventTypeSharedLinkSettingsAllowDownloadEnabled,
+
+  /// (sharing) Changed the audience of the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsChangeAudience,
+
+  /// (sharing) Changed the expiration date of the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsChangeExpiration,
+
+  /// (sharing) Changed the password of the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsChangePassword,
+
+  /// (sharing) Removed the expiration date from the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsRemoveExpiration,
+
+  /// (sharing) Removed the password from the shared link
+  DBTEAMLOGEventTypeSharedLinkSettingsRemovePassword,
+
   /// (sharing) Added members as audience of shared link
   DBTEAMLOGEventTypeSharedLinkShare,
 
@@ -966,6 +1558,12 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (sharing) Opened shared Paper doc (deprecated, no longer logged)
   DBTEAMLOGEventTypeSharedNoteOpened,
+
+  /// (sharing) Disabled downloads for link (deprecated, no longer logged)
+  DBTEAMLOGEventTypeShmodelDisableDownloads,
+
+  /// (sharing) Enabled downloads for link (deprecated, no longer logged)
+  DBTEAMLOGEventTypeShmodelEnableDownloads,
 
   /// (sharing) Shared link with group (deprecated, no longer logged)
   DBTEAMLOGEventTypeShmodelGroupShare,
@@ -1095,11 +1693,33 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (team_policies) Changed account capture setting on team domain
   DBTEAMLOGEventTypeAccountCaptureChangePolicy,
 
+  /// (team_policies) Changed admin reminder settings for requests to join the
+  /// team
+  DBTEAMLOGEventTypeAdminEmailRemindersChanged,
+
   /// (team_policies) Disabled downloads (deprecated, no longer logged)
   DBTEAMLOGEventTypeAllowDownloadDisabled,
 
   /// (team_policies) Enabled downloads (deprecated, no longer logged)
   DBTEAMLOGEventTypeAllowDownloadEnabled,
+
+  /// (team_policies) Changed app permissions
+  DBTEAMLOGEventTypeAppPermissionsChanged,
+
+  /// (team_policies) Changed camera uploads setting for team
+  DBTEAMLOGEventTypeCameraUploadsPolicyChanged,
+
+  /// (team_policies) Changed Capture transcription policy for team
+  DBTEAMLOGEventTypeCaptureTranscriptPolicyChanged,
+
+  /// (team_policies) Changed classification policy for team
+  DBTEAMLOGEventTypeClassificationChangePolicy,
+
+  /// (team_policies) Changed computer backup policy for team
+  DBTEAMLOGEventTypeComputerBackupPolicyChanged,
+
+  /// (team_policies) Changed content management setting
+  DBTEAMLOGEventTypeContentAdministrationPolicyChanged,
 
   /// (team_policies) Set restrictions on data center locations where team
   /// data resides
@@ -1108,6 +1728,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (team_policies) Completed restrictions on data center locations where
   /// team data resides
   DBTEAMLOGEventTypeDataPlacementRestrictionSatisfyPolicy,
+
+  /// (team_policies) Added members to device approvals exception list
+  DBTEAMLOGEventTypeDeviceApprovalsAddException,
 
   /// (team_policies) Set/removed limit on number of computers member can link
   /// to team Dropbox account
@@ -1125,11 +1748,20 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// approved device
   DBTEAMLOGEventTypeDeviceApprovalsChangeUnlinkAction,
 
+  /// (team_policies) Removed members from device approvals exception list
+  DBTEAMLOGEventTypeDeviceApprovalsRemoveException,
+
   /// (team_policies) Added members to directory restrictions list
   DBTEAMLOGEventTypeDirectoryRestrictionsAddMembers,
 
   /// (team_policies) Removed members from directory restrictions list
   DBTEAMLOGEventTypeDirectoryRestrictionsRemoveMembers,
+
+  /// (team_policies) Changed Dropbox Passwords policy for team
+  DBTEAMLOGEventTypeDropboxPasswordsPolicyChanged,
+
+  /// (team_policies) Changed email to Dropbox policy for team
+  DBTEAMLOGEventTypeEmailIngestPolicyChanged,
 
   /// (team_policies) Added members to EMM exception list
   DBTEAMLOGEventTypeEmmAddException,
@@ -1144,8 +1776,17 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (team_policies) Accepted/opted out of extended version history
   DBTEAMLOGEventTypeExtendedVersionHistoryChangePolicy,
 
+  /// (team_policies) Changed external drive backup policy for team
+  DBTEAMLOGEventTypeExternalDriveBackupPolicyChanged,
+
   /// (team_policies) Enabled/disabled commenting on team files
   DBTEAMLOGEventTypeFileCommentsChangePolicy,
+
+  /// (team_policies) Changed file locking policy for team
+  DBTEAMLOGEventTypeFileLockingPolicyChanged,
+
+  /// (team_policies) Changed File Provider Migration policy for team
+  DBTEAMLOGEventTypeFileProviderMigrationPolicyChanged,
 
   /// (team_policies) Enabled/disabled file requests
   DBTEAMLOGEventTypeFileRequestsChangePolicy,
@@ -1158,14 +1799,29 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// longer logged)
   DBTEAMLOGEventTypeFileRequestsEmailsRestrictedToTeamOnly,
 
+  /// (team_policies) Changed file transfers policy for team
+  DBTEAMLOGEventTypeFileTransfersPolicyChanged,
+
+  /// (team_policies) Changed folder link restrictions policy for team
+  DBTEAMLOGEventTypeFolderLinkRestrictionPolicyChanged,
+
   /// (team_policies) Enabled/disabled Google single sign-on for team
   DBTEAMLOGEventTypeGoogleSsoChangePolicy,
 
   /// (team_policies) Changed who can create groups
   DBTEAMLOGEventTypeGroupUserManagementChangePolicy,
 
+  /// (team_policies) Changed integration policy for team
+  DBTEAMLOGEventTypeIntegrationPolicyChanged,
+
+  /// (team_policies) Changed invite accept email policy for team
+  DBTEAMLOGEventTypeInviteAcceptanceEmailPolicyChanged,
+
   /// (team_policies) Changed whether users can find team when not invited
   DBTEAMLOGEventTypeMemberRequestsChangePolicy,
+
+  /// (team_policies) Changed member send invite policy for team
+  DBTEAMLOGEventTypeMemberSendInvitePolicyChanged,
 
   /// (team_policies) Added members to member space limit exception list
   DBTEAMLOGEventTypeMemberSpaceLimitsAddException,
@@ -1205,19 +1861,49 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (team_policies) Enabled/disabled Dropbox Paper for team
   DBTEAMLOGEventTypePaperChangePolicy,
 
+  /// (team_policies) Changed Paper Default Folder Policy setting for team
+  DBTEAMLOGEventTypePaperDefaultFolderPolicyChanged,
+
+  /// (team_policies) Enabled/disabled Paper Desktop for team
+  DBTEAMLOGEventTypePaperDesktopPolicyChanged,
+
   /// (team_policies) Added users to Paper-enabled users list
   DBTEAMLOGEventTypePaperEnabledUsersGroupAddition,
 
   /// (team_policies) Removed users from Paper-enabled users list
   DBTEAMLOGEventTypePaperEnabledUsersGroupRemoval,
 
+  /// (team_policies) Changed team password strength requirements
+  DBTEAMLOGEventTypePasswordStrengthRequirementsChangePolicy,
+
   /// (team_policies) Enabled/disabled ability of team members to permanently
   /// delete content
   DBTEAMLOGEventTypePermanentDeleteChangePolicy,
 
+  /// (team_policies) Enabled/disabled reseller support
+  DBTEAMLOGEventTypeResellerSupportChangePolicy,
+
+  /// (team_policies) Changed Rewind policy for team
+  DBTEAMLOGEventTypeRewindPolicyChanged,
+
+  /// (team_policies) Changed send for signature policy for team
+  DBTEAMLOGEventTypeSendForSignaturePolicyChanged,
+
   /// (team_policies) Changed whether team members can join shared folders
   /// owned outside team
   DBTEAMLOGEventTypeSharingChangeFolderJoinPolicy,
+
+  /// (team_policies) Changed the allow remove or change expiration policy for
+  /// the links shared outside of the team
+  DBTEAMLOGEventTypeSharingChangeLinkAllowChangeExpirationPolicy,
+
+  /// (team_policies) Changed the default expiration for the links shared
+  /// outside of the team
+  DBTEAMLOGEventTypeSharingChangeLinkDefaultExpirationPolicy,
+
+  /// (team_policies) Changed the password requirement for the links shared
+  /// outside of the team
+  DBTEAMLOGEventTypeSharingChangeLinkEnforcePasswordPolicy,
 
   /// (team_policies) Changed whether members can share links outside team,
   /// and if links are accessible only by team members or anyone by default
@@ -1238,6 +1924,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// team
   DBTEAMLOGEventTypeShowcaseChangeExternalSharingPolicy,
 
+  /// (team_policies) Changed automatic Smart Sync setting for team
+  DBTEAMLOGEventTypeSmarterSmartSyncPolicyChanged,
+
   /// (team_policies) Changed default Smart Sync setting for team members
   DBTEAMLOGEventTypeSmartSyncChangePolicy,
 
@@ -1250,12 +1939,41 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (team_policies) Changed single sign-on setting for team
   DBTEAMLOGEventTypeSsoChangePolicy,
 
+  /// (team_policies) Changed team branding policy for team
+  DBTEAMLOGEventTypeTeamBrandingPolicyChanged,
+
+  /// (team_policies) Changed App Integrations setting for team
+  DBTEAMLOGEventTypeTeamExtensionsPolicyChanged,
+
+  /// (team_policies) Enabled/disabled Team Selective Sync for team
+  DBTEAMLOGEventTypeTeamSelectiveSyncPolicyChanged,
+
+  /// (team_policies) Edited the approved list for sharing externally
+  DBTEAMLOGEventTypeTeamSharingWhitelistSubjectsChanged,
+
+  /// (team_policies) Added members to two factor authentication exception
+  /// list
+  DBTEAMLOGEventTypeTfaAddException,
+
   /// (team_policies) Changed two-step verification setting for team
   DBTEAMLOGEventTypeTfaChangePolicy,
+
+  /// (team_policies) Removed members from two factor authentication exception
+  /// list
+  DBTEAMLOGEventTypeTfaRemoveException,
 
   /// (team_policies) Enabled/disabled option for members to link personal
   /// Dropbox account and team account to same computer
   DBTEAMLOGEventTypeTwoAccountChangePolicy,
+
+  /// (team_policies) Changed team policy for viewer info
+  DBTEAMLOGEventTypeViewerInfoPolicyChanged,
+
+  /// (team_policies) Changed watermarking policy for team
+  DBTEAMLOGEventTypeWatermarkingPolicyChanged,
+
+  /// (team_policies) Changed limit on active sessions per member
+  DBTEAMLOGEventTypeWebSessionsChangeActiveSessionLimit,
 
   /// (team_policies) Changed how long members can stay signed in to
   /// Dropbox.com
@@ -1265,14 +1983,27 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// in to Dropbox.com
   DBTEAMLOGEventTypeWebSessionsChangeIdleLengthPolicy,
 
+  /// (team_profile) Requested data residency migration for team data
+  DBTEAMLOGEventTypeDataResidencyMigrationRequestSuccessful,
+
+  /// (team_profile) Request for data residency migration for team data has
+  /// failed
+  DBTEAMLOGEventTypeDataResidencyMigrationRequestUnsuccessful,
+
   /// (team_profile) Merged another team into this team
   DBTEAMLOGEventTypeTeamMergeFrom,
 
   /// (team_profile) Merged this team into another team
   DBTEAMLOGEventTypeTeamMergeTo,
 
+  /// (team_profile) Added team background to display on shared link headers
+  DBTEAMLOGEventTypeTeamProfileAddBackground,
+
   /// (team_profile) Added team logo to display on shared link headers
   DBTEAMLOGEventTypeTeamProfileAddLogo,
+
+  /// (team_profile) Changed team background displayed on shared link headers
+  DBTEAMLOGEventTypeTeamProfileChangeBackground,
 
   /// (team_profile) Changed default language for team
   DBTEAMLOGEventTypeTeamProfileChangeDefaultLanguage,
@@ -1282,6 +2013,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
   /// (team_profile) Changed team name
   DBTEAMLOGEventTypeTeamProfileChangeName,
+
+  /// (team_profile) Removed team background displayed on shared link headers
+  DBTEAMLOGEventTypeTeamProfileRemoveBackground,
 
   /// (team_profile) Removed team logo displayed on shared link headers
   DBTEAMLOGEventTypeTeamProfileRemoveLogo,
@@ -1307,6 +2041,92 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
   /// (tfa) Reset two-step verification for team member
   DBTEAMLOGEventTypeTfaReset,
 
+  /// (trusted_teams) Changed enterprise admin role
+  DBTEAMLOGEventTypeChangedEnterpriseAdminRole,
+
+  /// (trusted_teams) Changed enterprise-connected team status
+  DBTEAMLOGEventTypeChangedEnterpriseConnectedTeamStatus,
+
+  /// (trusted_teams) Ended enterprise admin session
+  DBTEAMLOGEventTypeEndedEnterpriseAdminSession,
+
+  /// (trusted_teams) Ended enterprise admin session (deprecated, replaced by
+  /// 'Ended enterprise admin session')
+  DBTEAMLOGEventTypeEndedEnterpriseAdminSessionDeprecated,
+
+  /// (trusted_teams) Changed who can update a setting
+  DBTEAMLOGEventTypeEnterpriseSettingsLocking,
+
+  /// (trusted_teams) Changed guest team admin status
+  DBTEAMLOGEventTypeGuestAdminChangeStatus,
+
+  /// (trusted_teams) Started enterprise admin session
+  DBTEAMLOGEventTypeStartedEnterpriseAdminSession,
+
+  /// (trusted_teams) Accepted a team merge request
+  DBTEAMLOGEventTypeTeamMergeRequestAccepted,
+
+  /// (trusted_teams) Accepted a team merge request (deprecated, replaced by
+  /// 'Accepted a team merge request')
+  DBTEAMLOGEventTypeTeamMergeRequestAcceptedShownToPrimaryTeam,
+
+  /// (trusted_teams) Accepted a team merge request (deprecated, replaced by
+  /// 'Accepted a team merge request')
+  DBTEAMLOGEventTypeTeamMergeRequestAcceptedShownToSecondaryTeam,
+
+  /// (trusted_teams) Automatically canceled team merge request
+  DBTEAMLOGEventTypeTeamMergeRequestAutoCanceled,
+
+  /// (trusted_teams) Canceled a team merge request
+  DBTEAMLOGEventTypeTeamMergeRequestCanceled,
+
+  /// (trusted_teams) Canceled a team merge request (deprecated, replaced by
+  /// 'Canceled a team merge request')
+  DBTEAMLOGEventTypeTeamMergeRequestCanceledShownToPrimaryTeam,
+
+  /// (trusted_teams) Canceled a team merge request (deprecated, replaced by
+  /// 'Canceled a team merge request')
+  DBTEAMLOGEventTypeTeamMergeRequestCanceledShownToSecondaryTeam,
+
+  /// (trusted_teams) Team merge request expired
+  DBTEAMLOGEventTypeTeamMergeRequestExpired,
+
+  /// (trusted_teams) Team merge request expired (deprecated, replaced by
+  /// 'Team merge request expired')
+  DBTEAMLOGEventTypeTeamMergeRequestExpiredShownToPrimaryTeam,
+
+  /// (trusted_teams) Team merge request expired (deprecated, replaced by
+  /// 'Team merge request expired')
+  DBTEAMLOGEventTypeTeamMergeRequestExpiredShownToSecondaryTeam,
+
+  /// (trusted_teams) Rejected a team merge request (deprecated, no longer
+  /// logged)
+  DBTEAMLOGEventTypeTeamMergeRequestRejectedShownToPrimaryTeam,
+
+  /// (trusted_teams) Rejected a team merge request (deprecated, no longer
+  /// logged)
+  DBTEAMLOGEventTypeTeamMergeRequestRejectedShownToSecondaryTeam,
+
+  /// (trusted_teams) Sent a team merge request reminder
+  DBTEAMLOGEventTypeTeamMergeRequestReminder,
+
+  /// (trusted_teams) Sent a team merge request reminder (deprecated, replaced
+  /// by 'Sent a team merge request reminder')
+  DBTEAMLOGEventTypeTeamMergeRequestReminderShownToPrimaryTeam,
+
+  /// (trusted_teams) Sent a team merge request reminder (deprecated, replaced
+  /// by 'Sent a team merge request reminder')
+  DBTEAMLOGEventTypeTeamMergeRequestReminderShownToSecondaryTeam,
+
+  /// (trusted_teams) Canceled the team merge
+  DBTEAMLOGEventTypeTeamMergeRequestRevoked,
+
+  /// (trusted_teams) Requested to merge their Dropbox team into yours
+  DBTEAMLOGEventTypeTeamMergeRequestSentShownToPrimaryTeam,
+
+  /// (trusted_teams) Requested to merge your team into another Dropbox team
+  DBTEAMLOGEventTypeTeamMergeRequestSentShownToSecondaryTeam,
+
   /// (no description).
   DBTEAMLOGEventTypeOther,
 
@@ -1314,6 +2134,36 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 /// Represents the union's current tag state.
 @property (nonatomic, readonly) DBTEAMLOGEventTypeTag tag;
+
+/// (admin_alerting) Changed an alert state @note Ensure the
+/// `isAdminAlertingAlertStateChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAdminAlertingAlertStateChangedType *adminAlertingAlertStateChanged;
+
+/// (admin_alerting) Changed an alert setting @note Ensure the
+/// `isAdminAlertingChangedAlertConfig` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAdminAlertingChangedAlertConfigType *adminAlertingChangedAlertConfig;
+
+/// (admin_alerting) Triggered security alert @note Ensure the
+/// `isAdminAlertingTriggeredAlert` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAdminAlertingTriggeredAlertType *adminAlertingTriggeredAlert;
+
+/// (admin_alerting) Completed ransomware restore process @note Ensure the
+/// `isRansomwareRestoreProcessCompleted` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGRansomwareRestoreProcessCompletedType *ransomwareRestoreProcessCompleted;
+
+/// (admin_alerting) Started ransomware restore process @note Ensure the
+/// `isRansomwareRestoreProcessStarted` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGRansomwareRestoreProcessStartedType *ransomwareRestoreProcessStarted;
+
+/// (apps) Failed to connect app for member @note Ensure the
+/// `isAppBlockedByPermissions` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAppBlockedByPermissionsType *appBlockedByPermissions;
 
 /// (apps) Linked app for team @note Ensure the `isAppLinkTeam` method returns
 /// true before accessing, otherwise a runtime exception will be raised.
@@ -1331,6 +2181,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGAppUnlinkUserType *appUnlinkUser;
 
+/// (apps) Connected integration for member @note Ensure the
+/// `isIntegrationConnected` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGIntegrationConnectedType *integrationConnected;
+
+/// (apps) Disconnected integration for member @note Ensure the
+/// `isIntegrationDisconnected` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGIntegrationDisconnectedType *integrationDisconnected;
+
 /// (comments) Added file comment @note Ensure the `isFileAddComment` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGFileAddCommentType *fileAddComment;
@@ -1344,6 +2204,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// method returns true before accessing, otherwise a runtime exception will be
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGFileDeleteCommentType *fileDeleteComment;
+
+/// (comments) Edited file comment @note Ensure the `isFileEditComment` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileEditCommentType *fileEditComment;
 
 /// (comments) Liked file comment (deprecated, no longer logged) @note Ensure
 /// the `isFileLikeComment` method returns true before accessing, otherwise a
@@ -1364,6 +2228,121 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// method returns true before accessing, otherwise a runtime exception will be
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGFileUnresolveCommentType *fileUnresolveComment;
+
+/// (data_governance) Added folders to policy @note Ensure the
+/// `isGovernancePolicyAddFolders` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyAddFoldersType *governancePolicyAddFolders;
+
+/// (data_governance) Couldn't add a folder to a policy @note Ensure the
+/// `isGovernancePolicyAddFolderFailed` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyAddFolderFailedType *governancePolicyAddFolderFailed;
+
+/// (data_governance) Content disposed @note Ensure the
+/// `isGovernancePolicyContentDisposed` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyContentDisposedType *governancePolicyContentDisposed;
+
+/// (data_governance) Activated a new policy @note Ensure the
+/// `isGovernancePolicyCreate` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyCreateType *governancePolicyCreate;
+
+/// (data_governance) Deleted a policy @note Ensure the
+/// `isGovernancePolicyDelete` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyDeleteType *governancePolicyDelete;
+
+/// (data_governance) Edited policy @note Ensure the
+/// `isGovernancePolicyEditDetails` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyEditDetailsType *governancePolicyEditDetails;
+
+/// (data_governance) Changed policy duration @note Ensure the
+/// `isGovernancePolicyEditDuration` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyEditDurationType *governancePolicyEditDuration;
+
+/// (data_governance) Created a policy download @note Ensure the
+/// `isGovernancePolicyExportCreated` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyExportCreatedType *governancePolicyExportCreated;
+
+/// (data_governance) Removed a policy download @note Ensure the
+/// `isGovernancePolicyExportRemoved` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyExportRemovedType *governancePolicyExportRemoved;
+
+/// (data_governance) Removed folders from policy @note Ensure the
+/// `isGovernancePolicyRemoveFolders` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyRemoveFoldersType *governancePolicyRemoveFolders;
+
+/// (data_governance) Created a summary report for a policy @note Ensure the
+/// `isGovernancePolicyReportCreated` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyReportCreatedType *governancePolicyReportCreated;
+
+/// (data_governance) Downloaded content from a policy @note Ensure the
+/// `isGovernancePolicyZipPartDownloaded` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGovernancePolicyZipPartDownloadedType *governancePolicyZipPartDownloaded;
+
+/// (data_governance) Activated a hold @note Ensure the
+/// `isLegalHoldsActivateAHold` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsActivateAHoldType *legalHoldsActivateAHold;
+
+/// (data_governance) Added members to a hold @note Ensure the
+/// `isLegalHoldsAddMembers` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsAddMembersType *legalHoldsAddMembers;
+
+/// (data_governance) Edited details for a hold @note Ensure the
+/// `isLegalHoldsChangeHoldDetails` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsChangeHoldDetailsType *legalHoldsChangeHoldDetails;
+
+/// (data_governance) Renamed a hold @note Ensure the
+/// `isLegalHoldsChangeHoldName` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsChangeHoldNameType *legalHoldsChangeHoldName;
+
+/// (data_governance) Exported hold @note Ensure the `isLegalHoldsExportAHold`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsExportAHoldType *legalHoldsExportAHold;
+
+/// (data_governance) Canceled export for a hold @note Ensure the
+/// `isLegalHoldsExportCancelled` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsExportCancelledType *legalHoldsExportCancelled;
+
+/// (data_governance) Downloaded export for a hold @note Ensure the
+/// `isLegalHoldsExportDownloaded` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsExportDownloadedType *legalHoldsExportDownloaded;
+
+/// (data_governance) Removed export for a hold @note Ensure the
+/// `isLegalHoldsExportRemoved` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsExportRemovedType *legalHoldsExportRemoved;
+
+/// (data_governance) Released a hold @note Ensure the
+/// `isLegalHoldsReleaseAHold` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsReleaseAHoldType *legalHoldsReleaseAHold;
+
+/// (data_governance) Removed members from a hold @note Ensure the
+/// `isLegalHoldsRemoveMembers` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsRemoveMembersType *legalHoldsRemoveMembers;
+
+/// (data_governance) Created a summary report for a hold @note Ensure the
+/// `isLegalHoldsReportAHold` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGLegalHoldsReportAHoldType *legalHoldsReportAHold;
 
 /// (devices) Changed IP address associated with active desktop session @note
 /// Ensure the `isDeviceChangeIpDesktop` method returns true before accessing,
@@ -1408,14 +2387,40 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGDeviceManagementEnabledType *deviceManagementEnabled;
 
+/// (devices) Enabled/disabled backup for computer @note Ensure the
+/// `isDeviceSyncBackupStatusChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGDeviceSyncBackupStatusChangedType *deviceSyncBackupStatusChanged;
+
 /// (devices) Disconnected device @note Ensure the `isDeviceUnlink` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGDeviceUnlinkType *deviceUnlink;
 
-/// (devices) Refreshed auth token used for setting up enterprise mobility
-/// management @note Ensure the `isEmmRefreshAuthToken` method returns true
-/// before accessing, otherwise a runtime exception will be raised.
+/// (devices) Exported passwords @note Ensure the `isDropboxPasswordsExported`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGDropboxPasswordsExportedType *dropboxPasswordsExported;
+
+/// (devices) Enrolled new Dropbox Passwords device @note Ensure the
+/// `isDropboxPasswordsNewDeviceEnrolled` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGDropboxPasswordsNewDeviceEnrolledType *dropboxPasswordsNewDeviceEnrolled;
+
+/// (devices) Refreshed auth token used for setting up EMM @note Ensure the
+/// `isEmmRefreshAuthToken` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGEmmRefreshAuthTokenType *emmRefreshAuthToken;
+
+/// (devices) Checked external drive backup eligibility status @note Ensure the
+/// `isExternalDriveBackupEligibilityStatusChecked` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGExternalDriveBackupEligibilityStatusCheckedType *externalDriveBackupEligibilityStatusChecked;
+
+/// (devices) Modified external drive backup @note Ensure the
+/// `isExternalDriveBackupStatusChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGExternalDriveBackupStatusChangedType *externalDriveBackupStatusChanged;
 
 /// (domains) Granted/revoked option to enable account capture on team domains
 /// @note Ensure the `isAccountCaptureChangeAvailability` method returns true
@@ -1427,9 +2432,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGAccountCaptureMigrateAccountType *accountCaptureMigrateAccount;
 
-/// (domains) Sent proactive account capture email to all unmanaged members
-/// @note Ensure the `isAccountCaptureNotificationEmailsSent` method returns
-/// true before accessing, otherwise a runtime exception will be raised.
+/// (domains) Sent account capture email to all unmanaged members @note Ensure
+/// the `isAccountCaptureNotificationEmailsSent` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGAccountCaptureNotificationEmailsSentType *accountCaptureNotificationEmailsSent;
 
 /// (domains) Account-captured user changed account email to personal email
@@ -1496,6 +2501,46 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGEnabledDomainInvitesType *enabledDomainInvites;
 
+/// (encryption) Canceled team encryption key deletion @note Ensure the
+/// `isTeamEncryptionKeyCancelKeyDeletion` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyCancelKeyDeletionType *teamEncryptionKeyCancelKeyDeletion;
+
+/// (encryption) Created team encryption key @note Ensure the
+/// `isTeamEncryptionKeyCreateKey` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyCreateKeyType *teamEncryptionKeyCreateKey;
+
+/// (encryption) Deleted team encryption key @note Ensure the
+/// `isTeamEncryptionKeyDeleteKey` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyDeleteKeyType *teamEncryptionKeyDeleteKey;
+
+/// (encryption) Disabled team encryption key @note Ensure the
+/// `isTeamEncryptionKeyDisableKey` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyDisableKeyType *teamEncryptionKeyDisableKey;
+
+/// (encryption) Enabled team encryption key @note Ensure the
+/// `isTeamEncryptionKeyEnableKey` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyEnableKeyType *teamEncryptionKeyEnableKey;
+
+/// (encryption) Rotated team encryption key (deprecated, no longer logged)
+/// @note Ensure the `isTeamEncryptionKeyRotateKey` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyRotateKeyType *teamEncryptionKeyRotateKey;
+
+/// (encryption) Scheduled encryption key deletion @note Ensure the
+/// `isTeamEncryptionKeyScheduleKeyDeletion` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamEncryptionKeyScheduleKeyDeletionType *teamEncryptionKeyScheduleKeyDeletion;
+
+/// (file_operations) Applied naming convention @note Ensure the
+/// `isApplyNamingConvention` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGApplyNamingConventionType *applyNamingConvention;
+
 /// (file_operations) Created folders (deprecated, no longer logged) @note
 /// Ensure the `isCreateFolder` method returns true before accessing, otherwise
 /// a runtime exception will be raised.
@@ -1505,6 +2550,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// method returns true before accessing, otherwise a runtime exception will be
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGFileAddType *fileAdd;
+
+/// (file_operations) Added files and/or folders from automation @note Ensure
+/// the `isFileAddFromAutomation` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileAddFromAutomationType *fileAddFromAutomation;
 
 /// (file_operations) Copied files and/or folders @note Ensure the `isFileCopy`
 /// method returns true before accessing, otherwise a runtime exception will be
@@ -1529,6 +2579,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// `isFileGetCopyReference` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGFileGetCopyReferenceType *fileGetCopyReference;
+
+/// (file_operations) Locked/unlocked editing for a file @note Ensure the
+/// `isFileLockingLockStatusChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileLockingLockStatusChangedType *fileLockingLockStatusChanged;
 
 /// (file_operations) Moved files and/or folders @note Ensure the `isFileMove`
 /// method returns true before accessing, otherwise a runtime exception will be
@@ -1570,6 +2625,72 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGFileSaveCopyReferenceType *fileSaveCopyReference;
 
+/// (file_operations) Updated folder overview @note Ensure the
+/// `isFolderOverviewDescriptionChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFolderOverviewDescriptionChangedType *folderOverviewDescriptionChanged;
+
+/// (file_operations) Pinned item to folder overview @note Ensure the
+/// `isFolderOverviewItemPinned` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFolderOverviewItemPinnedType *folderOverviewItemPinned;
+
+/// (file_operations) Unpinned item from folder overview @note Ensure the
+/// `isFolderOverviewItemUnpinned` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFolderOverviewItemUnpinnedType *folderOverviewItemUnpinned;
+
+/// (file_operations) Added a label @note Ensure the `isObjectLabelAdded` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGObjectLabelAddedType *objectLabelAdded;
+
+/// (file_operations) Removed a label @note Ensure the `isObjectLabelRemoved`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGObjectLabelRemovedType *objectLabelRemoved;
+
+/// (file_operations) Updated a label's value @note Ensure the
+/// `isObjectLabelUpdatedValue` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGObjectLabelUpdatedValueType *objectLabelUpdatedValue;
+
+/// (file_operations) Organized a folder with multi-file organize @note Ensure
+/// the `isOrganizeFolderWithTidy` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGOrganizeFolderWithTidyType *organizeFolderWithTidy;
+
+/// (file_operations) Deleted files in Replay @note Ensure the
+/// `isReplayFileDelete` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGReplayFileDeleteType *replayFileDelete;
+
+/// (file_operations) Rewound a folder @note Ensure the `isRewindFolder` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGRewindFolderType *rewindFolder;
+
+/// (file_operations) Reverted naming convention @note Ensure the
+/// `isUndoNamingConvention` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGUndoNamingConventionType *undoNamingConvention;
+
+/// (file_operations) Removed multi-file organize @note Ensure the
+/// `isUndoOrganizeFolderWithTidy` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGUndoOrganizeFolderWithTidyType *undoOrganizeFolderWithTidy;
+
+/// (file_operations) Tagged a file @note Ensure the `isUserTagsAdded` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGUserTagsAddedType *userTagsAdded;
+
+/// (file_operations) Removed tags @note Ensure the `isUserTagsRemoved` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGUserTagsRemovedType *userTagsRemoved;
+
+/// (file_requests) Received files via Email to Dropbox @note Ensure the
+/// `isEmailIngestReceiveFile` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGEmailIngestReceiveFileType *emailIngestReceiveFile;
+
 /// (file_requests) Changed file request @note Ensure the `isFileRequestChange`
 /// method returns true before accessing, otherwise a runtime exception will be
 /// raised.
@@ -1584,6 +2705,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// method returns true before accessing, otherwise a runtime exception will be
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGFileRequestCreateType *fileRequestCreate;
+
+/// (file_requests) Delete file request @note Ensure the `isFileRequestDelete`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGFileRequestDeleteType *fileRequestDelete;
 
 /// (file_requests) Received files for file request @note Ensure the
 /// `isFileRequestReceiveFile` method returns true before accessing, otherwise a
@@ -1652,10 +2778,25 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGGroupRenameType *groupRename;
 
+/// (logins) Unlocked/locked account after failed sign in attempts @note Ensure
+/// the `isAccountLockOrUnlocked` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAccountLockOrUnlockedType *accountLockOrUnlocked;
+
 /// (logins) Failed to sign in via EMM (deprecated, replaced by 'Failed to sign
 /// in') @note Ensure the `isEmmError` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGEmmErrorType *emmError;
+
+/// (logins) Started trusted team admin session @note Ensure the
+/// `isGuestAdminSignedInViaTrustedTeams` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGuestAdminSignedInViaTrustedTeamsType *guestAdminSignedInViaTrustedTeams;
+
+/// (logins) Ended trusted team admin session @note Ensure the
+/// `isGuestAdminSignedOutViaTrustedTeams` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGuestAdminSignedOutViaTrustedTeamsType *guestAdminSignedOutViaTrustedTeams;
 
 /// (logins) Failed to sign in @note Ensure the `isLoginFail` method returns
 /// true before accessing, otherwise a runtime exception will be raised.
@@ -1694,6 +2835,31 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSsoErrorType *ssoError;
 
+/// (members) Invited members to activate Backup @note Ensure the
+/// `isBackupAdminInvitationSent` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBackupAdminInvitationSentType *backupAdminInvitationSent;
+
+/// (members) Opened Backup invite @note Ensure the `isBackupInvitationOpened`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGBackupInvitationOpenedType *backupInvitationOpened;
+
+/// (members) Created team invite link @note Ensure the `isCreateTeamInviteLink`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGCreateTeamInviteLinkType *createTeamInviteLink;
+
+/// (members) Deleted team invite link @note Ensure the `isDeleteTeamInviteLink`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGDeleteTeamInviteLinkType *deleteTeamInviteLink;
+
+/// (members) Added an external ID for team member @note Ensure the
+/// `isMemberAddExternalId` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberAddExternalIdType *memberAddExternalId;
+
 /// (members) Added team member name @note Ensure the `isMemberAddName` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGMemberAddNameType *memberAddName;
@@ -1708,6 +2874,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGMemberChangeEmailType *memberChangeEmail;
 
+/// (members) Changed the external ID for team member @note Ensure the
+/// `isMemberChangeExternalId` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberChangeExternalIdType *memberChangeExternalId;
+
 /// (members) Changed membership type (limited/full) of member (deprecated, no
 /// longer logged) @note Ensure the `isMemberChangeMembershipType` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
@@ -1718,16 +2889,41 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGMemberChangeNameType *memberChangeName;
 
+/// (members) Changed team member reseller role @note Ensure the
+/// `isMemberChangeResellerRole` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberChangeResellerRoleType *memberChangeResellerRole;
+
 /// (members) Changed member status (invited, joined, suspended, etc.) @note
 /// Ensure the `isMemberChangeStatus` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGMemberChangeStatusType *memberChangeStatus;
+
+/// (members) Cleared manually added contacts @note Ensure the
+/// `isMemberDeleteManualContacts` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberDeleteManualContactsType *memberDeleteManualContacts;
+
+/// (members) Deleted team member profile photo @note Ensure the
+/// `isMemberDeleteProfilePhoto` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberDeleteProfilePhotoType *memberDeleteProfilePhoto;
 
 /// (members) Permanently deleted contents of deleted team member account @note
 /// Ensure the `isMemberPermanentlyDeleteAccountContents` method returns true
 /// before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly)
     DBTEAMLOGMemberPermanentlyDeleteAccountContentsType *memberPermanentlyDeleteAccountContents;
+
+/// (members) Removed the external ID for team member @note Ensure the
+/// `isMemberRemoveExternalId` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberRemoveExternalIdType *memberRemoveExternalId;
+
+/// (members) Set team member profile photo @note Ensure the
+/// `isMemberSetProfilePhoto` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberSetProfilePhotoType *memberSetProfilePhoto;
 
 /// (members) Set custom member space limit @note Ensure the
 /// `isMemberSpaceLimitsAddCustomQuota` method returns true before accessing,
@@ -1759,12 +2955,67 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGMemberTransferAccountContentsType *memberTransferAccountContents;
 
+/// (members) Added pending secondary email @note Ensure the
+/// `isPendingSecondaryEmailAdded` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGPendingSecondaryEmailAddedType *pendingSecondaryEmailAdded;
+
+/// (members) Deleted secondary email @note Ensure the `isSecondaryEmailDeleted`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGSecondaryEmailDeletedType *secondaryEmailDeleted;
+
+/// (members) Verified secondary email @note Ensure the
+/// `isSecondaryEmailVerified` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSecondaryEmailVerifiedType *secondaryEmailVerified;
+
 /// (members) Secondary mails policy changed @note Ensure the
 /// `isSecondaryMailsPolicyChanged` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSecondaryMailsPolicyChangedType *secondaryMailsPolicyChanged;
 
-/// (paper) Added team member to Paper doc/folder @note Ensure the
+/// (paper) Added Binder page (deprecated, replaced by 'Edited files') @note
+/// Ensure the `isBinderAddPage` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderAddPageType *binderAddPage;
+
+/// (paper) Added Binder section (deprecated, replaced by 'Edited files') @note
+/// Ensure the `isBinderAddSection` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderAddSectionType *binderAddSection;
+
+/// (paper) Removed Binder page (deprecated, replaced by 'Edited files') @note
+/// Ensure the `isBinderRemovePage` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderRemovePageType *binderRemovePage;
+
+/// (paper) Removed Binder section (deprecated, replaced by 'Edited files')
+/// @note Ensure the `isBinderRemoveSection` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderRemoveSectionType *binderRemoveSection;
+
+/// (paper) Renamed Binder page (deprecated, replaced by 'Edited files') @note
+/// Ensure the `isBinderRenamePage` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderRenamePageType *binderRenamePage;
+
+/// (paper) Renamed Binder section (deprecated, replaced by 'Edited files')
+/// @note Ensure the `isBinderRenameSection` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderRenameSectionType *binderRenameSection;
+
+/// (paper) Reordered Binder page (deprecated, replaced by 'Edited files') @note
+/// Ensure the `isBinderReorderPage` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderReorderPageType *binderReorderPage;
+
+/// (paper) Reordered Binder section (deprecated, replaced by 'Edited files')
+/// @note Ensure the `isBinderReorderSection` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGBinderReorderSectionType *binderReorderSection;
+
+/// (paper) Added users and/or groups to Paper doc/folder @note Ensure the
 /// `isPaperContentAddMember` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperContentAddMemberType *paperContentAddMember;
@@ -1794,7 +3045,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperContentRemoveFromFolderType *paperContentRemoveFromFolder;
 
-/// (paper) Removed team member from Paper doc/folder @note Ensure the
+/// (paper) Removed users and/or groups from Paper doc/folder @note Ensure the
 /// `isPaperContentRemoveMember` method returns true before accessing, otherwise
 /// a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperContentRemoveMemberType *paperContentRemoveMember;
@@ -1814,7 +3065,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperDocAddCommentType *paperDocAddComment;
 
-/// (paper) Changed team member permissions for Paper doc @note Ensure the
+/// (paper) Changed member permissions for Paper doc @note Ensure the
 /// `isPaperDocChangeMemberRole` method returns true before accessing, otherwise
 /// a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperDocChangeMemberRoleType *paperDocChangeMemberRole;
@@ -1858,10 +3109,15 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperDocFollowedType *paperDocFollowed;
 
-/// (paper) Mentioned team member in Paper doc @note Ensure the
-/// `isPaperDocMention` method returns true before accessing, otherwise a
-/// runtime exception will be raised.
+/// (paper) Mentioned user in Paper doc @note Ensure the `isPaperDocMention`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperDocMentionType *paperDocMention;
+
+/// (paper) Transferred ownership of Paper doc @note Ensure the
+/// `isPaperDocOwnershipChanged` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperDocOwnershipChangedType *paperDocOwnershipChanged;
 
 /// (paper) Requested access to Paper doc @note Ensure the
 /// `isPaperDocRequestAccess` method returns true before accessing, otherwise a
@@ -1883,8 +3139,8 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperDocSlackShareType *paperDocSlackShare;
 
-/// (paper) Shared Paper doc with team member (deprecated, no longer logged)
-/// @note Ensure the `isPaperDocTeamInvite` method returns true before
+/// (paper) Shared Paper doc with users and/or groups (deprecated, no longer
+/// logged) @note Ensure the `isPaperDocTeamInvite` method returns true before
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperDocTeamInviteType *paperDocTeamInvite;
 
@@ -1935,10 +3191,29 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperFolderFollowedType *paperFolderFollowed;
 
-/// (paper) Shared Paper folder with member (deprecated, no longer logged) @note
-/// Ensure the `isPaperFolderTeamInvite` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (paper) Shared Paper folder with users and/or groups (deprecated, no longer
+/// logged) @note Ensure the `isPaperFolderTeamInvite` method returns true
+/// before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperFolderTeamInviteType *paperFolderTeamInvite;
+
+/// (paper) Changed permissions for published doc @note Ensure the
+/// `isPaperPublishedLinkChangePermission` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperPublishedLinkChangePermissionType *paperPublishedLinkChangePermission;
+
+/// (paper) Published doc @note Ensure the `isPaperPublishedLinkCreate` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperPublishedLinkCreateType *paperPublishedLinkCreate;
+
+/// (paper) Unpublished doc @note Ensure the `isPaperPublishedLinkDisabled`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperPublishedLinkDisabledType *paperPublishedLinkDisabled;
+
+/// (paper) Viewed published doc @note Ensure the `isPaperPublishedLinkView`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperPublishedLinkViewType *paperPublishedLinkView;
 
 /// (passwords) Changed password @note Ensure the `isPasswordChange` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
@@ -1952,6 +3227,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// `isPasswordResetAll` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPasswordResetAllType *passwordResetAll;
+
+/// (reports) Created Classification report @note Ensure the
+/// `isClassificationCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGClassificationCreateReportType *classificationCreateReport;
+
+/// (reports) Couldn't create Classification report @note Ensure the
+/// `isClassificationCreateReportFail` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGClassificationCreateReportFailType *classificationCreateReportFail;
 
 /// (reports) Created EMM-excluded users report @note Ensure the
 /// `isEmmCreateExceptionsReport` method returns true before accessing,
@@ -1968,10 +3253,75 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGExportMembersReportType *exportMembersReport;
 
+/// (reports) Failed to create members data report @note Ensure the
+/// `isExportMembersReportFail` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGExportMembersReportFailType *exportMembersReportFail;
+
+/// (reports) Created External sharing report @note Ensure the
+/// `isExternalSharingCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGExternalSharingCreateReportType *externalSharingCreateReport;
+
+/// (reports) Couldn't create External sharing report @note Ensure the
+/// `isExternalSharingReportFailed` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGExternalSharingReportFailedType *externalSharingReportFailed;
+
+/// (reports) Report created: Links created with no expiration @note Ensure the
+/// `isNoExpirationLinkGenCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGNoExpirationLinkGenCreateReportType *noExpirationLinkGenCreateReport;
+
+/// (reports) Couldn't create report: Links created with no expiration @note
+/// Ensure the `isNoExpirationLinkGenReportFailed` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGNoExpirationLinkGenReportFailedType *noExpirationLinkGenReportFailed;
+
+/// (reports) Report created: Links created without passwords @note Ensure the
+/// `isNoPasswordLinkGenCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGNoPasswordLinkGenCreateReportType *noPasswordLinkGenCreateReport;
+
+/// (reports) Couldn't create report: Links created without passwords @note
+/// Ensure the `isNoPasswordLinkGenReportFailed` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGNoPasswordLinkGenReportFailedType *noPasswordLinkGenReportFailed;
+
+/// (reports) Report created: Views of links without passwords @note Ensure the
+/// `isNoPasswordLinkViewCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGNoPasswordLinkViewCreateReportType *noPasswordLinkViewCreateReport;
+
+/// (reports) Couldn't create report: Views of links without passwords @note
+/// Ensure the `isNoPasswordLinkViewReportFailed` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGNoPasswordLinkViewReportFailedType *noPasswordLinkViewReportFailed;
+
+/// (reports) Report created: Views of old links @note Ensure the
+/// `isOutdatedLinkViewCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGOutdatedLinkViewCreateReportType *outdatedLinkViewCreateReport;
+
+/// (reports) Couldn't create report: Views of old links @note Ensure the
+/// `isOutdatedLinkViewReportFailed` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGOutdatedLinkViewReportFailedType *outdatedLinkViewReportFailed;
+
 /// (reports) Exported all team Paper docs @note Ensure the
 /// `isPaperAdminExportStart` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperAdminExportStartType *paperAdminExportStart;
+
+/// (reports) Created ransomware report @note Ensure the
+/// `isRansomwareAlertCreateReport` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGRansomwareAlertCreateReportType *ransomwareAlertCreateReport;
+
+/// (reports) Couldn't generate ransomware report @note Ensure the
+/// `isRansomwareAlertCreateReportFailed` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGRansomwareAlertCreateReportFailedType *ransomwareAlertCreateReportFailed;
 
 /// (reports) Created Smart Sync non-admin devices report @note Ensure the
 /// `isSmartSyncCreateAdminPrivilegeReport` method returns true before
@@ -1983,9 +3333,39 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGTeamActivityCreateReportType *teamActivityCreateReport;
 
+/// (reports) Couldn't generate team activity report @note Ensure the
+/// `isTeamActivityCreateReportFail` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamActivityCreateReportFailType *teamActivityCreateReportFail;
+
 /// (sharing) Shared album @note Ensure the `isCollectionShare` method returns
 /// true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGCollectionShareType *collectionShare;
+
+/// (sharing) Transfer files added @note Ensure the `isFileTransfersFileAdd`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGFileTransfersFileAddType *fileTransfersFileAdd;
+
+/// (sharing) Deleted transfer @note Ensure the `isFileTransfersTransferDelete`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGFileTransfersTransferDeleteType *fileTransfersTransferDelete;
+
+/// (sharing) Transfer downloaded @note Ensure the
+/// `isFileTransfersTransferDownload` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileTransfersTransferDownloadType *fileTransfersTransferDownload;
+
+/// (sharing) Sent transfer @note Ensure the `isFileTransfersTransferSend`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGFileTransfersTransferSendType *fileTransfersTransferSend;
+
+/// (sharing) Viewed transfer @note Ensure the `isFileTransfersTransferView`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly) DBTEAMLOGFileTransfersTransferViewType *fileTransfersTransferView;
 
 /// (sharing) Changed Paper doc to invite-only (deprecated, no longer logged)
 /// @note Ensure the `isNoteAclInviteOnly` method returns true before accessing,
@@ -2016,6 +3396,26 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Ensure the `isOpenNoteShared` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGOpenNoteSharedType *openNoteShared;
+
+/// (sharing) Created shared link in Replay @note Ensure the
+/// `isReplayFileSharedLinkCreated` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGReplayFileSharedLinkCreatedType *replayFileSharedLinkCreated;
+
+/// (sharing) Modified shared link in Replay @note Ensure the
+/// `isReplayFileSharedLinkModified` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGReplayFileSharedLinkModifiedType *replayFileSharedLinkModified;
+
+/// (sharing) Added member to Replay Project @note Ensure the
+/// `isReplayProjectTeamAdd` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGReplayProjectTeamAddType *replayProjectTeamAdd;
+
+/// (sharing) Removed member from Replay Project @note Ensure the
+/// `isReplayProjectTeamDelete` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGReplayProjectTeamDeleteType *replayProjectTeamDelete;
 
 /// (sharing) Added team to shared folder (deprecated, no longer logged) @note
 /// Ensure the `isSfAddGroup` method returns true before accessing, otherwise a
@@ -2091,14 +3491,14 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentAddInviteesType *sharedContentAddInvitees;
 
-/// (sharing) Added expiration date to link for shared file/folder @note Ensure
-/// the `isSharedContentAddLinkExpiry` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Added expiration date to link for shared file/folder (deprecated,
+/// no longer logged) @note Ensure the `isSharedContentAddLinkExpiry` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentAddLinkExpiryType *sharedContentAddLinkExpiry;
 
-/// (sharing) Added password to link for shared file/folder @note Ensure the
-/// `isSharedContentAddLinkPassword` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Added password to link for shared file/folder (deprecated, no
+/// longer logged) @note Ensure the `isSharedContentAddLinkPassword` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentAddLinkPasswordType *sharedContentAddLinkPassword;
 
 /// (sharing) Added users and/or groups to shared file/folder @note Ensure the
@@ -2106,9 +3506,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentAddMemberType *sharedContentAddMember;
 
-/// (sharing) Changed whether members can download shared file/folder @note
-/// Ensure the `isSharedContentChangeDownloadsPolicy` method returns true before
-/// accessing, otherwise a runtime exception will be raised.
+/// (sharing) Changed whether members can download shared file/folder
+/// (deprecated, no longer logged) @note Ensure the
+/// `isSharedContentChangeDownloadsPolicy` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentChangeDownloadsPolicyType *sharedContentChangeDownloadsPolicy;
 
 /// (sharing) Changed access type of invitee to shared file/folder before invite
@@ -2116,19 +3517,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentChangeInviteeRoleType *sharedContentChangeInviteeRole;
 
-/// (sharing) Changed link audience of shared file/folder @note Ensure the
-/// `isSharedContentChangeLinkAudience` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Changed link audience of shared file/folder (deprecated, no longer
+/// logged) @note Ensure the `isSharedContentChangeLinkAudience` method returns
+/// true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentChangeLinkAudienceType *sharedContentChangeLinkAudience;
 
-/// (sharing) Changed link expiration of shared file/folder @note Ensure the
-/// `isSharedContentChangeLinkExpiry` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Changed link expiration of shared file/folder (deprecated, no
+/// longer logged) @note Ensure the `isSharedContentChangeLinkExpiry` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentChangeLinkExpiryType *sharedContentChangeLinkExpiry;
 
-/// (sharing) Changed link password of shared file/folder @note Ensure the
-/// `isSharedContentChangeLinkPassword` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Changed link password of shared file/folder (deprecated, no longer
+/// logged) @note Ensure the `isSharedContentChangeLinkPassword` method returns
+/// true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentChangeLinkPasswordType *sharedContentChangeLinkPassword;
 
 /// (sharing) Changed access type of shared file/folder member @note Ensure the
@@ -2166,14 +3567,14 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentRemoveInviteesType *sharedContentRemoveInvitees;
 
-/// (sharing) Removed link expiration date of shared file/folder @note Ensure
-/// the `isSharedContentRemoveLinkExpiry` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Removed link expiration date of shared file/folder (deprecated, no
+/// longer logged) @note Ensure the `isSharedContentRemoveLinkExpiry` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentRemoveLinkExpiryType *sharedContentRemoveLinkExpiry;
 
-/// (sharing) Removed link password of shared file/folder @note Ensure the
-/// `isSharedContentRemoveLinkPassword` method returns true before accessing,
-/// otherwise a runtime exception will be raised.
+/// (sharing) Removed link password of shared file/folder (deprecated, no longer
+/// logged) @note Ensure the `isSharedContentRemoveLinkPassword` method returns
+/// true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentRemoveLinkPasswordType *sharedContentRemoveLinkPassword;
 
 /// (sharing) Removed user/group from shared file/folder @note Ensure the
@@ -2186,9 +3587,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentRequestAccessType *sharedContentRequestAccess;
 
-/// (sharing) Unshared file/folder by clearing membership and turning off link
-/// @note Ensure the `isSharedContentUnshare` method returns true before
+/// (sharing) Restored shared file/folder invitees @note Ensure the
+/// `isSharedContentRestoreInvitees` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedContentRestoreInviteesType *sharedContentRestoreInvitees;
+
+/// (sharing) Restored users and/or groups to membership of shared file/folder
+/// @note Ensure the `isSharedContentRestoreMember` method returns true before
 /// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedContentRestoreMemberType *sharedContentRestoreMember;
+
+/// (sharing) Unshared file/folder by clearing membership @note Ensure the
+/// `isSharedContentUnshare` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedContentUnshareType *sharedContentUnshare;
 
 /// (sharing) Previewed shared file/folder @note Ensure the
@@ -2286,6 +3697,53 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedLinkRemoveExpiryType *sharedLinkRemoveExpiry;
 
+/// (sharing) Added an expiration date to the shared link @note Ensure the
+/// `isSharedLinkSettingsAddExpiration` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsAddExpirationType *sharedLinkSettingsAddExpiration;
+
+/// (sharing) Added a password to the shared link @note Ensure the
+/// `isSharedLinkSettingsAddPassword` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsAddPasswordType *sharedLinkSettingsAddPassword;
+
+/// (sharing) Disabled downloads @note Ensure the
+/// `isSharedLinkSettingsAllowDownloadDisabled` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGSharedLinkSettingsAllowDownloadDisabledType *sharedLinkSettingsAllowDownloadDisabled;
+
+/// (sharing) Enabled downloads @note Ensure the
+/// `isSharedLinkSettingsAllowDownloadEnabled` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGSharedLinkSettingsAllowDownloadEnabledType *sharedLinkSettingsAllowDownloadEnabled;
+
+/// (sharing) Changed the audience of the shared link @note Ensure the
+/// `isSharedLinkSettingsChangeAudience` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsChangeAudienceType *sharedLinkSettingsChangeAudience;
+
+/// (sharing) Changed the expiration date of the shared link @note Ensure the
+/// `isSharedLinkSettingsChangeExpiration` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsChangeExpirationType *sharedLinkSettingsChangeExpiration;
+
+/// (sharing) Changed the password of the shared link @note Ensure the
+/// `isSharedLinkSettingsChangePassword` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsChangePasswordType *sharedLinkSettingsChangePassword;
+
+/// (sharing) Removed the expiration date from the shared link @note Ensure the
+/// `isSharedLinkSettingsRemoveExpiration` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsRemoveExpirationType *sharedLinkSettingsRemoveExpiration;
+
+/// (sharing) Removed the password from the shared link @note Ensure the
+/// `isSharedLinkSettingsRemovePassword` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSharedLinkSettingsRemovePasswordType *sharedLinkSettingsRemovePassword;
+
 /// (sharing) Added members as audience of shared link @note Ensure the
 /// `isSharedLinkShare` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
@@ -2299,6 +3757,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Ensure the `isSharedNoteOpened` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharedNoteOpenedType *sharedNoteOpened;
+
+/// (sharing) Disabled downloads for link (deprecated, no longer logged) @note
+/// Ensure the `isShmodelDisableDownloads` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGShmodelDisableDownloadsType *shmodelDisableDownloads;
+
+/// (sharing) Enabled downloads for link (deprecated, no longer logged) @note
+/// Ensure the `isShmodelEnableDownloads` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGShmodelEnableDownloadsType *shmodelEnableDownloads;
 
 /// (sharing) Shared link with group (deprecated, no longer logged) @note Ensure
 /// the `isShmodelGroupShare` method returns true before accessing, otherwise a
@@ -2499,6 +3967,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGAccountCaptureChangePolicyType *accountCaptureChangePolicy;
 
+/// (team_policies) Changed admin reminder settings for requests to join the
+/// team @note Ensure the `isAdminEmailRemindersChanged` method returns true
+/// before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAdminEmailRemindersChangedType *adminEmailRemindersChanged;
+
 /// (team_policies) Disabled downloads (deprecated, no longer logged) @note
 /// Ensure the `isAllowDownloadDisabled` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
@@ -2508,6 +3981,36 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Ensure the `isAllowDownloadEnabled` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGAllowDownloadEnabledType *allowDownloadEnabled;
+
+/// (team_policies) Changed app permissions @note Ensure the
+/// `isAppPermissionsChanged` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGAppPermissionsChangedType *appPermissionsChanged;
+
+/// (team_policies) Changed camera uploads setting for team @note Ensure the
+/// `isCameraUploadsPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGCameraUploadsPolicyChangedType *cameraUploadsPolicyChanged;
+
+/// (team_policies) Changed Capture transcription policy for team @note Ensure
+/// the `isCaptureTranscriptPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGCaptureTranscriptPolicyChangedType *captureTranscriptPolicyChanged;
+
+/// (team_policies) Changed classification policy for team @note Ensure the
+/// `isClassificationChangePolicy` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGClassificationChangePolicyType *classificationChangePolicy;
+
+/// (team_policies) Changed computer backup policy for team @note Ensure the
+/// `isComputerBackupPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGComputerBackupPolicyChangedType *computerBackupPolicyChanged;
+
+/// (team_policies) Changed content management setting @note Ensure the
+/// `isContentAdministrationPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGContentAdministrationPolicyChangedType *contentAdministrationPolicyChanged;
 
 /// (team_policies) Set restrictions on data center locations where team data
 /// resides @note Ensure the `isDataPlacementRestrictionChangePolicy` method
@@ -2520,6 +4023,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// raised.
 @property (nonatomic, readonly)
     DBTEAMLOGDataPlacementRestrictionSatisfyPolicyType *dataPlacementRestrictionSatisfyPolicy;
+
+/// (team_policies) Added members to device approvals exception list @note
+/// Ensure the `isDeviceApprovalsAddException` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGDeviceApprovalsAddExceptionType *deviceApprovalsAddException;
 
 /// (team_policies) Set/removed limit on number of computers member can link to
 /// team Dropbox account @note Ensure the `isDeviceApprovalsChangeDesktopPolicy`
@@ -2544,6 +4052,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGDeviceApprovalsChangeUnlinkActionType *deviceApprovalsChangeUnlinkAction;
 
+/// (team_policies) Removed members from device approvals exception list @note
+/// Ensure the `isDeviceApprovalsRemoveException` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGDeviceApprovalsRemoveExceptionType *deviceApprovalsRemoveException;
+
 /// (team_policies) Added members to directory restrictions list @note Ensure
 /// the `isDirectoryRestrictionsAddMembers` method returns true before
 /// accessing, otherwise a runtime exception will be raised.
@@ -2553,6 +4066,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Ensure the `isDirectoryRestrictionsRemoveMembers` method returns true before
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGDirectoryRestrictionsRemoveMembersType *directoryRestrictionsRemoveMembers;
+
+/// (team_policies) Changed Dropbox Passwords policy for team @note Ensure the
+/// `isDropboxPasswordsPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGDropboxPasswordsPolicyChangedType *dropboxPasswordsPolicyChanged;
+
+/// (team_policies) Changed email to Dropbox policy for team @note Ensure the
+/// `isEmailIngestPolicyChanged` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGEmailIngestPolicyChangedType *emailIngestPolicyChanged;
 
 /// (team_policies) Added members to EMM exception list @note Ensure the
 /// `isEmmAddException` method returns true before accessing, otherwise a
@@ -2574,10 +4097,25 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGExtendedVersionHistoryChangePolicyType *extendedVersionHistoryChangePolicy;
 
+/// (team_policies) Changed external drive backup policy for team @note Ensure
+/// the `isExternalDriveBackupPolicyChanged` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGExternalDriveBackupPolicyChangedType *externalDriveBackupPolicyChanged;
+
 /// (team_policies) Enabled/disabled commenting on team files @note Ensure the
 /// `isFileCommentsChangePolicy` method returns true before accessing, otherwise
 /// a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGFileCommentsChangePolicyType *fileCommentsChangePolicy;
+
+/// (team_policies) Changed file locking policy for team @note Ensure the
+/// `isFileLockingPolicyChanged` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileLockingPolicyChangedType *fileLockingPolicyChanged;
+
+/// (team_policies) Changed File Provider Migration policy for team @note Ensure
+/// the `isFileProviderMigrationPolicyChanged` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileProviderMigrationPolicyChangedType *fileProviderMigrationPolicyChanged;
 
 /// (team_policies) Enabled/disabled file requests @note Ensure the
 /// `isFileRequestsChangePolicy` method returns true before accessing, otherwise
@@ -2595,6 +4133,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 @property (nonatomic, readonly)
     DBTEAMLOGFileRequestsEmailsRestrictedToTeamOnlyType *fileRequestsEmailsRestrictedToTeamOnly;
 
+/// (team_policies) Changed file transfers policy for team @note Ensure the
+/// `isFileTransfersPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFileTransfersPolicyChangedType *fileTransfersPolicyChanged;
+
+/// (team_policies) Changed folder link restrictions policy for team @note
+/// Ensure the `isFolderLinkRestrictionPolicyChanged` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGFolderLinkRestrictionPolicyChangedType *folderLinkRestrictionPolicyChanged;
+
 /// (team_policies) Enabled/disabled Google single sign-on for team @note Ensure
 /// the `isGoogleSsoChangePolicy` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
@@ -2605,10 +4153,25 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGGroupUserManagementChangePolicyType *groupUserManagementChangePolicy;
 
+/// (team_policies) Changed integration policy for team @note Ensure the
+/// `isIntegrationPolicyChanged` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGIntegrationPolicyChangedType *integrationPolicyChanged;
+
+/// (team_policies) Changed invite accept email policy for team @note Ensure the
+/// `isInviteAcceptanceEmailPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGInviteAcceptanceEmailPolicyChangedType *inviteAcceptanceEmailPolicyChanged;
+
 /// (team_policies) Changed whether users can find team when not invited @note
 /// Ensure the `isMemberRequestsChangePolicy` method returns true before
 /// accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGMemberRequestsChangePolicyType *memberRequestsChangePolicy;
+
+/// (team_policies) Changed member send invite policy for team @note Ensure the
+/// `isMemberSendInvitePolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGMemberSendInvitePolicyChangedType *memberSendInvitePolicyChanged;
 
 /// (team_policies) Added members to member space limit exception list @note
 /// Ensure the `isMemberSpaceLimitsAddException` method returns true before
@@ -2669,6 +4232,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperChangePolicyType *paperChangePolicy;
 
+/// (team_policies) Changed Paper Default Folder Policy setting for team @note
+/// Ensure the `isPaperDefaultFolderPolicyChanged` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperDefaultFolderPolicyChangedType *paperDefaultFolderPolicyChanged;
+
+/// (team_policies) Enabled/disabled Paper Desktop for team @note Ensure the
+/// `isPaperDesktopPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGPaperDesktopPolicyChangedType *paperDesktopPolicyChanged;
+
 /// (team_policies) Added users to Paper-enabled users list @note Ensure the
 /// `isPaperEnabledUsersGroupAddition` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
@@ -2679,15 +4252,57 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPaperEnabledUsersGroupRemovalType *paperEnabledUsersGroupRemoval;
 
+/// (team_policies) Changed team password strength requirements @note Ensure the
+/// `isPasswordStrengthRequirementsChangePolicy` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGPasswordStrengthRequirementsChangePolicyType *passwordStrengthRequirementsChangePolicy;
+
 /// (team_policies) Enabled/disabled ability of team members to permanently
 /// delete content @note Ensure the `isPermanentDeleteChangePolicy` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGPermanentDeleteChangePolicyType *permanentDeleteChangePolicy;
 
+/// (team_policies) Enabled/disabled reseller support @note Ensure the
+/// `isResellerSupportChangePolicy` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGResellerSupportChangePolicyType *resellerSupportChangePolicy;
+
+/// (team_policies) Changed Rewind policy for team @note Ensure the
+/// `isRewindPolicyChanged` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGRewindPolicyChangedType *rewindPolicyChanged;
+
+/// (team_policies) Changed send for signature policy for team @note Ensure the
+/// `isSendForSignaturePolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSendForSignaturePolicyChangedType *sendForSignaturePolicyChanged;
+
 /// (team_policies) Changed whether team members can join shared folders owned
 /// outside team @note Ensure the `isSharingChangeFolderJoinPolicy` method
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSharingChangeFolderJoinPolicyType *sharingChangeFolderJoinPolicy;
+
+/// (team_policies) Changed the allow remove or change expiration policy for the
+/// links shared outside of the team @note Ensure the
+/// `isSharingChangeLinkAllowChangeExpirationPolicy` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGSharingChangeLinkAllowChangeExpirationPolicyType *sharingChangeLinkAllowChangeExpirationPolicy;
+
+/// (team_policies) Changed the default expiration for the links shared outside
+/// of the team @note Ensure the `isSharingChangeLinkDefaultExpirationPolicy`
+/// method returns true before accessing, otherwise a runtime exception will be
+/// raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGSharingChangeLinkDefaultExpirationPolicyType *sharingChangeLinkDefaultExpirationPolicy;
+
+/// (team_policies) Changed the password requirement for the links shared
+/// outside of the team @note Ensure the
+/// `isSharingChangeLinkEnforcePasswordPolicy` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGSharingChangeLinkEnforcePasswordPolicyType *sharingChangeLinkEnforcePasswordPolicy;
 
 /// (team_policies) Changed whether members can share links outside team, and if
 /// links are accessible only by team members or anyone by default @note Ensure
@@ -2715,6 +4330,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGShowcaseChangeExternalSharingPolicyType *showcaseChangeExternalSharingPolicy;
 
+/// (team_policies) Changed automatic Smart Sync setting for team @note Ensure
+/// the `isSmarterSmartSyncPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGSmarterSmartSyncPolicyChangedType *smarterSmartSyncPolicyChanged;
+
 /// (team_policies) Changed default Smart Sync setting for team members @note
 /// Ensure the `isSmartSyncChangePolicy` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
@@ -2735,16 +4355,61 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGSsoChangePolicyType *ssoChangePolicy;
 
+/// (team_policies) Changed team branding policy for team @note Ensure the
+/// `isTeamBrandingPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamBrandingPolicyChangedType *teamBrandingPolicyChanged;
+
+/// (team_policies) Changed App Integrations setting for team @note Ensure the
+/// `isTeamExtensionsPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamExtensionsPolicyChangedType *teamExtensionsPolicyChanged;
+
+/// (team_policies) Enabled/disabled Team Selective Sync for team @note Ensure
+/// the `isTeamSelectiveSyncPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamSelectiveSyncPolicyChangedType *teamSelectiveSyncPolicyChanged;
+
+/// (team_policies) Edited the approved list for sharing externally @note Ensure
+/// the `isTeamSharingWhitelistSubjectsChanged` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamSharingWhitelistSubjectsChangedType *teamSharingWhitelistSubjectsChanged;
+
+/// (team_policies) Added members to two factor authentication exception list
+/// @note Ensure the `isTfaAddException` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTfaAddExceptionType *tfaAddException;
+
 /// (team_policies) Changed two-step verification setting for team @note Ensure
 /// the `isTfaChangePolicy` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGTfaChangePolicyType *tfaChangePolicy;
+
+/// (team_policies) Removed members from two factor authentication exception
+/// list @note Ensure the `isTfaRemoveException` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTfaRemoveExceptionType *tfaRemoveException;
 
 /// (team_policies) Enabled/disabled option for members to link personal Dropbox
 /// account and team account to same computer @note Ensure the
 /// `isTwoAccountChangePolicy` method returns true before accessing, otherwise a
 /// runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGTwoAccountChangePolicyType *twoAccountChangePolicy;
+
+/// (team_policies) Changed team policy for viewer info @note Ensure the
+/// `isViewerInfoPolicyChanged` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGViewerInfoPolicyChangedType *viewerInfoPolicyChanged;
+
+/// (team_policies) Changed watermarking policy for team @note Ensure the
+/// `isWatermarkingPolicyChanged` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGWatermarkingPolicyChangedType *watermarkingPolicyChanged;
+
+/// (team_policies) Changed limit on active sessions per member @note Ensure the
+/// `isWebSessionsChangeActiveSessionLimit` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGWebSessionsChangeActiveSessionLimitType *webSessionsChangeActiveSessionLimit;
 
 /// (team_policies) Changed how long members can stay signed in to Dropbox.com
 /// @note Ensure the `isWebSessionsChangeFixedLengthPolicy` method returns true
@@ -2756,6 +4421,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// returns true before accessing, otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGWebSessionsChangeIdleLengthPolicyType *webSessionsChangeIdleLengthPolicy;
 
+/// (team_profile) Requested data residency migration for team data @note Ensure
+/// the `isDataResidencyMigrationRequestSuccessful` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGDataResidencyMigrationRequestSuccessfulType *dataResidencyMigrationRequestSuccessful;
+
+/// (team_profile) Request for data residency migration for team data has failed
+/// @note Ensure the `isDataResidencyMigrationRequestUnsuccessful` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGDataResidencyMigrationRequestUnsuccessfulType *dataResidencyMigrationRequestUnsuccessful;
+
 /// (team_profile) Merged another team into this team @note Ensure the
 /// `isTeamMergeFrom` method returns true before accessing, otherwise a runtime
 /// exception will be raised.
@@ -2766,10 +4443,20 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGTeamMergeToType *teamMergeTo;
 
+/// (team_profile) Added team background to display on shared link headers @note
+/// Ensure the `isTeamProfileAddBackground` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamProfileAddBackgroundType *teamProfileAddBackground;
+
 /// (team_profile) Added team logo to display on shared link headers @note
 /// Ensure the `isTeamProfileAddLogo` method returns true before accessing,
 /// otherwise a runtime exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGTeamProfileAddLogoType *teamProfileAddLogo;
+
+/// (team_profile) Changed team background displayed on shared link headers
+/// @note Ensure the `isTeamProfileChangeBackground` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamProfileChangeBackgroundType *teamProfileChangeBackground;
 
 /// (team_profile) Changed default language for team @note Ensure the
 /// `isTeamProfileChangeDefaultLanguage` method returns true before accessing,
@@ -2785,6 +4472,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// method returns true before accessing, otherwise a runtime exception will be
 /// raised.
 @property (nonatomic, readonly) DBTEAMLOGTeamProfileChangeNameType *teamProfileChangeName;
+
+/// (team_profile) Removed team background displayed on shared link headers
+/// @note Ensure the `isTeamProfileRemoveBackground` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamProfileRemoveBackgroundType *teamProfileRemoveBackground;
 
 /// (team_profile) Removed team logo displayed on shared link headers @note
 /// Ensure the `isTeamProfileRemoveLogo` method returns true before accessing,
@@ -2826,7 +4518,239 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// exception will be raised.
 @property (nonatomic, readonly) DBTEAMLOGTfaResetType *tfaReset;
 
+/// (trusted_teams) Changed enterprise admin role @note Ensure the
+/// `isChangedEnterpriseAdminRole` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGChangedEnterpriseAdminRoleType *changedEnterpriseAdminRole;
+
+/// (trusted_teams) Changed enterprise-connected team status @note Ensure the
+/// `isChangedEnterpriseConnectedTeamStatus` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGChangedEnterpriseConnectedTeamStatusType *changedEnterpriseConnectedTeamStatus;
+
+/// (trusted_teams) Ended enterprise admin session @note Ensure the
+/// `isEndedEnterpriseAdminSession` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGEndedEnterpriseAdminSessionType *endedEnterpriseAdminSession;
+
+/// (trusted_teams) Ended enterprise admin session (deprecated, replaced by
+/// 'Ended enterprise admin session') @note Ensure the
+/// `isEndedEnterpriseAdminSessionDeprecated` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGEndedEnterpriseAdminSessionDeprecatedType *endedEnterpriseAdminSessionDeprecated;
+
+/// (trusted_teams) Changed who can update a setting @note Ensure the
+/// `isEnterpriseSettingsLocking` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGEnterpriseSettingsLockingType *enterpriseSettingsLocking;
+
+/// (trusted_teams) Changed guest team admin status @note Ensure the
+/// `isGuestAdminChangeStatus` method returns true before accessing, otherwise a
+/// runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGGuestAdminChangeStatusType *guestAdminChangeStatus;
+
+/// (trusted_teams) Started enterprise admin session @note Ensure the
+/// `isStartedEnterpriseAdminSession` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGStartedEnterpriseAdminSessionType *startedEnterpriseAdminSession;
+
+/// (trusted_teams) Accepted a team merge request @note Ensure the
+/// `isTeamMergeRequestAccepted` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamMergeRequestAcceptedType *teamMergeRequestAccepted;
+
+/// (trusted_teams) Accepted a team merge request (deprecated, replaced by
+/// 'Accepted a team merge request') @note Ensure the
+/// `isTeamMergeRequestAcceptedShownToPrimaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestAcceptedShownToPrimaryTeamType *teamMergeRequestAcceptedShownToPrimaryTeam;
+
+/// (trusted_teams) Accepted a team merge request (deprecated, replaced by
+/// 'Accepted a team merge request') @note Ensure the
+/// `isTeamMergeRequestAcceptedShownToSecondaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestAcceptedShownToSecondaryTeamType *teamMergeRequestAcceptedShownToSecondaryTeam;
+
+/// (trusted_teams) Automatically canceled team merge request @note Ensure the
+/// `isTeamMergeRequestAutoCanceled` method returns true before accessing,
+/// otherwise a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamMergeRequestAutoCanceledType *teamMergeRequestAutoCanceled;
+
+/// (trusted_teams) Canceled a team merge request @note Ensure the
+/// `isTeamMergeRequestCanceled` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamMergeRequestCanceledType *teamMergeRequestCanceled;
+
+/// (trusted_teams) Canceled a team merge request (deprecated, replaced by
+/// 'Canceled a team merge request') @note Ensure the
+/// `isTeamMergeRequestCanceledShownToPrimaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestCanceledShownToPrimaryTeamType *teamMergeRequestCanceledShownToPrimaryTeam;
+
+/// (trusted_teams) Canceled a team merge request (deprecated, replaced by
+/// 'Canceled a team merge request') @note Ensure the
+/// `isTeamMergeRequestCanceledShownToSecondaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestCanceledShownToSecondaryTeamType *teamMergeRequestCanceledShownToSecondaryTeam;
+
+/// (trusted_teams) Team merge request expired @note Ensure the
+/// `isTeamMergeRequestExpired` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamMergeRequestExpiredType *teamMergeRequestExpired;
+
+/// (trusted_teams) Team merge request expired (deprecated, replaced by 'Team
+/// merge request expired') @note Ensure the
+/// `isTeamMergeRequestExpiredShownToPrimaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestExpiredShownToPrimaryTeamType *teamMergeRequestExpiredShownToPrimaryTeam;
+
+/// (trusted_teams) Team merge request expired (deprecated, replaced by 'Team
+/// merge request expired') @note Ensure the
+/// `isTeamMergeRequestExpiredShownToSecondaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestExpiredShownToSecondaryTeamType *teamMergeRequestExpiredShownToSecondaryTeam;
+
+/// (trusted_teams) Rejected a team merge request (deprecated, no longer logged)
+/// @note Ensure the `isTeamMergeRequestRejectedShownToPrimaryTeam` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestRejectedShownToPrimaryTeamType *teamMergeRequestRejectedShownToPrimaryTeam;
+
+/// (trusted_teams) Rejected a team merge request (deprecated, no longer logged)
+/// @note Ensure the `isTeamMergeRequestRejectedShownToSecondaryTeam` method
+/// returns true before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestRejectedShownToSecondaryTeamType *teamMergeRequestRejectedShownToSecondaryTeam;
+
+/// (trusted_teams) Sent a team merge request reminder @note Ensure the
+/// `isTeamMergeRequestReminder` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamMergeRequestReminderType *teamMergeRequestReminder;
+
+/// (trusted_teams) Sent a team merge request reminder (deprecated, replaced by
+/// 'Sent a team merge request reminder') @note Ensure the
+/// `isTeamMergeRequestReminderShownToPrimaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestReminderShownToPrimaryTeamType *teamMergeRequestReminderShownToPrimaryTeam;
+
+/// (trusted_teams) Sent a team merge request reminder (deprecated, replaced by
+/// 'Sent a team merge request reminder') @note Ensure the
+/// `isTeamMergeRequestReminderShownToSecondaryTeam` method returns true before
+/// accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestReminderShownToSecondaryTeamType *teamMergeRequestReminderShownToSecondaryTeam;
+
+/// (trusted_teams) Canceled the team merge @note Ensure the
+/// `isTeamMergeRequestRevoked` method returns true before accessing, otherwise
+/// a runtime exception will be raised.
+@property (nonatomic, readonly) DBTEAMLOGTeamMergeRequestRevokedType *teamMergeRequestRevoked;
+
+/// (trusted_teams) Requested to merge their Dropbox team into yours @note
+/// Ensure the `isTeamMergeRequestSentShownToPrimaryTeam` method returns true
+/// before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestSentShownToPrimaryTeamType *teamMergeRequestSentShownToPrimaryTeam;
+
+/// (trusted_teams) Requested to merge your team into another Dropbox team @note
+/// Ensure the `isTeamMergeRequestSentShownToSecondaryTeam` method returns true
+/// before accessing, otherwise a runtime exception will be raised.
+@property (nonatomic, readonly)
+    DBTEAMLOGTeamMergeRequestSentShownToSecondaryTeamType *teamMergeRequestSentShownToSecondaryTeam;
+
 #pragma mark - Constructors
+
+///
+/// Initializes union class with tag state of
+/// "admin_alerting_alert_state_changed".
+///
+/// Description of the "admin_alerting_alert_state_changed" tag state:
+/// (admin_alerting) Changed an alert state
+///
+/// @param adminAlertingAlertStateChanged (admin_alerting) Changed an alert
+/// state
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAdminAlertingAlertStateChanged:
+    (DBTEAMLOGAdminAlertingAlertStateChangedType *)adminAlertingAlertStateChanged;
+
+///
+/// Initializes union class with tag state of
+/// "admin_alerting_changed_alert_config".
+///
+/// Description of the "admin_alerting_changed_alert_config" tag state:
+/// (admin_alerting) Changed an alert setting
+///
+/// @param adminAlertingChangedAlertConfig (admin_alerting) Changed an alert
+/// setting
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAdminAlertingChangedAlertConfig:
+    (DBTEAMLOGAdminAlertingChangedAlertConfigType *)adminAlertingChangedAlertConfig;
+
+///
+/// Initializes union class with tag state of "admin_alerting_triggered_alert".
+///
+/// Description of the "admin_alerting_triggered_alert" tag state:
+/// (admin_alerting) Triggered security alert
+///
+/// @param adminAlertingTriggeredAlert (admin_alerting) Triggered security alert
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAdminAlertingTriggeredAlert:
+    (DBTEAMLOGAdminAlertingTriggeredAlertType *)adminAlertingTriggeredAlert;
+
+///
+/// Initializes union class with tag state of
+/// "ransomware_restore_process_completed".
+///
+/// Description of the "ransomware_restore_process_completed" tag state:
+/// (admin_alerting) Completed ransomware restore process
+///
+/// @param ransomwareRestoreProcessCompleted (admin_alerting) Completed
+/// ransomware restore process
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRansomwareRestoreProcessCompleted:
+    (DBTEAMLOGRansomwareRestoreProcessCompletedType *)ransomwareRestoreProcessCompleted;
+
+///
+/// Initializes union class with tag state of
+/// "ransomware_restore_process_started".
+///
+/// Description of the "ransomware_restore_process_started" tag state:
+/// (admin_alerting) Started ransomware restore process
+///
+/// @param ransomwareRestoreProcessStarted (admin_alerting) Started ransomware
+/// restore process
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRansomwareRestoreProcessStarted:
+    (DBTEAMLOGRansomwareRestoreProcessStartedType *)ransomwareRestoreProcessStarted;
+
+///
+/// Initializes union class with tag state of "app_blocked_by_permissions".
+///
+/// Description of the "app_blocked_by_permissions" tag state: (apps) Failed to
+/// connect app for member
+///
+/// @param appBlockedByPermissions (apps) Failed to connect app for member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAppBlockedByPermissions:(DBTEAMLOGAppBlockedByPermissionsType *)appBlockedByPermissions;
 
 ///
 /// Initializes union class with tag state of "app_link_team".
@@ -2874,6 +4798,30 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithAppUnlinkUser:(DBTEAMLOGAppUnlinkUserType *)appUnlinkUser;
 
 ///
+/// Initializes union class with tag state of "integration_connected".
+///
+/// Description of the "integration_connected" tag state: (apps) Connected
+/// integration for member
+///
+/// @param integrationConnected (apps) Connected integration for member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithIntegrationConnected:(DBTEAMLOGIntegrationConnectedType *)integrationConnected;
+
+///
+/// Initializes union class with tag state of "integration_disconnected".
+///
+/// Description of the "integration_disconnected" tag state: (apps) Disconnected
+/// integration for member
+///
+/// @param integrationDisconnected (apps) Disconnected integration for member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithIntegrationDisconnected:(DBTEAMLOGIntegrationDisconnectedType *)integrationDisconnected;
+
+///
 /// Initializes union class with tag state of "file_add_comment".
 ///
 /// Description of the "file_add_comment" tag state: (comments) Added file
@@ -2911,6 +4859,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFileDeleteComment:(DBTEAMLOGFileDeleteCommentType *)fileDeleteComment;
+
+///
+/// Initializes union class with tag state of "file_edit_comment".
+///
+/// Description of the "file_edit_comment" tag state: (comments) Edited file
+/// comment
+///
+/// @param fileEditComment (comments) Edited file comment
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileEditComment:(DBTEAMLOGFileEditCommentType *)fileEditComment;
 
 ///
 /// Initializes union class with tag state of "file_like_comment".
@@ -2961,6 +4921,312 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFileUnresolveComment:(DBTEAMLOGFileUnresolveCommentType *)fileUnresolveComment;
+
+///
+/// Initializes union class with tag state of "governance_policy_add_folders".
+///
+/// Description of the "governance_policy_add_folders" tag state:
+/// (data_governance) Added folders to policy
+///
+/// @param governancePolicyAddFolders (data_governance) Added folders to policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyAddFolders:
+    (DBTEAMLOGGovernancePolicyAddFoldersType *)governancePolicyAddFolders;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_add_folder_failed".
+///
+/// Description of the "governance_policy_add_folder_failed" tag state:
+/// (data_governance) Couldn't add a folder to a policy
+///
+/// @param governancePolicyAddFolderFailed (data_governance) Couldn't add a
+/// folder to a policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyAddFolderFailed:
+    (DBTEAMLOGGovernancePolicyAddFolderFailedType *)governancePolicyAddFolderFailed;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_content_disposed".
+///
+/// Description of the "governance_policy_content_disposed" tag state:
+/// (data_governance) Content disposed
+///
+/// @param governancePolicyContentDisposed (data_governance) Content disposed
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyContentDisposed:
+    (DBTEAMLOGGovernancePolicyContentDisposedType *)governancePolicyContentDisposed;
+
+///
+/// Initializes union class with tag state of "governance_policy_create".
+///
+/// Description of the "governance_policy_create" tag state: (data_governance)
+/// Activated a new policy
+///
+/// @param governancePolicyCreate (data_governance) Activated a new policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyCreate:(DBTEAMLOGGovernancePolicyCreateType *)governancePolicyCreate;
+
+///
+/// Initializes union class with tag state of "governance_policy_delete".
+///
+/// Description of the "governance_policy_delete" tag state: (data_governance)
+/// Deleted a policy
+///
+/// @param governancePolicyDelete (data_governance) Deleted a policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyDelete:(DBTEAMLOGGovernancePolicyDeleteType *)governancePolicyDelete;
+
+///
+/// Initializes union class with tag state of "governance_policy_edit_details".
+///
+/// Description of the "governance_policy_edit_details" tag state:
+/// (data_governance) Edited policy
+///
+/// @param governancePolicyEditDetails (data_governance) Edited policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyEditDetails:
+    (DBTEAMLOGGovernancePolicyEditDetailsType *)governancePolicyEditDetails;
+
+///
+/// Initializes union class with tag state of "governance_policy_edit_duration".
+///
+/// Description of the "governance_policy_edit_duration" tag state:
+/// (data_governance) Changed policy duration
+///
+/// @param governancePolicyEditDuration (data_governance) Changed policy
+/// duration
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyEditDuration:
+    (DBTEAMLOGGovernancePolicyEditDurationType *)governancePolicyEditDuration;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_export_created".
+///
+/// Description of the "governance_policy_export_created" tag state:
+/// (data_governance) Created a policy download
+///
+/// @param governancePolicyExportCreated (data_governance) Created a policy
+/// download
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyExportCreated:
+    (DBTEAMLOGGovernancePolicyExportCreatedType *)governancePolicyExportCreated;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_export_removed".
+///
+/// Description of the "governance_policy_export_removed" tag state:
+/// (data_governance) Removed a policy download
+///
+/// @param governancePolicyExportRemoved (data_governance) Removed a policy
+/// download
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyExportRemoved:
+    (DBTEAMLOGGovernancePolicyExportRemovedType *)governancePolicyExportRemoved;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_remove_folders".
+///
+/// Description of the "governance_policy_remove_folders" tag state:
+/// (data_governance) Removed folders from policy
+///
+/// @param governancePolicyRemoveFolders (data_governance) Removed folders from
+/// policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyRemoveFolders:
+    (DBTEAMLOGGovernancePolicyRemoveFoldersType *)governancePolicyRemoveFolders;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_report_created".
+///
+/// Description of the "governance_policy_report_created" tag state:
+/// (data_governance) Created a summary report for a policy
+///
+/// @param governancePolicyReportCreated (data_governance) Created a summary
+/// report for a policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyReportCreated:
+    (DBTEAMLOGGovernancePolicyReportCreatedType *)governancePolicyReportCreated;
+
+///
+/// Initializes union class with tag state of
+/// "governance_policy_zip_part_downloaded".
+///
+/// Description of the "governance_policy_zip_part_downloaded" tag state:
+/// (data_governance) Downloaded content from a policy
+///
+/// @param governancePolicyZipPartDownloaded (data_governance) Downloaded
+/// content from a policy
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGovernancePolicyZipPartDownloaded:
+    (DBTEAMLOGGovernancePolicyZipPartDownloadedType *)governancePolicyZipPartDownloaded;
+
+///
+/// Initializes union class with tag state of "legal_holds_activate_a_hold".
+///
+/// Description of the "legal_holds_activate_a_hold" tag state:
+/// (data_governance) Activated a hold
+///
+/// @param legalHoldsActivateAHold (data_governance) Activated a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsActivateAHold:(DBTEAMLOGLegalHoldsActivateAHoldType *)legalHoldsActivateAHold;
+
+///
+/// Initializes union class with tag state of "legal_holds_add_members".
+///
+/// Description of the "legal_holds_add_members" tag state: (data_governance)
+/// Added members to a hold
+///
+/// @param legalHoldsAddMembers (data_governance) Added members to a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsAddMembers:(DBTEAMLOGLegalHoldsAddMembersType *)legalHoldsAddMembers;
+
+///
+/// Initializes union class with tag state of "legal_holds_change_hold_details".
+///
+/// Description of the "legal_holds_change_hold_details" tag state:
+/// (data_governance) Edited details for a hold
+///
+/// @param legalHoldsChangeHoldDetails (data_governance) Edited details for a
+/// hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsChangeHoldDetails:
+    (DBTEAMLOGLegalHoldsChangeHoldDetailsType *)legalHoldsChangeHoldDetails;
+
+///
+/// Initializes union class with tag state of "legal_holds_change_hold_name".
+///
+/// Description of the "legal_holds_change_hold_name" tag state:
+/// (data_governance) Renamed a hold
+///
+/// @param legalHoldsChangeHoldName (data_governance) Renamed a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsChangeHoldName:(DBTEAMLOGLegalHoldsChangeHoldNameType *)legalHoldsChangeHoldName;
+
+///
+/// Initializes union class with tag state of "legal_holds_export_a_hold".
+///
+/// Description of the "legal_holds_export_a_hold" tag state: (data_governance)
+/// Exported hold
+///
+/// @param legalHoldsExportAHold (data_governance) Exported hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsExportAHold:(DBTEAMLOGLegalHoldsExportAHoldType *)legalHoldsExportAHold;
+
+///
+/// Initializes union class with tag state of "legal_holds_export_cancelled".
+///
+/// Description of the "legal_holds_export_cancelled" tag state:
+/// (data_governance) Canceled export for a hold
+///
+/// @param legalHoldsExportCancelled (data_governance) Canceled export for a
+/// hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsExportCancelled:(DBTEAMLOGLegalHoldsExportCancelledType *)legalHoldsExportCancelled;
+
+///
+/// Initializes union class with tag state of "legal_holds_export_downloaded".
+///
+/// Description of the "legal_holds_export_downloaded" tag state:
+/// (data_governance) Downloaded export for a hold
+///
+/// @param legalHoldsExportDownloaded (data_governance) Downloaded export for a
+/// hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsExportDownloaded:
+    (DBTEAMLOGLegalHoldsExportDownloadedType *)legalHoldsExportDownloaded;
+
+///
+/// Initializes union class with tag state of "legal_holds_export_removed".
+///
+/// Description of the "legal_holds_export_removed" tag state: (data_governance)
+/// Removed export for a hold
+///
+/// @param legalHoldsExportRemoved (data_governance) Removed export for a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsExportRemoved:(DBTEAMLOGLegalHoldsExportRemovedType *)legalHoldsExportRemoved;
+
+///
+/// Initializes union class with tag state of "legal_holds_release_a_hold".
+///
+/// Description of the "legal_holds_release_a_hold" tag state: (data_governance)
+/// Released a hold
+///
+/// @param legalHoldsReleaseAHold (data_governance) Released a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsReleaseAHold:(DBTEAMLOGLegalHoldsReleaseAHoldType *)legalHoldsReleaseAHold;
+
+///
+/// Initializes union class with tag state of "legal_holds_remove_members".
+///
+/// Description of the "legal_holds_remove_members" tag state: (data_governance)
+/// Removed members from a hold
+///
+/// @param legalHoldsRemoveMembers (data_governance) Removed members from a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsRemoveMembers:(DBTEAMLOGLegalHoldsRemoveMembersType *)legalHoldsRemoveMembers;
+
+///
+/// Initializes union class with tag state of "legal_holds_report_a_hold".
+///
+/// Description of the "legal_holds_report_a_hold" tag state: (data_governance)
+/// Created a summary report for a hold
+///
+/// @param legalHoldsReportAHold (data_governance) Created a summary report for
+/// a hold
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLegalHoldsReportAHold:(DBTEAMLOGLegalHoldsReportAHoldType *)legalHoldsReportAHold;
 
 ///
 /// Initializes union class with tag state of "device_change_ip_desktop".
@@ -3078,6 +5344,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithDeviceManagementEnabled:(DBTEAMLOGDeviceManagementEnabledType *)deviceManagementEnabled;
 
 ///
+/// Initializes union class with tag state of
+/// "device_sync_backup_status_changed".
+///
+/// Description of the "device_sync_backup_status_changed" tag state: (devices)
+/// Enabled/disabled backup for computer
+///
+/// @param deviceSyncBackupStatusChanged (devices) Enabled/disabled backup for
+/// computer
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDeviceSyncBackupStatusChanged:
+    (DBTEAMLOGDeviceSyncBackupStatusChangedType *)deviceSyncBackupStatusChanged;
+
+///
 /// Initializes union class with tag state of "device_unlink".
 ///
 /// Description of the "device_unlink" tag state: (devices) Disconnected device
@@ -3089,17 +5370,74 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithDeviceUnlink:(DBTEAMLOGDeviceUnlinkType *)deviceUnlink;
 
 ///
+/// Initializes union class with tag state of "dropbox_passwords_exported".
+///
+/// Description of the "dropbox_passwords_exported" tag state: (devices)
+/// Exported passwords
+///
+/// @param dropboxPasswordsExported (devices) Exported passwords
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDropboxPasswordsExported:(DBTEAMLOGDropboxPasswordsExportedType *)dropboxPasswordsExported;
+
+///
+/// Initializes union class with tag state of
+/// "dropbox_passwords_new_device_enrolled".
+///
+/// Description of the "dropbox_passwords_new_device_enrolled" tag state:
+/// (devices) Enrolled new Dropbox Passwords device
+///
+/// @param dropboxPasswordsNewDeviceEnrolled (devices) Enrolled new Dropbox
+/// Passwords device
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDropboxPasswordsNewDeviceEnrolled:
+    (DBTEAMLOGDropboxPasswordsNewDeviceEnrolledType *)dropboxPasswordsNewDeviceEnrolled;
+
+///
 /// Initializes union class with tag state of "emm_refresh_auth_token".
 ///
 /// Description of the "emm_refresh_auth_token" tag state: (devices) Refreshed
-/// auth token used for setting up enterprise mobility management
+/// auth token used for setting up EMM
 ///
 /// @param emmRefreshAuthToken (devices) Refreshed auth token used for setting
-/// up enterprise mobility management
+/// up EMM
 ///
 /// @return An initialized instance.
 ///
 - (instancetype)initWithEmmRefreshAuthToken:(DBTEAMLOGEmmRefreshAuthTokenType *)emmRefreshAuthToken;
+
+///
+/// Initializes union class with tag state of
+/// "external_drive_backup_eligibility_status_checked".
+///
+/// Description of the "external_drive_backup_eligibility_status_checked" tag
+/// state: (devices) Checked external drive backup eligibility status
+///
+/// @param externalDriveBackupEligibilityStatusChecked (devices) Checked
+/// external drive backup eligibility status
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithExternalDriveBackupEligibilityStatusChecked:
+    (DBTEAMLOGExternalDriveBackupEligibilityStatusCheckedType *)externalDriveBackupEligibilityStatusChecked;
+
+///
+/// Initializes union class with tag state of
+/// "external_drive_backup_status_changed".
+///
+/// Description of the "external_drive_backup_status_changed" tag state:
+/// (devices) Modified external drive backup
+///
+/// @param externalDriveBackupStatusChanged (devices) Modified external drive
+/// backup
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithExternalDriveBackupStatusChanged:
+    (DBTEAMLOGExternalDriveBackupStatusChangedType *)externalDriveBackupStatusChanged;
 
 ///
 /// Initializes union class with tag state of
@@ -3135,10 +5473,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "account_capture_notification_emails_sent".
 ///
 /// Description of the "account_capture_notification_emails_sent" tag state:
-/// (domains) Sent proactive account capture email to all unmanaged members
+/// (domains) Sent account capture email to all unmanaged members
 ///
-/// @param accountCaptureNotificationEmailsSent (domains) Sent proactive account
-/// capture email to all unmanaged members
+/// @param accountCaptureNotificationEmailsSent (domains) Sent account capture
+/// email to all unmanaged members
 ///
 /// @return An initialized instance.
 ///
@@ -3323,6 +5661,114 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithEnabledDomainInvites:(DBTEAMLOGEnabledDomainInvitesType *)enabledDomainInvites;
 
 ///
+/// Initializes union class with tag state of
+/// "team_encryption_key_cancel_key_deletion".
+///
+/// Description of the "team_encryption_key_cancel_key_deletion" tag state:
+/// (encryption) Canceled team encryption key deletion
+///
+/// @param teamEncryptionKeyCancelKeyDeletion (encryption) Canceled team
+/// encryption key deletion
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyCancelKeyDeletion:
+    (DBTEAMLOGTeamEncryptionKeyCancelKeyDeletionType *)teamEncryptionKeyCancelKeyDeletion;
+
+///
+/// Initializes union class with tag state of "team_encryption_key_create_key".
+///
+/// Description of the "team_encryption_key_create_key" tag state: (encryption)
+/// Created team encryption key
+///
+/// @param teamEncryptionKeyCreateKey (encryption) Created team encryption key
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyCreateKey:
+    (DBTEAMLOGTeamEncryptionKeyCreateKeyType *)teamEncryptionKeyCreateKey;
+
+///
+/// Initializes union class with tag state of "team_encryption_key_delete_key".
+///
+/// Description of the "team_encryption_key_delete_key" tag state: (encryption)
+/// Deleted team encryption key
+///
+/// @param teamEncryptionKeyDeleteKey (encryption) Deleted team encryption key
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyDeleteKey:
+    (DBTEAMLOGTeamEncryptionKeyDeleteKeyType *)teamEncryptionKeyDeleteKey;
+
+///
+/// Initializes union class with tag state of "team_encryption_key_disable_key".
+///
+/// Description of the "team_encryption_key_disable_key" tag state: (encryption)
+/// Disabled team encryption key
+///
+/// @param teamEncryptionKeyDisableKey (encryption) Disabled team encryption key
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyDisableKey:
+    (DBTEAMLOGTeamEncryptionKeyDisableKeyType *)teamEncryptionKeyDisableKey;
+
+///
+/// Initializes union class with tag state of "team_encryption_key_enable_key".
+///
+/// Description of the "team_encryption_key_enable_key" tag state: (encryption)
+/// Enabled team encryption key
+///
+/// @param teamEncryptionKeyEnableKey (encryption) Enabled team encryption key
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyEnableKey:
+    (DBTEAMLOGTeamEncryptionKeyEnableKeyType *)teamEncryptionKeyEnableKey;
+
+///
+/// Initializes union class with tag state of "team_encryption_key_rotate_key".
+///
+/// Description of the "team_encryption_key_rotate_key" tag state: (encryption)
+/// Rotated team encryption key (deprecated, no longer logged)
+///
+/// @param teamEncryptionKeyRotateKey (encryption) Rotated team encryption key
+/// (deprecated, no longer logged)
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyRotateKey:
+    (DBTEAMLOGTeamEncryptionKeyRotateKeyType *)teamEncryptionKeyRotateKey;
+
+///
+/// Initializes union class with tag state of
+/// "team_encryption_key_schedule_key_deletion".
+///
+/// Description of the "team_encryption_key_schedule_key_deletion" tag state:
+/// (encryption) Scheduled encryption key deletion
+///
+/// @param teamEncryptionKeyScheduleKeyDeletion (encryption) Scheduled
+/// encryption key deletion
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamEncryptionKeyScheduleKeyDeletion:
+    (DBTEAMLOGTeamEncryptionKeyScheduleKeyDeletionType *)teamEncryptionKeyScheduleKeyDeletion;
+
+///
+/// Initializes union class with tag state of "apply_naming_convention".
+///
+/// Description of the "apply_naming_convention" tag state: (file_operations)
+/// Applied naming convention
+///
+/// @param applyNamingConvention (file_operations) Applied naming convention
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithApplyNamingConvention:(DBTEAMLOGApplyNamingConventionType *)applyNamingConvention;
+
+///
 /// Initializes union class with tag state of "create_folder".
 ///
 /// Description of the "create_folder" tag state: (file_operations) Created
@@ -3346,6 +5792,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFileAdd:(DBTEAMLOGFileAddType *)fileAdd;
+
+///
+/// Initializes union class with tag state of "file_add_from_automation".
+///
+/// Description of the "file_add_from_automation" tag state: (file_operations)
+/// Added files and/or folders from automation
+///
+/// @param fileAddFromAutomation (file_operations) Added files and/or folders
+/// from automation
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileAddFromAutomation:(DBTEAMLOGFileAddFromAutomationType *)fileAddFromAutomation;
 
 ///
 /// Initializes union class with tag state of "file_copy".
@@ -3406,6 +5865,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFileGetCopyReference:(DBTEAMLOGFileGetCopyReferenceType *)fileGetCopyReference;
+
+///
+/// Initializes union class with tag state of
+/// "file_locking_lock_status_changed".
+///
+/// Description of the "file_locking_lock_status_changed" tag state:
+/// (file_operations) Locked/unlocked editing for a file
+///
+/// @param fileLockingLockStatusChanged (file_operations) Locked/unlocked
+/// editing for a file
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileLockingLockStatusChanged:
+    (DBTEAMLOGFileLockingLockStatusChangedType *)fileLockingLockStatusChanged;
 
 ///
 /// Initializes union class with tag state of "file_move".
@@ -3506,6 +5980,184 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithFileSaveCopyReference:(DBTEAMLOGFileSaveCopyReferenceType *)fileSaveCopyReference;
 
 ///
+/// Initializes union class with tag state of
+/// "folder_overview_description_changed".
+///
+/// Description of the "folder_overview_description_changed" tag state:
+/// (file_operations) Updated folder overview
+///
+/// @param folderOverviewDescriptionChanged (file_operations) Updated folder
+/// overview
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFolderOverviewDescriptionChanged:
+    (DBTEAMLOGFolderOverviewDescriptionChangedType *)folderOverviewDescriptionChanged;
+
+///
+/// Initializes union class with tag state of "folder_overview_item_pinned".
+///
+/// Description of the "folder_overview_item_pinned" tag state:
+/// (file_operations) Pinned item to folder overview
+///
+/// @param folderOverviewItemPinned (file_operations) Pinned item to folder
+/// overview
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFolderOverviewItemPinned:(DBTEAMLOGFolderOverviewItemPinnedType *)folderOverviewItemPinned;
+
+///
+/// Initializes union class with tag state of "folder_overview_item_unpinned".
+///
+/// Description of the "folder_overview_item_unpinned" tag state:
+/// (file_operations) Unpinned item from folder overview
+///
+/// @param folderOverviewItemUnpinned (file_operations) Unpinned item from
+/// folder overview
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFolderOverviewItemUnpinned:
+    (DBTEAMLOGFolderOverviewItemUnpinnedType *)folderOverviewItemUnpinned;
+
+///
+/// Initializes union class with tag state of "object_label_added".
+///
+/// Description of the "object_label_added" tag state: (file_operations) Added a
+/// label
+///
+/// @param objectLabelAdded (file_operations) Added a label
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithObjectLabelAdded:(DBTEAMLOGObjectLabelAddedType *)objectLabelAdded;
+
+///
+/// Initializes union class with tag state of "object_label_removed".
+///
+/// Description of the "object_label_removed" tag state: (file_operations)
+/// Removed a label
+///
+/// @param objectLabelRemoved (file_operations) Removed a label
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithObjectLabelRemoved:(DBTEAMLOGObjectLabelRemovedType *)objectLabelRemoved;
+
+///
+/// Initializes union class with tag state of "object_label_updated_value".
+///
+/// Description of the "object_label_updated_value" tag state: (file_operations)
+/// Updated a label's value
+///
+/// @param objectLabelUpdatedValue (file_operations) Updated a label's value
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithObjectLabelUpdatedValue:(DBTEAMLOGObjectLabelUpdatedValueType *)objectLabelUpdatedValue;
+
+///
+/// Initializes union class with tag state of "organize_folder_with_tidy".
+///
+/// Description of the "organize_folder_with_tidy" tag state: (file_operations)
+/// Organized a folder with multi-file organize
+///
+/// @param organizeFolderWithTidy (file_operations) Organized a folder with
+/// multi-file organize
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithOrganizeFolderWithTidy:(DBTEAMLOGOrganizeFolderWithTidyType *)organizeFolderWithTidy;
+
+///
+/// Initializes union class with tag state of "replay_file_delete".
+///
+/// Description of the "replay_file_delete" tag state: (file_operations) Deleted
+/// files in Replay
+///
+/// @param replayFileDelete (file_operations) Deleted files in Replay
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithReplayFileDelete:(DBTEAMLOGReplayFileDeleteType *)replayFileDelete;
+
+///
+/// Initializes union class with tag state of "rewind_folder".
+///
+/// Description of the "rewind_folder" tag state: (file_operations) Rewound a
+/// folder
+///
+/// @param rewindFolder (file_operations) Rewound a folder
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRewindFolder:(DBTEAMLOGRewindFolderType *)rewindFolder;
+
+///
+/// Initializes union class with tag state of "undo_naming_convention".
+///
+/// Description of the "undo_naming_convention" tag state: (file_operations)
+/// Reverted naming convention
+///
+/// @param undoNamingConvention (file_operations) Reverted naming convention
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUndoNamingConvention:(DBTEAMLOGUndoNamingConventionType *)undoNamingConvention;
+
+///
+/// Initializes union class with tag state of "undo_organize_folder_with_tidy".
+///
+/// Description of the "undo_organize_folder_with_tidy" tag state:
+/// (file_operations) Removed multi-file organize
+///
+/// @param undoOrganizeFolderWithTidy (file_operations) Removed multi-file
+/// organize
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUndoOrganizeFolderWithTidy:
+    (DBTEAMLOGUndoOrganizeFolderWithTidyType *)undoOrganizeFolderWithTidy;
+
+///
+/// Initializes union class with tag state of "user_tags_added".
+///
+/// Description of the "user_tags_added" tag state: (file_operations) Tagged a
+/// file
+///
+/// @param userTagsAdded (file_operations) Tagged a file
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUserTagsAdded:(DBTEAMLOGUserTagsAddedType *)userTagsAdded;
+
+///
+/// Initializes union class with tag state of "user_tags_removed".
+///
+/// Description of the "user_tags_removed" tag state: (file_operations) Removed
+/// tags
+///
+/// @param userTagsRemoved (file_operations) Removed tags
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithUserTagsRemoved:(DBTEAMLOGUserTagsRemovedType *)userTagsRemoved;
+
+///
+/// Initializes union class with tag state of "email_ingest_receive_file".
+///
+/// Description of the "email_ingest_receive_file" tag state: (file_requests)
+/// Received files via Email to Dropbox
+///
+/// @param emailIngestReceiveFile (file_requests) Received files via Email to
+/// Dropbox
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEmailIngestReceiveFile:(DBTEAMLOGEmailIngestReceiveFileType *)emailIngestReceiveFile;
+
+///
 /// Initializes union class with tag state of "file_request_change".
 ///
 /// Description of the "file_request_change" tag state: (file_requests) Changed
@@ -3540,6 +6192,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFileRequestCreate:(DBTEAMLOGFileRequestCreateType *)fileRequestCreate;
+
+///
+/// Initializes union class with tag state of "file_request_delete".
+///
+/// Description of the "file_request_delete" tag state: (file_requests) Delete
+/// file request
+///
+/// @param fileRequestDelete (file_requests) Delete file request
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileRequestDelete:(DBTEAMLOGFileRequestDeleteType *)fileRequestDelete;
 
 ///
 /// Initializes union class with tag state of "file_request_receive_file".
@@ -3711,6 +6375,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithGroupRename:(DBTEAMLOGGroupRenameType *)groupRename;
 
 ///
+/// Initializes union class with tag state of "account_lock_or_unlocked".
+///
+/// Description of the "account_lock_or_unlocked" tag state: (logins)
+/// Unlocked/locked account after failed sign in attempts
+///
+/// @param accountLockOrUnlocked (logins) Unlocked/locked account after failed
+/// sign in attempts
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAccountLockOrUnlocked:(DBTEAMLOGAccountLockOrUnlockedType *)accountLockOrUnlocked;
+
+///
 /// Initializes union class with tag state of "emm_error".
 ///
 /// Description of the "emm_error" tag state: (logins) Failed to sign in via EMM
@@ -3722,6 +6399,36 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithEmmError:(DBTEAMLOGEmmErrorType *)emmError;
+
+///
+/// Initializes union class with tag state of
+/// "guest_admin_signed_in_via_trusted_teams".
+///
+/// Description of the "guest_admin_signed_in_via_trusted_teams" tag state:
+/// (logins) Started trusted team admin session
+///
+/// @param guestAdminSignedInViaTrustedTeams (logins) Started trusted team admin
+/// session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGuestAdminSignedInViaTrustedTeams:
+    (DBTEAMLOGGuestAdminSignedInViaTrustedTeamsType *)guestAdminSignedInViaTrustedTeams;
+
+///
+/// Initializes union class with tag state of
+/// "guest_admin_signed_out_via_trusted_teams".
+///
+/// Description of the "guest_admin_signed_out_via_trusted_teams" tag state:
+/// (logins) Ended trusted team admin session
+///
+/// @param guestAdminSignedOutViaTrustedTeams (logins) Ended trusted team admin
+/// session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGuestAdminSignedOutViaTrustedTeams:
+    (DBTEAMLOGGuestAdminSignedOutViaTrustedTeamsType *)guestAdminSignedOutViaTrustedTeams;
 
 ///
 /// Initializes union class with tag state of "login_fail".
@@ -3819,6 +6526,67 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithSsoError:(DBTEAMLOGSsoErrorType *)ssoError;
 
 ///
+/// Initializes union class with tag state of "backup_admin_invitation_sent".
+///
+/// Description of the "backup_admin_invitation_sent" tag state: (members)
+/// Invited members to activate Backup
+///
+/// @param backupAdminInvitationSent (members) Invited members to activate
+/// Backup
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBackupAdminInvitationSent:(DBTEAMLOGBackupAdminInvitationSentType *)backupAdminInvitationSent;
+
+///
+/// Initializes union class with tag state of "backup_invitation_opened".
+///
+/// Description of the "backup_invitation_opened" tag state: (members) Opened
+/// Backup invite
+///
+/// @param backupInvitationOpened (members) Opened Backup invite
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBackupInvitationOpened:(DBTEAMLOGBackupInvitationOpenedType *)backupInvitationOpened;
+
+///
+/// Initializes union class with tag state of "create_team_invite_link".
+///
+/// Description of the "create_team_invite_link" tag state: (members) Created
+/// team invite link
+///
+/// @param createTeamInviteLink (members) Created team invite link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCreateTeamInviteLink:(DBTEAMLOGCreateTeamInviteLinkType *)createTeamInviteLink;
+
+///
+/// Initializes union class with tag state of "delete_team_invite_link".
+///
+/// Description of the "delete_team_invite_link" tag state: (members) Deleted
+/// team invite link
+///
+/// @param deleteTeamInviteLink (members) Deleted team invite link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDeleteTeamInviteLink:(DBTEAMLOGDeleteTeamInviteLinkType *)deleteTeamInviteLink;
+
+///
+/// Initializes union class with tag state of "member_add_external_id".
+///
+/// Description of the "member_add_external_id" tag state: (members) Added an
+/// external ID for team member
+///
+/// @param memberAddExternalId (members) Added an external ID for team member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberAddExternalId:(DBTEAMLOGMemberAddExternalIdType *)memberAddExternalId;
+
+///
 /// Initializes union class with tag state of "member_add_name".
 ///
 /// Description of the "member_add_name" tag state: (members) Added team member
@@ -3855,6 +6623,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithMemberChangeEmail:(DBTEAMLOGMemberChangeEmailType *)memberChangeEmail;
 
 ///
+/// Initializes union class with tag state of "member_change_external_id".
+///
+/// Description of the "member_change_external_id" tag state: (members) Changed
+/// the external ID for team member
+///
+/// @param memberChangeExternalId (members) Changed the external ID for team
+/// member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberChangeExternalId:(DBTEAMLOGMemberChangeExternalIdType *)memberChangeExternalId;
+
+///
 /// Initializes union class with tag state of "member_change_membership_type".
 ///
 /// Description of the "member_change_membership_type" tag state: (members)
@@ -3882,6 +6663,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithMemberChangeName:(DBTEAMLOGMemberChangeNameType *)memberChangeName;
 
 ///
+/// Initializes union class with tag state of "member_change_reseller_role".
+///
+/// Description of the "member_change_reseller_role" tag state: (members)
+/// Changed team member reseller role
+///
+/// @param memberChangeResellerRole (members) Changed team member reseller role
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberChangeResellerRole:(DBTEAMLOGMemberChangeResellerRoleType *)memberChangeResellerRole;
+
+///
 /// Initializes union class with tag state of "member_change_status".
 ///
 /// Description of the "member_change_status" tag state: (members) Changed
@@ -3893,6 +6686,31 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithMemberChangeStatus:(DBTEAMLOGMemberChangeStatusType *)memberChangeStatus;
+
+///
+/// Initializes union class with tag state of "member_delete_manual_contacts".
+///
+/// Description of the "member_delete_manual_contacts" tag state: (members)
+/// Cleared manually added contacts
+///
+/// @param memberDeleteManualContacts (members) Cleared manually added contacts
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberDeleteManualContacts:
+    (DBTEAMLOGMemberDeleteManualContactsType *)memberDeleteManualContacts;
+
+///
+/// Initializes union class with tag state of "member_delete_profile_photo".
+///
+/// Description of the "member_delete_profile_photo" tag state: (members)
+/// Deleted team member profile photo
+///
+/// @param memberDeleteProfilePhoto (members) Deleted team member profile photo
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberDeleteProfilePhoto:(DBTEAMLOGMemberDeleteProfilePhotoType *)memberDeleteProfilePhoto;
 
 ///
 /// Initializes union class with tag state of
@@ -3908,6 +6726,31 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 - (instancetype)initWithMemberPermanentlyDeleteAccountContents:
     (DBTEAMLOGMemberPermanentlyDeleteAccountContentsType *)memberPermanentlyDeleteAccountContents;
+
+///
+/// Initializes union class with tag state of "member_remove_external_id".
+///
+/// Description of the "member_remove_external_id" tag state: (members) Removed
+/// the external ID for team member
+///
+/// @param memberRemoveExternalId (members) Removed the external ID for team
+/// member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberRemoveExternalId:(DBTEAMLOGMemberRemoveExternalIdType *)memberRemoveExternalId;
+
+///
+/// Initializes union class with tag state of "member_set_profile_photo".
+///
+/// Description of the "member_set_profile_photo" tag state: (members) Set team
+/// member profile photo
+///
+/// @param memberSetProfilePhoto (members) Set team member profile photo
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberSetProfilePhoto:(DBTEAMLOGMemberSetProfilePhotoType *)memberSetProfilePhoto;
 
 ///
 /// Initializes union class with tag state of
@@ -3996,6 +6839,43 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGMemberTransferAccountContentsType *)memberTransferAccountContents;
 
 ///
+/// Initializes union class with tag state of "pending_secondary_email_added".
+///
+/// Description of the "pending_secondary_email_added" tag state: (members)
+/// Added pending secondary email
+///
+/// @param pendingSecondaryEmailAdded (members) Added pending secondary email
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPendingSecondaryEmailAdded:
+    (DBTEAMLOGPendingSecondaryEmailAddedType *)pendingSecondaryEmailAdded;
+
+///
+/// Initializes union class with tag state of "secondary_email_deleted".
+///
+/// Description of the "secondary_email_deleted" tag state: (members) Deleted
+/// secondary email
+///
+/// @param secondaryEmailDeleted (members) Deleted secondary email
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSecondaryEmailDeleted:(DBTEAMLOGSecondaryEmailDeletedType *)secondaryEmailDeleted;
+
+///
+/// Initializes union class with tag state of "secondary_email_verified".
+///
+/// Description of the "secondary_email_verified" tag state: (members) Verified
+/// secondary email
+///
+/// @param secondaryEmailVerified (members) Verified secondary email
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSecondaryEmailVerified:(DBTEAMLOGSecondaryEmailVerifiedType *)secondaryEmailVerified;
+
+///
 /// Initializes union class with tag state of "secondary_mails_policy_changed".
 ///
 /// Description of the "secondary_mails_policy_changed" tag state: (members)
@@ -4009,12 +6889,117 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGSecondaryMailsPolicyChangedType *)secondaryMailsPolicyChanged;
 
 ///
+/// Initializes union class with tag state of "binder_add_page".
+///
+/// Description of the "binder_add_page" tag state: (paper) Added Binder page
+/// (deprecated, replaced by 'Edited files')
+///
+/// @param binderAddPage (paper) Added Binder page (deprecated, replaced by
+/// 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderAddPage:(DBTEAMLOGBinderAddPageType *)binderAddPage;
+
+///
+/// Initializes union class with tag state of "binder_add_section".
+///
+/// Description of the "binder_add_section" tag state: (paper) Added Binder
+/// section (deprecated, replaced by 'Edited files')
+///
+/// @param binderAddSection (paper) Added Binder section (deprecated, replaced
+/// by 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderAddSection:(DBTEAMLOGBinderAddSectionType *)binderAddSection;
+
+///
+/// Initializes union class with tag state of "binder_remove_page".
+///
+/// Description of the "binder_remove_page" tag state: (paper) Removed Binder
+/// page (deprecated, replaced by 'Edited files')
+///
+/// @param binderRemovePage (paper) Removed Binder page (deprecated, replaced by
+/// 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderRemovePage:(DBTEAMLOGBinderRemovePageType *)binderRemovePage;
+
+///
+/// Initializes union class with tag state of "binder_remove_section".
+///
+/// Description of the "binder_remove_section" tag state: (paper) Removed Binder
+/// section (deprecated, replaced by 'Edited files')
+///
+/// @param binderRemoveSection (paper) Removed Binder section (deprecated,
+/// replaced by 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderRemoveSection:(DBTEAMLOGBinderRemoveSectionType *)binderRemoveSection;
+
+///
+/// Initializes union class with tag state of "binder_rename_page".
+///
+/// Description of the "binder_rename_page" tag state: (paper) Renamed Binder
+/// page (deprecated, replaced by 'Edited files')
+///
+/// @param binderRenamePage (paper) Renamed Binder page (deprecated, replaced by
+/// 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderRenamePage:(DBTEAMLOGBinderRenamePageType *)binderRenamePage;
+
+///
+/// Initializes union class with tag state of "binder_rename_section".
+///
+/// Description of the "binder_rename_section" tag state: (paper) Renamed Binder
+/// section (deprecated, replaced by 'Edited files')
+///
+/// @param binderRenameSection (paper) Renamed Binder section (deprecated,
+/// replaced by 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderRenameSection:(DBTEAMLOGBinderRenameSectionType *)binderRenameSection;
+
+///
+/// Initializes union class with tag state of "binder_reorder_page".
+///
+/// Description of the "binder_reorder_page" tag state: (paper) Reordered Binder
+/// page (deprecated, replaced by 'Edited files')
+///
+/// @param binderReorderPage (paper) Reordered Binder page (deprecated, replaced
+/// by 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderReorderPage:(DBTEAMLOGBinderReorderPageType *)binderReorderPage;
+
+///
+/// Initializes union class with tag state of "binder_reorder_section".
+///
+/// Description of the "binder_reorder_section" tag state: (paper) Reordered
+/// Binder section (deprecated, replaced by 'Edited files')
+///
+/// @param binderReorderSection (paper) Reordered Binder section (deprecated,
+/// replaced by 'Edited files')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithBinderReorderSection:(DBTEAMLOGBinderReorderSectionType *)binderReorderSection;
+
+///
 /// Initializes union class with tag state of "paper_content_add_member".
 ///
-/// Description of the "paper_content_add_member" tag state: (paper) Added team
-/// member to Paper doc/folder
+/// Description of the "paper_content_add_member" tag state: (paper) Added users
+/// and/or groups to Paper doc/folder
 ///
-/// @param paperContentAddMember (paper) Added team member to Paper doc/folder
+/// @param paperContentAddMember (paper) Added users and/or groups to Paper
+/// doc/folder
 ///
 /// @return An initialized instance.
 ///
@@ -4090,10 +7075,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Initializes union class with tag state of "paper_content_remove_member".
 ///
 /// Description of the "paper_content_remove_member" tag state: (paper) Removed
-/// team member from Paper doc/folder
+/// users and/or groups from Paper doc/folder
 ///
-/// @param paperContentRemoveMember (paper) Removed team member from Paper
-/// doc/folder
+/// @param paperContentRemoveMember (paper) Removed users and/or groups from
+/// Paper doc/folder
 ///
 /// @return An initialized instance.
 ///
@@ -4139,10 +7124,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Initializes union class with tag state of "paper_doc_change_member_role".
 ///
 /// Description of the "paper_doc_change_member_role" tag state: (paper) Changed
-/// team member permissions for Paper doc
+/// member permissions for Paper doc
 ///
-/// @param paperDocChangeMemberRole (paper) Changed team member permissions for
-/// Paper doc
+/// @param paperDocChangeMemberRole (paper) Changed member permissions for Paper
+/// doc
 ///
 /// @return An initialized instance.
 ///
@@ -4251,14 +7236,26 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 /// Initializes union class with tag state of "paper_doc_mention".
 ///
-/// Description of the "paper_doc_mention" tag state: (paper) Mentioned team
-/// member in Paper doc
+/// Description of the "paper_doc_mention" tag state: (paper) Mentioned user in
+/// Paper doc
 ///
-/// @param paperDocMention (paper) Mentioned team member in Paper doc
+/// @param paperDocMention (paper) Mentioned user in Paper doc
 ///
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPaperDocMention:(DBTEAMLOGPaperDocMentionType *)paperDocMention;
+
+///
+/// Initializes union class with tag state of "paper_doc_ownership_changed".
+///
+/// Description of the "paper_doc_ownership_changed" tag state: (paper)
+/// Transferred ownership of Paper doc
+///
+/// @param paperDocOwnershipChanged (paper) Transferred ownership of Paper doc
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperDocOwnershipChanged:(DBTEAMLOGPaperDocOwnershipChangedType *)paperDocOwnershipChanged;
 
 ///
 /// Initializes union class with tag state of "paper_doc_request_access".
@@ -4312,9 +7309,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Initializes union class with tag state of "paper_doc_team_invite".
 ///
 /// Description of the "paper_doc_team_invite" tag state: (paper) Shared Paper
-/// doc with team member (deprecated, no longer logged)
+/// doc with users and/or groups (deprecated, no longer logged)
 ///
-/// @param paperDocTeamInvite (paper) Shared Paper doc with team member
+/// @param paperDocTeamInvite (paper) Shared Paper doc with users and/or groups
 /// (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
@@ -4454,14 +7451,66 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Initializes union class with tag state of "paper_folder_team_invite".
 ///
 /// Description of the "paper_folder_team_invite" tag state: (paper) Shared
-/// Paper folder with member (deprecated, no longer logged)
+/// Paper folder with users and/or groups (deprecated, no longer logged)
 ///
-/// @param paperFolderTeamInvite (paper) Shared Paper folder with member
-/// (deprecated, no longer logged)
+/// @param paperFolderTeamInvite (paper) Shared Paper folder with users and/or
+/// groups (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPaperFolderTeamInvite:(DBTEAMLOGPaperFolderTeamInviteType *)paperFolderTeamInvite;
+
+///
+/// Initializes union class with tag state of
+/// "paper_published_link_change_permission".
+///
+/// Description of the "paper_published_link_change_permission" tag state:
+/// (paper) Changed permissions for published doc
+///
+/// @param paperPublishedLinkChangePermission (paper) Changed permissions for
+/// published doc
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperPublishedLinkChangePermission:
+    (DBTEAMLOGPaperPublishedLinkChangePermissionType *)paperPublishedLinkChangePermission;
+
+///
+/// Initializes union class with tag state of "paper_published_link_create".
+///
+/// Description of the "paper_published_link_create" tag state: (paper)
+/// Published doc
+///
+/// @param paperPublishedLinkCreate (paper) Published doc
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperPublishedLinkCreate:(DBTEAMLOGPaperPublishedLinkCreateType *)paperPublishedLinkCreate;
+
+///
+/// Initializes union class with tag state of "paper_published_link_disabled".
+///
+/// Description of the "paper_published_link_disabled" tag state: (paper)
+/// Unpublished doc
+///
+/// @param paperPublishedLinkDisabled (paper) Unpublished doc
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperPublishedLinkDisabled:
+    (DBTEAMLOGPaperPublishedLinkDisabledType *)paperPublishedLinkDisabled;
+
+///
+/// Initializes union class with tag state of "paper_published_link_view".
+///
+/// Description of the "paper_published_link_view" tag state: (paper) Viewed
+/// published doc
+///
+/// @param paperPublishedLinkView (paper) Viewed published doc
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperPublishedLinkView:(DBTEAMLOGPaperPublishedLinkViewType *)paperPublishedLinkView;
 
 ///
 /// Initializes union class with tag state of "password_change".
@@ -4496,6 +7545,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPasswordResetAll:(DBTEAMLOGPasswordResetAllType *)passwordResetAll;
+
+///
+/// Initializes union class with tag state of "classification_create_report".
+///
+/// Description of the "classification_create_report" tag state: (reports)
+/// Created Classification report
+///
+/// @param classificationCreateReport (reports) Created Classification report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithClassificationCreateReport:
+    (DBTEAMLOGClassificationCreateReportType *)classificationCreateReport;
+
+///
+/// Initializes union class with tag state of
+/// "classification_create_report_fail".
+///
+/// Description of the "classification_create_report_fail" tag state: (reports)
+/// Couldn't create Classification report
+///
+/// @param classificationCreateReportFail (reports) Couldn't create
+/// Classification report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithClassificationCreateReportFail:
+    (DBTEAMLOGClassificationCreateReportFailType *)classificationCreateReportFail;
 
 ///
 /// Initializes union class with tag state of "emm_create_exceptions_report".
@@ -4534,6 +7611,166 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithExportMembersReport:(DBTEAMLOGExportMembersReportType *)exportMembersReport;
 
 ///
+/// Initializes union class with tag state of "export_members_report_fail".
+///
+/// Description of the "export_members_report_fail" tag state: (reports) Failed
+/// to create members data report
+///
+/// @param exportMembersReportFail (reports) Failed to create members data
+/// report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithExportMembersReportFail:(DBTEAMLOGExportMembersReportFailType *)exportMembersReportFail;
+
+///
+/// Initializes union class with tag state of "external_sharing_create_report".
+///
+/// Description of the "external_sharing_create_report" tag state: (reports)
+/// Created External sharing report
+///
+/// @param externalSharingCreateReport (reports) Created External sharing report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithExternalSharingCreateReport:
+    (DBTEAMLOGExternalSharingCreateReportType *)externalSharingCreateReport;
+
+///
+/// Initializes union class with tag state of "external_sharing_report_failed".
+///
+/// Description of the "external_sharing_report_failed" tag state: (reports)
+/// Couldn't create External sharing report
+///
+/// @param externalSharingReportFailed (reports) Couldn't create External
+/// sharing report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithExternalSharingReportFailed:
+    (DBTEAMLOGExternalSharingReportFailedType *)externalSharingReportFailed;
+
+///
+/// Initializes union class with tag state of
+/// "no_expiration_link_gen_create_report".
+///
+/// Description of the "no_expiration_link_gen_create_report" tag state:
+/// (reports) Report created: Links created with no expiration
+///
+/// @param noExpirationLinkGenCreateReport (reports) Report created: Links
+/// created with no expiration
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoExpirationLinkGenCreateReport:
+    (DBTEAMLOGNoExpirationLinkGenCreateReportType *)noExpirationLinkGenCreateReport;
+
+///
+/// Initializes union class with tag state of
+/// "no_expiration_link_gen_report_failed".
+///
+/// Description of the "no_expiration_link_gen_report_failed" tag state:
+/// (reports) Couldn't create report: Links created with no expiration
+///
+/// @param noExpirationLinkGenReportFailed (reports) Couldn't create report:
+/// Links created with no expiration
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoExpirationLinkGenReportFailed:
+    (DBTEAMLOGNoExpirationLinkGenReportFailedType *)noExpirationLinkGenReportFailed;
+
+///
+/// Initializes union class with tag state of
+/// "no_password_link_gen_create_report".
+///
+/// Description of the "no_password_link_gen_create_report" tag state: (reports)
+/// Report created: Links created without passwords
+///
+/// @param noPasswordLinkGenCreateReport (reports) Report created: Links created
+/// without passwords
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoPasswordLinkGenCreateReport:
+    (DBTEAMLOGNoPasswordLinkGenCreateReportType *)noPasswordLinkGenCreateReport;
+
+///
+/// Initializes union class with tag state of
+/// "no_password_link_gen_report_failed".
+///
+/// Description of the "no_password_link_gen_report_failed" tag state: (reports)
+/// Couldn't create report: Links created without passwords
+///
+/// @param noPasswordLinkGenReportFailed (reports) Couldn't create report: Links
+/// created without passwords
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoPasswordLinkGenReportFailed:
+    (DBTEAMLOGNoPasswordLinkGenReportFailedType *)noPasswordLinkGenReportFailed;
+
+///
+/// Initializes union class with tag state of
+/// "no_password_link_view_create_report".
+///
+/// Description of the "no_password_link_view_create_report" tag state:
+/// (reports) Report created: Views of links without passwords
+///
+/// @param noPasswordLinkViewCreateReport (reports) Report created: Views of
+/// links without passwords
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoPasswordLinkViewCreateReport:
+    (DBTEAMLOGNoPasswordLinkViewCreateReportType *)noPasswordLinkViewCreateReport;
+
+///
+/// Initializes union class with tag state of
+/// "no_password_link_view_report_failed".
+///
+/// Description of the "no_password_link_view_report_failed" tag state:
+/// (reports) Couldn't create report: Views of links without passwords
+///
+/// @param noPasswordLinkViewReportFailed (reports) Couldn't create report:
+/// Views of links without passwords
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithNoPasswordLinkViewReportFailed:
+    (DBTEAMLOGNoPasswordLinkViewReportFailedType *)noPasswordLinkViewReportFailed;
+
+///
+/// Initializes union class with tag state of
+/// "outdated_link_view_create_report".
+///
+/// Description of the "outdated_link_view_create_report" tag state: (reports)
+/// Report created: Views of old links
+///
+/// @param outdatedLinkViewCreateReport (reports) Report created: Views of old
+/// links
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithOutdatedLinkViewCreateReport:
+    (DBTEAMLOGOutdatedLinkViewCreateReportType *)outdatedLinkViewCreateReport;
+
+///
+/// Initializes union class with tag state of
+/// "outdated_link_view_report_failed".
+///
+/// Description of the "outdated_link_view_report_failed" tag state: (reports)
+/// Couldn't create report: Views of old links
+///
+/// @param outdatedLinkViewReportFailed (reports) Couldn't create report: Views
+/// of old links
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithOutdatedLinkViewReportFailed:
+    (DBTEAMLOGOutdatedLinkViewReportFailedType *)outdatedLinkViewReportFailed;
+
+///
 /// Initializes union class with tag state of "paper_admin_export_start".
 ///
 /// Description of the "paper_admin_export_start" tag state: (reports) Exported
@@ -4544,6 +7781,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPaperAdminExportStart:(DBTEAMLOGPaperAdminExportStartType *)paperAdminExportStart;
+
+///
+/// Initializes union class with tag state of "ransomware_alert_create_report".
+///
+/// Description of the "ransomware_alert_create_report" tag state: (reports)
+/// Created ransomware report
+///
+/// @param ransomwareAlertCreateReport (reports) Created ransomware report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRansomwareAlertCreateReport:
+    (DBTEAMLOGRansomwareAlertCreateReportType *)ransomwareAlertCreateReport;
+
+///
+/// Initializes union class with tag state of
+/// "ransomware_alert_create_report_failed".
+///
+/// Description of the "ransomware_alert_create_report_failed" tag state:
+/// (reports) Couldn't generate ransomware report
+///
+/// @param ransomwareAlertCreateReportFailed (reports) Couldn't generate
+/// ransomware report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRansomwareAlertCreateReportFailed:
+    (DBTEAMLOGRansomwareAlertCreateReportFailedType *)ransomwareAlertCreateReportFailed;
 
 ///
 /// Initializes union class with tag state of
@@ -4573,6 +7838,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithTeamActivityCreateReport:(DBTEAMLOGTeamActivityCreateReportType *)teamActivityCreateReport;
 
 ///
+/// Initializes union class with tag state of
+/// "team_activity_create_report_fail".
+///
+/// Description of the "team_activity_create_report_fail" tag state: (reports)
+/// Couldn't generate team activity report
+///
+/// @param teamActivityCreateReportFail (reports) Couldn't generate team
+/// activity report
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamActivityCreateReportFail:
+    (DBTEAMLOGTeamActivityCreateReportFailType *)teamActivityCreateReportFail;
+
+///
 /// Initializes union class with tag state of "collection_share".
 ///
 /// Description of the "collection_share" tag state: (sharing) Shared album
@@ -4582,6 +7862,69 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithCollectionShare:(DBTEAMLOGCollectionShareType *)collectionShare;
+
+///
+/// Initializes union class with tag state of "file_transfers_file_add".
+///
+/// Description of the "file_transfers_file_add" tag state: (sharing) Transfer
+/// files added
+///
+/// @param fileTransfersFileAdd (sharing) Transfer files added
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileTransfersFileAdd:(DBTEAMLOGFileTransfersFileAddType *)fileTransfersFileAdd;
+
+///
+/// Initializes union class with tag state of "file_transfers_transfer_delete".
+///
+/// Description of the "file_transfers_transfer_delete" tag state: (sharing)
+/// Deleted transfer
+///
+/// @param fileTransfersTransferDelete (sharing) Deleted transfer
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileTransfersTransferDelete:
+    (DBTEAMLOGFileTransfersTransferDeleteType *)fileTransfersTransferDelete;
+
+///
+/// Initializes union class with tag state of
+/// "file_transfers_transfer_download".
+///
+/// Description of the "file_transfers_transfer_download" tag state: (sharing)
+/// Transfer downloaded
+///
+/// @param fileTransfersTransferDownload (sharing) Transfer downloaded
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileTransfersTransferDownload:
+    (DBTEAMLOGFileTransfersTransferDownloadType *)fileTransfersTransferDownload;
+
+///
+/// Initializes union class with tag state of "file_transfers_transfer_send".
+///
+/// Description of the "file_transfers_transfer_send" tag state: (sharing) Sent
+/// transfer
+///
+/// @param fileTransfersTransferSend (sharing) Sent transfer
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileTransfersTransferSend:(DBTEAMLOGFileTransfersTransferSendType *)fileTransfersTransferSend;
+
+///
+/// Initializes union class with tag state of "file_transfers_transfer_view".
+///
+/// Description of the "file_transfers_transfer_view" tag state: (sharing)
+/// Viewed transfer
+///
+/// @param fileTransfersTransferView (sharing) Viewed transfer
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileTransfersTransferView:(DBTEAMLOGFileTransfersTransferViewType *)fileTransfersTransferView;
 
 ///
 /// Initializes union class with tag state of "note_acl_invite_only".
@@ -4659,6 +8002,57 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithOpenNoteShared:(DBTEAMLOGOpenNoteSharedType *)openNoteShared;
+
+///
+/// Initializes union class with tag state of "replay_file_shared_link_created".
+///
+/// Description of the "replay_file_shared_link_created" tag state: (sharing)
+/// Created shared link in Replay
+///
+/// @param replayFileSharedLinkCreated (sharing) Created shared link in Replay
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithReplayFileSharedLinkCreated:
+    (DBTEAMLOGReplayFileSharedLinkCreatedType *)replayFileSharedLinkCreated;
+
+///
+/// Initializes union class with tag state of
+/// "replay_file_shared_link_modified".
+///
+/// Description of the "replay_file_shared_link_modified" tag state: (sharing)
+/// Modified shared link in Replay
+///
+/// @param replayFileSharedLinkModified (sharing) Modified shared link in Replay
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithReplayFileSharedLinkModified:
+    (DBTEAMLOGReplayFileSharedLinkModifiedType *)replayFileSharedLinkModified;
+
+///
+/// Initializes union class with tag state of "replay_project_team_add".
+///
+/// Description of the "replay_project_team_add" tag state: (sharing) Added
+/// member to Replay Project
+///
+/// @param replayProjectTeamAdd (sharing) Added member to Replay Project
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithReplayProjectTeamAdd:(DBTEAMLOGReplayProjectTeamAddType *)replayProjectTeamAdd;
+
+///
+/// Initializes union class with tag state of "replay_project_team_delete".
+///
+/// Description of the "replay_project_team_delete" tag state: (sharing) Removed
+/// member from Replay Project
+///
+/// @param replayProjectTeamDelete (sharing) Removed member from Replay Project
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithReplayProjectTeamDelete:(DBTEAMLOGReplayProjectTeamDeleteType *)replayProjectTeamDelete;
 
 ///
 /// Initializes union class with tag state of "sf_add_group".
@@ -4855,10 +8249,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// Initializes union class with tag state of "shared_content_add_link_expiry".
 ///
 /// Description of the "shared_content_add_link_expiry" tag state: (sharing)
-/// Added expiration date to link for shared file/folder
+/// Added expiration date to link for shared file/folder (deprecated, no longer
+/// logged)
 ///
 /// @param sharedContentAddLinkExpiry (sharing) Added expiration date to link
-/// for shared file/folder
+/// for shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -4870,10 +8265,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_content_add_link_password".
 ///
 /// Description of the "shared_content_add_link_password" tag state: (sharing)
-/// Added password to link for shared file/folder
+/// Added password to link for shared file/folder (deprecated, no longer logged)
 ///
 /// @param sharedContentAddLinkPassword (sharing) Added password to link for
-/// shared file/folder
+/// shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -4899,9 +8294,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 /// Description of the "shared_content_change_downloads_policy" tag state:
 /// (sharing) Changed whether members can download shared file/folder
+/// (deprecated, no longer logged)
 ///
 /// @param sharedContentChangeDownloadsPolicy (sharing) Changed whether members
-/// can download shared file/folder
+/// can download shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -4929,10 +8325,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_content_change_link_audience".
 ///
 /// Description of the "shared_content_change_link_audience" tag state:
-/// (sharing) Changed link audience of shared file/folder
+/// (sharing) Changed link audience of shared file/folder (deprecated, no longer
+/// logged)
 ///
 /// @param sharedContentChangeLinkAudience (sharing) Changed link audience of
-/// shared file/folder
+/// shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -4944,10 +8341,10 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_content_change_link_expiry".
 ///
 /// Description of the "shared_content_change_link_expiry" tag state: (sharing)
-/// Changed link expiration of shared file/folder
+/// Changed link expiration of shared file/folder (deprecated, no longer logged)
 ///
 /// @param sharedContentChangeLinkExpiry (sharing) Changed link expiration of
-/// shared file/folder
+/// shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -4959,10 +8356,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_content_change_link_password".
 ///
 /// Description of the "shared_content_change_link_password" tag state:
-/// (sharing) Changed link password of shared file/folder
+/// (sharing) Changed link password of shared file/folder (deprecated, no longer
+/// logged)
 ///
 /// @param sharedContentChangeLinkPassword (sharing) Changed link password of
-/// shared file/folder
+/// shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -5070,10 +8468,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_content_remove_link_expiry".
 ///
 /// Description of the "shared_content_remove_link_expiry" tag state: (sharing)
-/// Removed link expiration date of shared file/folder
+/// Removed link expiration date of shared file/folder (deprecated, no longer
+/// logged)
 ///
 /// @param sharedContentRemoveLinkExpiry (sharing) Removed link expiration date
-/// of shared file/folder
+/// of shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -5085,10 +8484,11 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_content_remove_link_password".
 ///
 /// Description of the "shared_content_remove_link_password" tag state:
-/// (sharing) Removed link password of shared file/folder
+/// (sharing) Removed link password of shared file/folder (deprecated, no longer
+/// logged)
 ///
 /// @param sharedContentRemoveLinkPassword (sharing) Removed link password of
-/// shared file/folder
+/// shared file/folder (deprecated, no longer logged)
 ///
 /// @return An initialized instance.
 ///
@@ -5123,13 +8523,41 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGSharedContentRequestAccessType *)sharedContentRequestAccess;
 
 ///
+/// Initializes union class with tag state of "shared_content_restore_invitees".
+///
+/// Description of the "shared_content_restore_invitees" tag state: (sharing)
+/// Restored shared file/folder invitees
+///
+/// @param sharedContentRestoreInvitees (sharing) Restored shared file/folder
+/// invitees
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedContentRestoreInvitees:
+    (DBTEAMLOGSharedContentRestoreInviteesType *)sharedContentRestoreInvitees;
+
+///
+/// Initializes union class with tag state of "shared_content_restore_member".
+///
+/// Description of the "shared_content_restore_member" tag state: (sharing)
+/// Restored users and/or groups to membership of shared file/folder
+///
+/// @param sharedContentRestoreMember (sharing) Restored users and/or groups to
+/// membership of shared file/folder
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedContentRestoreMember:
+    (DBTEAMLOGSharedContentRestoreMemberType *)sharedContentRestoreMember;
+
+///
 /// Initializes union class with tag state of "shared_content_unshare".
 ///
 /// Description of the "shared_content_unshare" tag state: (sharing) Unshared
-/// file/folder by clearing membership and turning off link
+/// file/folder by clearing membership
 ///
 /// @param sharedContentUnshare (sharing) Unshared file/folder by clearing
-/// membership and turning off link
+/// membership
 ///
 /// @return An initialized instance.
 ///
@@ -5386,6 +8814,139 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithSharedLinkRemoveExpiry:(DBTEAMLOGSharedLinkRemoveExpiryType *)sharedLinkRemoveExpiry;
 
 ///
+/// Initializes union class with tag state of
+/// "shared_link_settings_add_expiration".
+///
+/// Description of the "shared_link_settings_add_expiration" tag state:
+/// (sharing) Added an expiration date to the shared link
+///
+/// @param sharedLinkSettingsAddExpiration (sharing) Added an expiration date to
+/// the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsAddExpiration:
+    (DBTEAMLOGSharedLinkSettingsAddExpirationType *)sharedLinkSettingsAddExpiration;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_add_password".
+///
+/// Description of the "shared_link_settings_add_password" tag state: (sharing)
+/// Added a password to the shared link
+///
+/// @param sharedLinkSettingsAddPassword (sharing) Added a password to the
+/// shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsAddPassword:
+    (DBTEAMLOGSharedLinkSettingsAddPasswordType *)sharedLinkSettingsAddPassword;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_allow_download_disabled".
+///
+/// Description of the "shared_link_settings_allow_download_disabled" tag state:
+/// (sharing) Disabled downloads
+///
+/// @param sharedLinkSettingsAllowDownloadDisabled (sharing) Disabled downloads
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsAllowDownloadDisabled:
+    (DBTEAMLOGSharedLinkSettingsAllowDownloadDisabledType *)sharedLinkSettingsAllowDownloadDisabled;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_allow_download_enabled".
+///
+/// Description of the "shared_link_settings_allow_download_enabled" tag state:
+/// (sharing) Enabled downloads
+///
+/// @param sharedLinkSettingsAllowDownloadEnabled (sharing) Enabled downloads
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsAllowDownloadEnabled:
+    (DBTEAMLOGSharedLinkSettingsAllowDownloadEnabledType *)sharedLinkSettingsAllowDownloadEnabled;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_change_audience".
+///
+/// Description of the "shared_link_settings_change_audience" tag state:
+/// (sharing) Changed the audience of the shared link
+///
+/// @param sharedLinkSettingsChangeAudience (sharing) Changed the audience of
+/// the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsChangeAudience:
+    (DBTEAMLOGSharedLinkSettingsChangeAudienceType *)sharedLinkSettingsChangeAudience;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_change_expiration".
+///
+/// Description of the "shared_link_settings_change_expiration" tag state:
+/// (sharing) Changed the expiration date of the shared link
+///
+/// @param sharedLinkSettingsChangeExpiration (sharing) Changed the expiration
+/// date of the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsChangeExpiration:
+    (DBTEAMLOGSharedLinkSettingsChangeExpirationType *)sharedLinkSettingsChangeExpiration;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_change_password".
+///
+/// Description of the "shared_link_settings_change_password" tag state:
+/// (sharing) Changed the password of the shared link
+///
+/// @param sharedLinkSettingsChangePassword (sharing) Changed the password of
+/// the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsChangePassword:
+    (DBTEAMLOGSharedLinkSettingsChangePasswordType *)sharedLinkSettingsChangePassword;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_remove_expiration".
+///
+/// Description of the "shared_link_settings_remove_expiration" tag state:
+/// (sharing) Removed the expiration date from the shared link
+///
+/// @param sharedLinkSettingsRemoveExpiration (sharing) Removed the expiration
+/// date from the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsRemoveExpiration:
+    (DBTEAMLOGSharedLinkSettingsRemoveExpirationType *)sharedLinkSettingsRemoveExpiration;
+
+///
+/// Initializes union class with tag state of
+/// "shared_link_settings_remove_password".
+///
+/// Description of the "shared_link_settings_remove_password" tag state:
+/// (sharing) Removed the password from the shared link
+///
+/// @param sharedLinkSettingsRemovePassword (sharing) Removed the password from
+/// the shared link
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharedLinkSettingsRemovePassword:
+    (DBTEAMLOGSharedLinkSettingsRemovePasswordType *)sharedLinkSettingsRemovePassword;
+
+///
 /// Initializes union class with tag state of "shared_link_share".
 ///
 /// Description of the "shared_link_share" tag state: (sharing) Added members as
@@ -5421,6 +8982,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithSharedNoteOpened:(DBTEAMLOGSharedNoteOpenedType *)sharedNoteOpened;
+
+///
+/// Initializes union class with tag state of "shmodel_disable_downloads".
+///
+/// Description of the "shmodel_disable_downloads" tag state: (sharing) Disabled
+/// downloads for link (deprecated, no longer logged)
+///
+/// @param shmodelDisableDownloads (sharing) Disabled downloads for link
+/// (deprecated, no longer logged)
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithShmodelDisableDownloads:(DBTEAMLOGShmodelDisableDownloadsType *)shmodelDisableDownloads;
+
+///
+/// Initializes union class with tag state of "shmodel_enable_downloads".
+///
+/// Description of the "shmodel_enable_downloads" tag state: (sharing) Enabled
+/// downloads for link (deprecated, no longer logged)
+///
+/// @param shmodelEnableDownloads (sharing) Enabled downloads for link
+/// (deprecated, no longer logged)
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithShmodelEnableDownloads:(DBTEAMLOGShmodelEnableDownloadsType *)shmodelEnableDownloads;
 
 ///
 /// Initializes union class with tag state of "shmodel_group_share".
@@ -5936,6 +9523,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGAccountCaptureChangePolicyType *)accountCaptureChangePolicy;
 
 ///
+/// Initializes union class with tag state of "admin_email_reminders_changed".
+///
+/// Description of the "admin_email_reminders_changed" tag state:
+/// (team_policies) Changed admin reminder settings for requests to join the
+/// team
+///
+/// @param adminEmailRemindersChanged (team_policies) Changed admin reminder
+/// settings for requests to join the team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAdminEmailRemindersChanged:
+    (DBTEAMLOGAdminEmailRemindersChangedType *)adminEmailRemindersChanged;
+
+///
 /// Initializes union class with tag state of "allow_download_disabled".
 ///
 /// Description of the "allow_download_disabled" tag state: (team_policies)
@@ -5960,6 +9562,90 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithAllowDownloadEnabled:(DBTEAMLOGAllowDownloadEnabledType *)allowDownloadEnabled;
+
+///
+/// Initializes union class with tag state of "app_permissions_changed".
+///
+/// Description of the "app_permissions_changed" tag state: (team_policies)
+/// Changed app permissions
+///
+/// @param appPermissionsChanged (team_policies) Changed app permissions
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAppPermissionsChanged:(DBTEAMLOGAppPermissionsChangedType *)appPermissionsChanged;
+
+///
+/// Initializes union class with tag state of "camera_uploads_policy_changed".
+///
+/// Description of the "camera_uploads_policy_changed" tag state:
+/// (team_policies) Changed camera uploads setting for team
+///
+/// @param cameraUploadsPolicyChanged (team_policies) Changed camera uploads
+/// setting for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCameraUploadsPolicyChanged:
+    (DBTEAMLOGCameraUploadsPolicyChangedType *)cameraUploadsPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "capture_transcript_policy_changed".
+///
+/// Description of the "capture_transcript_policy_changed" tag state:
+/// (team_policies) Changed Capture transcription policy for team
+///
+/// @param captureTranscriptPolicyChanged (team_policies) Changed Capture
+/// transcription policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithCaptureTranscriptPolicyChanged:
+    (DBTEAMLOGCaptureTranscriptPolicyChangedType *)captureTranscriptPolicyChanged;
+
+///
+/// Initializes union class with tag state of "classification_change_policy".
+///
+/// Description of the "classification_change_policy" tag state: (team_policies)
+/// Changed classification policy for team
+///
+/// @param classificationChangePolicy (team_policies) Changed classification
+/// policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithClassificationChangePolicy:
+    (DBTEAMLOGClassificationChangePolicyType *)classificationChangePolicy;
+
+///
+/// Initializes union class with tag state of "computer_backup_policy_changed".
+///
+/// Description of the "computer_backup_policy_changed" tag state:
+/// (team_policies) Changed computer backup policy for team
+///
+/// @param computerBackupPolicyChanged (team_policies) Changed computer backup
+/// policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithComputerBackupPolicyChanged:
+    (DBTEAMLOGComputerBackupPolicyChangedType *)computerBackupPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "content_administration_policy_changed".
+///
+/// Description of the "content_administration_policy_changed" tag state:
+/// (team_policies) Changed content management setting
+///
+/// @param contentAdministrationPolicyChanged (team_policies) Changed content
+/// management setting
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithContentAdministrationPolicyChanged:
+    (DBTEAMLOGContentAdministrationPolicyChangedType *)contentAdministrationPolicyChanged;
 
 ///
 /// Initializes union class with tag state of
@@ -5992,6 +9678,20 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 - (instancetype)initWithDataPlacementRestrictionSatisfyPolicy:
     (DBTEAMLOGDataPlacementRestrictionSatisfyPolicyType *)dataPlacementRestrictionSatisfyPolicy;
+
+///
+/// Initializes union class with tag state of "device_approvals_add_exception".
+///
+/// Description of the "device_approvals_add_exception" tag state:
+/// (team_policies) Added members to device approvals exception list
+///
+/// @param deviceApprovalsAddException (team_policies) Added members to device
+/// approvals exception list
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDeviceApprovalsAddException:
+    (DBTEAMLOGDeviceApprovalsAddExceptionType *)deviceApprovalsAddException;
 
 ///
 /// Initializes union class with tag state of
@@ -6058,6 +9758,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Initializes union class with tag state of
+/// "device_approvals_remove_exception".
+///
+/// Description of the "device_approvals_remove_exception" tag state:
+/// (team_policies) Removed members from device approvals exception list
+///
+/// @param deviceApprovalsRemoveException (team_policies) Removed members from
+/// device approvals exception list
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDeviceApprovalsRemoveException:
+    (DBTEAMLOGDeviceApprovalsRemoveExceptionType *)deviceApprovalsRemoveException;
+
+///
+/// Initializes union class with tag state of
 /// "directory_restrictions_add_members".
 ///
 /// Description of the "directory_restrictions_add_members" tag state:
@@ -6085,6 +9800,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 - (instancetype)initWithDirectoryRestrictionsRemoveMembers:
     (DBTEAMLOGDirectoryRestrictionsRemoveMembersType *)directoryRestrictionsRemoveMembers;
+
+///
+/// Initializes union class with tag state of
+/// "dropbox_passwords_policy_changed".
+///
+/// Description of the "dropbox_passwords_policy_changed" tag state:
+/// (team_policies) Changed Dropbox Passwords policy for team
+///
+/// @param dropboxPasswordsPolicyChanged (team_policies) Changed Dropbox
+/// Passwords policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDropboxPasswordsPolicyChanged:
+    (DBTEAMLOGDropboxPasswordsPolicyChangedType *)dropboxPasswordsPolicyChanged;
+
+///
+/// Initializes union class with tag state of "email_ingest_policy_changed".
+///
+/// Description of the "email_ingest_policy_changed" tag state: (team_policies)
+/// Changed email to Dropbox policy for team
+///
+/// @param emailIngestPolicyChanged (team_policies) Changed email to Dropbox
+/// policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEmailIngestPolicyChanged:(DBTEAMLOGEmailIngestPolicyChangedType *)emailIngestPolicyChanged;
 
 ///
 /// Initializes union class with tag state of "emm_add_exception".
@@ -6140,6 +9883,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGExtendedVersionHistoryChangePolicyType *)extendedVersionHistoryChangePolicy;
 
 ///
+/// Initializes union class with tag state of
+/// "external_drive_backup_policy_changed".
+///
+/// Description of the "external_drive_backup_policy_changed" tag state:
+/// (team_policies) Changed external drive backup policy for team
+///
+/// @param externalDriveBackupPolicyChanged (team_policies) Changed external
+/// drive backup policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithExternalDriveBackupPolicyChanged:
+    (DBTEAMLOGExternalDriveBackupPolicyChangedType *)externalDriveBackupPolicyChanged;
+
+///
 /// Initializes union class with tag state of "file_comments_change_policy".
 ///
 /// Description of the "file_comments_change_policy" tag state: (team_policies)
@@ -6151,6 +9909,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithFileCommentsChangePolicy:(DBTEAMLOGFileCommentsChangePolicyType *)fileCommentsChangePolicy;
+
+///
+/// Initializes union class with tag state of "file_locking_policy_changed".
+///
+/// Description of the "file_locking_policy_changed" tag state: (team_policies)
+/// Changed file locking policy for team
+///
+/// @param fileLockingPolicyChanged (team_policies) Changed file locking policy
+/// for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileLockingPolicyChanged:(DBTEAMLOGFileLockingPolicyChangedType *)fileLockingPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "file_provider_migration_policy_changed".
+///
+/// Description of the "file_provider_migration_policy_changed" tag state:
+/// (team_policies) Changed File Provider Migration policy for team
+///
+/// @param fileProviderMigrationPolicyChanged (team_policies) Changed File
+/// Provider Migration policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileProviderMigrationPolicyChanged:
+    (DBTEAMLOGFileProviderMigrationPolicyChangedType *)fileProviderMigrationPolicyChanged;
 
 ///
 /// Initializes union class with tag state of "file_requests_change_policy".
@@ -6195,6 +9981,35 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGFileRequestsEmailsRestrictedToTeamOnlyType *)fileRequestsEmailsRestrictedToTeamOnly;
 
 ///
+/// Initializes union class with tag state of "file_transfers_policy_changed".
+///
+/// Description of the "file_transfers_policy_changed" tag state:
+/// (team_policies) Changed file transfers policy for team
+///
+/// @param fileTransfersPolicyChanged (team_policies) Changed file transfers
+/// policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFileTransfersPolicyChanged:
+    (DBTEAMLOGFileTransfersPolicyChangedType *)fileTransfersPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "folder_link_restriction_policy_changed".
+///
+/// Description of the "folder_link_restriction_policy_changed" tag state:
+/// (team_policies) Changed folder link restrictions policy for team
+///
+/// @param folderLinkRestrictionPolicyChanged (team_policies) Changed folder
+/// link restrictions policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithFolderLinkRestrictionPolicyChanged:
+    (DBTEAMLOGFolderLinkRestrictionPolicyChangedType *)folderLinkRestrictionPolicyChanged;
+
+///
 /// Initializes union class with tag state of "google_sso_change_policy".
 ///
 /// Description of the "google_sso_change_policy" tag state: (team_policies)
@@ -6223,6 +10038,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGGroupUserManagementChangePolicyType *)groupUserManagementChangePolicy;
 
 ///
+/// Initializes union class with tag state of "integration_policy_changed".
+///
+/// Description of the "integration_policy_changed" tag state: (team_policies)
+/// Changed integration policy for team
+///
+/// @param integrationPolicyChanged (team_policies) Changed integration policy
+/// for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithIntegrationPolicyChanged:(DBTEAMLOGIntegrationPolicyChangedType *)integrationPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "invite_acceptance_email_policy_changed".
+///
+/// Description of the "invite_acceptance_email_policy_changed" tag state:
+/// (team_policies) Changed invite accept email policy for team
+///
+/// @param inviteAcceptanceEmailPolicyChanged (team_policies) Changed invite
+/// accept email policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithInviteAcceptanceEmailPolicyChanged:
+    (DBTEAMLOGInviteAcceptanceEmailPolicyChangedType *)inviteAcceptanceEmailPolicyChanged;
+
+///
 /// Initializes union class with tag state of "member_requests_change_policy".
 ///
 /// Description of the "member_requests_change_policy" tag state:
@@ -6235,6 +10078,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 - (instancetype)initWithMemberRequestsChangePolicy:
     (DBTEAMLOGMemberRequestsChangePolicyType *)memberRequestsChangePolicy;
+
+///
+/// Initializes union class with tag state of
+/// "member_send_invite_policy_changed".
+///
+/// Description of the "member_send_invite_policy_changed" tag state:
+/// (team_policies) Changed member send invite policy for team
+///
+/// @param memberSendInvitePolicyChanged (team_policies) Changed member send
+/// invite policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithMemberSendInvitePolicyChanged:
+    (DBTEAMLOGMemberSendInvitePolicyChangedType *)memberSendInvitePolicyChanged;
 
 ///
 /// Initializes union class with tag state of
@@ -6401,6 +10259,34 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Initializes union class with tag state of
+/// "paper_default_folder_policy_changed".
+///
+/// Description of the "paper_default_folder_policy_changed" tag state:
+/// (team_policies) Changed Paper Default Folder Policy setting for team
+///
+/// @param paperDefaultFolderPolicyChanged (team_policies) Changed Paper Default
+/// Folder Policy setting for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperDefaultFolderPolicyChanged:
+    (DBTEAMLOGPaperDefaultFolderPolicyChangedType *)paperDefaultFolderPolicyChanged;
+
+///
+/// Initializes union class with tag state of "paper_desktop_policy_changed".
+///
+/// Description of the "paper_desktop_policy_changed" tag state: (team_policies)
+/// Enabled/disabled Paper Desktop for team
+///
+/// @param paperDesktopPolicyChanged (team_policies) Enabled/disabled Paper
+/// Desktop for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPaperDesktopPolicyChanged:(DBTEAMLOGPaperDesktopPolicyChangedType *)paperDesktopPolicyChanged;
+
+///
+/// Initializes union class with tag state of
 /// "paper_enabled_users_group_addition".
 ///
 /// Description of the "paper_enabled_users_group_addition" tag state:
@@ -6430,6 +10316,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGPaperEnabledUsersGroupRemovalType *)paperEnabledUsersGroupRemoval;
 
 ///
+/// Initializes union class with tag state of
+/// "password_strength_requirements_change_policy".
+///
+/// Description of the "password_strength_requirements_change_policy" tag state:
+/// (team_policies) Changed team password strength requirements
+///
+/// @param passwordStrengthRequirementsChangePolicy (team_policies) Changed team
+/// password strength requirements
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPasswordStrengthRequirementsChangePolicy:
+    (DBTEAMLOGPasswordStrengthRequirementsChangePolicyType *)passwordStrengthRequirementsChangePolicy;
+
+///
 /// Initializes union class with tag state of "permanent_delete_change_policy".
 ///
 /// Description of the "permanent_delete_change_policy" tag state:
@@ -6443,6 +10344,47 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 - (instancetype)initWithPermanentDeleteChangePolicy:
     (DBTEAMLOGPermanentDeleteChangePolicyType *)permanentDeleteChangePolicy;
+
+///
+/// Initializes union class with tag state of "reseller_support_change_policy".
+///
+/// Description of the "reseller_support_change_policy" tag state:
+/// (team_policies) Enabled/disabled reseller support
+///
+/// @param resellerSupportChangePolicy (team_policies) Enabled/disabled reseller
+/// support
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithResellerSupportChangePolicy:
+    (DBTEAMLOGResellerSupportChangePolicyType *)resellerSupportChangePolicy;
+
+///
+/// Initializes union class with tag state of "rewind_policy_changed".
+///
+/// Description of the "rewind_policy_changed" tag state: (team_policies)
+/// Changed Rewind policy for team
+///
+/// @param rewindPolicyChanged (team_policies) Changed Rewind policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithRewindPolicyChanged:(DBTEAMLOGRewindPolicyChangedType *)rewindPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "send_for_signature_policy_changed".
+///
+/// Description of the "send_for_signature_policy_changed" tag state:
+/// (team_policies) Changed send for signature policy for team
+///
+/// @param sendForSignaturePolicyChanged (team_policies) Changed send for
+/// signature policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSendForSignaturePolicyChanged:
+    (DBTEAMLOGSendForSignaturePolicyChangedType *)sendForSignaturePolicyChanged;
 
 ///
 /// Initializes union class with tag state of
@@ -6459,6 +10401,55 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 - (instancetype)initWithSharingChangeFolderJoinPolicy:
     (DBTEAMLOGSharingChangeFolderJoinPolicyType *)sharingChangeFolderJoinPolicy;
+
+///
+/// Initializes union class with tag state of
+/// "sharing_change_link_allow_change_expiration_policy".
+///
+/// Description of the "sharing_change_link_allow_change_expiration_policy" tag
+/// state: (team_policies) Changed the allow remove or change expiration policy
+/// for the links shared outside of the team
+///
+/// @param sharingChangeLinkAllowChangeExpirationPolicy (team_policies) Changed
+/// the allow remove or change expiration policy for the links shared outside of
+/// the team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharingChangeLinkAllowChangeExpirationPolicy:
+    (DBTEAMLOGSharingChangeLinkAllowChangeExpirationPolicyType *)sharingChangeLinkAllowChangeExpirationPolicy;
+
+///
+/// Initializes union class with tag state of
+/// "sharing_change_link_default_expiration_policy".
+///
+/// Description of the "sharing_change_link_default_expiration_policy" tag
+/// state: (team_policies) Changed the default expiration for the links shared
+/// outside of the team
+///
+/// @param sharingChangeLinkDefaultExpirationPolicy (team_policies) Changed the
+/// default expiration for the links shared outside of the team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharingChangeLinkDefaultExpirationPolicy:
+    (DBTEAMLOGSharingChangeLinkDefaultExpirationPolicyType *)sharingChangeLinkDefaultExpirationPolicy;
+
+///
+/// Initializes union class with tag state of
+/// "sharing_change_link_enforce_password_policy".
+///
+/// Description of the "sharing_change_link_enforce_password_policy" tag state:
+/// (team_policies) Changed the password requirement for the links shared
+/// outside of the team
+///
+/// @param sharingChangeLinkEnforcePasswordPolicy (team_policies) Changed the
+/// password requirement for the links shared outside of the team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSharingChangeLinkEnforcePasswordPolicy:
+    (DBTEAMLOGSharingChangeLinkEnforcePasswordPolicyType *)sharingChangeLinkEnforcePasswordPolicy;
 
 ///
 /// Initializes union class with tag state of "sharing_change_link_policy".
@@ -6534,6 +10525,21 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGShowcaseChangeExternalSharingPolicyType *)showcaseChangeExternalSharingPolicy;
 
 ///
+/// Initializes union class with tag state of
+/// "smarter_smart_sync_policy_changed".
+///
+/// Description of the "smarter_smart_sync_policy_changed" tag state:
+/// (team_policies) Changed automatic Smart Sync setting for team
+///
+/// @param smarterSmartSyncPolicyChanged (team_policies) Changed automatic Smart
+/// Sync setting for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithSmarterSmartSyncPolicyChanged:
+    (DBTEAMLOGSmarterSmartSyncPolicyChangedType *)smarterSmartSyncPolicyChanged;
+
+///
 /// Initializes union class with tag state of "smart_sync_change_policy".
 ///
 /// Description of the "smart_sync_change_policy" tag state: (team_policies)
@@ -6584,6 +10590,76 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithSsoChangePolicy:(DBTEAMLOGSsoChangePolicyType *)ssoChangePolicy;
 
 ///
+/// Initializes union class with tag state of "team_branding_policy_changed".
+///
+/// Description of the "team_branding_policy_changed" tag state: (team_policies)
+/// Changed team branding policy for team
+///
+/// @param teamBrandingPolicyChanged (team_policies) Changed team branding
+/// policy for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamBrandingPolicyChanged:(DBTEAMLOGTeamBrandingPolicyChangedType *)teamBrandingPolicyChanged;
+
+///
+/// Initializes union class with tag state of "team_extensions_policy_changed".
+///
+/// Description of the "team_extensions_policy_changed" tag state:
+/// (team_policies) Changed App Integrations setting for team
+///
+/// @param teamExtensionsPolicyChanged (team_policies) Changed App Integrations
+/// setting for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamExtensionsPolicyChanged:
+    (DBTEAMLOGTeamExtensionsPolicyChangedType *)teamExtensionsPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "team_selective_sync_policy_changed".
+///
+/// Description of the "team_selective_sync_policy_changed" tag state:
+/// (team_policies) Enabled/disabled Team Selective Sync for team
+///
+/// @param teamSelectiveSyncPolicyChanged (team_policies) Enabled/disabled Team
+/// Selective Sync for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamSelectiveSyncPolicyChanged:
+    (DBTEAMLOGTeamSelectiveSyncPolicyChangedType *)teamSelectiveSyncPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "team_sharing_whitelist_subjects_changed".
+///
+/// Description of the "team_sharing_whitelist_subjects_changed" tag state:
+/// (team_policies) Edited the approved list for sharing externally
+///
+/// @param teamSharingWhitelistSubjectsChanged (team_policies) Edited the
+/// approved list for sharing externally
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamSharingWhitelistSubjectsChanged:
+    (DBTEAMLOGTeamSharingWhitelistSubjectsChangedType *)teamSharingWhitelistSubjectsChanged;
+
+///
+/// Initializes union class with tag state of "tfa_add_exception".
+///
+/// Description of the "tfa_add_exception" tag state: (team_policies) Added
+/// members to two factor authentication exception list
+///
+/// @param tfaAddException (team_policies) Added members to two factor
+/// authentication exception list
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTfaAddException:(DBTEAMLOGTfaAddExceptionType *)tfaAddException;
+
+///
 /// Initializes union class with tag state of "tfa_change_policy".
 ///
 /// Description of the "tfa_change_policy" tag state: (team_policies) Changed
@@ -6595,6 +10671,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithTfaChangePolicy:(DBTEAMLOGTfaChangePolicyType *)tfaChangePolicy;
+
+///
+/// Initializes union class with tag state of "tfa_remove_exception".
+///
+/// Description of the "tfa_remove_exception" tag state: (team_policies) Removed
+/// members from two factor authentication exception list
+///
+/// @param tfaRemoveException (team_policies) Removed members from two factor
+/// authentication exception list
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTfaRemoveException:(DBTEAMLOGTfaRemoveExceptionType *)tfaRemoveException;
 
 ///
 /// Initializes union class with tag state of "two_account_change_policy".
@@ -6609,6 +10698,47 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithTwoAccountChangePolicy:(DBTEAMLOGTwoAccountChangePolicyType *)twoAccountChangePolicy;
+
+///
+/// Initializes union class with tag state of "viewer_info_policy_changed".
+///
+/// Description of the "viewer_info_policy_changed" tag state: (team_policies)
+/// Changed team policy for viewer info
+///
+/// @param viewerInfoPolicyChanged (team_policies) Changed team policy for
+/// viewer info
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithViewerInfoPolicyChanged:(DBTEAMLOGViewerInfoPolicyChangedType *)viewerInfoPolicyChanged;
+
+///
+/// Initializes union class with tag state of "watermarking_policy_changed".
+///
+/// Description of the "watermarking_policy_changed" tag state: (team_policies)
+/// Changed watermarking policy for team
+///
+/// @param watermarkingPolicyChanged (team_policies) Changed watermarking policy
+/// for team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithWatermarkingPolicyChanged:(DBTEAMLOGWatermarkingPolicyChangedType *)watermarkingPolicyChanged;
+
+///
+/// Initializes union class with tag state of
+/// "web_sessions_change_active_session_limit".
+///
+/// Description of the "web_sessions_change_active_session_limit" tag state:
+/// (team_policies) Changed limit on active sessions per member
+///
+/// @param webSessionsChangeActiveSessionLimit (team_policies) Changed limit on
+/// active sessions per member
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithWebSessionsChangeActiveSessionLimit:
+    (DBTEAMLOGWebSessionsChangeActiveSessionLimitType *)webSessionsChangeActiveSessionLimit;
 
 ///
 /// Initializes union class with tag state of
@@ -6642,6 +10772,37 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
     (DBTEAMLOGWebSessionsChangeIdleLengthPolicyType *)webSessionsChangeIdleLengthPolicy;
 
 ///
+/// Initializes union class with tag state of
+/// "data_residency_migration_request_successful".
+///
+/// Description of the "data_residency_migration_request_successful" tag state:
+/// (team_profile) Requested data residency migration for team data
+///
+/// @param dataResidencyMigrationRequestSuccessful (team_profile) Requested data
+/// residency migration for team data
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDataResidencyMigrationRequestSuccessful:
+    (DBTEAMLOGDataResidencyMigrationRequestSuccessfulType *)dataResidencyMigrationRequestSuccessful;
+
+///
+/// Initializes union class with tag state of
+/// "data_residency_migration_request_unsuccessful".
+///
+/// Description of the "data_residency_migration_request_unsuccessful" tag
+/// state: (team_profile) Request for data residency migration for team data has
+/// failed
+///
+/// @param dataResidencyMigrationRequestUnsuccessful (team_profile) Request for
+/// data residency migration for team data has failed
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDataResidencyMigrationRequestUnsuccessful:
+    (DBTEAMLOGDataResidencyMigrationRequestUnsuccessfulType *)dataResidencyMigrationRequestUnsuccessful;
+
+///
 /// Initializes union class with tag state of "team_merge_from".
 ///
 /// Description of the "team_merge_from" tag state: (team_profile) Merged
@@ -6666,6 +10827,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithTeamMergeTo:(DBTEAMLOGTeamMergeToType *)teamMergeTo;
 
 ///
+/// Initializes union class with tag state of "team_profile_add_background".
+///
+/// Description of the "team_profile_add_background" tag state: (team_profile)
+/// Added team background to display on shared link headers
+///
+/// @param teamProfileAddBackground (team_profile) Added team background to
+/// display on shared link headers
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamProfileAddBackground:(DBTEAMLOGTeamProfileAddBackgroundType *)teamProfileAddBackground;
+
+///
 /// Initializes union class with tag state of "team_profile_add_logo".
 ///
 /// Description of the "team_profile_add_logo" tag state: (team_profile) Added
@@ -6677,6 +10851,20 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithTeamProfileAddLogo:(DBTEAMLOGTeamProfileAddLogoType *)teamProfileAddLogo;
+
+///
+/// Initializes union class with tag state of "team_profile_change_background".
+///
+/// Description of the "team_profile_change_background" tag state:
+/// (team_profile) Changed team background displayed on shared link headers
+///
+/// @param teamProfileChangeBackground (team_profile) Changed team background
+/// displayed on shared link headers
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamProfileChangeBackground:
+    (DBTEAMLOGTeamProfileChangeBackgroundType *)teamProfileChangeBackground;
 
 ///
 /// Initializes union class with tag state of
@@ -6717,6 +10905,20 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithTeamProfileChangeName:(DBTEAMLOGTeamProfileChangeNameType *)teamProfileChangeName;
+
+///
+/// Initializes union class with tag state of "team_profile_remove_background".
+///
+/// Description of the "team_profile_remove_background" tag state:
+/// (team_profile) Removed team background displayed on shared link headers
+///
+/// @param teamProfileRemoveBackground (team_profile) Removed team background
+/// displayed on shared link headers
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamProfileRemoveBackground:
+    (DBTEAMLOGTeamProfileRemoveBackgroundType *)teamProfileRemoveBackground;
 
 ///
 /// Initializes union class with tag state of "team_profile_remove_logo".
@@ -6820,6 +11022,380 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)initWithTfaReset:(DBTEAMLOGTfaResetType *)tfaReset;
 
 ///
+/// Initializes union class with tag state of "changed_enterprise_admin_role".
+///
+/// Description of the "changed_enterprise_admin_role" tag state:
+/// (trusted_teams) Changed enterprise admin role
+///
+/// @param changedEnterpriseAdminRole (trusted_teams) Changed enterprise admin
+/// role
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithChangedEnterpriseAdminRole:
+    (DBTEAMLOGChangedEnterpriseAdminRoleType *)changedEnterpriseAdminRole;
+
+///
+/// Initializes union class with tag state of
+/// "changed_enterprise_connected_team_status".
+///
+/// Description of the "changed_enterprise_connected_team_status" tag state:
+/// (trusted_teams) Changed enterprise-connected team status
+///
+/// @param changedEnterpriseConnectedTeamStatus (trusted_teams) Changed
+/// enterprise-connected team status
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithChangedEnterpriseConnectedTeamStatus:
+    (DBTEAMLOGChangedEnterpriseConnectedTeamStatusType *)changedEnterpriseConnectedTeamStatus;
+
+///
+/// Initializes union class with tag state of "ended_enterprise_admin_session".
+///
+/// Description of the "ended_enterprise_admin_session" tag state:
+/// (trusted_teams) Ended enterprise admin session
+///
+/// @param endedEnterpriseAdminSession (trusted_teams) Ended enterprise admin
+/// session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEndedEnterpriseAdminSession:
+    (DBTEAMLOGEndedEnterpriseAdminSessionType *)endedEnterpriseAdminSession;
+
+///
+/// Initializes union class with tag state of
+/// "ended_enterprise_admin_session_deprecated".
+///
+/// Description of the "ended_enterprise_admin_session_deprecated" tag state:
+/// (trusted_teams) Ended enterprise admin session (deprecated, replaced by
+/// 'Ended enterprise admin session')
+///
+/// @param endedEnterpriseAdminSessionDeprecated (trusted_teams) Ended
+/// enterprise admin session (deprecated, replaced by 'Ended enterprise admin
+/// session')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEndedEnterpriseAdminSessionDeprecated:
+    (DBTEAMLOGEndedEnterpriseAdminSessionDeprecatedType *)endedEnterpriseAdminSessionDeprecated;
+
+///
+/// Initializes union class with tag state of "enterprise_settings_locking".
+///
+/// Description of the "enterprise_settings_locking" tag state: (trusted_teams)
+/// Changed who can update a setting
+///
+/// @param enterpriseSettingsLocking (trusted_teams) Changed who can update a
+/// setting
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEnterpriseSettingsLocking:(DBTEAMLOGEnterpriseSettingsLockingType *)enterpriseSettingsLocking;
+
+///
+/// Initializes union class with tag state of "guest_admin_change_status".
+///
+/// Description of the "guest_admin_change_status" tag state: (trusted_teams)
+/// Changed guest team admin status
+///
+/// @param guestAdminChangeStatus (trusted_teams) Changed guest team admin
+/// status
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithGuestAdminChangeStatus:(DBTEAMLOGGuestAdminChangeStatusType *)guestAdminChangeStatus;
+
+///
+/// Initializes union class with tag state of
+/// "started_enterprise_admin_session".
+///
+/// Description of the "started_enterprise_admin_session" tag state:
+/// (trusted_teams) Started enterprise admin session
+///
+/// @param startedEnterpriseAdminSession (trusted_teams) Started enterprise
+/// admin session
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithStartedEnterpriseAdminSession:
+    (DBTEAMLOGStartedEnterpriseAdminSessionType *)startedEnterpriseAdminSession;
+
+///
+/// Initializes union class with tag state of "team_merge_request_accepted".
+///
+/// Description of the "team_merge_request_accepted" tag state: (trusted_teams)
+/// Accepted a team merge request
+///
+/// @param teamMergeRequestAccepted (trusted_teams) Accepted a team merge
+/// request
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestAccepted:(DBTEAMLOGTeamMergeRequestAcceptedType *)teamMergeRequestAccepted;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_accepted_shown_to_primary_team".
+///
+/// Description of the "team_merge_request_accepted_shown_to_primary_team" tag
+/// state: (trusted_teams) Accepted a team merge request (deprecated, replaced
+/// by 'Accepted a team merge request')
+///
+/// @param teamMergeRequestAcceptedShownToPrimaryTeam (trusted_teams) Accepted a
+/// team merge request (deprecated, replaced by 'Accepted a team merge request')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestAcceptedShownToPrimaryTeam:
+    (DBTEAMLOGTeamMergeRequestAcceptedShownToPrimaryTeamType *)teamMergeRequestAcceptedShownToPrimaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_accepted_shown_to_secondary_team".
+///
+/// Description of the "team_merge_request_accepted_shown_to_secondary_team" tag
+/// state: (trusted_teams) Accepted a team merge request (deprecated, replaced
+/// by 'Accepted a team merge request')
+///
+/// @param teamMergeRequestAcceptedShownToSecondaryTeam (trusted_teams) Accepted
+/// a team merge request (deprecated, replaced by 'Accepted a team merge
+/// request')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestAcceptedShownToSecondaryTeam:
+    (DBTEAMLOGTeamMergeRequestAcceptedShownToSecondaryTeamType *)teamMergeRequestAcceptedShownToSecondaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_auto_canceled".
+///
+/// Description of the "team_merge_request_auto_canceled" tag state:
+/// (trusted_teams) Automatically canceled team merge request
+///
+/// @param teamMergeRequestAutoCanceled (trusted_teams) Automatically canceled
+/// team merge request
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestAutoCanceled:
+    (DBTEAMLOGTeamMergeRequestAutoCanceledType *)teamMergeRequestAutoCanceled;
+
+///
+/// Initializes union class with tag state of "team_merge_request_canceled".
+///
+/// Description of the "team_merge_request_canceled" tag state: (trusted_teams)
+/// Canceled a team merge request
+///
+/// @param teamMergeRequestCanceled (trusted_teams) Canceled a team merge
+/// request
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestCanceled:(DBTEAMLOGTeamMergeRequestCanceledType *)teamMergeRequestCanceled;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_canceled_shown_to_primary_team".
+///
+/// Description of the "team_merge_request_canceled_shown_to_primary_team" tag
+/// state: (trusted_teams) Canceled a team merge request (deprecated, replaced
+/// by 'Canceled a team merge request')
+///
+/// @param teamMergeRequestCanceledShownToPrimaryTeam (trusted_teams) Canceled a
+/// team merge request (deprecated, replaced by 'Canceled a team merge request')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestCanceledShownToPrimaryTeam:
+    (DBTEAMLOGTeamMergeRequestCanceledShownToPrimaryTeamType *)teamMergeRequestCanceledShownToPrimaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_canceled_shown_to_secondary_team".
+///
+/// Description of the "team_merge_request_canceled_shown_to_secondary_team" tag
+/// state: (trusted_teams) Canceled a team merge request (deprecated, replaced
+/// by 'Canceled a team merge request')
+///
+/// @param teamMergeRequestCanceledShownToSecondaryTeam (trusted_teams) Canceled
+/// a team merge request (deprecated, replaced by 'Canceled a team merge
+/// request')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestCanceledShownToSecondaryTeam:
+    (DBTEAMLOGTeamMergeRequestCanceledShownToSecondaryTeamType *)teamMergeRequestCanceledShownToSecondaryTeam;
+
+///
+/// Initializes union class with tag state of "team_merge_request_expired".
+///
+/// Description of the "team_merge_request_expired" tag state: (trusted_teams)
+/// Team merge request expired
+///
+/// @param teamMergeRequestExpired (trusted_teams) Team merge request expired
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestExpired:(DBTEAMLOGTeamMergeRequestExpiredType *)teamMergeRequestExpired;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_expired_shown_to_primary_team".
+///
+/// Description of the "team_merge_request_expired_shown_to_primary_team" tag
+/// state: (trusted_teams) Team merge request expired (deprecated, replaced by
+/// 'Team merge request expired')
+///
+/// @param teamMergeRequestExpiredShownToPrimaryTeam (trusted_teams) Team merge
+/// request expired (deprecated, replaced by 'Team merge request expired')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestExpiredShownToPrimaryTeam:
+    (DBTEAMLOGTeamMergeRequestExpiredShownToPrimaryTeamType *)teamMergeRequestExpiredShownToPrimaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_expired_shown_to_secondary_team".
+///
+/// Description of the "team_merge_request_expired_shown_to_secondary_team" tag
+/// state: (trusted_teams) Team merge request expired (deprecated, replaced by
+/// 'Team merge request expired')
+///
+/// @param teamMergeRequestExpiredShownToSecondaryTeam (trusted_teams) Team
+/// merge request expired (deprecated, replaced by 'Team merge request expired')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestExpiredShownToSecondaryTeam:
+    (DBTEAMLOGTeamMergeRequestExpiredShownToSecondaryTeamType *)teamMergeRequestExpiredShownToSecondaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_rejected_shown_to_primary_team".
+///
+/// Description of the "team_merge_request_rejected_shown_to_primary_team" tag
+/// state: (trusted_teams) Rejected a team merge request (deprecated, no longer
+/// logged)
+///
+/// @param teamMergeRequestRejectedShownToPrimaryTeam (trusted_teams) Rejected a
+/// team merge request (deprecated, no longer logged)
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestRejectedShownToPrimaryTeam:
+    (DBTEAMLOGTeamMergeRequestRejectedShownToPrimaryTeamType *)teamMergeRequestRejectedShownToPrimaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_rejected_shown_to_secondary_team".
+///
+/// Description of the "team_merge_request_rejected_shown_to_secondary_team" tag
+/// state: (trusted_teams) Rejected a team merge request (deprecated, no longer
+/// logged)
+///
+/// @param teamMergeRequestRejectedShownToSecondaryTeam (trusted_teams) Rejected
+/// a team merge request (deprecated, no longer logged)
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestRejectedShownToSecondaryTeam:
+    (DBTEAMLOGTeamMergeRequestRejectedShownToSecondaryTeamType *)teamMergeRequestRejectedShownToSecondaryTeam;
+
+///
+/// Initializes union class with tag state of "team_merge_request_reminder".
+///
+/// Description of the "team_merge_request_reminder" tag state: (trusted_teams)
+/// Sent a team merge request reminder
+///
+/// @param teamMergeRequestReminder (trusted_teams) Sent a team merge request
+/// reminder
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestReminder:(DBTEAMLOGTeamMergeRequestReminderType *)teamMergeRequestReminder;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_reminder_shown_to_primary_team".
+///
+/// Description of the "team_merge_request_reminder_shown_to_primary_team" tag
+/// state: (trusted_teams) Sent a team merge request reminder (deprecated,
+/// replaced by 'Sent a team merge request reminder')
+///
+/// @param teamMergeRequestReminderShownToPrimaryTeam (trusted_teams) Sent a
+/// team merge request reminder (deprecated, replaced by 'Sent a team merge
+/// request reminder')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestReminderShownToPrimaryTeam:
+    (DBTEAMLOGTeamMergeRequestReminderShownToPrimaryTeamType *)teamMergeRequestReminderShownToPrimaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_reminder_shown_to_secondary_team".
+///
+/// Description of the "team_merge_request_reminder_shown_to_secondary_team" tag
+/// state: (trusted_teams) Sent a team merge request reminder (deprecated,
+/// replaced by 'Sent a team merge request reminder')
+///
+/// @param teamMergeRequestReminderShownToSecondaryTeam (trusted_teams) Sent a
+/// team merge request reminder (deprecated, replaced by 'Sent a team merge
+/// request reminder')
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestReminderShownToSecondaryTeam:
+    (DBTEAMLOGTeamMergeRequestReminderShownToSecondaryTeamType *)teamMergeRequestReminderShownToSecondaryTeam;
+
+///
+/// Initializes union class with tag state of "team_merge_request_revoked".
+///
+/// Description of the "team_merge_request_revoked" tag state: (trusted_teams)
+/// Canceled the team merge
+///
+/// @param teamMergeRequestRevoked (trusted_teams) Canceled the team merge
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestRevoked:(DBTEAMLOGTeamMergeRequestRevokedType *)teamMergeRequestRevoked;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_sent_shown_to_primary_team".
+///
+/// Description of the "team_merge_request_sent_shown_to_primary_team" tag
+/// state: (trusted_teams) Requested to merge their Dropbox team into yours
+///
+/// @param teamMergeRequestSentShownToPrimaryTeam (trusted_teams) Requested to
+/// merge their Dropbox team into yours
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestSentShownToPrimaryTeam:
+    (DBTEAMLOGTeamMergeRequestSentShownToPrimaryTeamType *)teamMergeRequestSentShownToPrimaryTeam;
+
+///
+/// Initializes union class with tag state of
+/// "team_merge_request_sent_shown_to_secondary_team".
+///
+/// Description of the "team_merge_request_sent_shown_to_secondary_team" tag
+/// state: (trusted_teams) Requested to merge your team into another Dropbox
+/// team
+///
+/// @param teamMergeRequestSentShownToSecondaryTeam (trusted_teams) Requested to
+/// merge your team into another Dropbox team
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTeamMergeRequestSentShownToSecondaryTeam:
+    (DBTEAMLOGTeamMergeRequestSentShownToSecondaryTeamType *)teamMergeRequestSentShownToSecondaryTeam;
+
+///
 /// Initializes union class with tag state of "other".
 ///
 /// @return An initialized instance.
@@ -6829,6 +11405,84 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (instancetype)init NS_UNAVAILABLE;
 
 #pragma mark - Tag state methods
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "admin_alerting_alert_state_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `adminAlertingAlertStateChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "admin_alerting_alert_state_changed".
+///
+- (BOOL)isAdminAlertingAlertStateChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "admin_alerting_changed_alert_config".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `adminAlertingChangedAlertConfig` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "admin_alerting_changed_alert_config".
+///
+- (BOOL)isAdminAlertingChangedAlertConfig;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "admin_alerting_triggered_alert".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `adminAlertingTriggeredAlert` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "admin_alerting_triggered_alert".
+///
+- (BOOL)isAdminAlertingTriggeredAlert;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "ransomware_restore_process_completed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `ransomwareRestoreProcessCompleted` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "ransomware_restore_process_completed".
+///
+- (BOOL)isRansomwareRestoreProcessCompleted;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "ransomware_restore_process_started".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `ransomwareRestoreProcessStarted` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "ransomware_restore_process_started".
+///
+- (BOOL)isRansomwareRestoreProcessStarted;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "app_blocked_by_permissions".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `appBlockedByPermissions` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "app_blocked_by_permissions".
+///
+- (BOOL)isAppBlockedByPermissions;
 
 ///
 /// Retrieves whether the union's current tag state has value "app_link_team".
@@ -6872,6 +11526,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "integration_connected".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `integrationConnected` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "integration_connected".
+///
+- (BOOL)isIntegrationConnected;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "integration_disconnected".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `integrationDisconnected` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "integration_disconnected".
+///
+- (BOOL)isIntegrationDisconnected;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "file_add_comment".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -6905,6 +11585,17 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "file_delete_comment".
 ///
 - (BOOL)isFileDeleteComment;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_edit_comment".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileEditComment` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value "file_edit_comment".
+///
+- (BOOL)isFileEditComment;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -6953,6 +11644,305 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "file_unresolve_comment".
 ///
 - (BOOL)isFileUnresolveComment;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_add_folders".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyAddFolders` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_add_folders".
+///
+- (BOOL)isGovernancePolicyAddFolders;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_add_folder_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyAddFolderFailed` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_add_folder_failed".
+///
+- (BOOL)isGovernancePolicyAddFolderFailed;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_content_disposed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyContentDisposed` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_content_disposed".
+///
+- (BOOL)isGovernancePolicyContentDisposed;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_create".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyCreate` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_create".
+///
+- (BOOL)isGovernancePolicyCreate;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_delete".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyDelete` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_delete".
+///
+- (BOOL)isGovernancePolicyDelete;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_edit_details".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyEditDetails` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_edit_details".
+///
+- (BOOL)isGovernancePolicyEditDetails;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_edit_duration".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyEditDuration` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_edit_duration".
+///
+- (BOOL)isGovernancePolicyEditDuration;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_export_created".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyExportCreated` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_export_created".
+///
+- (BOOL)isGovernancePolicyExportCreated;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_export_removed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyExportRemoved` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_export_removed".
+///
+- (BOOL)isGovernancePolicyExportRemoved;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_remove_folders".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyRemoveFolders` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_remove_folders".
+///
+- (BOOL)isGovernancePolicyRemoveFolders;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_report_created".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyReportCreated` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_report_created".
+///
+- (BOOL)isGovernancePolicyReportCreated;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "governance_policy_zip_part_downloaded".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `governancePolicyZipPartDownloaded` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "governance_policy_zip_part_downloaded".
+///
+- (BOOL)isGovernancePolicyZipPartDownloaded;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_activate_a_hold".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsActivateAHold` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_activate_a_hold".
+///
+- (BOOL)isLegalHoldsActivateAHold;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_add_members".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsAddMembers` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_add_members".
+///
+- (BOOL)isLegalHoldsAddMembers;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_change_hold_details".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsChangeHoldDetails` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_change_hold_details".
+///
+- (BOOL)isLegalHoldsChangeHoldDetails;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_change_hold_name".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsChangeHoldName` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_change_hold_name".
+///
+- (BOOL)isLegalHoldsChangeHoldName;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_export_a_hold".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsExportAHold` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_export_a_hold".
+///
+- (BOOL)isLegalHoldsExportAHold;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_export_cancelled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsExportCancelled` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_export_cancelled".
+///
+- (BOOL)isLegalHoldsExportCancelled;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_export_downloaded".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsExportDownloaded` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_export_downloaded".
+///
+- (BOOL)isLegalHoldsExportDownloaded;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_export_removed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsExportRemoved` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_export_removed".
+///
+- (BOOL)isLegalHoldsExportRemoved;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_release_a_hold".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsReleaseAHold` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_release_a_hold".
+///
+- (BOOL)isLegalHoldsReleaseAHold;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_remove_members".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsRemoveMembers` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_remove_members".
+///
+- (BOOL)isLegalHoldsRemoveMembers;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "legal_holds_report_a_hold".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `legalHoldsReportAHold` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "legal_holds_report_a_hold".
+///
+- (BOOL)isLegalHoldsReportAHold;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -7068,6 +12058,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isDeviceManagementEnabled;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "device_sync_backup_status_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `deviceSyncBackupStatusChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "device_sync_backup_status_changed".
+///
+- (BOOL)isDeviceSyncBackupStatusChanged;
+
+///
 /// Retrieves whether the union's current tag state has value "device_unlink".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7076,6 +12079,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return Whether the union's current tag state has value "device_unlink".
 ///
 - (BOOL)isDeviceUnlink;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "dropbox_passwords_exported".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `dropboxPasswordsExported` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "dropbox_passwords_exported".
+///
+- (BOOL)isDropboxPasswordsExported;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "dropbox_passwords_new_device_enrolled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `dropboxPasswordsNewDeviceEnrolled` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "dropbox_passwords_new_device_enrolled".
+///
+- (BOOL)isDropboxPasswordsNewDeviceEnrolled;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -7089,6 +12118,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "emm_refresh_auth_token".
 ///
 - (BOOL)isEmmRefreshAuthToken;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "external_drive_backup_eligibility_status_checked".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `externalDriveBackupEligibilityStatusChecked` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "external_drive_backup_eligibility_status_checked".
+///
+- (BOOL)isExternalDriveBackupEligibilityStatusChecked;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "external_drive_backup_status_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `externalDriveBackupStatusChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "external_drive_backup_status_changed".
+///
+- (BOOL)isExternalDriveBackupStatusChanged;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -7286,6 +12341,110 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isEnabledDomainInvites;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_cancel_key_deletion".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyCancelKeyDeletion` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_cancel_key_deletion".
+///
+- (BOOL)isTeamEncryptionKeyCancelKeyDeletion;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_create_key".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyCreateKey` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_create_key".
+///
+- (BOOL)isTeamEncryptionKeyCreateKey;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_delete_key".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyDeleteKey` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_delete_key".
+///
+- (BOOL)isTeamEncryptionKeyDeleteKey;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_disable_key".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyDisableKey` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_disable_key".
+///
+- (BOOL)isTeamEncryptionKeyDisableKey;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_enable_key".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyEnableKey` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_enable_key".
+///
+- (BOOL)isTeamEncryptionKeyEnableKey;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_rotate_key".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyRotateKey` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_rotate_key".
+///
+- (BOOL)isTeamEncryptionKeyRotateKey;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_encryption_key_schedule_key_deletion".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamEncryptionKeyScheduleKeyDeletion` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_encryption_key_schedule_key_deletion".
+///
+- (BOOL)isTeamEncryptionKeyScheduleKeyDeletion;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "apply_naming_convention".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `applyNamingConvention` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "apply_naming_convention".
+///
+- (BOOL)isApplyNamingConvention;
+
+///
 /// Retrieves whether the union's current tag state has value "create_folder".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7304,6 +12463,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return Whether the union's current tag state has value "file_add".
 ///
 - (BOOL)isFileAdd;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_add_from_automation".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileAddFromAutomation` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_add_from_automation".
+///
+- (BOOL)isFileAddFromAutomation;
 
 ///
 /// Retrieves whether the union's current tag state has value "file_copy".
@@ -7357,6 +12529,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "file_get_copy_reference".
 ///
 - (BOOL)isFileGetCopyReference;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_locking_lock_status_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileLockingLockStatusChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_locking_lock_status_changed".
+///
+- (BOOL)isFileLockingLockStatusChanged;
 
 ///
 /// Retrieves whether the union's current tag state has value "file_move".
@@ -7449,6 +12634,177 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "folder_overview_description_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `folderOverviewDescriptionChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "folder_overview_description_changed".
+///
+- (BOOL)isFolderOverviewDescriptionChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "folder_overview_item_pinned".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `folderOverviewItemPinned` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "folder_overview_item_pinned".
+///
+- (BOOL)isFolderOverviewItemPinned;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "folder_overview_item_unpinned".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `folderOverviewItemUnpinned` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "folder_overview_item_unpinned".
+///
+- (BOOL)isFolderOverviewItemUnpinned;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "object_label_added".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `objectLabelAdded` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "object_label_added".
+///
+- (BOOL)isObjectLabelAdded;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "object_label_removed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `objectLabelRemoved` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "object_label_removed".
+///
+- (BOOL)isObjectLabelRemoved;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "object_label_updated_value".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `objectLabelUpdatedValue` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "object_label_updated_value".
+///
+- (BOOL)isObjectLabelUpdatedValue;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "organize_folder_with_tidy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `organizeFolderWithTidy` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "organize_folder_with_tidy".
+///
+- (BOOL)isOrganizeFolderWithTidy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "replay_file_delete".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `replayFileDelete` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "replay_file_delete".
+///
+- (BOOL)isReplayFileDelete;
+
+///
+/// Retrieves whether the union's current tag state has value "rewind_folder".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `rewindFolder` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value "rewind_folder".
+///
+- (BOOL)isRewindFolder;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "undo_naming_convention".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `undoNamingConvention` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "undo_naming_convention".
+///
+- (BOOL)isUndoNamingConvention;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "undo_organize_folder_with_tidy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `undoOrganizeFolderWithTidy` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "undo_organize_folder_with_tidy".
+///
+- (BOOL)isUndoOrganizeFolderWithTidy;
+
+///
+/// Retrieves whether the union's current tag state has value "user_tags_added".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `userTagsAdded` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value "user_tags_added".
+///
+- (BOOL)isUserTagsAdded;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "user_tags_removed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `userTagsRemoved` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value "user_tags_removed".
+///
+- (BOOL)isUserTagsRemoved;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "email_ingest_receive_file".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `emailIngestReceiveFile` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "email_ingest_receive_file".
+///
+- (BOOL)isEmailIngestReceiveFile;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "file_request_change".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7482,6 +12838,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "file_request_create".
 ///
 - (BOOL)isFileRequestCreate;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_request_delete".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileRequestDelete` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_request_delete".
+///
+- (BOOL)isFileRequestDelete;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -7650,6 +13018,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isGroupRename;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "account_lock_or_unlocked".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `accountLockOrUnlocked` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "account_lock_or_unlocked".
+///
+- (BOOL)isAccountLockOrUnlocked;
+
+///
 /// Retrieves whether the union's current tag state has value "emm_error".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7658,6 +13039,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return Whether the union's current tag state has value "emm_error".
 ///
 - (BOOL)isEmmError;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "guest_admin_signed_in_via_trusted_teams".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `guestAdminSignedInViaTrustedTeams` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "guest_admin_signed_in_via_trusted_teams".
+///
+- (BOOL)isGuestAdminSignedInViaTrustedTeams;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "guest_admin_signed_out_via_trusted_teams".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `guestAdminSignedOutViaTrustedTeams` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "guest_admin_signed_out_via_trusted_teams".
+///
+- (BOOL)isGuestAdminSignedOutViaTrustedTeams;
 
 ///
 /// Retrieves whether the union's current tag state has value "login_fail".
@@ -7751,6 +13158,71 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isSsoError;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "backup_admin_invitation_sent".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `backupAdminInvitationSent` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "backup_admin_invitation_sent".
+///
+- (BOOL)isBackupAdminInvitationSent;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "backup_invitation_opened".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `backupInvitationOpened` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "backup_invitation_opened".
+///
+- (BOOL)isBackupInvitationOpened;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "create_team_invite_link".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `createTeamInviteLink` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "create_team_invite_link".
+///
+- (BOOL)isCreateTeamInviteLink;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "delete_team_invite_link".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `deleteTeamInviteLink` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "delete_team_invite_link".
+///
+- (BOOL)isDeleteTeamInviteLink;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "member_add_external_id".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberAddExternalId` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_add_external_id".
+///
+- (BOOL)isMemberAddExternalId;
+
+///
 /// Retrieves whether the union's current tag state has value "member_add_name".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7787,6 +13259,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "member_change_external_id".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberChangeExternalId` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_change_external_id".
+///
+- (BOOL)isMemberChangeExternalId;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "member_change_membership_type".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7812,6 +13297,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "member_change_reseller_role".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberChangeResellerRole` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_change_reseller_role".
+///
+- (BOOL)isMemberChangeResellerRole;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "member_change_status".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7821,6 +13319,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "member_change_status".
 ///
 - (BOOL)isMemberChangeStatus;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "member_delete_manual_contacts".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberDeleteManualContacts` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_delete_manual_contacts".
+///
+- (BOOL)isMemberDeleteManualContacts;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "member_delete_profile_photo".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberDeleteProfilePhoto` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_delete_profile_photo".
+///
+- (BOOL)isMemberDeleteProfilePhoto;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -7834,6 +13358,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "member_permanently_delete_account_contents".
 ///
 - (BOOL)isMemberPermanentlyDeleteAccountContents;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "member_remove_external_id".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberRemoveExternalId` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_remove_external_id".
+///
+- (BOOL)isMemberRemoveExternalId;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "member_set_profile_photo".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberSetProfilePhoto` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_set_profile_photo".
+///
+- (BOOL)isMemberSetProfilePhoto;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -7912,6 +13462,45 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "pending_secondary_email_added".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `pendingSecondaryEmailAdded` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "pending_secondary_email_added".
+///
+- (BOOL)isPendingSecondaryEmailAdded;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "secondary_email_deleted".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `secondaryEmailDeleted` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "secondary_email_deleted".
+///
+- (BOOL)isSecondaryEmailDeleted;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "secondary_email_verified".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `secondaryEmailVerified` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "secondary_email_verified".
+///
+- (BOOL)isSecondaryEmailVerified;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "secondary_mails_policy_changed".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -7922,6 +13511,103 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "secondary_mails_policy_changed".
 ///
 - (BOOL)isSecondaryMailsPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value "binder_add_page".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderAddPage` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value "binder_add_page".
+///
+- (BOOL)isBinderAddPage;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_add_section".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderAddSection` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_add_section".
+///
+- (BOOL)isBinderAddSection;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_remove_page".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderRemovePage` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_remove_page".
+///
+- (BOOL)isBinderRemovePage;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_remove_section".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderRemoveSection` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_remove_section".
+///
+- (BOOL)isBinderRemoveSection;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_rename_page".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderRenamePage` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_rename_page".
+///
+- (BOOL)isBinderRenamePage;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_rename_section".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderRenameSection` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_rename_section".
+///
+- (BOOL)isBinderRenameSection;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_reorder_page".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderReorderPage` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_reorder_page".
+///
+- (BOOL)isBinderReorderPage;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "binder_reorder_section".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `binderReorderSection` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "binder_reorder_section".
+///
+- (BOOL)isBinderReorderSection;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -8173,6 +13859,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "paper_doc_ownership_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperDocOwnershipChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_doc_ownership_changed".
+///
+- (BOOL)isPaperDocOwnershipChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "paper_doc_request_access".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -8369,6 +14068,58 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isPaperFolderTeamInvite;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "paper_published_link_change_permission".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperPublishedLinkChangePermission` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_published_link_change_permission".
+///
+- (BOOL)isPaperPublishedLinkChangePermission;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "paper_published_link_create".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperPublishedLinkCreate` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_published_link_create".
+///
+- (BOOL)isPaperPublishedLinkCreate;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "paper_published_link_disabled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperPublishedLinkDisabled` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_published_link_disabled".
+///
+- (BOOL)isPaperPublishedLinkDisabled;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "paper_published_link_view".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperPublishedLinkView` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_published_link_view".
+///
+- (BOOL)isPaperPublishedLinkView;
+
+///
 /// Retrieves whether the union's current tag state has value "password_change".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -8399,6 +14150,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "password_reset_all".
 ///
 - (BOOL)isPasswordResetAll;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "classification_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `classificationCreateReport` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "classification_create_report".
+///
+- (BOOL)isClassificationCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "classification_create_report_fail".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `classificationCreateReportFail` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "classification_create_report_fail".
+///
+- (BOOL)isClassificationCreateReportFail;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -8441,6 +14218,149 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "export_members_report_fail".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `exportMembersReportFail` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "export_members_report_fail".
+///
+- (BOOL)isExportMembersReportFail;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "external_sharing_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `externalSharingCreateReport` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "external_sharing_create_report".
+///
+- (BOOL)isExternalSharingCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "external_sharing_report_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `externalSharingReportFailed` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "external_sharing_report_failed".
+///
+- (BOOL)isExternalSharingReportFailed;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "no_expiration_link_gen_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `noExpirationLinkGenCreateReport` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "no_expiration_link_gen_create_report".
+///
+- (BOOL)isNoExpirationLinkGenCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "no_expiration_link_gen_report_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `noExpirationLinkGenReportFailed` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "no_expiration_link_gen_report_failed".
+///
+- (BOOL)isNoExpirationLinkGenReportFailed;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "no_password_link_gen_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `noPasswordLinkGenCreateReport` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "no_password_link_gen_create_report".
+///
+- (BOOL)isNoPasswordLinkGenCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "no_password_link_gen_report_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `noPasswordLinkGenReportFailed` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "no_password_link_gen_report_failed".
+///
+- (BOOL)isNoPasswordLinkGenReportFailed;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "no_password_link_view_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `noPasswordLinkViewCreateReport` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "no_password_link_view_create_report".
+///
+- (BOOL)isNoPasswordLinkViewCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "no_password_link_view_report_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `noPasswordLinkViewReportFailed` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "no_password_link_view_report_failed".
+///
+- (BOOL)isNoPasswordLinkViewReportFailed;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "outdated_link_view_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `outdatedLinkViewCreateReport` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "outdated_link_view_create_report".
+///
+- (BOOL)isOutdatedLinkViewCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "outdated_link_view_report_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `outdatedLinkViewReportFailed` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "outdated_link_view_report_failed".
+///
+- (BOOL)isOutdatedLinkViewReportFailed;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "paper_admin_export_start".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -8451,6 +14371,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "paper_admin_export_start".
 ///
 - (BOOL)isPaperAdminExportStart;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "ransomware_alert_create_report".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `ransomwareAlertCreateReport` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "ransomware_alert_create_report".
+///
+- (BOOL)isRansomwareAlertCreateReport;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "ransomware_alert_create_report_failed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `ransomwareAlertCreateReportFailed` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "ransomware_alert_create_report_failed".
+///
+- (BOOL)isRansomwareAlertCreateReportFailed;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -8480,6 +14426,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "team_activity_create_report_fail".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamActivityCreateReportFail` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_activity_create_report_fail".
+///
+- (BOOL)isTeamActivityCreateReportFail;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "collection_share".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -8488,6 +14447,71 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return Whether the union's current tag state has value "collection_share".
 ///
 - (BOOL)isCollectionShare;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_transfers_file_add".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileTransfersFileAdd` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_transfers_file_add".
+///
+- (BOOL)isFileTransfersFileAdd;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_transfers_transfer_delete".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileTransfersTransferDelete` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_transfers_transfer_delete".
+///
+- (BOOL)isFileTransfersTransferDelete;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_transfers_transfer_download".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileTransfersTransferDownload` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_transfers_transfer_download".
+///
+- (BOOL)isFileTransfersTransferDownload;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_transfers_transfer_send".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileTransfersTransferSend` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_transfers_transfer_send".
+///
+- (BOOL)isFileTransfersTransferSend;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_transfers_transfer_view".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileTransfersTransferView` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_transfers_transfer_view".
+///
+- (BOOL)isFileTransfersTransferView;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -8555,6 +14579,58 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return Whether the union's current tag state has value "open_note_shared".
 ///
 - (BOOL)isOpenNoteShared;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "replay_file_shared_link_created".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `replayFileSharedLinkCreated` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "replay_file_shared_link_created".
+///
+- (BOOL)isReplayFileSharedLinkCreated;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "replay_file_shared_link_modified".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `replayFileSharedLinkModified` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "replay_file_shared_link_modified".
+///
+- (BOOL)isReplayFileSharedLinkModified;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "replay_project_team_add".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `replayProjectTeamAdd` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "replay_project_team_add".
+///
+- (BOOL)isReplayProjectTeamAdd;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "replay_project_team_delete".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `replayProjectTeamDelete` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "replay_project_team_delete".
+///
+- (BOOL)isReplayProjectTeamDelete;
 
 ///
 /// Retrieves whether the union's current tag state has value "sf_add_group".
@@ -8965,6 +15041,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "shared_content_restore_invitees".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedContentRestoreInvitees` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_content_restore_invitees".
+///
+- (BOOL)isSharedContentRestoreInvitees;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_content_restore_member".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedContentRestoreMember` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_content_restore_member".
+///
+- (BOOL)isSharedContentRestoreMember;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "shared_content_unshare".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -9216,6 +15318,123 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_add_expiration".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsAddExpiration` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_add_expiration".
+///
+- (BOOL)isSharedLinkSettingsAddExpiration;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_add_password".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsAddPassword` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_add_password".
+///
+- (BOOL)isSharedLinkSettingsAddPassword;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_allow_download_disabled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsAllowDownloadDisabled` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_allow_download_disabled".
+///
+- (BOOL)isSharedLinkSettingsAllowDownloadDisabled;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_allow_download_enabled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsAllowDownloadEnabled` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_allow_download_enabled".
+///
+- (BOOL)isSharedLinkSettingsAllowDownloadEnabled;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_change_audience".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsChangeAudience` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_change_audience".
+///
+- (BOOL)isSharedLinkSettingsChangeAudience;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_change_expiration".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsChangeExpiration` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_change_expiration".
+///
+- (BOOL)isSharedLinkSettingsChangeExpiration;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_change_password".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsChangePassword` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_change_password".
+///
+- (BOOL)isSharedLinkSettingsChangePassword;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_remove_expiration".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsRemoveExpiration` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_remove_expiration".
+///
+- (BOOL)isSharedLinkSettingsRemoveExpiration;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shared_link_settings_remove_password".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharedLinkSettingsRemovePassword` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shared_link_settings_remove_password".
+///
+- (BOOL)isSharedLinkSettingsRemovePassword;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "shared_link_share".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -9247,6 +15466,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "shared_note_opened".
 ///
 - (BOOL)isSharedNoteOpened;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shmodel_disable_downloads".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `shmodelDisableDownloads` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shmodel_disable_downloads".
+///
+- (BOOL)isShmodelDisableDownloads;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "shmodel_enable_downloads".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `shmodelEnableDownloads` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "shmodel_enable_downloads".
+///
+- (BOOL)isShmodelEnableDownloads;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -9757,6 +16002,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "admin_email_reminders_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `adminEmailRemindersChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "admin_email_reminders_changed".
+///
+- (BOOL)isAdminEmailRemindersChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "allow_download_disabled".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -9783,6 +16041,84 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "app_permissions_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `appPermissionsChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "app_permissions_changed".
+///
+- (BOOL)isAppPermissionsChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "camera_uploads_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `cameraUploadsPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "camera_uploads_policy_changed".
+///
+- (BOOL)isCameraUploadsPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "capture_transcript_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `captureTranscriptPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "capture_transcript_policy_changed".
+///
+- (BOOL)isCaptureTranscriptPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "classification_change_policy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `classificationChangePolicy` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "classification_change_policy".
+///
+- (BOOL)isClassificationChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "computer_backup_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `computerBackupPolicyChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "computer_backup_policy_changed".
+///
+- (BOOL)isComputerBackupPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "content_administration_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `contentAdministrationPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "content_administration_policy_changed".
+///
+- (BOOL)isContentAdministrationPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "data_placement_restriction_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -9806,6 +16142,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "data_placement_restriction_satisfy_policy".
 ///
 - (BOOL)isDataPlacementRestrictionSatisfyPolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "device_approvals_add_exception".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `deviceApprovalsAddException` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "device_approvals_add_exception".
+///
+- (BOOL)isDeviceApprovalsAddException;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -9861,6 +16210,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "device_approvals_remove_exception".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `deviceApprovalsRemoveException` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "device_approvals_remove_exception".
+///
+- (BOOL)isDeviceApprovalsRemoveException;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "directory_restrictions_add_members".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -9884,6 +16246,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "directory_restrictions_remove_members".
 ///
 - (BOOL)isDirectoryRestrictionsRemoveMembers;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "dropbox_passwords_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `dropboxPasswordsPolicyChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "dropbox_passwords_policy_changed".
+///
+- (BOOL)isDropboxPasswordsPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "email_ingest_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `emailIngestPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "email_ingest_policy_changed".
+///
+- (BOOL)isEmailIngestPolicyChanged;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -9934,6 +16322,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "external_drive_backup_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `externalDriveBackupPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "external_drive_backup_policy_changed".
+///
+- (BOOL)isExternalDriveBackupPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "file_comments_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -9944,6 +16345,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "file_comments_change_policy".
 ///
 - (BOOL)isFileCommentsChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_locking_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileLockingPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_locking_policy_changed".
+///
+- (BOOL)isFileLockingPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "file_provider_migration_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileProviderMigrationPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_provider_migration_policy_changed".
+///
+- (BOOL)isFileProviderMigrationPolicyChanged;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -9986,6 +16413,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "file_transfers_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `fileTransfersPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "file_transfers_policy_changed".
+///
+- (BOOL)isFileTransfersPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "folder_link_restriction_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `folderLinkRestrictionPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "folder_link_restriction_policy_changed".
+///
+- (BOOL)isFolderLinkRestrictionPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "google_sso_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10012,6 +16465,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "integration_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `integrationPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "integration_policy_changed".
+///
+- (BOOL)isIntegrationPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "invite_acceptance_email_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `inviteAcceptanceEmailPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "invite_acceptance_email_policy_changed".
+///
+- (BOOL)isInviteAcceptanceEmailPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "member_requests_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10022,6 +16501,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "member_requests_change_policy".
 ///
 - (BOOL)isMemberRequestsChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "member_send_invite_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `memberSendInvitePolicyChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "member_send_invite_policy_changed".
+///
+- (BOOL)isMemberSendInvitePolicyChanged;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -10167,6 +16659,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "paper_default_folder_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperDefaultFolderPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_default_folder_policy_changed".
+///
+- (BOOL)isPaperDefaultFolderPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "paper_desktop_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `paperDesktopPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "paper_desktop_policy_changed".
+///
+- (BOOL)isPaperDesktopPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "paper_enabled_users_group_addition".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10193,6 +16711,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "password_strength_requirements_change_policy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `passwordStrengthRequirementsChangePolicy` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "password_strength_requirements_change_policy".
+///
+- (BOOL)isPasswordStrengthRequirementsChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "permanent_delete_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10206,6 +16737,45 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "reseller_support_change_policy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `resellerSupportChangePolicy` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "reseller_support_change_policy".
+///
+- (BOOL)isResellerSupportChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "rewind_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `rewindPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "rewind_policy_changed".
+///
+- (BOOL)isRewindPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "send_for_signature_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sendForSignaturePolicyChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "send_for_signature_policy_changed".
+///
+- (BOOL)isSendForSignaturePolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "sharing_change_folder_join_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10216,6 +16786,45 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "sharing_change_folder_join_policy".
 ///
 - (BOOL)isSharingChangeFolderJoinPolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "sharing_change_link_allow_change_expiration_policy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharingChangeLinkAllowChangeExpirationPolicy` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "sharing_change_link_allow_change_expiration_policy".
+///
+- (BOOL)isSharingChangeLinkAllowChangeExpirationPolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "sharing_change_link_default_expiration_policy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharingChangeLinkDefaultExpirationPolicy` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "sharing_change_link_default_expiration_policy".
+///
+- (BOOL)isSharingChangeLinkDefaultExpirationPolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "sharing_change_link_enforce_password_policy".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `sharingChangeLinkEnforcePasswordPolicy` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "sharing_change_link_enforce_password_policy".
+///
+- (BOOL)isSharingChangeLinkEnforcePasswordPolicy;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -10284,6 +16893,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "smarter_smart_sync_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `smarterSmartSyncPolicyChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "smarter_smart_sync_policy_changed".
+///
+- (BOOL)isSmarterSmartSyncPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "smart_sync_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10332,6 +16954,69 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "team_branding_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamBrandingPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_branding_policy_changed".
+///
+- (BOOL)isTeamBrandingPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_extensions_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamExtensionsPolicyChanged` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_extensions_policy_changed".
+///
+- (BOOL)isTeamExtensionsPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_selective_sync_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamSelectiveSyncPolicyChanged` property, otherwise a runtime exception
+/// will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_selective_sync_policy_changed".
+///
+- (BOOL)isTeamSelectiveSyncPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_sharing_whitelist_subjects_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamSharingWhitelistSubjectsChanged` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_sharing_whitelist_subjects_changed".
+///
+- (BOOL)isTeamSharingWhitelistSubjectsChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "tfa_add_exception".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `tfaAddException` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value "tfa_add_exception".
+///
+- (BOOL)isTfaAddException;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "tfa_change_policy".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10340,6 +17025,18 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return Whether the union's current tag state has value "tfa_change_policy".
 ///
 - (BOOL)isTfaChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "tfa_remove_exception".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `tfaRemoveException` property, otherwise a runtime exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "tfa_remove_exception".
+///
+- (BOOL)isTfaRemoveException;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -10353,6 +17050,45 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "two_account_change_policy".
 ///
 - (BOOL)isTwoAccountChangePolicy;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "viewer_info_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `viewerInfoPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "viewer_info_policy_changed".
+///
+- (BOOL)isViewerInfoPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "watermarking_policy_changed".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `watermarkingPolicyChanged` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "watermarking_policy_changed".
+///
+- (BOOL)isWatermarkingPolicyChanged;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "web_sessions_change_active_session_limit".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `webSessionsChangeActiveSessionLimit` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "web_sessions_change_active_session_limit".
+///
+- (BOOL)isWebSessionsChangeActiveSessionLimit;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -10381,6 +17117,32 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isWebSessionsChangeIdleLengthPolicy;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "data_residency_migration_request_successful".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `dataResidencyMigrationRequestSuccessful` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "data_residency_migration_request_successful".
+///
+- (BOOL)isDataResidencyMigrationRequestSuccessful;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "data_residency_migration_request_unsuccessful".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `dataResidencyMigrationRequestUnsuccessful` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "data_residency_migration_request_unsuccessful".
+///
+- (BOOL)isDataResidencyMigrationRequestUnsuccessful;
+
+///
 /// Retrieves whether the union's current tag state has value "team_merge_from".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10402,6 +17164,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 
 ///
 /// Retrieves whether the union's current tag state has value
+/// "team_profile_add_background".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamProfileAddBackground` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_profile_add_background".
+///
+- (BOOL)isTeamProfileAddBackground;
+
+///
+/// Retrieves whether the union's current tag state has value
 /// "team_profile_add_logo".
 ///
 /// @note Call this method and ensure it returns true before accessing the
@@ -10411,6 +17186,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "team_profile_add_logo".
 ///
 - (BOOL)isTeamProfileAddLogo;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_profile_change_background".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamProfileChangeBackground` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_profile_change_background".
+///
+- (BOOL)isTeamProfileChangeBackground;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -10450,6 +17238,19 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// "team_profile_change_name".
 ///
 - (BOOL)isTeamProfileChangeName;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_profile_remove_background".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamProfileRemoveBackground` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_profile_remove_background".
+///
+- (BOOL)isTeamProfileRemoveBackground;
 
 ///
 /// Retrieves whether the union's current tag state has value
@@ -10549,6 +17350,331 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 - (BOOL)isTfaReset;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "changed_enterprise_admin_role".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `changedEnterpriseAdminRole` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "changed_enterprise_admin_role".
+///
+- (BOOL)isChangedEnterpriseAdminRole;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "changed_enterprise_connected_team_status".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `changedEnterpriseConnectedTeamStatus` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "changed_enterprise_connected_team_status".
+///
+- (BOOL)isChangedEnterpriseConnectedTeamStatus;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "ended_enterprise_admin_session".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `endedEnterpriseAdminSession` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "ended_enterprise_admin_session".
+///
+- (BOOL)isEndedEnterpriseAdminSession;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "ended_enterprise_admin_session_deprecated".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `endedEnterpriseAdminSessionDeprecated` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "ended_enterprise_admin_session_deprecated".
+///
+- (BOOL)isEndedEnterpriseAdminSessionDeprecated;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "enterprise_settings_locking".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `enterpriseSettingsLocking` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "enterprise_settings_locking".
+///
+- (BOOL)isEnterpriseSettingsLocking;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "guest_admin_change_status".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `guestAdminChangeStatus` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "guest_admin_change_status".
+///
+- (BOOL)isGuestAdminChangeStatus;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "started_enterprise_admin_session".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `startedEnterpriseAdminSession` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "started_enterprise_admin_session".
+///
+- (BOOL)isStartedEnterpriseAdminSession;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_accepted".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestAccepted` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_accepted".
+///
+- (BOOL)isTeamMergeRequestAccepted;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_accepted_shown_to_primary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestAcceptedShownToPrimaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_accepted_shown_to_primary_team".
+///
+- (BOOL)isTeamMergeRequestAcceptedShownToPrimaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_accepted_shown_to_secondary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestAcceptedShownToSecondaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_accepted_shown_to_secondary_team".
+///
+- (BOOL)isTeamMergeRequestAcceptedShownToSecondaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_auto_canceled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestAutoCanceled` property, otherwise a runtime exception will
+/// be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_auto_canceled".
+///
+- (BOOL)isTeamMergeRequestAutoCanceled;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_canceled".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestCanceled` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_canceled".
+///
+- (BOOL)isTeamMergeRequestCanceled;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_canceled_shown_to_primary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestCanceledShownToPrimaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_canceled_shown_to_primary_team".
+///
+- (BOOL)isTeamMergeRequestCanceledShownToPrimaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_canceled_shown_to_secondary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestCanceledShownToSecondaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_canceled_shown_to_secondary_team".
+///
+- (BOOL)isTeamMergeRequestCanceledShownToSecondaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_expired".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestExpired` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_expired".
+///
+- (BOOL)isTeamMergeRequestExpired;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_expired_shown_to_primary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestExpiredShownToPrimaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_expired_shown_to_primary_team".
+///
+- (BOOL)isTeamMergeRequestExpiredShownToPrimaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_expired_shown_to_secondary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestExpiredShownToSecondaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_expired_shown_to_secondary_team".
+///
+- (BOOL)isTeamMergeRequestExpiredShownToSecondaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_rejected_shown_to_primary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestRejectedShownToPrimaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_rejected_shown_to_primary_team".
+///
+- (BOOL)isTeamMergeRequestRejectedShownToPrimaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_rejected_shown_to_secondary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestRejectedShownToSecondaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_rejected_shown_to_secondary_team".
+///
+- (BOOL)isTeamMergeRequestRejectedShownToSecondaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_reminder".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestReminder` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_reminder".
+///
+- (BOOL)isTeamMergeRequestReminder;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_reminder_shown_to_primary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestReminderShownToPrimaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_reminder_shown_to_primary_team".
+///
+- (BOOL)isTeamMergeRequestReminderShownToPrimaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_reminder_shown_to_secondary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestReminderShownToSecondaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_reminder_shown_to_secondary_team".
+///
+- (BOOL)isTeamMergeRequestReminderShownToSecondaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_revoked".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestRevoked` property, otherwise a runtime exception will be
+/// thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_revoked".
+///
+- (BOOL)isTeamMergeRequestRevoked;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_sent_shown_to_primary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestSentShownToPrimaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_sent_shown_to_primary_team".
+///
+- (BOOL)isTeamMergeRequestSentShownToPrimaryTeam;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "team_merge_request_sent_shown_to_secondary_team".
+///
+/// @note Call this method and ensure it returns true before accessing the
+/// `teamMergeRequestSentShownToSecondaryTeam` property, otherwise a runtime
+/// exception will be thrown.
+///
+/// @return Whether the union's current tag state has value
+/// "team_merge_request_sent_shown_to_secondary_team".
+///
+- (BOOL)isTeamMergeRequestSentShownToSecondaryTeam;
+
+///
 /// Retrieves whether the union's current tag state has value "other".
 ///
 /// @return Whether the union's current tag state has value "other".
@@ -10579,7 +17705,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGEventType` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGEventType *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGEventType *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGEventType` instances.
@@ -10589,7 +17715,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventTypeTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGEventType` object.
 ///
-+ (DBTEAMLOGEventType *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGEventType *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMTeamFolderCreateErrorTag` enum type represents the possible tag
 /// states with which the `DBTEAMTeamFolderCreateError` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMTeamFolderCreateErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMTeamFolderCreateErrorTag) {
   /// The provided name cannot be used.
   DBTEAMTeamFolderCreateErrorInvalidFolderName,
 
@@ -179,7 +179,7 @@ typedef NS_ENUM(NSInteger, DBTEAMTeamFolderCreateErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMTeamFolderCreateError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMTeamFolderCreateError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMTeamFolderCreateError *)instance;
 
 ///
 /// Deserializes `DBTEAMTeamFolderCreateError` instances.
@@ -189,7 +189,7 @@ typedef NS_ENUM(NSInteger, DBTEAMTeamFolderCreateErrorTag) {
 ///
 /// @return An instantiation of the `DBTEAMTeamFolderCreateError` object.
 ///
-+ (DBTEAMTeamFolderCreateError *)deserialize:(NSDictionary *)dict;
++ (DBTEAMTeamFolderCreateError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

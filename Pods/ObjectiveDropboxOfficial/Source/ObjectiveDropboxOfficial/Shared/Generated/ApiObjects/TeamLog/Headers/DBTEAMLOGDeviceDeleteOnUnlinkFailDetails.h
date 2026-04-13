@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Instance fields
 
-/// Session unique id. Might be missing due to historical data gap.
+/// Session unique id.
 @property (nonatomic, readonly, nullable) DBTEAMLOGSessionLogInfo *sessionInfo;
 
 /// The device name. Might be missing due to historical data gap.
@@ -43,8 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param numFailures The number of times that remote file deletion failed.
-/// @param sessionInfo Session unique id. Might be missing due to historical
-/// data gap.
+/// @param sessionInfo Session unique id.
 /// @param displayName The device name. Might be missing due to historical data
 /// gap.
 ///
@@ -84,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGDeviceDeleteOnUnlinkFailDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGDeviceDeleteOnUnlinkFailDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGDeviceDeleteOnUnlinkFailDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGDeviceDeleteOnUnlinkFailDetails` instances.
@@ -95,7 +94,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An instantiation of the `DBTEAMLOGDeviceDeleteOnUnlinkFailDetails`
 /// object.
 ///
-+ (DBTEAMLOGDeviceDeleteOnUnlinkFailDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGDeviceDeleteOnUnlinkFailDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

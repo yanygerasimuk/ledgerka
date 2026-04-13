@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBTEAMLOGExtendedVersionHistoryPolicyTag` enum type represents the
 /// possible tag states with which the `DBTEAMLOGExtendedVersionHistoryPolicy`
 /// union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGExtendedVersionHistoryPolicyTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGExtendedVersionHistoryPolicyTag) {
   /// (no description).
   DBTEAMLOGExtendedVersionHistoryPolicyExplicitlyLimited,
 
@@ -159,7 +159,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGExtendedVersionHistoryPolicyTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGExtendedVersionHistoryPolicy` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGExtendedVersionHistoryPolicy *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGExtendedVersionHistoryPolicy *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGExtendedVersionHistoryPolicy` instances.
@@ -170,7 +170,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGExtendedVersionHistoryPolicyTag) {
 /// @return An instantiation of the `DBTEAMLOGExtendedVersionHistoryPolicy`
 /// object.
 ///
-+ (DBTEAMLOGExtendedVersionHistoryPolicy *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGExtendedVersionHistoryPolicy *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

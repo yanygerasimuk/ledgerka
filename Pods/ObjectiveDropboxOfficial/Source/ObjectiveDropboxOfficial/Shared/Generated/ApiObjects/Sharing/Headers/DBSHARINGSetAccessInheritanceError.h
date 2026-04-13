@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBSHARINGSetAccessInheritanceErrorTag` enum type represents the
 /// possible tag states with which the `DBSHARINGSetAccessInheritanceError`
 /// union can exist.
-typedef NS_ENUM(NSInteger, DBSHARINGSetAccessInheritanceErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBSHARINGSetAccessInheritanceErrorTag) {
   /// Unable to access shared folder.
   DBSHARINGSetAccessInheritanceErrorAccessError,
 
@@ -131,7 +131,7 @@ typedef NS_ENUM(NSInteger, DBSHARINGSetAccessInheritanceErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBSHARINGSetAccessInheritanceError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBSHARINGSetAccessInheritanceError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBSHARINGSetAccessInheritanceError *)instance;
 
 ///
 /// Deserializes `DBSHARINGSetAccessInheritanceError` instances.
@@ -141,7 +141,7 @@ typedef NS_ENUM(NSInteger, DBSHARINGSetAccessInheritanceErrorTag) {
 ///
 /// @return An instantiation of the `DBSHARINGSetAccessInheritanceError` object.
 ///
-+ (DBSHARINGSetAccessInheritanceError *)deserialize:(NSDictionary *)dict;
++ (DBSHARINGSetAccessInheritanceError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

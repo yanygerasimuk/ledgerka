@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGIdentifierTypeTag` enum type represents the possible tag
 /// states with which the `DBTEAMLOGIdentifierType` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGIdentifierTypeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGIdentifierTypeTag) {
   /// (no description).
   DBTEAMLOGIdentifierTypeEmail,
 
@@ -116,7 +116,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGIdentifierTypeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGIdentifierType` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGIdentifierType *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGIdentifierType *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGIdentifierType` instances.
@@ -126,7 +126,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGIdentifierTypeTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGIdentifierType` object.
 ///
-+ (DBTEAMLOGIdentifierType *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGIdentifierType *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

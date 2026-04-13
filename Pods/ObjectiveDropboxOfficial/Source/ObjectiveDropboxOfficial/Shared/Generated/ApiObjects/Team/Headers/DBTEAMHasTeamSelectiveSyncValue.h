@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMHasTeamSelectiveSyncValueTag` enum type represents the possible
 /// tag states with which the `DBTEAMHasTeamSelectiveSyncValue` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMHasTeamSelectiveSyncValueTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMHasTeamSelectiveSyncValueTag) {
   /// Does this team have team selective sync enabled.
   DBTEAMHasTeamSelectiveSyncValueHasTeamSelectiveSync,
 
@@ -116,7 +116,7 @@ typedef NS_ENUM(NSInteger, DBTEAMHasTeamSelectiveSyncValueTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMHasTeamSelectiveSyncValue` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMHasTeamSelectiveSyncValue *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMHasTeamSelectiveSyncValue *)instance;
 
 ///
 /// Deserializes `DBTEAMHasTeamSelectiveSyncValue` instances.
@@ -126,7 +126,7 @@ typedef NS_ENUM(NSInteger, DBTEAMHasTeamSelectiveSyncValueTag) {
 ///
 /// @return An instantiation of the `DBTEAMHasTeamSelectiveSyncValue` object.
 ///
-+ (DBTEAMHasTeamSelectiveSyncValue *)deserialize:(NSDictionary *)dict;
++ (DBTEAMHasTeamSelectiveSyncValue *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

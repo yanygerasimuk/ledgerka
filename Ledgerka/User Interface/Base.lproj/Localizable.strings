@@ -27,8 +27,8 @@
 /* Author of application (Yan Gerasimuk) */
 "APPLICATION_AUTHOR" = "Yan Gerasimuk";
 
-/* Name of application (Ledger) */
-"APPLICATION_NAME" = "Ledger";
+/* Name of application (Ledgerka) */
+"APPLICATION_NAME" = "Ledgerka";
 
 /* Pretext for release build date. */
 "APPLICATION_RELEASED_PRETEXT" = "released";
@@ -268,7 +268,7 @@
 "YESTERDAY" = "Yesterday";
 
 /* Application name on Launch screen. */
-"LAUNCH_SCREEN_APP_NAME_LABEL" = "Ledger";
+"LAUNCH_SCREEN_APP_NAME_LABEL" = "Ledgerka";
 
 /* Log text during loading Launch screen. */
 "LAUNCH_SCREEN_LOG_LOADING_LABEL" = "Loading...";

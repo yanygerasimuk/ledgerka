@@ -1,20 +1,20 @@
 PODS:
-  - ObjectiveDropboxOfficial (3.9.1)
-  - ReactiveObjC (3.1.0)
+  - ObjectiveDropboxOfficial (7.4.2)
+  - ReactiveObjC (3.1.1)
 
 DEPENDENCIES:
-  - ObjectiveDropboxOfficial (~> 3.9.1)
-  - ReactiveObjC (~> 3.1.0)
+  - ObjectiveDropboxOfficial
+  - ReactiveObjC
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ObjectiveDropboxOfficial
     - ReactiveObjC
 
 SPEC CHECKSUMS:
-  ObjectiveDropboxOfficial: 274ce69d66286c94416daf1da5237c55e105e8c0
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  ObjectiveDropboxOfficial: 1645cbc5a542831173425b00ed6929d5a07d0a95
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
 
-PODFILE CHECKSUM: ef464a313f227335f9f2bbde5a2ac6198fad88da
+PODFILE CHECKSUM: 4c6f903dfea104c574a538deaa42014d7af4f0b4
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.16.2

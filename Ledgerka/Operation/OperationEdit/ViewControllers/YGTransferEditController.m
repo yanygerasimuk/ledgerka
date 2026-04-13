@@ -13,7 +13,7 @@
 #import "YGCategoryManager.h"
 #import "YGOperationManager.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @interface YGTransferEditController () <UITextFieldDelegate, UITextViewDelegate> {
     NSDate *p_day;

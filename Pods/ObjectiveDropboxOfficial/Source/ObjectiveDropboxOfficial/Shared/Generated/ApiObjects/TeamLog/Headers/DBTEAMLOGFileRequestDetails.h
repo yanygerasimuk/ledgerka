@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Asset position in the Assets list.
 @property (nonatomic, readonly) NSNumber *assetIndex;
 
-/// File request deadline. Might be missing due to historical data gap.
+/// File request deadline.
 @property (nonatomic, readonly, nullable) DBTEAMLOGFileRequestDeadline *deadline;
 
 #pragma mark - Constructors
@@ -40,8 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param assetIndex Asset position in the Assets list.
-/// @param deadline File request deadline. Might be missing due to historical
-/// data gap.
+/// @param deadline File request deadline.
 ///
 /// @return An initialized instance.
 ///
@@ -76,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGFileRequestDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGFileRequestDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGFileRequestDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGFileRequestDetails` instances.
@@ -86,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @return An instantiation of the `DBTEAMLOGFileRequestDetails` object.
 ///
-+ (DBTEAMLOGFileRequestDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGFileRequestDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

@@ -33,10 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// Original shared folder name.
 @property (nonatomic, readonly, copy) NSString *originalFolderName;
 
-/// Previous sharing permission. Might be missing due to historical data gap.
+/// Previous sharing permission.
 @property (nonatomic, readonly, copy, nullable) NSString *previousSharingPermission;
 
-/// New sharing permission. Might be missing due to historical data gap.
+/// New sharing permission.
 @property (nonatomic, readonly, copy, nullable) NSString *dNewSharingPermission;
 
 #pragma mark - Constructors
@@ -46,10 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param targetAssetIndex Target asset position in the Assets list.
 /// @param originalFolderName Original shared folder name.
-/// @param previousSharingPermission Previous sharing permission. Might be
-/// missing due to historical data gap.
-/// @param dNewSharingPermission New sharing permission. Might be missing due to
-/// historical data gap.
+/// @param previousSharingPermission Previous sharing permission.
+/// @param dNewSharingPermission New sharing permission.
 ///
 /// @return An initialized instance.
 ///
@@ -89,7 +87,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGSfFbInviteChangeRoleDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGSfFbInviteChangeRoleDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGSfFbInviteChangeRoleDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGSfFbInviteChangeRoleDetails` instances.
@@ -100,7 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An instantiation of the `DBTEAMLOGSfFbInviteChangeRoleDetails`
 /// object.
 ///
-+ (DBTEAMLOGSfFbInviteChangeRoleDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGSfFbInviteChangeRoleDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

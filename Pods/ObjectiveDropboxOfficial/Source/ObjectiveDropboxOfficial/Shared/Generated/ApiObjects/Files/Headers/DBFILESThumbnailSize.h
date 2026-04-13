@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESThumbnailSizeTag` enum type represents the possible tag states
 /// with which the `DBFILESThumbnailSize` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESThumbnailSizeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESThumbnailSizeTag) {
   /// 32 by 32 px.
   DBFILESThumbnailSizeW32h32,
 
@@ -234,7 +234,7 @@ typedef NS_ENUM(NSInteger, DBFILESThumbnailSizeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESThumbnailSize` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESThumbnailSize *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESThumbnailSize *)instance;
 
 ///
 /// Deserializes `DBFILESThumbnailSize` instances.
@@ -244,7 +244,7 @@ typedef NS_ENUM(NSInteger, DBFILESThumbnailSizeTag) {
 ///
 /// @return An instantiation of the `DBFILESThumbnailSize` object.
 ///
-+ (DBFILESThumbnailSize *)deserialize:(NSDictionary *)dict;
++ (DBFILESThumbnailSize *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

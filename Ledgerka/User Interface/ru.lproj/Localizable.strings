@@ -27,7 +27,7 @@
 /* Author of application (Yan Gerasimuk) */
 "APPLICATION_AUTHOR" = "Ян Герасимук";
 
-/* Name of application (Ledger) */
+/* Name of application (Ledgerka) */
 "APPLICATION_NAME" = "Леджерка";
 
 /* Pretext for release build date. */

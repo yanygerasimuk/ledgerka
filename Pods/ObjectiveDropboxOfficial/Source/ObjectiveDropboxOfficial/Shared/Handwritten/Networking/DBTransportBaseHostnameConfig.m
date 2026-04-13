@@ -27,28 +27,29 @@
 @implementation DBTransportBaseHostnameConfig
 
 - (instancetype)init {
-  if (!kSDKDebug) {
-    return [self initWithMeta:@"www.dropbox.com"
-                          api:@"api.dropbox.com"
-                      content:@"api-content.dropbox.com"
-                       notify:@"notify.dropboxapi.com"];
-  } else {
-    return [self initWithMeta:[NSString stringWithFormat:@"meta-%@.dev.corp.dropbox.com", kSDKDebugHost]
-                          api:[NSString stringWithFormat:@"api-%@.dev.corp.dropbox.com", kSDKDebugHost]
-                      content:[NSString stringWithFormat:@"api-content-%@.dev.corp.dropbox.com", kSDKDebugHost]
-                       notify:[NSString stringWithFormat:@"notify-%@.dev.corp.dropboxapi.com", kSDKDebugHost]];
-  }
-  return self;
+  return [self initWithMeta:@"www.dropbox.com"
+                        api:@"api.dropbox.com"
+                    content:@"api-content.dropbox.com"
+                     notify:@"notify.dropboxapi.com"];
 }
 
 - (instancetype)initWithMeta:(NSString *)meta
                          api:(NSString *)api
                      content:(NSString *)content
                       notify:(NSString *)notify {
+  return [self initWithMeta:meta api:api content:content downloadContent:content notify:notify];
+}
+
+- (instancetype)initWithMeta:(NSString *)meta
+                         api:(NSString *)api
+                     content:(NSString *)content
+             downloadContent:(NSString *)downloadContent
+                      notify:(NSString *)notify {
   if (self = [super init]) {
     _meta = meta;
     _api = api;
     _content = content;
+    _downloadContent = downloadContent;
     _notify = notify;
   }
   return self;
@@ -59,7 +60,11 @@
   case DBRouteHostApi:
     return [NSString stringWithFormat:@"https://%@/2", _api];
   case DBRouteHostContent:
-    return [NSString stringWithFormat:@"https://%@/2", _content];
+    if ([route.attrs[@"style"] isEqualToString:@"download"]) {
+      return [NSString stringWithFormat:@"https://%@/2", _downloadContent];
+    } else {
+      return [NSString stringWithFormat:@"https://%@/2", _content];
+    }
   case DBRouteHostNotify:
     return [NSString stringWithFormat:@"https://%@/2", _notify];
   case DBRouteHostUnknown:

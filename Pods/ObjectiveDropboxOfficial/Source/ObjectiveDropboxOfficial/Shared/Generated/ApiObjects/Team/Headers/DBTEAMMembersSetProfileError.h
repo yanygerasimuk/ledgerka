@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMMembersSetProfileErrorTag` enum type represents the possible tag
 /// states with which the `DBTEAMMembersSetProfileError` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMMembersSetProfileErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMMembersSetProfileErrorTag) {
   /// No matching user found. The provided team_member_id, email, or
   /// external_id does not exist on this team.
   DBTEAMMembersSetProfileErrorUserNotFound,
@@ -326,7 +326,7 @@ typedef NS_ENUM(NSInteger, DBTEAMMembersSetProfileErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMMembersSetProfileError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMMembersSetProfileError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMMembersSetProfileError *)instance;
 
 ///
 /// Deserializes `DBTEAMMembersSetProfileError` instances.
@@ -336,7 +336,7 @@ typedef NS_ENUM(NSInteger, DBTEAMMembersSetProfileErrorTag) {
 ///
 /// @return An instantiation of the `DBTEAMMembersSetProfileError` object.
 ///
-+ (DBTEAMMembersSetProfileError *)deserialize:(NSDictionary *)dict;
++ (DBTEAMMembersSetProfileError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

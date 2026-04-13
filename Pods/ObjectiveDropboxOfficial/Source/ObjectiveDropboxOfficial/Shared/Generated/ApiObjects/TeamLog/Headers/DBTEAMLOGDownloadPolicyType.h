@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGDownloadPolicyTypeTag` enum type represents the possible tag
 /// states with which the `DBTEAMLOGDownloadPolicyType` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGDownloadPolicyTypeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGDownloadPolicyTypeTag) {
   /// (no description).
   DBTEAMLOGDownloadPolicyTypeAllow,
 
@@ -116,7 +116,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGDownloadPolicyTypeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGDownloadPolicyType` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGDownloadPolicyType *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGDownloadPolicyType *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGDownloadPolicyType` instances.
@@ -126,7 +126,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGDownloadPolicyTypeTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGDownloadPolicyType` object.
 ///
-+ (DBTEAMLOGDownloadPolicyType *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGDownloadPolicyType *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

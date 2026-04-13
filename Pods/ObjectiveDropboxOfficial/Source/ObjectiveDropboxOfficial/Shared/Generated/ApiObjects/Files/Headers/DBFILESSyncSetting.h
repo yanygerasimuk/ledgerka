@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESSyncSettingTag` enum type represents the possible tag states
 /// with which the `DBFILESSyncSetting` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESSyncSettingTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESSyncSettingTag) {
   /// On first sync to members' computers, the specified folder will follow
   /// its parent folder's setting or otherwise follow default sync behavior.
   DBFILESSyncSettingDefault_,
@@ -148,7 +148,7 @@ typedef NS_ENUM(NSInteger, DBFILESSyncSettingTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESSyncSetting` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESSyncSetting *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESSyncSetting *)instance;
 
 ///
 /// Deserializes `DBFILESSyncSetting` instances.
@@ -158,7 +158,7 @@ typedef NS_ENUM(NSInteger, DBFILESSyncSettingTag) {
 ///
 /// @return An instantiation of the `DBFILESSyncSetting` object.
 ///
-+ (DBFILESSyncSetting *)deserialize:(NSDictionary *)dict;
++ (DBFILESSyncSetting *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

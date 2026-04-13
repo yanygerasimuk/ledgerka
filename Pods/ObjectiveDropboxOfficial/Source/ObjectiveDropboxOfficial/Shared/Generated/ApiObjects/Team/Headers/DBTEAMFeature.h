@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMFeatureTag` enum type represents the possible tag states with
 /// which the `DBTEAMFeature` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMFeatureTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMFeatureTag) {
   /// The number of upload API calls allowed per month.
   DBTEAMFeatureUploadApiRateLimit,
 
@@ -170,7 +170,7 @@ typedef NS_ENUM(NSInteger, DBTEAMFeatureTag) {
 /// @return A json-compatible dictionary representation of the `DBTEAMFeature`
 /// API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMFeature *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMFeature *)instance;
 
 ///
 /// Deserializes `DBTEAMFeature` instances.
@@ -180,7 +180,7 @@ typedef NS_ENUM(NSInteger, DBTEAMFeatureTag) {
 ///
 /// @return An instantiation of the `DBTEAMFeature` object.
 ///
-+ (DBTEAMFeature *)deserialize:(NSDictionary *)dict;
++ (DBTEAMFeature *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

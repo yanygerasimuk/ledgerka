@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESThumbnailModeTag` enum type represents the possible tag states
 /// with which the `DBFILESThumbnailMode` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESThumbnailModeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESThumbnailModeTag) {
   /// Scale down the image to fit within the given size.
   DBFILESThumbnailModeStrict,
 
@@ -124,7 +124,7 @@ typedef NS_ENUM(NSInteger, DBFILESThumbnailModeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESThumbnailMode` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESThumbnailMode *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESThumbnailMode *)instance;
 
 ///
 /// Deserializes `DBFILESThumbnailMode` instances.
@@ -134,7 +134,7 @@ typedef NS_ENUM(NSInteger, DBFILESThumbnailModeTag) {
 ///
 /// @return An instantiation of the `DBFILESThumbnailMode` object.
 ///
-+ (DBFILESThumbnailMode *)deserialize:(NSDictionary *)dict;
++ (DBFILESThumbnailMode *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

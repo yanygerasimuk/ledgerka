@@ -39,6 +39,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// change.
 @property (nonatomic, readonly, nullable) DBTEAMLOGActionDetails *action;
 
+/// The user's new team name. This field is relevant when the user is
+/// transferred off the team.
+@property (nonatomic, readonly, copy, nullable) NSString *dNewTeam;
+
+/// The user's previous team name. This field is relevant when the user is
+/// transferred onto the team.
+@property (nonatomic, readonly, copy, nullable) NSString *previousTeam;
+
 #pragma mark - Constructors
 
 ///
@@ -49,12 +57,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// historical data gap.
 /// @param action Additional information indicating the action taken that caused
 /// status change.
+/// @param dNewTeam The user's new team name. This field is relevant when the
+/// user is transferred off the team.
+/// @param previousTeam The user's previous team name. This field is relevant
+/// when the user is transferred onto the team.
 ///
 /// @return An initialized instance.
 ///
 - (instancetype)initWithDNewValue:(DBTEAMLOGMemberStatus *)dNewValue
                     previousValue:(nullable DBTEAMLOGMemberStatus *)previousValue
-                           action:(nullable DBTEAMLOGActionDetails *)action;
+                           action:(nullable DBTEAMLOGActionDetails *)action
+                         dNewTeam:(nullable NSString *)dNewTeam
+                     previousTeam:(nullable NSString *)previousTeam;
 
 ///
 /// Convenience constructor (exposes only non-nullable instance variables with
@@ -86,7 +100,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGMemberChangeStatusDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGMemberChangeStatusDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGMemberChangeStatusDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGMemberChangeStatusDetails` instances.
@@ -96,7 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @return An instantiation of the `DBTEAMLOGMemberChangeStatusDetails` object.
 ///
-+ (DBTEAMLOGMemberChangeStatusDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGMemberChangeStatusDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

@@ -10,7 +10,7 @@
 #import "YGSQLite.h"
 #import "YGDBManager.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 #import "YYGDBConfig.h"
 #import "YGConfig.h"
 #import "YYGUpdater.h"
@@ -99,18 +99,21 @@
     NSLog(@"application:openURL:options:...");
     NSLog(@"openURL: %@", url);
 #endif
-    
-    DBOAuthResult *authResult = [DBClientsManager handleRedirectURL:url];
-    if (authResult != nil) {
+
+    // TODO: if more url, make switch
+    DBOAuthCompletion completion = ^(DBOAuthResult *authResult) {
+      if (authResult != nil) {
         if ([authResult isSuccess]) {
-            NSLog(@"Success! User is logged into Dropbox.");
+          NSLog(@"\n\nSuccess! User is logged into Dropbox.\n\n");
         } else if ([authResult isCancel]) {
-            NSLog(@"Authorization flow was manually canceled by user!");
+          NSLog(@"\n\nAuthorization flow was manually canceled by user!\n\n");
         } else if ([authResult isError]) {
-            NSLog(@"Error: %@", authResult);
+          NSLog(@"\n\nError: %@\n\n", authResult);
         }
-    }
-    return NO;
+      }
+    };
+    BOOL canHandle = [DBClientsManager handleRedirectURL:url completion:completion];
+    return canHandle;
 }
 
 /**

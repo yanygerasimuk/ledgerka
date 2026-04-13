@@ -14,7 +14,7 @@
 #import "YYGCategorySelectController.h"
 #import "YYGCategorySelectViewModel.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @interface YYGEntityEditController () <UITextFieldDelegate, UITextViewDelegate> {
     NSString *p_name;

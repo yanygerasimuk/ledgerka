@@ -31,10 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy) NSString *eventUuid;
 
 /// Target asset position in the Assets list.
-@property (nonatomic, readonly) NSNumber *targetAssetIndex;
+@property (nonatomic, readonly, nullable) NSNumber *targetAssetIndex;
 
 /// Parent asset position in the Assets list.
-@property (nonatomic, readonly) NSNumber *parentAssetIndex;
+@property (nonatomic, readonly, nullable) NSNumber *parentAssetIndex;
 
 #pragma mark - Constructors
 
@@ -48,8 +48,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An initialized instance.
 ///
 - (instancetype)initWithEventUuid:(NSString *)eventUuid
-                 targetAssetIndex:(NSNumber *)targetAssetIndex
-                 parentAssetIndex:(NSNumber *)parentAssetIndex;
+                 targetAssetIndex:(nullable NSNumber *)targetAssetIndex
+                 parentAssetIndex:(nullable NSNumber *)parentAssetIndex;
+
+///
+/// Convenience constructor (exposes only non-nullable instance variables with
+/// no default value).
+///
+/// @param eventUuid Event unique identifier.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEventUuid:(NSString *)eventUuid;
 
 - (instancetype)init NS_UNAVAILABLE;
 
@@ -72,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGPaperContentRemoveFromFolderDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGPaperContentRemoveFromFolderDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGPaperContentRemoveFromFolderDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGPaperContentRemoveFromFolderDetails` instances.
@@ -83,7 +93,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An instantiation of the
 /// `DBTEAMLOGPaperContentRemoveFromFolderDetails` object.
 ///
-+ (DBTEAMLOGPaperContentRemoveFromFolderDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGPaperContentRemoveFromFolderDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

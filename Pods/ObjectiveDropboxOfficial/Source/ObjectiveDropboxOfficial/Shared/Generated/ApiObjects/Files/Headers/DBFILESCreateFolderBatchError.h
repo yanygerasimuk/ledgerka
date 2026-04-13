@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESCreateFolderBatchErrorTag` enum type represents the possible tag
 /// states with which the `DBFILESCreateFolderBatchError` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESCreateFolderBatchErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESCreateFolderBatchErrorTag) {
   /// The operation would involve too many files or folders.
   DBFILESCreateFolderBatchErrorTooManyFiles,
 
@@ -101,7 +101,7 @@ typedef NS_ENUM(NSInteger, DBFILESCreateFolderBatchErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESCreateFolderBatchError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESCreateFolderBatchError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESCreateFolderBatchError *)instance;
 
 ///
 /// Deserializes `DBFILESCreateFolderBatchError` instances.
@@ -111,7 +111,7 @@ typedef NS_ENUM(NSInteger, DBFILESCreateFolderBatchErrorTag) {
 ///
 /// @return An instantiation of the `DBFILESCreateFolderBatchError` object.
 ///
-+ (DBFILESCreateFolderBatchError *)deserialize:(NSDictionary *)dict;
++ (DBFILESCreateFolderBatchError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

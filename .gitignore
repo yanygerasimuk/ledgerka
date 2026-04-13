@@ -2,3 +2,8 @@
 *.xcuserstate
 *.DS_Store
 *.xcbkptlist
+*.xcuserdatad
+
+## Sensitive
+Shadow
+Sensitive.*

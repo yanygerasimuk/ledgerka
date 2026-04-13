@@ -35,8 +35,8 @@
 		133050F81EDAE29D0031044D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 133050F71EDAE29D0031044D /* AppDelegate.m */; };
 		133050FE1EDAE29D0031044D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133050FC1EDAE29D0031044D /* Main.storyboard */; };
 		133051001EDAE29D0031044D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133050FF1EDAE29D0031044D /* Assets.xcassets */; };
-		1330510E1EDAE29D0031044D /* LedgerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330510D1EDAE29D0031044D /* LedgerTests.m */; };
-		133051191EDAE29D0031044D /* LedgerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 133051181EDAE29D0031044D /* LedgerUITests.m */; };
+		1330510E1EDAE29D0031044D /* LedgerkaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330510D1EDAE29D0031044D /* LedgerkaTests.m */; };
+		133051191EDAE29D0031044D /* LedgerkaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 133051181EDAE29D0031044D /* LedgerkaUITests.m */; };
 		133051281EDAE3300031044D /* YGTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133051271EDAE3300031044D /* YGTabBarViewController.m */; };
 		1330512E1EDAE60F0031044D /* YGSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330512D1EDAE60F0031044D /* YGSQLite.m */; };
 		133051311EDAEDA00031044D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 133051301EDAEDA00031044D /* libsqlite3.tbd */; };
@@ -75,8 +75,8 @@
 		133977C3212842C00029297C /* YYGRepaymentDebtViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 133977C2212842C00029297C /* YYGRepaymentDebtViewModel.m */; };
 		133A6E821F3117550069AB98 /* YYGDBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A6E811F3117550069AB98 /* YYGDBLog.m */; };
 		133A6E851F311D670069AB98 /* YYGDBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 133A6E841F311D670069AB98 /* YYGDBConfig.m */; };
-		133C001C1F17748200D0CB0E /* YYGLedgerDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C001B1F17748200D0CB0E /* YYGLedgerDefine.m */; };
-		133C001F1F17748E00D0CB0E /* YYGLedgerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C001E1F17748E00D0CB0E /* YYGLedgerError.m */; };
+		133C001C1F17748200D0CB0E /* YYGLedgerkaDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C001B1F17748200D0CB0E /* YYGLedgerkaDefine.m */; };
+		133C001F1F17748E00D0CB0E /* YYGLedgerkaError.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C001E1F17748E00D0CB0E /* YYGLedgerkaError.m */; };
 		133C00241F1777B400D0CB0E /* YYGFileSystemDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C00211F1777B400D0CB0E /* YYGFileSystemDefine.m */; };
 		133C00251F1777B400D0CB0E /* YYGFileSystemError.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C00231F1777B400D0CB0E /* YYGFileSystemError.m */; };
 		133C7F6720C8157B00CC9F16 /* YGLaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133C7F6620C8157B00CC9F16 /* YGLaunchScreenViewController.m */; };
@@ -133,7 +133,7 @@
 		13F0D54720E7D95C00DE8CBE /* YYGDBTestDbFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F0D54620E7D95C00DE8CBE /* YYGDBTestDbFormat.m */; };
 		13F0D54C20EB84A400DE8CBE /* YYGUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F0D54B20EB84A400DE8CBE /* YYGUpdater.m */; };
 		13F0D54F20EBB10D00DE8CBE /* YYGAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F0D54E20EBB10D00DE8CBE /* YYGAppVersion.m */; };
-		36741E3595D5FB02CBB6712E /* Pods_Ledger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC63D6CE913B28B7FCF6A27 /* Pods_Ledger.framework */; };
+		D9A81C61DA2DCA976FAC1F66 /* Pods_Ledgerka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE3BD6BD1523FC5E116A1CD /* Pods_Ledgerka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,10 +211,10 @@
 		133050FF1EDAE29D0031044D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		133051041EDAE29D0031044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133051091EDAE29D0031044D /* LedgerkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1330510D1EDAE29D0031044D /* LedgerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerTests.m; sourceTree = "<group>"; };
+		1330510D1EDAE29D0031044D /* LedgerkaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerkaTests.m; sourceTree = "<group>"; };
 		1330510F1EDAE29D0031044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133051141EDAE29D0031044D /* LedgerkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		133051181EDAE29D0031044D /* LedgerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerUITests.m; sourceTree = "<group>"; };
+		133051181EDAE29D0031044D /* LedgerkaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerkaUITests.m; sourceTree = "<group>"; };
 		1330511A1EDAE29D0031044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133051261EDAE3300031044D /* YGTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGTabBarViewController.h; sourceTree = "<group>"; };
 		133051271EDAE3300031044D /* YGTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGTabBarViewController.m; sourceTree = "<group>"; };
@@ -291,10 +291,10 @@
 		133A6E811F3117550069AB98 /* YYGDBLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGDBLog.m; sourceTree = "<group>"; };
 		133A6E831F311D670069AB98 /* YYGDBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGDBConfig.h; sourceTree = "<group>"; };
 		133A6E841F311D670069AB98 /* YYGDBConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGDBConfig.m; sourceTree = "<group>"; };
-		133C001A1F17748200D0CB0E /* YYGLedgerDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGLedgerDefine.h; sourceTree = "<group>"; };
-		133C001B1F17748200D0CB0E /* YYGLedgerDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGLedgerDefine.m; sourceTree = "<group>"; };
-		133C001D1F17748E00D0CB0E /* YYGLedgerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGLedgerError.h; sourceTree = "<group>"; };
-		133C001E1F17748E00D0CB0E /* YYGLedgerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGLedgerError.m; sourceTree = "<group>"; };
+		133C001A1F17748200D0CB0E /* YYGLedgerkaDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGLedgerkaDefine.h; sourceTree = "<group>"; };
+		133C001B1F17748200D0CB0E /* YYGLedgerkaDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGLedgerkaDefine.m; sourceTree = "<group>"; };
+		133C001D1F17748E00D0CB0E /* YYGLedgerkaError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGLedgerkaError.h; sourceTree = "<group>"; };
+		133C001E1F17748E00D0CB0E /* YYGLedgerkaError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGLedgerkaError.m; sourceTree = "<group>"; };
 		133C00201F1777B400D0CB0E /* YYGFileSystemDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGFileSystemDefine.h; sourceTree = "<group>"; };
 		133C00211F1777B400D0CB0E /* YYGFileSystemDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGFileSystemDefine.m; sourceTree = "<group>"; };
 		133C00221F1777B400D0CB0E /* YYGFileSystemError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGFileSystemError.h; sourceTree = "<group>"; };
@@ -411,9 +411,9 @@
 		13F0D54B20EB84A400DE8CBE /* YYGUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGUpdater.m; sourceTree = "<group>"; };
 		13F0D54D20EBB10D00DE8CBE /* YYGAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGAppVersion.h; sourceTree = "<group>"; };
 		13F0D54E20EBB10D00DE8CBE /* YYGAppVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGAppVersion.m; sourceTree = "<group>"; };
-		3F386E3B4F2A62DBAA823C4A /* Pods-Ledger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ledger/Pods-Ledger.release.xcconfig"; sourceTree = "<group>"; };
-		5EC63D6CE913B28B7FCF6A27 /* Pods_Ledger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D9EA6EC8CCFEC6265AFDFD7 /* Pods-Ledger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ledger/Pods-Ledger.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE3BD6BD1523FC5E116A1CD /* Pods_Ledgerka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledgerka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6788B9B4586B41D4C1943D /* Pods-Ledgerka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledgerka.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ledgerka/Pods-Ledgerka.release.xcconfig"; sourceTree = "<group>"; };
+		F529EB0A8C2EA46FDA48C8C9 /* Pods-Ledgerka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledgerka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ledgerka/Pods-Ledgerka.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,7 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				133051311EDAEDA00031044D /* libsqlite3.tbd in Frameworks */,
-				36741E3595D5FB02CBB6712E /* Pods_Ledger.framework in Frameworks */,
+				D9A81C61DA2DCA976FAC1F66 /* Pods_Ledgerka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,10 +446,10 @@
 		0152F34B2F8D0B1B007CED47 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				133C001A1F17748200D0CB0E /* YYGLedgerDefine.h */,
-				133C001B1F17748200D0CB0E /* YYGLedgerDefine.m */,
-				133C001D1F17748E00D0CB0E /* YYGLedgerError.h */,
-				133C001E1F17748E00D0CB0E /* YYGLedgerError.m */,
+				133C001A1F17748200D0CB0E /* YYGLedgerkaDefine.h */,
+				133C001B1F17748200D0CB0E /* YYGLedgerkaDefine.m */,
+				133C001D1F17748E00D0CB0E /* YYGLedgerkaError.h */,
+				133C001E1F17748E00D0CB0E /* YYGLedgerkaError.m */,
 				137E80D820F241E2000E4B7A /* main.m */,
 				137E80DA20F2434A000E4B7A /* LaunchScreen.storyboard */,
 			);
@@ -499,7 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				138662961F34FA0D00800A11 /* InfoPlist.strings */,
-				1330510D1EDAE29D0031044D /* LedgerTests.m */,
+				1330510D1EDAE29D0031044D /* LedgerkaTests.m */,
 				1330510F1EDAE29D0031044D /* Info.plist */,
 			);
 			path = LedgerkaTests;
@@ -509,7 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				1386628C1F34FA0C00800A11 /* InfoPlist.strings */,
-				133051181EDAE29D0031044D /* LedgerUITests.m */,
+				133051181EDAE29D0031044D /* LedgerkaUITests.m */,
 				1330511A1EDAE29D0031044D /* Info.plist */,
 			);
 			path = LedgerkaUITests;
@@ -519,7 +519,7 @@
 			isa = PBXGroup;
 			children = (
 				133051301EDAEDA00031044D /* libsqlite3.tbd */,
-				5EC63D6CE913B28B7FCF6A27 /* Pods_Ledger.framework */,
+				2DE3BD6BD1523FC5E116A1CD /* Pods_Ledgerka.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1247,8 +1247,8 @@
 		B8111A2E5F7E4B899CAC00DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7D9EA6EC8CCFEC6265AFDFD7 /* Pods-Ledger.debug.xcconfig */,
-				3F386E3B4F2A62DBAA823C4A /* Pods-Ledger.release.xcconfig */,
+				F529EB0A8C2EA46FDA48C8C9 /* Pods-Ledgerka.debug.xcconfig */,
+				6B6788B9B4586B41D4C1943D /* Pods-Ledgerka.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1400,7 +1400,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Ledger/Pods-Ledger-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Ledgerka/Pods-Ledgerka-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
@@ -1411,7 +1411,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ledger/Pods-Ledger-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ledgerka/Pods-Ledgerka-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		57A6EB723FF81406FFCD2D1A /* [CP] Check Pods Manifest.lock */ = {
@@ -1425,7 +1425,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ledger-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Ledgerka-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1445,7 +1445,7 @@
 				13A658082115EB480059C2BF /* YYGOperationEditController.m in Sources */,
 				13CCF8731F16861400EAB928 /* YGSearchRuleNameMinLength.m in Sources */,
 				1397439E20E1425600391439 /* YYGStorageDropbox.m in Sources */,
-				133C001C1F17748200D0CB0E /* YYGLedgerDefine.m in Sources */,
+				133C001C1F17748200D0CB0E /* YYGLedgerkaDefine.m in Sources */,
 				13F0D54720E7D95C00DE8CBE /* YYGDBTestDbFormat.m in Sources */,
 				13CCF86D1F16861400EAB928 /* YGFileSystemObject.m in Sources */,
 				131E1DA21EF7E67C00531F10 /* YGAccountActualEditController.m in Sources */,
@@ -1480,7 +1480,7 @@
 				133051991EDEEFBC0031044D /* YGCategory.m in Sources */,
 				137E80D920F241E2000E4B7A /* main.m in Sources */,
 				133977BA21278FC00029297C /* YYGDebtSelectViewModel.m in Sources */,
-				133C001F1F17748E00D0CB0E /* YYGLedgerError.m in Sources */,
+				133C001F1F17748E00D0CB0E /* YYGLedgerkaError.m in Sources */,
 				133977BD212791F00029297C /* YYGAccountSelectViewModel.m in Sources */,
 				13A657FC2114B50D0059C2BF /* YYGCounterpartyViewModel.m in Sources */,
 				1331723B2108812F00BD5A4F /* YYGCurrenciesViewModel.m in Sources */,
@@ -1562,7 +1562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1330510E1EDAE29D0031044D /* LedgerTests.m in Sources */,
+				1330510E1EDAE29D0031044D /* LedgerkaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1570,7 +1570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133051191EDAE29D0031044D /* LedgerUITests.m in Sources */,
+				133051191EDAE29D0031044D /* LedgerkaUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1767,7 +1767,7 @@
 		};
 		1330511E1EDAE29D0031044D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9EA6EC8CCFEC6265AFDFD7 /* Pods-Ledger.debug.xcconfig */;
+			baseConfigurationReference = F529EB0A8C2EA46FDA48C8C9 /* Pods-Ledgerka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EF64T58JW4;
@@ -1782,7 +1782,7 @@
 		};
 		1330511F1EDAE29D0031044D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F386E3B4F2A62DBAA823C4A /* Pods-Ledger.release.xcconfig */;
+			baseConfigurationReference = 6B6788B9B4586B41D4C1943D /* Pods-Ledgerka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EF64T58JW4;
@@ -1800,7 +1800,7 @@
 				DEVELOPMENT_TEAM = EF64T58JW4;
 				INFOPLIST_FILE = LedgerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.LedgerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.LedgerkaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ledgerka.app/Ledgerka";
 			};
@@ -1813,7 +1813,7 @@
 				DEVELOPMENT_TEAM = EF64T58JW4;
 				INFOPLIST_FILE = LedgerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.LedgerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.LedgerkaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ledgerka.app/Ledgerka";
 			};

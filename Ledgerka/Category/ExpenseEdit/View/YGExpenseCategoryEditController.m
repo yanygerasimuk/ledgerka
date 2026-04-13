@@ -10,7 +10,7 @@
 #import "YYGExpenseParentChoiceController.h"
 #import "YGCategoryManager.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @interface YGExpenseCategoryEditController () <UITextFieldDelegate, UITextViewDelegate> {
     

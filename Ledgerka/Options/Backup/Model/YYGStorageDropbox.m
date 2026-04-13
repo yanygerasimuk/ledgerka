@@ -9,7 +9,7 @@
 #import "YYGStorageDropbox.h"
 #import "YGTools.h"
 #import "YYGDBTester.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 #import "YYGDBTestDbOpen.h"
 #import "YYGDBTestDbFormat.h"
 #import "YYGUpdater.h"
@@ -52,13 +52,18 @@ typedef NS_ENUM(NSInteger, YYGDownloadTaskType) {
 - (void)checkBackup {
     
     [self.owner notifyMessage:NSLocalizedString(@"DROPBOX_DOWNLOAD_BACKUP_INFO_MESSAGE", @"Download backup info...")];
-    
+
+#ifdef DEBUG_DROPBOX_UNLINK
+    [DBClientsManager unlinkAndResetClients];
+    return;
+#endif
+
     DBUserClient *client = [DBClientsManager authorizedClient];
     
     NSString *searchPath = @"";
     
     // list folder metadata contents (folder will be root "/" Dropbox folder if app has permission
-    // "Full Dropbox" or "/Apps/<APP_NAME>/" if app has permission "App Folder").
+    // "Full Dropbox" or "/Apps/<APP_NAME>/" if app has permission "App Folder")
     [[client.filesRoutes listFolder:searchPath]
      setResponseBlock:^(DBFILESListFolderResult *result, DBFILESListFolderError *routeError, DBRequestError *error) {
          
@@ -123,8 +128,12 @@ typedef NS_ENUM(NSInteger, YYGDownloadTaskType) {
     
     DBUserClient *client = [DBClientsManager authorizedClient];
     
-    [[client.filesRoutes createFolderV2:@"/Backup"] setResponseBlock:^(DBFILESCreateFolderResult * _Nullable result, DBFILESCreateFolderError * _Nullable routeError, DBRequestError * _Nullable networkError) {
-        
+    [[client.filesRoutes createFolderV2:@"/Backup"]
+     setResponseBlock:^(DBFILESCreateFolderResult * _Nullable result,
+                        DBFILESCreateFolderError * _Nullable routeError,
+                        DBRequestError * _Nullable networkError
+                        ) {
+
         if (result){
             [self.owner notifyIsBackupExists:NO];
         } else {
@@ -638,8 +647,11 @@ typedef NS_ENUM(NSInteger, YYGDownloadTaskType) {
     [client.filesRoutes deleteBatch:[args copy]];
 }
 
-- (void)uploadFile:(NSString *)fileName successHandler:(void (^)(void))successHandler errorHandler:(void (^)(NSString *message))errorHandler {
-    
+- (void)uploadFile:(NSString *)fileName
+    successHandler:(void (^)(void))successHandler
+      errorHandler:(void (^)(NSString *message))errorHandler
+{
+
     [self.owner notifyMessage:NSLocalizedString(@"DROPBOX_UPLOAD_BACKUP_MESSAGE", @"Upload backup...")];
     
     DBUserClient *client = [DBClientsManager authorizedClient];
@@ -652,66 +664,40 @@ typedef NS_ENUM(NSInteger, YYGDownloadTaskType) {
     // Remote path
     NSString *shortName = [fileName lastPathComponent];
     NSString *targetPath = [@"/Backup/" stringByAppendingString:shortName];
-    
-    [[[client.filesRoutes uploadData:targetPath
-                                mode:mode
-                          autorename:@(NO)
-                      clientModified:nil
-                                mute:@(NO)
-                      propertyGroups:nil
-                           inputData:fileData]
-      setResponseBlock:^(DBFILESFileMetadata *result, DBFILESUploadError *routeError, DBRequestError *networkError) {
-          if (result) {
-              //NSLog(@"%@\n", result);
-              successHandler();
-          } else {
-              NSLog(@"%@\n%@\n", routeError, networkError);
-              NSString *message = nil;
-              if (networkError){
-                  NSString *errorUserInfo = [[networkError nsError] localizedDescription];
-                  if (errorUserInfo)
-                      message = errorUserInfo;
-              }
-              else if(routeError){
-                  message = [routeError description];
-              }
-              errorHandler(message);
-          }
-      }] setProgressBlock:^(int64_t bytesUploaded, int64_t totalBytesUploaded, int64_t totalBytesExpectedToUploaded) {
-          //NSLog(@"\n%lld\n%lld\n%lld\n", bytesUploaded, totalBytesUploaded, totalBytesExpectedToUploaded);
-      }];
-}
 
-
-- (void)uploadBackupFile:(NSString *)fileName {
-    DBUserClient *client = [DBClientsManager authorizedClient];
-    
-    NSData *fileData = [NSData dataWithContentsOfFile:fileName];
-    
-    // For overriding on upload
-    DBFILESWriteMode *mode = [[DBFILESWriteMode alloc] initWithOverwrite];
-    
-    NSString *shortFileName = [fileName lastPathComponent];
-    
-    NSString *targetFileName = [@"/Backup/" stringByAppendingString:shortFileName];
-    
-    [[[client.filesRoutes uploadData:targetFileName
-                                mode:mode
-                          autorename:@(YES)
-                      clientModified:nil
-                                mute:@(NO)
-                      propertyGroups:nil
-                           inputData:fileData]
-      setResponseBlock:^(DBFILESFileMetadata *result, DBFILESUploadError *routeError, DBRequestError *networkError) {
-          if (result) {
-              NSLog(@"%@\n", result);
-          } else {
-              NSLog(@"%@\n%@\n", routeError, networkError);
-          }
-      }] setProgressBlock:^(int64_t bytesUploaded, int64_t totalBytesUploaded, int64_t totalBytesExpectedToUploaded) {
-          NSLog(@"\n%lld\n%lld\n%lld\n", bytesUploaded, totalBytesUploaded, totalBytesExpectedToUploaded);
-      }];
-
+    DBUploadTask *task = [client.filesRoutes uploadData:targetPath
+                                                   mode:mode
+                                             autorename:@(YES)
+                                         clientModified:nil
+                                                   mute:@(NO)
+                                         propertyGroups:nil
+                                         strictConflict:@(YES)
+                                            contentHash:nil
+                                              inputData:fileData];
+    [task setResponseBlock:^(id  _Nullable result,
+                             id  _Nullable routeError,
+                             DBRequestError * _Nullable networkError
+                             ) {
+        if (result)
+        {
+            successHandler();
+        }
+        else
+        {
+            NSLog(@"%@\n%@\n", routeError, networkError);
+            NSString *message = nil;
+            if (networkError){
+                NSString *errorUserInfo = [[networkError nsError] localizedDescription];
+                if (errorUserInfo)
+                    message = errorUserInfo;
+            }
+            else if(routeError){
+                message = [routeError description];
+            }
+            errorHandler(message);
+        }
+    }];
+    [task start];
 }
 
 - (void)downloadFileFrom:(NSString *)downloadPath toDestination:(NSURL *)destinationUrl successHandler:(void (^)(NSURL *downloadedUrl))successHandler errorHandler:(void (^)(NSString *message))errorHandler{

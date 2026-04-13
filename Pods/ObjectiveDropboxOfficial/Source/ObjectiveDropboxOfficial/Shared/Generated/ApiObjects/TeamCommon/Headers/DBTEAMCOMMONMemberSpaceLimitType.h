@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBTEAMCOMMONMemberSpaceLimitTypeTag` enum type represents the possible
 /// tag states with which the `DBTEAMCOMMONMemberSpaceLimitType` union can
 /// exist.
-typedef NS_ENUM(NSInteger, DBTEAMCOMMONMemberSpaceLimitTypeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMCOMMONMemberSpaceLimitTypeTag) {
   /// The team member does not have imposed space limit.
   DBTEAMCOMMONMemberSpaceLimitTypeOff,
 
@@ -146,7 +146,7 @@ typedef NS_ENUM(NSInteger, DBTEAMCOMMONMemberSpaceLimitTypeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMCOMMONMemberSpaceLimitType` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMCOMMONMemberSpaceLimitType *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMCOMMONMemberSpaceLimitType *)instance;
 
 ///
 /// Deserializes `DBTEAMCOMMONMemberSpaceLimitType` instances.
@@ -156,7 +156,7 @@ typedef NS_ENUM(NSInteger, DBTEAMCOMMONMemberSpaceLimitTypeTag) {
 ///
 /// @return An instantiation of the `DBTEAMCOMMONMemberSpaceLimitType` object.
 ///
-+ (DBTEAMCOMMONMemberSpaceLimitType *)deserialize:(NSDictionary *)dict;
++ (DBTEAMCOMMONMemberSpaceLimitType *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 
