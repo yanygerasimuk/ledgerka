@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBSHARINGFolderActionTag` enum type represents the possible tag states
 /// with which the `DBSHARINGFolderAction` union can exist.
-typedef NS_ENUM(NSInteger, DBSHARINGFolderActionTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBSHARINGFolderActionTag) {
   /// Change folder options, such as who can be invited to join the folder.
   DBSHARINGFolderActionChangeOptions,
 
@@ -371,7 +371,7 @@ typedef NS_ENUM(NSInteger, DBSHARINGFolderActionTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBSHARINGFolderAction` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBSHARINGFolderAction *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBSHARINGFolderAction *)instance;
 
 ///
 /// Deserializes `DBSHARINGFolderAction` instances.
@@ -381,7 +381,7 @@ typedef NS_ENUM(NSInteger, DBSHARINGFolderActionTag) {
 ///
 /// @return An instantiation of the `DBSHARINGFolderAction` object.
 ///
-+ (DBSHARINGFolderAction *)deserialize:(NSDictionary *)dict;
++ (DBSHARINGFolderAction *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

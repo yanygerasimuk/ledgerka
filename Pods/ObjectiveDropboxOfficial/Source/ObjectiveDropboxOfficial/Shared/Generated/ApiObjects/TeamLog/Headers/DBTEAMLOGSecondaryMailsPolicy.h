@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGSecondaryMailsPolicyTag` enum type represents the possible tag
 /// states with which the `DBTEAMLOGSecondaryMailsPolicy` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGSecondaryMailsPolicyTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGSecondaryMailsPolicyTag) {
   /// (no description).
   DBTEAMLOGSecondaryMailsPolicyDisabled,
 
@@ -115,7 +115,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGSecondaryMailsPolicyTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGSecondaryMailsPolicy` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGSecondaryMailsPolicy *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGSecondaryMailsPolicy *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGSecondaryMailsPolicy` instances.
@@ -125,7 +125,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGSecondaryMailsPolicyTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGSecondaryMailsPolicy` object.
 ///
-+ (DBTEAMLOGSecondaryMailsPolicy *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGSecondaryMailsPolicy *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

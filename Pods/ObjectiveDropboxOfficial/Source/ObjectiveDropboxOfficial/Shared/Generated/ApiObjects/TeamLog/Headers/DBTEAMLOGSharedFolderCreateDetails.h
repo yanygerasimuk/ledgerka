@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Instance fields
 
-/// Target namespace ID. Might be missing due to historical data gap.
+/// Target namespace ID.
 @property (nonatomic, readonly, copy, nullable) NSString *targetNsId;
 
 #pragma mark - Constructors
@@ -35,8 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// Full constructor for the struct (exposes all instance variables).
 ///
-/// @param targetNsId Target namespace ID. Might be missing due to historical
-/// data gap.
+/// @param targetNsId Target namespace ID.
 ///
 /// @return An initialized instance.
 ///
@@ -71,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGSharedFolderCreateDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGSharedFolderCreateDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGSharedFolderCreateDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGSharedFolderCreateDetails` instances.
@@ -81,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @return An instantiation of the `DBTEAMLOGSharedFolderCreateDetails` object.
 ///
-+ (DBTEAMLOGSharedFolderCreateDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGSharedFolderCreateDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

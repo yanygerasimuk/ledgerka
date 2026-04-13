@@ -13,7 +13,7 @@
 #import "YGEntityManager.h"
 #import "YGCategoryManager.h"
 #import "YGOperationManager.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @interface YGAccountActualEditController () <UITextFieldDelegate, UITextViewDelegate> {
     

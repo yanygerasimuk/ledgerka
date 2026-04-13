@@ -27,15 +27,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGMemberRemoveActionTypeTag` enum type represents the possible
 /// tag states with which the `DBTEAMLOGMemberRemoveActionType` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
   /// (no description).
   DBTEAMLOGMemberRemoveActionTypeDelete_,
+
+  /// (no description).
+  DBTEAMLOGMemberRemoveActionTypeLeave,
 
   /// (no description).
   DBTEAMLOGMemberRemoveActionTypeOffboard,
 
   /// (no description).
-  DBTEAMLOGMemberRemoveActionTypeLeave,
+  DBTEAMLOGMemberRemoveActionTypeOffboardAndRetainTeamFolders,
 
   /// (no description).
   DBTEAMLOGMemberRemoveActionTypeOther,
@@ -55,6 +58,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
 - (instancetype)initWithDelete_;
 
 ///
+/// Initializes union class with tag state of "leave".
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithLeave;
+
+///
 /// Initializes union class with tag state of "offboard".
 ///
 /// @return An initialized instance.
@@ -62,11 +72,12 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
 - (instancetype)initWithOffboard;
 
 ///
-/// Initializes union class with tag state of "leave".
+/// Initializes union class with tag state of
+/// "offboard_and_retain_team_folders".
 ///
 /// @return An initialized instance.
 ///
-- (instancetype)initWithLeave;
+- (instancetype)initWithOffboardAndRetainTeamFolders;
 
 ///
 /// Initializes union class with tag state of "other".
@@ -87,6 +98,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
 - (BOOL)isDelete_;
 
 ///
+/// Retrieves whether the union's current tag state has value "leave".
+///
+/// @return Whether the union's current tag state has value "leave".
+///
+- (BOOL)isLeave;
+
+///
 /// Retrieves whether the union's current tag state has value "offboard".
 ///
 /// @return Whether the union's current tag state has value "offboard".
@@ -94,11 +112,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
 - (BOOL)isOffboard;
 
 ///
-/// Retrieves whether the union's current tag state has value "leave".
+/// Retrieves whether the union's current tag state has value
+/// "offboard_and_retain_team_folders".
 ///
-/// @return Whether the union's current tag state has value "leave".
+/// @return Whether the union's current tag state has value
+/// "offboard_and_retain_team_folders".
 ///
-- (BOOL)isLeave;
+- (BOOL)isOffboardAndRetainTeamFolders;
 
 ///
 /// Retrieves whether the union's current tag state has value "other".
@@ -132,7 +152,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGMemberRemoveActionType` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGMemberRemoveActionType *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGMemberRemoveActionType *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGMemberRemoveActionType` instances.
@@ -142,7 +162,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGMemberRemoveActionTypeTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGMemberRemoveActionType` object.
 ///
-+ (DBTEAMLOGMemberRemoveActionType *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGMemberRemoveActionType *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

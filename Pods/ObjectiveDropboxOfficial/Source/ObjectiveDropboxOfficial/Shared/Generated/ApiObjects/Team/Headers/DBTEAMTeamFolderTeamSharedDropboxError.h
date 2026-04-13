@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBTEAMTeamFolderTeamSharedDropboxErrorTag` enum type represents the
 /// possible tag states with which the `DBTEAMTeamFolderTeamSharedDropboxError`
 /// union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMTeamFolderTeamSharedDropboxErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMTeamFolderTeamSharedDropboxErrorTag) {
   /// This action is not allowed for a shared team root.
   DBTEAMTeamFolderTeamSharedDropboxErrorDisallowed,
 
@@ -103,7 +103,7 @@ typedef NS_ENUM(NSInteger, DBTEAMTeamFolderTeamSharedDropboxErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMTeamFolderTeamSharedDropboxError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMTeamFolderTeamSharedDropboxError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMTeamFolderTeamSharedDropboxError *)instance;
 
 ///
 /// Deserializes `DBTEAMTeamFolderTeamSharedDropboxError` instances.
@@ -114,7 +114,7 @@ typedef NS_ENUM(NSInteger, DBTEAMTeamFolderTeamSharedDropboxErrorTag) {
 /// @return An instantiation of the `DBTEAMTeamFolderTeamSharedDropboxError`
 /// object.
 ///
-+ (DBTEAMTeamFolderTeamSharedDropboxError *)deserialize:(NSDictionary *)dict;
++ (DBTEAMTeamFolderTeamSharedDropboxError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

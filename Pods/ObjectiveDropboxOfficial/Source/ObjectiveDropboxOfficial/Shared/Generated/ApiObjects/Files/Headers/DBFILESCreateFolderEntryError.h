@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESCreateFolderEntryErrorTag` enum type represents the possible tag
 /// states with which the `DBFILESCreateFolderEntryError` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESCreateFolderEntryErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESCreateFolderEntryErrorTag) {
   /// (no description).
   DBFILESCreateFolderEntryErrorPath,
 
@@ -108,7 +108,7 @@ typedef NS_ENUM(NSInteger, DBFILESCreateFolderEntryErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESCreateFolderEntryError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESCreateFolderEntryError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESCreateFolderEntryError *)instance;
 
 ///
 /// Deserializes `DBFILESCreateFolderEntryError` instances.
@@ -118,7 +118,7 @@ typedef NS_ENUM(NSInteger, DBFILESCreateFolderEntryErrorTag) {
 ///
 /// @return An instantiation of the `DBFILESCreateFolderEntryError` object.
 ///
-+ (DBFILESCreateFolderEntryError *)deserialize:(NSDictionary *)dict;
++ (DBFILESCreateFolderEntryError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

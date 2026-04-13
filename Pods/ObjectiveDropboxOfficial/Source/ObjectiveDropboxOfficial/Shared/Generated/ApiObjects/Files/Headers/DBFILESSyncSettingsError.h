@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESSyncSettingsErrorTag` enum type represents the possible tag
 /// states with which the `DBFILESSyncSettingsError` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESSyncSettingsErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESSyncSettingsErrorTag) {
   /// (no description).
   DBFILESSyncSettingsErrorPath,
 
@@ -152,7 +152,7 @@ typedef NS_ENUM(NSInteger, DBFILESSyncSettingsErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESSyncSettingsError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESSyncSettingsError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESSyncSettingsError *)instance;
 
 ///
 /// Deserializes `DBFILESSyncSettingsError` instances.
@@ -162,7 +162,7 @@ typedef NS_ENUM(NSInteger, DBFILESSyncSettingsErrorTag) {
 ///
 /// @return An instantiation of the `DBFILESSyncSettingsError` object.
 ///
-+ (DBFILESSyncSettingsError *)deserialize:(NSDictionary *)dict;
++ (DBFILESSyncSettingsError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

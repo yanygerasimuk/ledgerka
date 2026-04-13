@@ -37,12 +37,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// Submitted file names.
 @property (nonatomic, readonly) NSArray<NSString *> *submittedFileNames;
 
-/// The name as provided by the submitter. Might be missing due to historical
-/// data gap.
+/// The name as provided by the submitter.
 @property (nonatomic, readonly, copy, nullable) NSString *submitterName;
 
-/// The email as provided by the submitter. Might be missing due to historical
-/// data gap.
+/// The email as provided by the submitter.
 @property (nonatomic, readonly, copy, nullable) NSString *submitterEmail;
 
 #pragma mark - Constructors
@@ -55,10 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// data gap.
 /// @param fileRequestDetails File request details. Might be missing due to
 /// historical data gap.
-/// @param submitterName The name as provided by the submitter. Might be missing
-/// due to historical data gap.
-/// @param submitterEmail The email as provided by the submitter. Might be
-/// missing due to historical data gap.
+/// @param submitterName The name as provided by the submitter.
+/// @param submitterEmail The email as provided by the submitter.
 ///
 /// @return An initialized instance.
 ///
@@ -98,7 +94,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGFileRequestReceiveFileDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGFileRequestReceiveFileDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGFileRequestReceiveFileDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGFileRequestReceiveFileDetails` instances.
@@ -109,7 +105,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return An instantiation of the `DBTEAMLOGFileRequestReceiveFileDetails`
 /// object.
 ///
-+ (DBTEAMLOGFileRequestReceiveFileDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGFileRequestReceiveFileDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

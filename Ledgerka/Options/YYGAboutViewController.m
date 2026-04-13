@@ -8,7 +8,7 @@
 
 #import "YYGAboutViewController.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 #import "YYGAppVersion.h"
 
 @interface YYGAboutViewController()

@@ -27,16 +27,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Instance fields
 
-/// The IP address of the last activity from this session. Might be missing due
-/// to historical data gap.
+/// The IP address of the last activity from this session.
 @property (nonatomic, readonly, copy, nullable) NSString *ipAddress;
 
-/// The time this session was created. Might be missing due to historical data
-/// gap.
+/// The time this session was created.
 @property (nonatomic, readonly, nullable) NSDate *created;
 
-/// The time of the last activity from this session. Might be missing due to
-/// historical data gap.
+/// The time of the last activity from this session.
 @property (nonatomic, readonly, nullable) NSDate *updated;
 
 #pragma mark - Constructors
@@ -45,11 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// Full constructor for the struct (exposes all instance variables).
 ///
 /// @param ipAddress The IP address of the last activity from this session.
-/// Might be missing due to historical data gap.
-/// @param created The time this session was created. Might be missing due to
-/// historical data gap.
-/// @param updated The time of the last activity from this session. Might be
-/// missing due to historical data gap.
+/// @param created The time this session was created.
+/// @param updated The time of the last activity from this session.
 ///
 /// @return An initialized instance.
 ///
@@ -86,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGDeviceSessionLogInfo` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGDeviceSessionLogInfo *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGDeviceSessionLogInfo *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGDeviceSessionLogInfo` instances.
@@ -96,7 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @return An instantiation of the `DBTEAMLOGDeviceSessionLogInfo` object.
 ///
-+ (DBTEAMLOGDeviceSessionLogInfo *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGDeviceSessionLogInfo *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

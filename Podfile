@@ -1,14 +1,14 @@
-platform :ios, '10.0'
+platform :ios, '15.0'
 
 use_frameworks!
 
 def settings
-	platform :ios, '10.0'
+	platform :ios, '15.0'
 end
 
 def pods
-	pod 'ObjectiveDropboxOfficial', '~> 3.9.1'
-	pod 'ReactiveObjC', '~> 3.1.0'
+	pod 'ObjectiveDropboxOfficial'
+	pod 'ReactiveObjC'
 end
 
 def setup
@@ -16,7 +16,7 @@ def setup
 	pods
 end
 
-target 'Ledger' do
+target 'Ledgerka' do
 	setup
 end
 

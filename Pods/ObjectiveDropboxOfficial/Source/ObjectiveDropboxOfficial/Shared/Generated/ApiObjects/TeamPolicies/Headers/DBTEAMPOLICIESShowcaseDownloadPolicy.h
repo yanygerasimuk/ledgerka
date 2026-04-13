@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBTEAMPOLICIESShowcaseDownloadPolicyTag` enum type represents the
 /// possible tag states with which the `DBTEAMPOLICIESShowcaseDownloadPolicy`
 /// union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMPOLICIESShowcaseDownloadPolicyTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMPOLICIESShowcaseDownloadPolicyTag) {
   /// Do not allow files to be downloaded from Showcases.
   DBTEAMPOLICIESShowcaseDownloadPolicyDisabled,
 
@@ -123,7 +123,7 @@ typedef NS_ENUM(NSInteger, DBTEAMPOLICIESShowcaseDownloadPolicyTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMPOLICIESShowcaseDownloadPolicy` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMPOLICIESShowcaseDownloadPolicy *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMPOLICIESShowcaseDownloadPolicy *)instance;
 
 ///
 /// Deserializes `DBTEAMPOLICIESShowcaseDownloadPolicy` instances.
@@ -134,7 +134,7 @@ typedef NS_ENUM(NSInteger, DBTEAMPOLICIESShowcaseDownloadPolicyTag) {
 /// @return An instantiation of the `DBTEAMPOLICIESShowcaseDownloadPolicy`
 /// object.
 ///
-+ (DBTEAMPOLICIESShowcaseDownloadPolicy *)deserialize:(NSDictionary *)dict;
++ (DBTEAMPOLICIESShowcaseDownloadPolicy *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

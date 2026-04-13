@@ -8,7 +8,7 @@
 
 #import "YGCategoryDefaultEditController.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 
 @interface YGCategoryDefaultEditController () <UITextFieldDelegate, UITextViewDelegate> {

@@ -29,12 +29,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBTEAMLOGEventCategoryTag` enum type represents the possible tag states
 /// with which the `DBTEAMLOGEventCategory` union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
+  /// Events that involve team related alerts.
+  DBTEAMLOGEventCategoryAdminAlerting,
+
   /// Events that apply to management of linked apps.
   DBTEAMLOGEventCategoryApps,
 
   /// Events that have to do with comments on files and Paper documents.
   DBTEAMLOGEventCategoryComments,
+
+  /// Events that involve data governance actions
+  DBTEAMLOGEventCategoryDataGovernance,
 
   /// Events that apply to linked devices on mobile, desktop and Web
   /// platforms.
@@ -43,6 +49,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
   /// Events that involve domain management feature: domain verification,
   /// invite enforcement and account capture.
   DBTEAMLOGEventCategoryDomains,
+
+  /// Events that involve encryption.
+  DBTEAMLOGEventCategoryEncryption,
 
   /// Events that have to do with filesystem operations on files and folders:
   /// copy, move, delete, etc.
@@ -93,6 +102,9 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
   /// well as administrative policies concerning two factor authentication.
   DBTEAMLOGEventCategoryTfa,
 
+  /// Events that apply to cross-team trust establishment.
+  DBTEAMLOGEventCategoryTrustedTeams,
+
   /// (no description).
   DBTEAMLOGEventCategoryOther,
 
@@ -102,6 +114,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 @property (nonatomic, readonly) DBTEAMLOGEventCategoryTag tag;
 
 #pragma mark - Constructors
+
+///
+/// Initializes union class with tag state of "admin_alerting".
+///
+/// Description of the "admin_alerting" tag state: Events that involve team
+/// related alerts.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithAdminAlerting;
 
 ///
 /// Initializes union class with tag state of "apps".
@@ -124,6 +146,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 - (instancetype)initWithComments;
 
 ///
+/// Initializes union class with tag state of "data_governance".
+///
+/// Description of the "data_governance" tag state: Events that involve data
+/// governance actions
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithDataGovernance;
+
+///
 /// Initializes union class with tag state of "devices".
 ///
 /// Description of the "devices" tag state: Events that apply to linked devices
@@ -143,6 +175,15 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 /// @return An initialized instance.
 ///
 - (instancetype)initWithDomains;
+
+///
+/// Initializes union class with tag state of "encryption".
+///
+/// Description of the "encryption" tag state: Events that involve encryption.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithEncryption;
 
 ///
 /// Initializes union class with tag state of "file_operations".
@@ -294,6 +335,16 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 - (instancetype)initWithTfa;
 
 ///
+/// Initializes union class with tag state of "trusted_teams".
+///
+/// Description of the "trusted_teams" tag state: Events that apply to
+/// cross-team trust establishment.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithTrustedTeams;
+
+///
 /// Initializes union class with tag state of "other".
 ///
 /// @return An initialized instance.
@@ -303,6 +354,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 - (instancetype)init NS_UNAVAILABLE;
 
 #pragma mark - Tag state methods
+
+///
+/// Retrieves whether the union's current tag state has value "admin_alerting".
+///
+/// @return Whether the union's current tag state has value "admin_alerting".
+///
+- (BOOL)isAdminAlerting;
 
 ///
 /// Retrieves whether the union's current tag state has value "apps".
@@ -319,6 +377,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 - (BOOL)isComments;
 
 ///
+/// Retrieves whether the union's current tag state has value "data_governance".
+///
+/// @return Whether the union's current tag state has value "data_governance".
+///
+- (BOOL)isDataGovernance;
+
+///
 /// Retrieves whether the union's current tag state has value "devices".
 ///
 /// @return Whether the union's current tag state has value "devices".
@@ -331,6 +396,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 /// @return Whether the union's current tag state has value "domains".
 ///
 - (BOOL)isDomains;
+
+///
+/// Retrieves whether the union's current tag state has value "encryption".
+///
+/// @return Whether the union's current tag state has value "encryption".
+///
+- (BOOL)isEncryption;
 
 ///
 /// Retrieves whether the union's current tag state has value "file_operations".
@@ -438,6 +510,13 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 - (BOOL)isTfa;
 
 ///
+/// Retrieves whether the union's current tag state has value "trusted_teams".
+///
+/// @return Whether the union's current tag state has value "trusted_teams".
+///
+- (BOOL)isTrustedTeams;
+
+///
 /// Retrieves whether the union's current tag state has value "other".
 ///
 /// @return Whether the union's current tag state has value "other".
@@ -468,7 +547,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGEventCategory` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGEventCategory *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGEventCategory *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGEventCategory` instances.
@@ -478,7 +557,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGEventCategoryTag) {
 ///
 /// @return An instantiation of the `DBTEAMLOGEventCategory` object.
 ///
-+ (DBTEAMLOGEventCategory *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGEventCategory *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

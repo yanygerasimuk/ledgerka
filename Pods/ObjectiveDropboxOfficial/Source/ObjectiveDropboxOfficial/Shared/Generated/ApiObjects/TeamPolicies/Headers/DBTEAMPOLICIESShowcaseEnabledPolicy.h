@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBTEAMPOLICIESShowcaseEnabledPolicyTag` enum type represents the
 /// possible tag states with which the `DBTEAMPOLICIESShowcaseEnabledPolicy`
 /// union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMPOLICIESShowcaseEnabledPolicyTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMPOLICIESShowcaseEnabledPolicyTag) {
   /// Showcase is disabled.
   DBTEAMPOLICIESShowcaseEnabledPolicyDisabled,
 
@@ -120,7 +120,7 @@ typedef NS_ENUM(NSInteger, DBTEAMPOLICIESShowcaseEnabledPolicyTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMPOLICIESShowcaseEnabledPolicy` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMPOLICIESShowcaseEnabledPolicy *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMPOLICIESShowcaseEnabledPolicy *)instance;
 
 ///
 /// Deserializes `DBTEAMPOLICIESShowcaseEnabledPolicy` instances.
@@ -131,7 +131,7 @@ typedef NS_ENUM(NSInteger, DBTEAMPOLICIESShowcaseEnabledPolicyTag) {
 /// @return An instantiation of the `DBTEAMPOLICIESShowcaseEnabledPolicy`
 /// object.
 ///
-+ (DBTEAMPOLICIESShowcaseEnabledPolicy *)deserialize:(NSDictionary *)dict;
++ (DBTEAMPOLICIESShowcaseEnabledPolicy *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

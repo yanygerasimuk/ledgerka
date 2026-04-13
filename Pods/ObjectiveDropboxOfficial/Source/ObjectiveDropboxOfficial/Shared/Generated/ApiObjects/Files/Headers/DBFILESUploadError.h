@@ -29,13 +29,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBFILESUploadErrorTag` enum type represents the possible tag states
 /// with which the `DBFILESUploadError` union can exist.
-typedef NS_ENUM(NSInteger, DBFILESUploadErrorTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBFILESUploadErrorTag) {
   /// Unable to save the uploaded contents to a file.
   DBFILESUploadErrorPath,
 
   /// The supplied property group is invalid. The file has uploaded without
   /// property groups.
   DBFILESUploadErrorPropertiesError,
+
+  /// The request payload must be at most 150 MB.
+  DBFILESUploadErrorPayloadTooLarge,
+
+  /// The content received by the Dropbox server in this call does not match
+  /// the provided content hash.
+  DBFILESUploadErrorContentHashMismatch,
 
   /// (no description).
   DBFILESUploadErrorOther,
@@ -83,6 +90,26 @@ typedef NS_ENUM(NSInteger, DBFILESUploadErrorTag) {
 - (instancetype)initWithPropertiesError:(DBFILEPROPERTIESInvalidPropertyGroupError *)propertiesError;
 
 ///
+/// Initializes union class with tag state of "payload_too_large".
+///
+/// Description of the "payload_too_large" tag state: The request payload must
+/// be at most 150 MB.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithPayloadTooLarge;
+
+///
+/// Initializes union class with tag state of "content_hash_mismatch".
+///
+/// Description of the "content_hash_mismatch" tag state: The content received
+/// by the Dropbox server in this call does not match the provided content hash.
+///
+/// @return An initialized instance.
+///
+- (instancetype)initWithContentHashMismatch;
+
+///
 /// Initializes union class with tag state of "other".
 ///
 /// @return An initialized instance.
@@ -115,6 +142,23 @@ typedef NS_ENUM(NSInteger, DBFILESUploadErrorTag) {
 - (BOOL)isPropertiesError;
 
 ///
+/// Retrieves whether the union's current tag state has value
+/// "payload_too_large".
+///
+/// @return Whether the union's current tag state has value "payload_too_large".
+///
+- (BOOL)isPayloadTooLarge;
+
+///
+/// Retrieves whether the union's current tag state has value
+/// "content_hash_mismatch".
+///
+/// @return Whether the union's current tag state has value
+/// "content_hash_mismatch".
+///
+- (BOOL)isContentHashMismatch;
+
+///
 /// Retrieves whether the union's current tag state has value "other".
 ///
 /// @return Whether the union's current tag state has value "other".
@@ -145,7 +189,7 @@ typedef NS_ENUM(NSInteger, DBFILESUploadErrorTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBFILESUploadError` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBFILESUploadError *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBFILESUploadError *)instance;
 
 ///
 /// Deserializes `DBFILESUploadError` instances.
@@ -155,7 +199,7 @@ typedef NS_ENUM(NSInteger, DBFILESUploadErrorTag) {
 ///
 /// @return An instantiation of the `DBFILESUploadError` object.
 ///
-+ (DBFILESUploadError *)deserialize:(NSDictionary *)dict;
++ (DBFILESUploadError *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

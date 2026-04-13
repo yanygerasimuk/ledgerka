@@ -8,7 +8,7 @@
 
 #import "YYGDBConfig.h"
 #import "YGSQLite.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @implementation YYGDBConfig
 

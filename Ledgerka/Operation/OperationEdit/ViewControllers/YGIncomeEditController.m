@@ -14,7 +14,7 @@
 #import "YGCategoryManager.h"
 #import "YGOperationManager.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 
 @interface YGIncomeEditController () <UITextFieldDelegate, UITextViewDelegate> {
     

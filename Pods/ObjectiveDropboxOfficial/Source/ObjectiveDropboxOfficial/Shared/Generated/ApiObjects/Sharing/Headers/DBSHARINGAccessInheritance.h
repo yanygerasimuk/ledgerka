@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The `DBSHARINGAccessInheritanceTag` enum type represents the possible tag
 /// states with which the `DBSHARINGAccessInheritance` union can exist.
-typedef NS_ENUM(NSInteger, DBSHARINGAccessInheritanceTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBSHARINGAccessInheritanceTag) {
   /// The shared folder inherits its members from the parent folder.
   DBSHARINGAccessInheritanceInherit,
 
@@ -122,7 +122,7 @@ typedef NS_ENUM(NSInteger, DBSHARINGAccessInheritanceTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBSHARINGAccessInheritance` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBSHARINGAccessInheritance *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBSHARINGAccessInheritance *)instance;
 
 ///
 /// Deserializes `DBSHARINGAccessInheritance` instances.
@@ -132,7 +132,7 @@ typedef NS_ENUM(NSInteger, DBSHARINGAccessInheritanceTag) {
 ///
 /// @return An instantiation of the `DBSHARINGAccessInheritance` object.
 ///
-+ (DBSHARINGAccessInheritance *)deserialize:(NSDictionary *)dict;
++ (DBSHARINGAccessInheritance *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The `DBTEAMLOGShowcaseExternalSharingPolicyTag` enum type represents the
 /// possible tag states with which the `DBTEAMLOGShowcaseExternalSharingPolicy`
 /// union can exist.
-typedef NS_ENUM(NSInteger, DBTEAMLOGShowcaseExternalSharingPolicyTag) {
+typedef NS_CLOSED_ENUM(NSInteger, DBTEAMLOGShowcaseExternalSharingPolicyTag) {
   /// (no description).
   DBTEAMLOGShowcaseExternalSharingPolicyDisabled,
 
@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGShowcaseExternalSharingPolicyTag) {
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGShowcaseExternalSharingPolicy` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGShowcaseExternalSharingPolicy *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGShowcaseExternalSharingPolicy *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGShowcaseExternalSharingPolicy` instances.
@@ -130,7 +130,7 @@ typedef NS_ENUM(NSInteger, DBTEAMLOGShowcaseExternalSharingPolicyTag) {
 /// @return An instantiation of the `DBTEAMLOGShowcaseExternalSharingPolicy`
 /// object.
 ///
-+ (DBTEAMLOGShowcaseExternalSharingPolicy *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGShowcaseExternalSharingPolicy *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 

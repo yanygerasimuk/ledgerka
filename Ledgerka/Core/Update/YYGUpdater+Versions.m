@@ -9,7 +9,7 @@
 #import "YYGUpdater+Versions.h"
 #import "YGSQLite.h"
 #import <sqlite3.h>
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 #import "YGTools.h"
 #import "YGEntity.h"
 #import "YGEntityManager.h"

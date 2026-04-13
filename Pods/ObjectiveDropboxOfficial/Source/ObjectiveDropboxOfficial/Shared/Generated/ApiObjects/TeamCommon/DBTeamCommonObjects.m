@@ -85,17 +85,17 @@
 
 #pragma mark - Serialization methods
 
-+ (nullable NSDictionary *)serialize:(id)instance {
++ (nullable NSDictionary<NSString *, id> *)serialize:(id)instance {
   return [DBTEAMCOMMONGroupManagementTypeSerializer serialize:instance];
 }
 
-+ (id)deserialize:(NSDictionary *)dict {
++ (id)deserialize:(NSDictionary<NSString *, id> *)dict {
   return [DBTEAMCOMMONGroupManagementTypeSerializer deserialize:dict];
 }
 
-#pragma mark - Description method
+#pragma mark - Debug Description method
 
-- (NSString *)description {
+- (NSString *)debugDescription {
   return [[DBTEAMCOMMONGroupManagementTypeSerializer serialize:self] description];
 }
 
@@ -116,12 +116,16 @@
   switch (_tag) {
   case DBTEAMCOMMONGroupManagementTypeUserManaged:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONGroupManagementTypeCompanyManaged:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONGroupManagementTypeSystemManaged:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONGroupManagementTypeOther:
     result = prime * result + [[self tagName] hash];
+    break;
   }
 
   return prime * result;
@@ -165,7 +169,7 @@
 
 @implementation DBTEAMCOMMONGroupManagementTypeSerializer
 
-+ (NSDictionary *)serialize:(DBTEAMCOMMONGroupManagementType *)valueObj {
++ (NSDictionary<NSString *, id> *)serialize:(DBTEAMCOMMONGroupManagementType *)valueObj {
   NSMutableDictionary *jsonDict = [[NSMutableDictionary alloc] init];
 
   if ([valueObj isUserManaged]) {
@@ -180,10 +184,10 @@
     jsonDict[@".tag"] = @"other";
   }
 
-  return [jsonDict count] > 0 ? jsonDict : nil;
+  return jsonDict;
 }
 
-+ (DBTEAMCOMMONGroupManagementType *)deserialize:(NSDictionary *)valueDict {
++ (DBTEAMCOMMONGroupManagementType *)deserialize:(NSDictionary<NSString *, id> *)valueDict {
   NSString *tag = valueDict[@".tag"];
 
   if ([tag isEqualToString:@"user_managed"]) {
@@ -244,17 +248,17 @@
 
 #pragma mark - Serialization methods
 
-+ (nullable NSDictionary *)serialize:(id)instance {
++ (nullable NSDictionary<NSString *, id> *)serialize:(id)instance {
   return [DBTEAMCOMMONGroupSummarySerializer serialize:instance];
 }
 
-+ (id)deserialize:(NSDictionary *)dict {
++ (id)deserialize:(NSDictionary<NSString *, id> *)dict {
   return [DBTEAMCOMMONGroupSummarySerializer deserialize:dict];
 }
 
-#pragma mark - Description method
+#pragma mark - Debug Description method
 
-- (NSString *)description {
+- (NSString *)debugDescription {
   return [[DBTEAMCOMMONGroupSummarySerializer serialize:self] description];
 }
 
@@ -329,7 +333,7 @@
 
 @implementation DBTEAMCOMMONGroupSummarySerializer
 
-+ (NSDictionary *)serialize:(DBTEAMCOMMONGroupSummary *)valueObj {
++ (NSDictionary<NSString *, id> *)serialize:(DBTEAMCOMMONGroupSummary *)valueObj {
   NSMutableDictionary *jsonDict = [[NSMutableDictionary alloc] init];
 
   jsonDict[@"group_name"] = valueObj.groupName;
@@ -343,10 +347,10 @@
     jsonDict[@"member_count"] = valueObj.memberCount;
   }
 
-  return [jsonDict count] > 0 ? jsonDict : nil;
+  return jsonDict;
 }
 
-+ (DBTEAMCOMMONGroupSummary *)deserialize:(NSDictionary *)valueDict {
++ (DBTEAMCOMMONGroupSummary *)deserialize:(NSDictionary<NSString *, id> *)valueDict {
   NSString *groupName = valueDict[@"group_name"];
   NSString *groupId = valueDict[@"group_id"];
   DBTEAMCOMMONGroupManagementType *groupManagementType =
@@ -428,17 +432,17 @@
 
 #pragma mark - Serialization methods
 
-+ (nullable NSDictionary *)serialize:(id)instance {
++ (nullable NSDictionary<NSString *, id> *)serialize:(id)instance {
   return [DBTEAMCOMMONGroupTypeSerializer serialize:instance];
 }
 
-+ (id)deserialize:(NSDictionary *)dict {
++ (id)deserialize:(NSDictionary<NSString *, id> *)dict {
   return [DBTEAMCOMMONGroupTypeSerializer deserialize:dict];
 }
 
-#pragma mark - Description method
+#pragma mark - Debug Description method
 
-- (NSString *)description {
+- (NSString *)debugDescription {
   return [[DBTEAMCOMMONGroupTypeSerializer serialize:self] description];
 }
 
@@ -459,10 +463,13 @@
   switch (_tag) {
   case DBTEAMCOMMONGroupTypeTeam:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONGroupTypeUserManaged:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONGroupTypeOther:
     result = prime * result + [[self tagName] hash];
+    break;
   }
 
   return prime * result;
@@ -504,7 +511,7 @@
 
 @implementation DBTEAMCOMMONGroupTypeSerializer
 
-+ (NSDictionary *)serialize:(DBTEAMCOMMONGroupType *)valueObj {
++ (NSDictionary<NSString *, id> *)serialize:(DBTEAMCOMMONGroupType *)valueObj {
   NSMutableDictionary *jsonDict = [[NSMutableDictionary alloc] init];
 
   if ([valueObj isTeam]) {
@@ -517,10 +524,10 @@
     jsonDict[@".tag"] = @"other";
   }
 
-  return [jsonDict count] > 0 ? jsonDict : nil;
+  return jsonDict;
 }
 
-+ (DBTEAMCOMMONGroupType *)deserialize:(NSDictionary *)valueDict {
++ (DBTEAMCOMMONGroupType *)deserialize:(NSDictionary<NSString *, id> *)valueDict {
   NSString *tag = valueDict[@".tag"];
 
   if ([tag isEqualToString:@"team"]) {
@@ -615,17 +622,17 @@
 
 #pragma mark - Serialization methods
 
-+ (nullable NSDictionary *)serialize:(id)instance {
++ (nullable NSDictionary<NSString *, id> *)serialize:(id)instance {
   return [DBTEAMCOMMONMemberSpaceLimitTypeSerializer serialize:instance];
 }
 
-+ (id)deserialize:(NSDictionary *)dict {
++ (id)deserialize:(NSDictionary<NSString *, id> *)dict {
   return [DBTEAMCOMMONMemberSpaceLimitTypeSerializer deserialize:dict];
 }
 
-#pragma mark - Description method
+#pragma mark - Debug Description method
 
-- (NSString *)description {
+- (NSString *)debugDescription {
   return [[DBTEAMCOMMONMemberSpaceLimitTypeSerializer serialize:self] description];
 }
 
@@ -646,12 +653,16 @@
   switch (_tag) {
   case DBTEAMCOMMONMemberSpaceLimitTypeOff:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONMemberSpaceLimitTypeAlertOnly:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONMemberSpaceLimitTypeStopSync:
     result = prime * result + [[self tagName] hash];
+    break;
   case DBTEAMCOMMONMemberSpaceLimitTypeOther:
     result = prime * result + [[self tagName] hash];
+    break;
   }
 
   return prime * result;
@@ -695,7 +706,7 @@
 
 @implementation DBTEAMCOMMONMemberSpaceLimitTypeSerializer
 
-+ (NSDictionary *)serialize:(DBTEAMCOMMONMemberSpaceLimitType *)valueObj {
++ (NSDictionary<NSString *, id> *)serialize:(DBTEAMCOMMONMemberSpaceLimitType *)valueObj {
   NSMutableDictionary *jsonDict = [[NSMutableDictionary alloc] init];
 
   if ([valueObj isOff]) {
@@ -710,10 +721,10 @@
     jsonDict[@".tag"] = @"other";
   }
 
-  return [jsonDict count] > 0 ? jsonDict : nil;
+  return jsonDict;
 }
 
-+ (DBTEAMCOMMONMemberSpaceLimitType *)deserialize:(NSDictionary *)valueDict {
++ (DBTEAMCOMMONMemberSpaceLimitType *)deserialize:(NSDictionary<NSString *, id> *)valueDict {
   NSString *tag = valueDict[@".tag"];
 
   if ([tag isEqualToString:@"off"]) {
@@ -757,17 +768,17 @@
 
 #pragma mark - Serialization methods
 
-+ (nullable NSDictionary *)serialize:(id)instance {
++ (nullable NSDictionary<NSString *, id> *)serialize:(id)instance {
   return [DBTEAMCOMMONTimeRangeSerializer serialize:instance];
 }
 
-+ (id)deserialize:(NSDictionary *)dict {
++ (id)deserialize:(NSDictionary<NSString *, id> *)dict {
   return [DBTEAMCOMMONTimeRangeSerializer deserialize:dict];
 }
 
-#pragma mark - Description method
+#pragma mark - Debug Description method
 
-- (NSString *)description {
+- (NSString *)debugDescription {
   return [[DBTEAMCOMMONTimeRangeSerializer serialize:self] description];
 }
 
@@ -830,7 +841,7 @@
 
 @implementation DBTEAMCOMMONTimeRangeSerializer
 
-+ (NSDictionary *)serialize:(DBTEAMCOMMONTimeRange *)valueObj {
++ (NSDictionary<NSString *, id> *)serialize:(DBTEAMCOMMONTimeRange *)valueObj {
   NSMutableDictionary *jsonDict = [[NSMutableDictionary alloc] init];
 
   if (valueObj.startTime) {
@@ -840,10 +851,10 @@
     jsonDict[@"end_time"] = [DBNSDateSerializer serialize:valueObj.endTime dateFormat:@"%Y-%m-%dT%H:%M:%SZ"];
   }
 
-  return [jsonDict count] > 0 ? jsonDict : nil;
+  return jsonDict;
 }
 
-+ (DBTEAMCOMMONTimeRange *)deserialize:(NSDictionary *)valueDict {
++ (DBTEAMCOMMONTimeRange *)deserialize:(NSDictionary<NSString *, id> *)valueDict {
   NSDate *startTime = valueDict[@"start_time"]
                           ? [DBNSDateSerializer deserialize:valueDict[@"start_time"] dateFormat:@"%Y-%m-%dT%H:%M:%SZ"]
                           : nil;

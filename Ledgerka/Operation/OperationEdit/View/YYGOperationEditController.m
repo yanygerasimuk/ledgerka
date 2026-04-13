@@ -9,7 +9,7 @@
 #import "YYGOperationEditController.h"
 #import "YYGOperationEditViewModel.h"
 #import "YGTools.h"
-#import "YYGLedgerDefine.h"
+#import "YYGLedgerkaDefine.h"
 #import "YYGObject.h"
 #import "YGDateChoiceController.h"
 #import "YYGCategorySelectController.h"

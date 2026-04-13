@@ -88,26 +88,32 @@
             }
         }
     } else {
-        [DBClientsManager authorizeFromController:[UIApplication sharedApplication]
-                                       controller:[[self class] topMostController]
-                                          openURL:^(NSURL *url) {
-            [[UIApplication sharedApplication] openURL:url
-                                               options:[NSDictionary dictionary]
-                                     completionHandler:^(BOOL success) {
-                                                  
-                //NSLog(@"openURL complete");
-            }];
-        }];
+        DBScopeRequest *scopeRequest = [[DBScopeRequest alloc]
+                                        initWithScopeType:DBScopeTypeUser
+                                        scopes:@[
+            @"files.metadata.read",
+            @"files.metadata.write",
+            @"files.content.read",
+            @"files.content.write"
+        ]
+                                        includeGrantedScopes:NO];
+
+        [DBClientsManager authorizeFromControllerV2:[UIApplication sharedApplication]
+                                         controller:[[self class] topMostController]
+                              loadingStatusDelegate:nil
+                                            openURL:^(NSURL *url) { [[UIApplication sharedApplication] openURL:url]; }
+                                       scopeRequest:scopeRequest];
     }
 }
 
-+ (UIViewController*)topMostController {
++ (UIViewController *)topMostController
+{
     UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    
+
     while (topController.presentedViewController) {
         topController = topController.presentedViewController;
     }
-    
+
     return topController;
 }
 

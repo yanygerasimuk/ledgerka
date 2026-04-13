@@ -27,26 +27,34 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Instance fields
 
-/// Previous parent namespace ID. Might be missing due to historical data gap.
+/// Previous parent namespace ID.
 @property (nonatomic, readonly, copy, nullable) NSString *previousParentNsId;
 
-/// New parent namespace ID. Might be missing due to historical data gap.
+/// New parent namespace ID.
 @property (nonatomic, readonly, copy, nullable) NSString *dNewParentNsId;
+
+/// Previous namespace path.
+@property (nonatomic, readonly, copy, nullable) NSString *previousNsPath;
+
+/// New namespace path.
+@property (nonatomic, readonly, copy, nullable) NSString *dNewNsPath;
 
 #pragma mark - Constructors
 
 ///
 /// Full constructor for the struct (exposes all instance variables).
 ///
-/// @param previousParentNsId Previous parent namespace ID. Might be missing due
-/// to historical data gap.
-/// @param dNewParentNsId New parent namespace ID. Might be missing due to
-/// historical data gap.
+/// @param previousParentNsId Previous parent namespace ID.
+/// @param dNewParentNsId New parent namespace ID.
+/// @param previousNsPath Previous namespace path.
+/// @param dNewNsPath New namespace path.
 ///
 /// @return An initialized instance.
 ///
 - (instancetype)initWithPreviousParentNsId:(nullable NSString *)previousParentNsId
-                            dNewParentNsId:(nullable NSString *)dNewParentNsId;
+                            dNewParentNsId:(nullable NSString *)dNewParentNsId
+                            previousNsPath:(nullable NSString *)previousNsPath
+                                dNewNsPath:(nullable NSString *)dNewNsPath;
 
 ///
 /// Convenience constructor (exposes only non-nullable instance variables with
@@ -77,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return A json-compatible dictionary representation of the
 /// `DBTEAMLOGSharedFolderNestDetails` API object.
 ///
-+ (nullable NSDictionary *)serialize:(DBTEAMLOGSharedFolderNestDetails *)instance;
++ (nullable NSDictionary<NSString *, id> *)serialize:(DBTEAMLOGSharedFolderNestDetails *)instance;
 
 ///
 /// Deserializes `DBTEAMLOGSharedFolderNestDetails` instances.
@@ -87,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @return An instantiation of the `DBTEAMLOGSharedFolderNestDetails` object.
 ///
-+ (DBTEAMLOGSharedFolderNestDetails *)deserialize:(NSDictionary *)dict;
++ (DBTEAMLOGSharedFolderNestDetails *)deserialize:(NSDictionary<NSString *, id> *)dict;
 
 @end
 
