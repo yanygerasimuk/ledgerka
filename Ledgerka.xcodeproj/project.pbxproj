@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0150DD022F8D782F0064D8F4 /* YYGReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DD012F8D782F0064D8F4 /* YYGReport.m */; };
+		0150DD062F8D78F00064D8F4 /* YYGReportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DD052F8D78F00064D8F4 /* YYGReportManager.m */; };
+		0150DD092F8D7D560064D8F4 /* YYGReportValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DD082F8D7D560064D8F4 /* YYGReportValue.m */; };
+		0150DD0F2F8D7E220064D8F4 /* YYGReportParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DD0E2F8D7E220064D8F4 /* YYGReportParameter.m */; };
+		0150DD122F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DD112F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.m */; };
+		0150DD152F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DD142F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.m */; };
 		1317BEF11F0E67920039A224 /* YGDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1317BEF01F0E67920039A224 /* YGDBManager.m */; };
 		131E1D961EF59B1600531F10 /* YGExpenseCategoryEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131E1D941EF59B1600531F10 /* YGExpenseCategoryEditController.m */; };
 		131E1D991EF59C4900531F10 /* YGExpenseEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131E1D971EF59C4900531F10 /* YGExpenseEditController.m */; };
@@ -154,6 +160,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0150DD002F8D782F0064D8F4 /* YYGReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGReport.h; sourceTree = "<group>"; };
+		0150DD012F8D782F0064D8F4 /* YYGReport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGReport.m; sourceTree = "<group>"; };
+		0150DD042F8D78F00064D8F4 /* YYGReportManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGReportManager.h; sourceTree = "<group>"; };
+		0150DD052F8D78F00064D8F4 /* YYGReportManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGReportManager.m; sourceTree = "<group>"; };
+		0150DD072F8D7D560064D8F4 /* YYGReportValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGReportValue.h; sourceTree = "<group>"; };
+		0150DD082F8D7D560064D8F4 /* YYGReportValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGReportValue.m; sourceTree = "<group>"; };
+		0150DD0D2F8D7E220064D8F4 /* YYGReportParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGReportParameter.h; sourceTree = "<group>"; };
+		0150DD0E2F8D7E220064D8F4 /* YYGReportParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGReportParameter.m; sourceTree = "<group>"; };
+		0150DD102F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYGReportManager+YYGReportParameter.h"; sourceTree = "<group>"; };
+		0150DD112F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYGReportManager+YYGReportParameter.m"; sourceTree = "<group>"; };
+		0150DD132F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYGReportManager+YYGReportValue.h"; sourceTree = "<group>"; };
+		0150DD142F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYGReportManager+YYGReportValue.m"; sourceTree = "<group>"; };
+		0150DD192F8D85820064D8F4 /* YYGResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGResult.h; sourceTree = "<group>"; };
 		1317BEEF1F0E67920039A224 /* YGDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGDBManager.h; sourceTree = "<group>"; };
 		1317BEF01F0E67920039A224 /* YGDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGDBManager.m; sourceTree = "<group>"; };
 		131E1D941EF59B1600531F10 /* YGExpenseCategoryEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGExpenseCategoryEditController.m; sourceTree = "<group>"; };
@@ -443,6 +462,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0150DD032F8D78340064D8F4 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				0150DD162F8D83AE0064D8F4 /* Model */,
+				0150DD042F8D78F00064D8F4 /* YYGReportManager.h */,
+				0150DD052F8D78F00064D8F4 /* YYGReportManager.m */,
+				0150DD102F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.h */,
+				0150DD112F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.m */,
+				0150DD132F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.h */,
+				0150DD142F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.m */,
+				0150DD1D2F8D872E0064D8F4 /* UserInterface */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		0150DD162F8D83AE0064D8F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0150DD002F8D782F0064D8F4 /* YYGReport.h */,
+				0150DD012F8D782F0064D8F4 /* YYGReport.m */,
+				0150DD0D2F8D7E220064D8F4 /* YYGReportParameter.h */,
+				0150DD0E2F8D7E220064D8F4 /* YYGReportParameter.m */,
+				0150DD072F8D7D560064D8F4 /* YYGReportValue.h */,
+				0150DD082F8D7D560064D8F4 /* YYGReportValue.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0150DD1D2F8D872E0064D8F4 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				0150DD1E2F8D87700064D8F4 /* AccountBalance */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		0150DD1E2F8D87700064D8F4 /* AccountBalance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountBalance;
+			sourceTree = "<group>";
+		};
 		0152F34B2F8D0B1B007CED47 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +548,7 @@
 				135F860020EFB17400CFA942 /* Category */,
 				135F85FE20EFB11600CFA942 /* Entity */,
 				135F860420EFB2AF00CFA942 /* Operation */,
+				0150DD032F8D78340064D8F4 /* Report */,
 				139743AA20E3FA0600391439 /* Options */,
 				139743AB20E3FB0400391439 /* Utilities */,
 				0152F34B2F8D0B1B007CED47 /* Support */,
@@ -1053,6 +1116,7 @@
 				1397437A20E10BD700391439 /* YGLoadView.m */,
 				133172632109ED9900BD5A4F /* YYGNoDataView.h */,
 				133172642109ED9900BD5A4F /* YYGNoDataView.m */,
+				0150DD192F8D85820064D8F4 /* YYGResult.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1454,6 +1518,7 @@
 				13CCF8781F16861400EAB928 /* YGFileSystemSorter.m in Sources */,
 				13CCF86C1F16861400EAB928 /* YGFile.m in Sources */,
 				1331726E210A0C4E00BD5A4F /* YYGAccountsViewModel.m in Sources */,
+				0150DD152F8D82D90064D8F4 /* YYGReportManager+YYGReportValue.m in Sources */,
 				133172572109BECF00BD5A4F /* YYGIncomeViewModel.m in Sources */,
 				13279DBF1EF1903B00BA46AF /* YGCategoryDefaultEditController.m in Sources */,
 				135510E81F177096004F10DE /* YYGConfigDefine.m in Sources */,
@@ -1463,10 +1528,12 @@
 				133C00251F1777B400D0CB0E /* YYGFileSystemError.m in Sources */,
 				1397437520E0E41300391439 /* YGDropboxLinkViewController.m in Sources */,
 				13279DC21EF26F6F00BA46AF /* YGEntityViewController.m in Sources */,
+				0150DD0F2F8D7E220064D8F4 /* YYGReportParameter.m in Sources */,
 				13CCF8711F16861400EAB928 /* YGSearchPattern.m in Sources */,
 				1317BEF11F0E67920039A224 /* YGDBManager.m in Sources */,
 				132379E71F13D1350051325F /* YGOperationRow.m in Sources */,
 				133C7F6720C8157B00CC9F16 /* YGLaunchScreenViewController.m in Sources */,
+				0150DD092F8D7D560064D8F4 /* YYGReportValue.m in Sources */,
 				131E1D991EF59C4900531F10 /* YGExpenseEditController.m in Sources */,
 				13A658102115EC580059C2BF /* YYGSetDebtViewModel.m in Sources */,
 				1397439220E13C4200391439 /* YYGStorage.m in Sources */,
@@ -1476,6 +1543,7 @@
 				133977C0212823700029297C /* YYGGiveDebtViewModel.m in Sources */,
 				13CCF86F1F16861400EAB928 /* YGDirectory.m in Sources */,
 				13279D4D1EED949900BA46AF /* YGEntity.m in Sources */,
+				0150DD022F8D782F0064D8F4 /* YYGReport.m in Sources */,
 				133172512109BEAD00BD5A4F /* YYGExpenseViewModel.m in Sources */,
 				133051991EDEEFBC0031044D /* YGCategory.m in Sources */,
 				137E80D920F241E2000E4B7A /* main.m in Sources */,
@@ -1527,6 +1595,7 @@
 				13D9D8991F1A5573001F46B1 /* YYGExpenseParentChoiceController.m in Sources */,
 				131E1D961EF59B1600531F10 /* YGExpenseCategoryEditController.m in Sources */,
 				1331722A210730AA00BD5A4F /* YYGEntityEditViewModel.m in Sources */,
+				0150DD062F8D78F00064D8F4 /* YYGReportManager.m in Sources */,
 				133977B7212786700029297C /* YYGEntitySelectViewModel.m in Sources */,
 				13A657F92114AAFC0059C2BF /* YYGCurrencySelectViewModel.m in Sources */,
 				1397439820E13DC800391439 /* YYGBackupViewController.m in Sources */,
@@ -1541,6 +1610,7 @@
 				13317290210B3E4800BD5A4F /* YYGDropboxBackupViewModel.m in Sources */,
 				13279D581EEDD9A700BA46AF /* YGOperationManager.m in Sources */,
 				13CCF87C1F16862E00EAB928 /* YGConfig.m in Sources */,
+				0150DD122F8D813F0064D8F4 /* YYGReportManager+YYGReportParameter.m in Sources */,
 				139743A420E15EE900391439 /* YYGBackuper.m in Sources */,
 				13A6580D2115EBDA0059C2BF /* YYGOperationEditViewModel.m in Sources */,
 				1331722621072CB700BD5A4F /* YYGEntityEditController.m in Sources */,

@@ -18,8 +18,9 @@
     YYGAppVersion *v1_1_13 = [[YYGAppVersion alloc] initWithMajor:1 minor:1 build:13];
     YYGAppVersion *v1_2_6 = [[YYGAppVersion alloc] initWithMajor:1 minor:2 build:6];
     YYGAppVersion *v1_3_3 = [[YYGAppVersion alloc] initWithMajor:1 minor:3 build:3];
-    
-    return @[v1_1_13, v1_2_6, v1_3_3];
+    YYGAppVersion *v2_0_0 = [[YYGAppVersion alloc] initWithMajor:2 minor:0 build:0];
+
+    return @[v1_1_13, v1_2_6, v1_3_3, v2_0_0];
 }
 
 /**

@@ -18,6 +18,150 @@
 @implementation YYGUpdater (Versions)
 
 /**
+Update to version 2.0(0).
+return nonliquid design
+up min version ios
+
+[x] retur Fix bug with non-process transfer operation while actualize balance of accounts.
+[x] Fix bug with non-update entities list after restore db.
+[x] Fix bug with non-update conterparty while edit debt.
+*/
+- (NSNumber *)updateToVersionMajor2Minor0Build0
+{
+    NSLog(@"Update to version 2.0(0)...");
+
+    // Prepare updade
+    BOOL updateResult = NO;
+    NSInteger result = NSNotFound;
+    sqlite3 *db;
+    NSString *sql;
+    char *error = 0;
+
+    @try {
+        // Open db
+        NSString *databaseFullName = [[YGTools documentsDirectoryPath] stringByAppendingPathComponent:kDatabaseName];
+        NSInteger result = NSNotFound;
+        result = sqlite3_open([databaseFullName UTF8String], &db);
+        if(result != SQLITE_OK)
+            @throw [NSException exceptionWithName:@"Fail to open db."
+                                           reason:[NSString stringWithFormat:@"Result: %ld", (long)result]
+                                         userInfo:nil];
+
+        // BEGIN TRANSACTION;
+        sql = @"BEGIN TRANSACTION";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            @throw [NSException exceptionWithName:@"Fail to begin transaction."
+                                           reason:[NSString stringWithFormat:@"Result: %ld, error: %@", (long)result, errMsg]
+                                         userInfo:nil];
+        }
+
+        // Добавить таблицу report
+        sql = @"CREATE TABLE IF NOT EXISTS report "
+        "(report_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "report_type_id INTEGER NOT NULL, "
+        "name TEXT NOT NULL, "
+        "active INTEGER NOT NULL, "
+        "created TEXT NOT NULL, "
+        "modified TEXT, "
+        "sort INTEGER NOT NULL, "
+        "comment TEXT, "
+        "uuid TEXT NOT NULL"
+        ");";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            @throw [NSException exceptionWithName:@"Fail to create report table."
+                                           reason:[NSString stringWithFormat:@"Result: %ld, error: %@", (long)result, errMsg]
+                                         userInfo:nil];
+        }
+
+        // Добавить таблицу report_parameter
+        sql = @"CREATE TABLE IF NOT EXISTS report_parameter "
+        "(report_parameter_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "report_parameter_type_id INTEGER NOT NULL, "
+        "report_id INTEGER NOT NULL, "
+        "uuid TEXT NOT NULL"
+        ");";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            @throw [NSException exceptionWithName:@"Fail to create report_parameter table."
+                                           reason:[NSString stringWithFormat:@"Result: %ld, error: %@", (long)result, errMsg]
+                                         userInfo:nil];
+        }
+
+        // Добавить таблицу report_value
+        sql = @"CREATE TABLE IF NOT EXISTS report_value "
+        "(report_value_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "report_value_type_id INTEGER NOT NULL, "
+        "report_parameter_id INTEGER NOT NULL, "
+        "value_text TEXT NULL, "
+        "value_bool INTEGER NULL, "
+        "value_integer INTEGER NULL, "
+        "value_float REAL NULL, "
+        "uuid TEXT NOT NULL"
+        ");";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            @throw [NSException exceptionWithName:@"Fail to create report_value table."
+                                           reason:[NSString stringWithFormat:@"Result: %ld, error: %@", (long)result, errMsg]
+                                         userInfo:nil];
+        }
+
+        // COMMIT
+        sql = @"COMMIT";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSString *errMsg = nil;
+            if(error){
+                errMsg = [NSString stringWithUTF8String:error];
+                NSLog(@"Error: %@", errMsg);
+            }
+            @throw [NSException exceptionWithName:@"Fail to commit transaction."
+                                           reason:[NSString stringWithFormat:@"Result: %ld, error: %@", (long)result, errMsg]
+                                         userInfo:nil];
+        }
+        updateResult = YES;
+    }
+    @catch(NSException *ex) {
+        NSLog(@"YYGUpdater exception handled. Message: %@", [ex description]);
+
+        // ROLLBACK?
+        sql = @"ROLLBACK";
+        result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
+        if(result != SQLITE_OK) {
+            NSLog(@"Fail to rollback transaction.");
+            if(error)
+                NSLog(@"Error: %@", [NSString stringWithUTF8String:error]);
+        }
+        updateResult = NO;
+    }
+    @finally {
+        sqlite3_close(db);
+        return [NSNumber numberWithBool:updateResult];
+    }
+}
+
+/**
  Update to version 1.3(3).
  
  [x] Fix bug with non-process transfer operation while actualize balance of accounts.

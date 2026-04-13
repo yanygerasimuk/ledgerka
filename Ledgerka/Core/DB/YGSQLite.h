@@ -31,4 +31,18 @@
 
 - (BOOL)hasColumn:(NSString *)column inTable:(NSString *)table;
 
+/// Sync exec some sql in one transaction
+/// - Parameter sqls: List of sql strings
+/// - Returns: Result
+- (BOOL)execSyncInTransactionSQLs:(NSArray<NSString *> *)sqls;
+
+/// Async exec some sql in one transaction
+/// - Parameters:
+///   - sqls: List of sql strings
+///   - successBlock: Block executed on success
+///   - failureBlock: Block executed on failure
+- (void)execAsyncInTransactionSQLs:(NSArray<NSString *> *)sqls
+                      successBlock:(void (^) (void))successBlock
+                      failureBlock:(void (^) (void))failureBlock;
+
 @end

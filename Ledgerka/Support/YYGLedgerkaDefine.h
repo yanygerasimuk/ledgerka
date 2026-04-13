@@ -34,3 +34,4 @@ extern NSString *const kDropboxAppKey;
 
 extern char *const kSQLiteQueue;
 extern char *const kEntitiesQueue;
+extern char *const kReportsQueue;
