@@ -204,16 +204,16 @@
 		132C0235212A1168000306C5 /* YYGGetCreditEditViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGGetCreditEditViewModel.m; sourceTree = "<group>"; };
 		132C0237212A12D5000306C5 /* YYGReturnCreditEditViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYGReturnCreditEditViewModel.h; sourceTree = "<group>"; };
 		132C0238212A12D5000306C5 /* YYGReturnCreditEditViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYGReturnCreditEditViewModel.m; sourceTree = "<group>"; };
-		133050F01EDAE29D0031044D /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		133050F01EDAE29D0031044D /* Ledgerka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledgerka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133050F61EDAE29D0031044D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		133050F71EDAE29D0031044D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		133050FD1EDAE29D0031044D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		133050FF1EDAE29D0031044D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		133051041EDAE29D0031044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		133051091EDAE29D0031044D /* LedgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		133051091EDAE29D0031044D /* LedgerkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1330510D1EDAE29D0031044D /* LedgerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerTests.m; sourceTree = "<group>"; };
 		1330510F1EDAE29D0031044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		133051141EDAE29D0031044D /* LedgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		133051141EDAE29D0031044D /* LedgerkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		133051181EDAE29D0031044D /* LedgerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerUITests.m; sourceTree = "<group>"; };
 		1330511A1EDAE29D0031044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		133051261EDAE3300031044D /* YGTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGTabBarViewController.h; sourceTree = "<group>"; };
@@ -443,13 +443,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0152F34B2F8D0B1B007CED47 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				133C001A1F17748200D0CB0E /* YYGLedgerDefine.h */,
+				133C001B1F17748200D0CB0E /* YYGLedgerDefine.m */,
+				133C001D1F17748E00D0CB0E /* YYGLedgerError.h */,
+				133C001E1F17748E00D0CB0E /* YYGLedgerError.m */,
+				137E80D820F241E2000E4B7A /* main.m */,
+				137E80DA20F2434A000E4B7A /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		133050E71EDAE29D0031044D = {
 			isa = PBXGroup;
 			children = (
-				133050F21EDAE29D0031044D /* Ledger */,
-				137E80DC20F24490000E4B7A /* Supporting Files */,
-				1330510C1EDAE29D0031044D /* LedgerTests */,
-				133051171EDAE29D0031044D /* LedgerUITests */,
+				133050F21EDAE29D0031044D /* Ledgerka */,
+				1330510C1EDAE29D0031044D /* LedgerkaTests */,
+				133051171EDAE29D0031044D /* LedgerkaUITests */,
 				133050F11EDAE29D0031044D /* Products */,
 				1330512F1EDAEDA00031044D /* Frameworks */,
 				B8111A2E5F7E4B899CAC00DC /* Pods */,
@@ -459,14 +471,14 @@
 		133050F11EDAE29D0031044D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				133050F01EDAE29D0031044D /* Ledger.app */,
-				133051091EDAE29D0031044D /* LedgerTests.xctest */,
-				133051141EDAE29D0031044D /* LedgerUITests.xctest */,
+				133050F01EDAE29D0031044D /* Ledgerka.app */,
+				133051091EDAE29D0031044D /* LedgerkaTests.xctest */,
+				133051141EDAE29D0031044D /* LedgerkaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		133050F21EDAE29D0031044D /* Ledger */ = {
+		133050F21EDAE29D0031044D /* Ledgerka */ = {
 			isa = PBXGroup;
 			children = (
 				1397437F20E12B7600391439 /* Core */,
@@ -476,28 +488,31 @@
 				135F860420EFB2AF00CFA942 /* Operation */,
 				139743AA20E3FA0600391439 /* Options */,
 				139743AB20E3FB0400391439 /* Utilities */,
+				0152F34B2F8D0B1B007CED47 /* Support */,
+				138662861F3498E600800A11 /* InfoPlist.strings */,
+				133051041EDAE29D0031044D /* Info.plist */,
 			);
-			path = Ledger;
+			path = Ledgerka;
 			sourceTree = "<group>";
 		};
-		1330510C1EDAE29D0031044D /* LedgerTests */ = {
+		1330510C1EDAE29D0031044D /* LedgerkaTests */ = {
 			isa = PBXGroup;
 			children = (
 				138662961F34FA0D00800A11 /* InfoPlist.strings */,
 				1330510D1EDAE29D0031044D /* LedgerTests.m */,
 				1330510F1EDAE29D0031044D /* Info.plist */,
 			);
-			path = LedgerTests;
+			path = LedgerkaTests;
 			sourceTree = "<group>";
 		};
-		133051171EDAE29D0031044D /* LedgerUITests */ = {
+		133051171EDAE29D0031044D /* LedgerkaUITests */ = {
 			isa = PBXGroup;
 			children = (
 				1386628C1F34FA0C00800A11 /* InfoPlist.strings */,
 				133051181EDAE29D0031044D /* LedgerUITests.m */,
 				1330511A1EDAE29D0031044D /* Info.plist */,
 			);
-			path = LedgerUITests;
+			path = LedgerkaUITests;
 			sourceTree = "<group>";
 		};
 		1330512F1EDAEDA00031044D /* Frameworks */ = {
@@ -992,22 +1007,6 @@
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
-		137E80DC20F24490000E4B7A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				133051041EDAE29D0031044D /* Info.plist */,
-				138662861F3498E600800A11 /* InfoPlist.strings */,
-				133C001A1F17748200D0CB0E /* YYGLedgerDefine.h */,
-				133C001B1F17748200D0CB0E /* YYGLedgerDefine.m */,
-				133C001D1F17748E00D0CB0E /* YYGLedgerError.h */,
-				133C001E1F17748E00D0CB0E /* YYGLedgerError.m */,
-				137E80D820F241E2000E4B7A /* main.m */,
-				137E80DA20F2434A000E4B7A /* LaunchScreen.storyboard */,
-			);
-			name = "Supporting Files";
-			path = Ledger;
-			sourceTree = "<group>";
-		};
 		1397437F20E12B7600391439 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -1257,9 +1256,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		133050EF1EDAE29D0031044D /* Ledger */ = {
+		133050EF1EDAE29D0031044D /* Ledgerka */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1330511D1EDAE29D0031044D /* Build configuration list for PBXNativeTarget "Ledger" */;
+			buildConfigurationList = 1330511D1EDAE29D0031044D /* Build configuration list for PBXNativeTarget "Ledgerka" */;
 			buildPhases = (
 				57A6EB723FF81406FFCD2D1A /* [CP] Check Pods Manifest.lock */,
 				133050EC1EDAE29D0031044D /* Sources */,
@@ -1271,14 +1270,14 @@
 			);
 			dependencies = (
 			);
-			name = Ledger;
+			name = Ledgerka;
 			productName = Ledger;
-			productReference = 133050F01EDAE29D0031044D /* Ledger.app */;
+			productReference = 133050F01EDAE29D0031044D /* Ledgerka.app */;
 			productType = "com.apple.product-type.application";
 		};
-		133051081EDAE29D0031044D /* LedgerTests */ = {
+		133051081EDAE29D0031044D /* LedgerkaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 133051201EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerTests" */;
+			buildConfigurationList = 133051201EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerkaTests" */;
 			buildPhases = (
 				133051051EDAE29D0031044D /* Sources */,
 				133051061EDAE29D0031044D /* Frameworks */,
@@ -1289,14 +1288,14 @@
 			dependencies = (
 				1330510B1EDAE29D0031044D /* PBXTargetDependency */,
 			);
-			name = LedgerTests;
+			name = LedgerkaTests;
 			productName = LedgerTests;
-			productReference = 133051091EDAE29D0031044D /* LedgerTests.xctest */;
+			productReference = 133051091EDAE29D0031044D /* LedgerkaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		133051131EDAE29D0031044D /* LedgerUITests */ = {
+		133051131EDAE29D0031044D /* LedgerkaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 133051231EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerUITests" */;
+			buildConfigurationList = 133051231EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerkaUITests" */;
 			buildPhases = (
 				133051101EDAE29D0031044D /* Sources */,
 				133051111EDAE29D0031044D /* Frameworks */,
@@ -1307,9 +1306,9 @@
 			dependencies = (
 				133051161EDAE29D0031044D /* PBXTargetDependency */,
 			);
-			name = LedgerUITests;
+			name = LedgerkaUITests;
 			productName = LedgerUITests;
-			productReference = 133051141EDAE29D0031044D /* LedgerUITests.xctest */;
+			productReference = 133051141EDAE29D0031044D /* LedgerkaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -1341,11 +1340,12 @@
 					};
 				};
 			};
-			buildConfigurationList = 133050EB1EDAE29D0031044D /* Build configuration list for PBXProject "Ledger" */;
+			buildConfigurationList = 133050EB1EDAE29D0031044D /* Build configuration list for PBXProject "Ledgerka" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				ru,
@@ -1355,9 +1355,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				133050EF1EDAE29D0031044D /* Ledger */,
-				133051081EDAE29D0031044D /* LedgerTests */,
-				133051131EDAE29D0031044D /* LedgerUITests */,
+				133050EF1EDAE29D0031044D /* Ledgerka */,
+				133051081EDAE29D0031044D /* LedgerkaTests */,
+				133051131EDAE29D0031044D /* LedgerkaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1579,12 +1579,12 @@
 /* Begin PBXTargetDependency section */
 		1330510B1EDAE29D0031044D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 133050EF1EDAE29D0031044D /* Ledger */;
+			target = 133050EF1EDAE29D0031044D /* Ledgerka */;
 			targetProxy = 1330510A1EDAE29D0031044D /* PBXContainerItemProxy */;
 		};
 		133051161EDAE29D0031044D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 133050EF1EDAE29D0031044D /* Ledger */;
+			target = 133050EF1EDAE29D0031044D /* Ledgerka */;
 			targetProxy = 133051151EDAE29D0031044D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1772,11 +1772,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EF64T58JW4;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Ledger/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Ledgerka/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.Ledger;
-				PRODUCT_NAME = Ledger;
+				PRODUCT_NAME = Ledgerka;
 			};
 			name = Debug;
 		};
@@ -1786,10 +1786,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EF64T58JW4;
-				INFOPLIST_FILE = "$(SRCROOT)/Ledger/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Ledgerka/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.Ledger;
-				PRODUCT_NAME = Ledger;
+				PRODUCT_NAME = Ledgerka;
 			};
 			name = Release;
 		};
@@ -1802,7 +1802,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.LedgerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ledger.app/Ledger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ledgerka.app/Ledgerka";
 			};
 			name = Debug;
 		};
@@ -1815,7 +1815,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangerasimuk.LedgerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ledger.app/Ledger";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ledgerka.app/Ledgerka";
 			};
 			name = Release;
 		};
@@ -1846,7 +1846,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		133050EB1EDAE29D0031044D /* Build configuration list for PBXProject "Ledger" */ = {
+		133050EB1EDAE29D0031044D /* Build configuration list for PBXProject "Ledgerka" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1330511B1EDAE29D0031044D /* Debug */,
@@ -1855,7 +1855,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1330511D1EDAE29D0031044D /* Build configuration list for PBXNativeTarget "Ledger" */ = {
+		1330511D1EDAE29D0031044D /* Build configuration list for PBXNativeTarget "Ledgerka" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1330511E1EDAE29D0031044D /* Debug */,
@@ -1864,7 +1864,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		133051201EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerTests" */ = {
+		133051201EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerkaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				133051211EDAE29D0031044D /* Debug */,
@@ -1873,7 +1873,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		133051231EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerUITests" */ = {
+		133051231EDAE29D0031044D /* Build configuration list for PBXNativeTarget "LedgerkaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				133051241EDAE29D0031044D /* Debug */,

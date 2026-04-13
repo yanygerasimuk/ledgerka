@@ -28,7 +28,7 @@
 "APPLICATION_AUTHOR" = "Ян Герасимук";
 
 /* Name of application (Ledger) */
-"APPLICATION_NAME" = "Леджер";
+"APPLICATION_NAME" = "Леджерка";
 
 /* Pretext for release build date. */
 "APPLICATION_RELEASED_PRETEXT" = "от";
@@ -221,7 +221,7 @@
 "YESTERDAY" = "Вчера";
 
 /* Application name on Launch screen. */
-"LAUNCH_SCREEN_APP_NAME_LABEL" = "Леджер";
+"LAUNCH_SCREEN_APP_NAME_LABEL" = "Леджерка";
 
 /* Log text during loading Launch screen. */
 "LAUNCH_SCREEN_LOG_LOADING_LABEL" = "Загрузка...";
