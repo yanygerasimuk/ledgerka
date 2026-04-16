@@ -182,7 +182,7 @@
     "modified TEXT, "
     "sort INTEGER NOT NULL, "
     "comment TEXT, "
-    "uuid TEXT NOT NULL, "
+    "uuid TEXT NOT NULL"
     ");";
 
     [self createTable:@"report" createSQL:createSql];
