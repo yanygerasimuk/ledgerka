@@ -14,6 +14,7 @@
 #import "YYGDBConfig.h"
 #import "YGConfig.h"
 #import "YYGUpdater.h"
+#import "YYGTabBarController.h"
 #import <ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.h>
 
 @interface AppDelegate()
@@ -120,14 +121,16 @@
  Load main UI after Launch UIViewController and background tasks finish work.
  */
 - (void)loadMainUI {
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TabBarViewController"];
+    YYGTabBarController *vc = [YYGTabBarController new];
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TabBarViewController"];
+//    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
     UIView *snapshot = [self.window snapshotViewAfterScreenUpdates:true];
     [vc.view addSubview:snapshot];
-    
+
     self.window.rootViewController = vc;
     
     [UIView animateWithDuration:1.0 animations:^{

@@ -42,10 +42,10 @@ static NSString *const kEntityCellId = @"EntityCellId";
 - (void)injectViewModel {
     YGEntityType type = 0;
     switch(self.tabBarController.selectedIndex) {
-        case 1:
+        case 2:
             type = YGEntityTypeAccount;
             break;
-        case 2:
+        case 3:
             type = YGEntityTypeDebt;
             break;
         default:
