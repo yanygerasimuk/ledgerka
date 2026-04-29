@@ -121,13 +121,10 @@
  Load main UI after Launch UIViewController and background tasks finish work.
  */
 - (void)loadMainUI {
-    YYGTabBarController *vc = [YYGTabBarController new];
+    YYGDesignSystem *ds = [YYGDesignSystem shared];
+    YYGTabBarController *vc = [[YYGTabBarController alloc] initWithDesignSystem:ds];
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TabBarViewController"];
-//    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    
     UIView *snapshot = [self.window snapshotViewAfterScreenUpdates:true];
     [vc.view addSubview:snapshot];
 

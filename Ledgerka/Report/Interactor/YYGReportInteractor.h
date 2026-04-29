@@ -14,6 +14,7 @@
 
 @protocol YYGReportInteractorOutput;
 @protocol YYGReportRepositoryInput;
+@protocol YYGReportListPresenterInput;
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,6 +28,8 @@ YYGReportListPresenterOutput
 
 @property (nonatomic, strong) id<YYGReportInteractorOutput> output; /**< FlowCoordinator */
 @property (nonatomic, strong) id<YYGReportRepositoryInput> reportRepository; /**< Репозиторий отчётов */
+
+@property (nonatomic, strong) id<YYGReportListPresenterInput> listPresenter;
 
 @end
 

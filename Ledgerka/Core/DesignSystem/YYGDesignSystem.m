@@ -80,6 +80,31 @@
     return [UIColor colorNamed:@"backgroundSecondary"];
 }
 
+- (UIColor *)colorBackgroundOcean
+{
+    return [UIColor colorNamed:@"backgroundOcean"];
+}
+
+- (UIColor *)colorBackgroundIsland
+{
+    return [UIColor colorNamed:@"backgroundIsland"];
+}
+
+- (UIColor *)colorTextPrimary
+{
+    return [UIColor colorNamed:@"textPrimary"];
+}
+
+- (UIColor *)colorTextSecondary
+{
+    return [UIColor colorNamed:@"textSecondary"];
+}
+
+- (UIColor *)colorTextMint
+{
+    return [UIColor colorNamed:@"textMint"];
+}
+
 
 #pragma mark - Fonts
 

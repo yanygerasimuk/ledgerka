@@ -156,6 +156,144 @@
     });
 }
 
+- (NSArray *)selectWithSql:(NSString *)sql
+{
+#ifdef DEBUG_PERFORMANCE
+    NSLog(@"-[YYGSQLite selectWithSql: %@]", sql);
+#endif
+
+    __block NSMutableArray *result = [[NSMutableArray alloc] init];
+    __weak YYGSQLite *weakSelf = self;
+    dispatch_sync(queue, ^{
+        YYGSQLite *strongSelf = weakSelf;
+        if(strongSelf) {
+            sqlite3 *db = [strongSelf database];
+            sqlite3_stmt *statement;
+
+            int resultSqlitePrepare = sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil);
+
+            if (resultSqlitePrepare == SQLITE_OK) {
+
+                while (sqlite3_step(statement) == SQLITE_ROW) {
+                    NSMutableArray *row = [[NSMutableArray alloc] init];
+                    for(int i = 0; i < sqlite3_column_count(statement); i++){
+                        int columnType = sqlite3_column_type(statement, i);
+                        if(columnType == 1){ //int
+                            int intVal = sqlite3_column_int(statement, i);
+                            [row addObject:[NSNumber numberWithInt:intVal]];
+                        }
+                        else if(columnType == 2){ // double
+                            double doubleVal = sqlite3_column_double(statement, i);
+                            [row addObject:[NSNumber numberWithDouble:doubleVal]];
+                        }
+                        else if(columnType == 3){ //text
+                            const char *charValue = (char *)sqlite3_column_text(statement, i);
+                            if(charValue != NULL)
+                                [row addObject:[[NSString alloc] initWithUTF8String:charValue]];
+                            else
+                                [row addObject:[NSNull null]];
+                        }
+                        else if(columnType == 5){
+                            [row addObject:[NSNull null]];
+                        }
+                        else {
+                            @throw [NSException exceptionWithName:@"-[YYGSQLite selectWithSql]" reason:@"Can not get value of selected type" userInfo:nil];
+                        }
+                    }
+                    [result addObject:row];
+                }
+            } else {
+                NSLog(@"-[YYGSQLite selectWithSql] .. sqlite3_prepare_v2() != SQLITE_OK. Result: %d", resultSqlitePrepare);
+                NSLog(@"Unable to prepare statement: %s db err '%s' (%1d)", __FUNCTION__, sqlite3_errmsg(db), sqlite3_errcode(db));
+            }
+            sqlite3_finalize(statement);
+            sqlite3_close(db);
+#ifdef DEBUG_PERFORMANCE
+            NSLog(@"<< selectWithSql finished");
+#endif
+        }
+    });
+    return [result count] > 0 ? [result copy] : nil;
+}
+
+- (void)selectAsyncSql:(NSString *)sql
+        successHandler:(void (^) (NSArray *))successHandler
+        failureHandler:(void (^) (void))failureHandler
+{
+#ifdef DEBUG_PERFORMANCE
+    NSLog(@"YGSQLite.selectWithSqlQuery:");
+#endif
+    NSLog(@"YGSQLite.selectWithSqlQuery:");
+    NSLog(@"sql: %@", sql);
+    NSLog(@"\t isMainThread: %@", [NSThread isMainThread] ? @"YES" : @"NO");
+
+    __block NSMutableArray *result = [[NSMutableArray alloc] init];
+    __weak YYGSQLite *weakSelf = self;
+    dispatch_async(queue, ^{
+
+        NSLog(@"\t\tYGSQLite.selectWithSqlQuery: { inside dispatch_sync }");
+        NSLog(@"\t\t isMainThread: %@", [NSThread isMainThread] ? @"YES" : @"NO");
+
+        YYGSQLite *strongSelf = weakSelf;
+        if(strongSelf) {
+            sqlite3 *db = [strongSelf database];
+            sqlite3_stmt *statement;
+
+            int resultSqlitePrepare = sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil);
+
+            if (resultSqlitePrepare == SQLITE_OK) {
+                while (sqlite3_step(statement) == SQLITE_ROW) {
+                    NSMutableArray *row = [[NSMutableArray alloc] init];
+                    for(int i = 0; i < sqlite3_column_count(statement); i++){
+                        int columnType = sqlite3_column_type(statement, i);
+                        if(columnType == 1){ //int
+                            int intVal = sqlite3_column_int(statement, i);
+                            [row addObject:[NSNumber numberWithInt:intVal]];
+                        }
+                        else if(columnType == 2){ // double
+                            double doubleVal = sqlite3_column_double(statement, i);
+                            [row addObject:[NSNumber numberWithDouble:doubleVal]];
+                        }
+                        else if(columnType == 3){ //text
+                            const char *charValue = (char *)sqlite3_column_text(statement, i);
+                            if(charValue != NULL)
+                                [row addObject:[[NSString alloc] initWithUTF8String:charValue]];
+                            else
+                                [row addObject:[NSNull null]];
+                        }
+                        else if(columnType == 5){
+                            [row addObject:[NSNull null]];
+                        }
+                        else {
+                            // @throw [NSException exceptionWithName:@"-[YGSQLite selectWithSqlQuery]" reason:@"Can not get value of selected type" userInfo:nil];
+                            failureHandler();
+                        }
+                    }
+                    [result addObject:row];
+                }
+                sqlite3_finalize(statement);
+                sqlite3_close(db);
+                successHandler(result);
+            } else {
+                NSLog(@"-[YGSQLite selectWithSqlQuery] .. sqlite3_prepare_v2() != SQLITE_OK. Result: %d", resultSqlitePrepare);
+                NSLog(@"Unable to prepare statement: %s db err '%s' (%1d)", __FUNCTION__, sqlite3_errmsg(db), sqlite3_errcode(db));
+                sqlite3_finalize(statement);
+                sqlite3_close(db);
+                failureHandler();
+            }
+#ifdef DEBUG_PERFORMANCE
+            NSLog(@"<< selectWithSqlQuery finished");
+#endif
+        }
+        else
+        {
+            // а нужно ли?
+            failureHandler();
+        }
+    });
+}
+
+
 #pragma mark - Statics
 
 + (YYGSQLite *)shared
@@ -197,14 +335,21 @@
 {
     __block sqlite3 *db;
 
-    dispatch_sync(queue, ^{
-        NSString *path = [YYGSQLite databaseFullName];
-        int result = sqlite3_open([path UTF8String], &db);
-        if(result != SQLITE_OK){
-            NSLog(@"[YYGSQLite database]. sqlite3_open() fails. Result: %@. Can not open sqlite db.", @(result));
-            sqlite3_close(db);
-        }
-    });
+    NSString *path = [YYGSQLite databaseFullName];
+    int result = sqlite3_open([path UTF8String], &db);
+    if(result != SQLITE_OK){
+        NSLog(@"[YYGSQLite database]. sqlite3_open() fails. Result: %@. Can not open sqlite db.", @(result));
+        sqlite3_close(db);
+    }
+
+//    dispatch_sync(queue, ^{
+//        NSString *path = [YYGSQLite databaseFullName];
+//        int result = sqlite3_open([path UTF8String], &db);
+//        if(result != SQLITE_OK){
+//            NSLog(@"[YYGSQLite database]. sqlite3_open() fails. Result: %@. Can not open sqlite db.", @(result));
+//            sqlite3_close(db);
+//        }
+//    });
 
     return db;
 }

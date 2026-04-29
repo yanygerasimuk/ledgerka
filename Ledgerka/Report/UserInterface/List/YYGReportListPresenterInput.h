@@ -6,11 +6,13 @@
 //  Copyright © 2020 Yan Gerasimuk. All rights reserved.
 //
 
-//#import "YYGReport.h"
+#import "YYGReport.h"
 
 
 @protocol YYGReportListPresenterInput
 
-//- (void)reloadReports;
+- (void)didFetchReports:(NSArray<YYGReport *> *)reports;
+
+- (void)didFetchReportsWithError;
 
 @end

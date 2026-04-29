@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YYGTabBarController : UITabBarController
 
-- (instancetype)initWithDesignSystem: (YYGDesignSystem *) designSystem;
+- (instancetype)initWithDesignSystem:(YYGDesignSystem *)ds;
 
 @end
 

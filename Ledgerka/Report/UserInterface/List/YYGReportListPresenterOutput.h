@@ -10,12 +10,7 @@
 
 @protocol YYGReportListPresenterOutput
 
-//- (void)reportListAddButtonPressed;
-//
-//- (NSArray <YYGReport *> *)reports;
-//
-//- (void)didSelectReport:(YYGReport *)report;
-//
-//- (void)getReportsWithHandler:(void(^)(NSArray<YYGReport *> *result, NSString *message))handler;
+- (void)fetchReports;
+- (void)didTapAddReport;
 
 @end

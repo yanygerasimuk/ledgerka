@@ -28,6 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, strong) UIColor *colorBackgroundPrimary;
 @property (nonatomic, readonly, strong) UIColor *colorBackgroundSecondary;
 
+@property (nonatomic, readonly, strong) UIColor *colorBackgroundOcean;
+@property (nonatomic, readonly, strong) UIColor *colorBackgroundIsland;
+
+@property (nonatomic, readonly, strong) UIColor *colorTextPrimary;
+@property (nonatomic, readonly, strong) UIColor *colorTextSecondary;
+@property (nonatomic, readonly, strong) UIColor *colorTextMint;
+
 - (UIFont *)fontHeadMed;
 - (UIFont *)fontTitleMed;
 - (UIFont *)fontBodyMMed;

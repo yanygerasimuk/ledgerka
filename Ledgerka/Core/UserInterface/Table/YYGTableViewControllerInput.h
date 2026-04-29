@@ -7,30 +7,26 @@
 //
 
 #import "YYGTableViewModel.h"
+
 // #import "YYGNavBarViewModel.h"
 
 @class YYGErrorViewModel;
 @class YYGNavBarViewModel;
+@class YYGBottomButtonViewModel;
+@class YYGTwoTextsViewModel;
 
 @protocol YYGTableViewControllerInput
 
-//- (void)setupUI;
-//
-//- (void)showEmptyView;
-//- (void)hideEmptyView;
-//
-//- (void)showLoading;
-//- (void)hideLoading;
-//
 //- (void)hidePullRefresh;
-//
-//- (void)showErrorWithViewModel:(YYGErrorViewModel *)viewModel;
-//
-////- (void)showWithViewModel:(YYGTableViewModel *)viewModel;
-//
 //- (void)reloadData;
 
-- (void)configureTableWithViewModel:(YYGTableViewModel *)tableViewModel;
-- (void)configureNavBarWithViewModel:(YYGNavBarViewModel *)navBarViewModel;
+- (void)showLoading;
+- (void)hideLoading;
+- (void)showInfoWithViewModel:(YYGTwoTextsViewModel * _Nonnull)viewModel;
+- (void)hideInfoView;
 
+- (void)configureTableWithViewModel:(YYGTableViewModel * _Nonnull)tableViewModel;
+- (void)configureNavBarWithViewModel:(YYGNavBarViewModel * _Nonnull)navBarViewModel;
+- (void)configureBottomButtonsWithFirstViewModel:(YYGBottomButtonViewModel * _Nullable)firstViewModel
+                                 secondViewModel:(YYGBottomButtonViewModel * _Nullable)secondViewModel;
 @end

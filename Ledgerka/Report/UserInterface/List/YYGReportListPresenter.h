@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YYGReport.h"
 #import "YYGTableViewControllerOutput.h"
 #import "YYGReportListPresenterInput.h"
 
@@ -20,8 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 YYGReportListPresenterInput,
 YYGTableViewControllerOutput
 >
-
-//@property (nonatomic, strong) id<YYGReportListPresenterOutput> output;    /**< FlowCoordinator */
 
 @property (nonatomic, strong) id<YYGReportListPresenterOutput> output;    /**< Interactor */
 @property (nonatomic, weak) id<YYGTableViewControllerInput> view;

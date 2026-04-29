@@ -6,7 +6,7 @@
 //  Copyright © 2021 Yan Gerasimuk. All rights reserved.
 //
 
-//#import "YYGReport.h"
+#import "YYGReport.h"
 //#import "YGEntity.h"
 //#import "YYGAccountBalanceModel.h"
 //#import "YYGAccountBalanceReport.h"
@@ -44,10 +44,9 @@ NS_ASSUME_NONNULL_BEGIN
 //- (YYGResult)removeReport:(YYGReport *)report;
 //
 //// New API
-//
-//- (void)reportsWithHandler:(void(^)(NSArray<YYGReport *> * _Nullable result,
-//                                    NSString * _Nullable message))handler;
 
+- (void)fetchReportsWithSuccessHandler:(void (^)(NSArray<YYGReport *> *))successHandler
+                        failureHandler:(void (^)(void))failureHandler;
 
 @end
 

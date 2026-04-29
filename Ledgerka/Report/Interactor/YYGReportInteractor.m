@@ -9,7 +9,29 @@
 #import "YYGReportInteractor.h"
 #import "YYGReportInteractorOutput.h"
 #import "YYGReportRepositoryInput.h"
+#import "YYGReportListPresenterInput.h"
 
 @implementation YYGReportInteractor
+
+
+#pragma mark - YYGReportListPresenterOutput
+
+- (void)fetchReports
+{
+    [self.reportRepository fetchReportsWithSuccessHandler:^(NSArray<YYGReport *> * reports) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.listPresenter didFetchReports:reports];
+        });
+    } failureHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.listPresenter didFetchReportsWithError];
+        });
+    }];
+}
+
+- (void)didTapAddReport
+{
+    NSLog(@"yyg -[interactor didTapAddReport]");
+}
 
 @end

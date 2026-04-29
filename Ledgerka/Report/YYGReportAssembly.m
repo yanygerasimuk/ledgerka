@@ -31,7 +31,6 @@
 //    YYGDesignSystem *designSystem = [[YYGDesignSystem alloc] initWithOptions:options];
     YYGDesignSystem *designSystem = [YYGDesignSystem new];
     YYGTableViewController *viewController = [[YYGTableViewController alloc] initWithDesignSystem:designSystem];
-//    YYGReportListViewController *viewController = [YYGReportListViewController new];
     YYGReportListPresenter *presenter = [YYGReportListPresenter new];
 
     viewController.output = presenter;
@@ -39,11 +38,11 @@
 
     YYGReportFlowCoordinator *flowCoordinator = [YYGReportFlowCoordinator new];
     flowCoordinator.listPresenter = presenter;
-//    presenter.output = flowCoordinator;
     self.flowCoordinator = flowCoordinator;
 
     YYGReportInteractor *interactor = [YYGReportInteractor new];
     interactor.output = self.flowCoordinator;
+    interactor.listPresenter = presenter;
 
     // Передалать на weak
     self.flowCoordinator.interactor = interactor;

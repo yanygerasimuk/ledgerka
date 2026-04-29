@@ -7,7 +7,7 @@
 //
 
 
-//#import "YYGReport.h"
+#import "YYGReport.h"
 
 /// Протокол сообщений репозитория отчётов
 @protocol YYGReportRepositoryOutput
@@ -23,5 +23,12 @@
 ////- (void)reportDidUpdate:(YYGReport *)report;
 //
 //- (void)didUpdateReport:(YYGReport *)report;
+
+//- (void)fetchReportsWithHandler:(void(^)(NSArray<YYGReport *> * _Nullable result,
+//                                         NSString * _Nullable message))handler;
+//
+//- (void)fetchReportsWithSuccessHandler:(void(^)(NSArray<YYGReport *> *result))successHandler
+//                        failureHandler:(void(^)(void))failureHandler;
+
 
 @end

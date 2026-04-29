@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, YYGTabTag)
 
 @interface YYGTabBarController ()
 
-@property (nonatomic, strong) YYGDesignSystem *designSystem;
+@property (nonatomic, strong) YYGDesignSystem *ds;
 
 @end
 
@@ -36,19 +36,41 @@ typedef NS_ENUM(NSInteger, YYGTabTag)
 // TODO: добавить локализацию строк
 @implementation YYGTabBarController
 
-- (instancetype)initWithDesignSystem: (YYGDesignSystem *) designSystem
+- (instancetype)initWithDesignSystem:(YYGDesignSystem *)ds
 {
     self = [super init];
     if (self)
     {
-        _designSystem = designSystem;
+        _ds = ds;
     }
     return self;
+}
+
+- (void)setupAppearance
+{
+    if (@available(iOS 13.0, *)) {
+        UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
+        [appearance configureWithDefaultBackground];
+        appearance.backgroundColor = [self.ds colorBackgroundIsland];
+
+        // Selected state
+//        appearance.stackedLayoutAppearance.selected.iconColor = [UIColor blueColor];
+//        appearance.stackedLayoutAppearance.selected.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
+//
+//        appearance.stackedLayoutAppearance.normal.iconColor = [UIColor grayColor];
+//        appearance.stackedLayoutAppearance.normal.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor grayColor]};
+
+        self.tabBar.standardAppearance = appearance;
+        if (@available(iOS 15.0, *)) {
+            self.tabBar.scrollEdgeAppearance = appearance;
+        }
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupAppearance];
 
     UINavigationController *operationNC = [self navControllerForOperation];
     UINavigationController *reportNC = [self navControllerForReport];
@@ -58,23 +80,11 @@ typedef NS_ENUM(NSInteger, YYGTabTag)
 
     self.viewControllers = @[operationNC, reportNC, accountNC, debtNC, optionNC];
 //    self.viewControllers = @[operationNC, accountNC, debtNC, optionNC];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
-    if (@available(iOS 13, *))
-    {
-        UITabBarAppearance *appearance = [UITabBarAppearance new];
-        [appearance configureWithDefaultBackground];
-        appearance.backgroundColor = [self.designSystem colorBackgroundSystem];
-        UITabBar.appearance.standardAppearance = appearance;
-
-        if (@available(iOS 15, *))
-        {
-            UITabBar.appearance.scrollEdgeAppearance = appearance;
-        }
-    }
 }
 
 - (UINavigationController *)navControllerForOperation
@@ -116,7 +126,7 @@ typedef NS_ENUM(NSInteger, YYGTabTag)
 //    accountVC.type = YGEntityTypeAccount;
     accountNC.viewControllers = @[accountVC];
     UIImage *accountImage = [UIImage imageNamed:@"tabBarIconAccounts"];
-    accountNC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Счёта"
+    accountNC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Счета"
                                                          image:accountImage
                                                            tag:YYGTabTagAccount];
 
