@@ -16,6 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
         successHandler:(void (^) (NSInteger))successHandler
         failureHandler:(void (^) (void))failureHandler;
 
+/// SELECT
+- (NSArray *)selectWithSql:(NSString *)sql;
+- (void)selectAsyncSql:(NSString *)sql
+        successHandler:(void (^) (NSArray *))successHandler
+        failureHandler:(void (^) (void))failureHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END
